@@ -1,0 +1,52 @@
+{
+  "crime_type_distribution": {
+    "THEFT": 202,
+    "BURGLARY": 111,
+    "CHAIN": 109,
+    "VEH_THEFT": 98,
+    "ASSAULT": 75,
+    "FRAUD": 49,
+    "ROBBERY": 43,
+    "CYBER": 42,
+    "DRUNK_DRV": 36,
+    "PICK": 36,
+    "TRESPASS": 30,
+    "NARCOTICS": 30,
+    "ARSON": 26,
+    "ATM_FRAUD": 24,
+    "HIT_RUN": 22,
+    "DACOITY": 16,
+    "POSSESS": 13,
+    "RIOTING": 12,
+    "ATTEMPT_M": 12,
+    "MURDER": 9,
+    "KIDNAP": 6
+  },
+  "district_distribution": {
+    "KA-BLR": 283,
+    "KA-BLR2": 81,
+    "KA-HBL": 80,
+    "KA-RBG": 67,
+    "KA-KLP": 66,
+    "KA-MGL": 64,
+    "KA-MYS": 60,
+    "KA-BLG": 53,
+    "KA-UDR": 50,
+    "KA-CHB": 18,
+    "KA-BDR": 17,
+    "KA-SHV": 17,
+    "KA-RMN": 17,
+    "KA-RCR": 16,
+    "KA-KLR": 14
+  },
+  "total_loss_inr": 1273193250.75,
+  "gang_crimes_fraction": 0.14985014985014986,
+  "status_distribution": {
+    "Under Investigation": 404,
+    "Charge Sheet Filed": 232,
+    "Closed (Undetected)": 118,
+    "Final Report": 170,
+    "Transferred": 48,
+    "Withdrawn": 29
+  }
+}

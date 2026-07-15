@@ -1,0 +1,19 @@
+{
+  "simulation_summary": {
+    "total_districts": 31,
+    "total_stations": 632,
+    "total_officers": 3948,
+    "total_citizens": 5000,
+    "total_criminals": 246,
+    "total_gangs": 5,
+    "total_firs": 1001,
+    "total_victims": 2169,
+    "total_accused": 1143,
+    "total_evidence": 2354,
+    "total_arrests": 296,
+    "total_chargesheets": 158,
+    "total_patrol_logs": 168112,
+    "total_cctv_events": 747,
+    "entity_resolution_records": 598
+  }
+}

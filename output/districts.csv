@@ -1,0 +1,32 @@
+﻿district_id,name,headquarters,district_type,population_density,num_stations,taluks
+KA-BLR,Bengaluru Urban,Bengaluru,metro,very_high,60,Bengaluru North|Bengaluru South|Bengaluru East|Bengaluru West|Yelahanka|Rajarajeshwari Nagar|Mahadevapura
+KA-BLR-R,Bengaluru Rural,Bengaluru,semi_urban,medium,18,Hosakote|Devanahalli|Doddaballapura|Nelamangala
+KA-MYS,Mysuru,Mysuru,urban,high,30,Mysuru|Nanjangud|Hunsur|Heggadadevankote|Periyapatna|T Narsipur|Krishnarajanagar
+KA-MGL,Dakshina Kannada,Mangaluru,urban,high,30,Mangaluru|Bantwal|Belthangady|Puttur|Sullia|Kadaba
+KA-HBL,Hubballi-Dharwad,Hubballi,urban,high,30,Hubballi|Dharwad|Kalghatagi|Navalgund|Kundgol
+KA-BLG,Belagavi,Belagavi,urban,medium,30,Belagavi|Gokak|Hukkeri|Khanapur|Chikkodi|Raibag|Ramdurg|Savadatti
+KA-KLP,Kalaburagi,Kalaburagi,urban,medium,30,Kalaburagi|Afzalpur|Chittapur|Gulbarga|Sedam|Shorapur|Yadgir
+KA-DVG,Davanagere,Davanagere,semi_urban,medium,18,Davanagere|Harihar|Channagiri|Harapanahalli|Jagalur
+KA-SHV,Shivamogga,Shivamogga,semi_urban,medium,18,Shivamogga|Bhadravati|Tirthahalli|Soraba|Sagar|Hosanagara
+KA-TKR,Tumakuru,Tumakuru,semi_urban,medium,18,Tumakuru|Tiptur|Gubbi|Sira|Pavagada|Madhugiri|Chikkanayakanahalli
+KA-RCR,Raichur,Raichur,semi_urban,low,18,Raichur|Manvi|Devadurga|Lingasugur|Sindhanur
+KA-BDR,Bidar,Bidar,semi_urban,low,18,Bidar|Basavakalyan|Aurad|Bhalki|Humnabad
+KA-VJP,Vijayapura,Vijayapura,semi_urban,low,18,Vijayapura|Basavana Bagewadi|Indi|Muddebihal|Sindagi
+KA-BSD,Bagalkote,Bagalkote,rural,low,10,Bagalkote|Badami|Bilagi|Hungund|Jamkhandi|Mudhol
+KA-HSN,Hassan,Hassan,semi_urban,medium,18,Hassan|Arsikere|Belur|Channarayapatna|Holenarasipur|Sakleshpur
+KA-CKM,Chikkamagaluru,Chikkamagaluru,rural,low,10,Chikkamagaluru|Kadur|Koppa|Mudigere|Sringeri|Tarikere
+KA-KDG,Kodagu,Madikeri,rural,very_low,10,Madikeri|Somwarpet|Virajpete
+KA-UDR,Udupi,Udupi,urban,medium,30,Udupi|Kundapura|Karkala|Brahmavar
+KA-MDY,Mandya,Mandya,semi_urban,medium,18,Mandya|Maddur|Malavalli|Nagamangala|Pandavapura|Shrirangapattana
+KA-CHT,Chamarajanagara,Chamarajanagara,rural,low,10,Chamarajanagara|Gundlupete|Hanur|Yelandur
+KA-KLR,Kolar,Kolar,semi_urban,medium,18,Kolar|Bangarpet|Malur|Mulbagal|Srinivaspur
+KA-CHB,Chikkaballapura,Chikkaballapura,semi_urban,medium,18,Chikkaballapura|Bagepalli|Chintamani|Gauribidanur|Gudibande|Sidlaghatta
+KA-RMN,Ramanagara,Ramanagara,semi_urban,medium,18,Ramanagara|Channapatna|Kanakapura|Magadi
+KA-GBG,Gadag,Gadag,rural,low,10,Gadag|Ron|Shirhatti|Mundargi|Nargund
+KA-HVR,Haveri,Haveri,rural,low,10,Haveri|Byadagi|Hanagal|Hirekerur|Ranebennur|Shiggaon
+KA-KPT,Koppal,Koppal,rural,low,10,Koppal|Gangavathi|Kushtagi|Yelburga
+KA-YDG,Yadgir,Yadgir,rural,very_low,10,Yadgir|Gurmatkal|Shorapur
+KA-VKT,Vijayanagara,Hosapete,semi_urban,low,18,Hosapete|Hagaribommanahalli|Hadagali|Harapanahalli|Hoovina Hadagali
+KA-CTV,Chitradurga,Chitradurga,semi_urban,low,18,Chitradurga|Challakere|Hiriyur|Holalkere|Hosadurga|Molakalmuru
+KA-BLR2,Ballari,Ballari,urban,medium,30,Ballari|Hagaribommanahalli|Sandur|Siruguppa
+KA-RBG,Dharwad,Dharwad,urban,medium,30,Dharwad|Hubballi|Kalghatagi|Navalgund

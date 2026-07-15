@@ -1,0 +1,599 @@
+﻿canonical_id,canonical_name,alias_id,alias_value,alias_type,confidence,source_module
+FIR-KLP-2021-00001,Deepak Krishnamurthy,FIR-KLP-2021-00001-NOISE,FIR-KLP-2021-00001-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00002,Shantha Shetty,FIR-BLR2-2021-00002-NOISE,FIR-BLR2-2021-00002-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00010,Ajay Lingayat,FIR-BLR-2021-00010-NOISE,FIR-BLR-2021-00010-NOISE,duplicate_fir,1.0,noise_injector
+FIR-KLP-2021-00004,Jyothi Hegde,FIR-KLP-2021-00004-NOISE,FIR-KLP-2021-00004-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00012,Shruthi Joshi,FIR-BLR-2021-00012-NOISE,FIR-BLR-2021-00012-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00007,Lakshmi Krishnamurthy,FIR-MGL-2021-00007-NOISE,FIR-MGL-2021-00007-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00002,Radha Sharma,FIR-MYS-2021-00002-NOISE,FIR-MYS-2021-00002-NOISE,duplicate_fir,1.0,noise_injector
+FIR-KLP-2021-00011,Mahesh Rao,FIR-KLP-2021-00011-NOISE,FIR-KLP-2021-00011-NOISE,duplicate_fir,1.0,noise_injector
+FIR-KLP-2021-00014,Mohan Krishnamurthy,FIR-KLP-2021-00014-NOISE,FIR-KLP-2021-00014-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00007,Meera Swamy,FIR-BLR2-2021-00007-NOISE,FIR-BLR2-2021-00007-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00011,Ganesh Murthy,FIR-RBG-2021-00011-NOISE,FIR-RBG-2021-00011-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00051,Swathi Desai,FIR-BLR-2021-00051-NOISE,FIR-BLR-2021-00051-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00011,Manjunath Nayak,FIR-MYS-2021-00011-NOISE,FIR-MYS-2021-00011-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00058,Sneha Shastri,FIR-BLR-2021-00058-NOISE,FIR-BLR-2021-00058-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00017,Vidya Udupi,FIR-MGL-2021-00017-NOISE,FIR-MGL-2021-00017-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00065,Deepak Ayyar,FIR-BLR-2021-00065-NOISE,FIR-BLR-2021-00065-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00018,Ajay Raju,FIR-MYS-2021-00018-NOISE,FIR-MYS-2021-00018-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2021-00015,Suresh Nayak,FIR-HBL-2021-00015-NOISE,FIR-HBL-2021-00015-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00091,Geetha Murthy,FIR-BLR-2021-00091-NOISE,FIR-BLR-2021-00091-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00021,Basavaraj Swamy,FIR-RBG-2021-00021-NOISE,FIR-RBG-2021-00021-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLG-2021-00017,Radha Sharma,FIR-BLG-2021-00017-NOISE,FIR-BLG-2021-00017-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00026,Harsh Swamy,FIR-BLR2-2021-00026-NOISE,FIR-BLR2-2021-00026-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00024,Anil Shastri,FIR-RBG-2021-00024-NOISE,FIR-RBG-2021-00024-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00105,Saritha Kumar,FIR-BLR-2021-00105-NOISE,FIR-BLR-2021-00105-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00026,Deepa Shastri,FIR-RBG-2021-00026-NOISE,FIR-RBG-2021-00026-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00028,Radha Tantri,FIR-BLR2-2021-00028-NOISE,FIR-BLR2-2021-00028-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00110,Vikram Kamath,FIR-BLR-2021-00110-NOISE,FIR-BLR-2021-00110-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00028,Kavitha Joshi,FIR-MYS-2021-00028-NOISE,FIR-MYS-2021-00028-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00115,Akash Sharma,FIR-BLR-2021-00115-NOISE,FIR-BLR-2021-00115-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00118,Umesh Gowda,FIR-BLR-2021-00118-NOISE,FIR-BLR-2021-00118-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00119,Amala Singh,FIR-BLR-2021-00119-NOISE,FIR-BLR-2021-00119-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00029,Arjun Bhat,FIR-RBG-2021-00029-NOISE,FIR-RBG-2021-00029-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00123,Ajay Aras,FIR-BLR-2021-00123-NOISE,FIR-BLR-2021-00123-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00029,Deepa Kamath,FIR-MYS-2021-00029-NOISE,FIR-MYS-2021-00029-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00028,Swathi Ayyar,FIR-MGL-2021-00028-NOISE,FIR-MGL-2021-00028-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00031,Kiran Joshi,FIR-MYS-2021-00031-NOISE,FIR-MYS-2021-00031-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00137,Shantha Prabhu,FIR-BLR-2021-00137-NOISE,FIR-BLR-2021-00137-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00140,Abhishek Gowda,FIR-BLR-2021-00140-NOISE,FIR-BLR-2021-00140-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00152,Madhu Adiga,FIR-BLR-2021-00152-NOISE,FIR-BLR-2021-00152-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00034,Rohit Vokkaliga,FIR-RBG-2021-00034-NOISE,FIR-RBG-2021-00034-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00032,Priya Nambiar,FIR-MGL-2021-00032-NOISE,FIR-MGL-2021-00032-NOISE,duplicate_fir,1.0,noise_injector
+FIR-CHB-2021-00007,Tejas Pillai,FIR-CHB-2021-00007-NOISE,FIR-CHB-2021-00007-NOISE,duplicate_fir,1.0,noise_injector
+FIR-UDR-2021-00024,Swathi Shastri,FIR-UDR-2021-00024-NOISE,FIR-UDR-2021-00024-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2021-00038,Rajesh Verma,FIR-HBL-2021-00038-NOISE,FIR-HBL-2021-00038-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00033,Yogesh Patil,FIR-MGL-2021-00033-NOISE,FIR-MGL-2021-00033-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00034,Sujatha Sharma,FIR-MYS-2021-00034-NOISE,FIR-MYS-2021-00034-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00163,Jyothi Shastri,FIR-BLR-2021-00163-NOISE,FIR-BLR-2021-00163-NOISE,duplicate_fir,1.0,noise_injector
+FIR-CKM-2021-00008,Abhishek Thakur,FIR-CKM-2021-00008-NOISE,FIR-CKM-2021-00008-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2021-00043,Anil Hegde,FIR-HBL-2021-00043-NOISE,FIR-HBL-2021-00043-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00036,Priya Patil,FIR-MGL-2021-00036-NOISE,FIR-MGL-2021-00036-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00171,Harsh Krishnamurthy,FIR-BLR-2021-00171-NOISE,FIR-BLR-2021-00171-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00045,Lakshmi Patil,FIR-BLR2-2021-00045-NOISE,FIR-BLR2-2021-00045-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RCR-2021-00010,Sandeep Hegde,FIR-RCR-2021-00010-NOISE,FIR-RCR-2021-00010-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00040,Madhu Aras,FIR-RBG-2021-00040-NOISE,FIR-RBG-2021-00040-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00175,Umesh Verma,FIR-BLR-2021-00175-NOISE,FIR-BLR-2021-00175-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00037,Mahesh Joshi,FIR-MGL-2021-00037-NOISE,FIR-MGL-2021-00037-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2021-00045,Anita Singh,FIR-HBL-2021-00045-NOISE,FIR-HBL-2021-00045-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00188,Yogesh Kamath,FIR-BLR-2021-00188-NOISE,FIR-BLR-2021-00188-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00043,Mahesh Verma,FIR-MGL-2021-00043-NOISE,FIR-MGL-2021-00043-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00047,Saritha Ayyar,FIR-RBG-2021-00047-NOISE,FIR-RBG-2021-00047-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2021-00053,Seeta Tantri,FIR-HBL-2021-00053-NOISE,FIR-HBL-2021-00053-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00198,Madhu Shastri,FIR-BLR-2021-00198-NOISE,FIR-BLR-2021-00198-NOISE,duplicate_fir,1.0,noise_injector
+FIR-KLP-2021-00050,Prashanth Vokkaliga,FIR-KLP-2021-00050-NOISE,FIR-KLP-2021-00050-NOISE,duplicate_fir,1.0,noise_injector
+FIR-CHB-2021-00011,Rajesh Patil,FIR-CHB-2021-00011-NOISE,FIR-CHB-2021-00011-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00207,Harsh Kumar,FIR-BLR-2021-00207-NOISE,FIR-BLR-2021-00207-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLG-2021-00041,Naveen Nayak,FIR-BLG-2021-00041-NOISE,FIR-BLG-2021-00041-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BDR-2021-00015,Madhu Raju,FIR-BDR-2021-00015-NOISE,FIR-BDR-2021-00015-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00208,Suma Singh,FIR-BLR-2021-00208-NOISE,FIR-BLR-2021-00208-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HSN-2021-00004,Priya Verma,FIR-HSN-2021-00004-NOISE,FIR-HSN-2021-00004-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00057,Abhishek Hegde,FIR-BLR2-2021-00057-NOISE,FIR-BLR2-2021-00057-NOISE,duplicate_fir,1.0,noise_injector
+FIR-CHT-2021-00007,Tejas Kamath,FIR-CHT-2021-00007-NOISE,FIR-CHT-2021-00007-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00214,Deepak Kumar,FIR-BLR-2021-00214-NOISE,FIR-BLR-2021-00214-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2021-00061,Lakshmi Sharma,FIR-BLR2-2021-00061-NOISE,FIR-BLR2-2021-00061-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00215,Deepa Hegde,FIR-BLR-2021-00215-NOISE,FIR-BLR-2021-00215-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00216,Nitya Prabhu,FIR-BLR-2021-00216-NOISE,FIR-BLR-2021-00216-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00060,Mahesh Adiga,FIR-RBG-2021-00060-NOISE,FIR-RBG-2021-00060-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MGL-2021-00049,Vidya Hegde,FIR-MGL-2021-00049-NOISE,FIR-MGL-2021-00049-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2021-00063,Seeta Bhat,FIR-HBL-2021-00063-NOISE,FIR-HBL-2021-00063-NOISE,duplicate_fir,1.0,noise_injector
+FIR-UDR-2021-00044,Seeta Swamy,FIR-UDR-2021-00044-NOISE,FIR-UDR-2021-00044-NOISE,duplicate_fir,1.0,noise_injector
+FIR-CHT-2021-00009,Raghavendra Sharma,FIR-CHT-2021-00009-NOISE,FIR-CHT-2021-00009-NOISE,duplicate_fir,1.0,noise_injector
+FIR-MYS-2021-00054,Pooja Thakur,FIR-MYS-2021-00054-NOISE,FIR-MYS-2021-00054-NOISE,duplicate_fir,1.0,noise_injector
+FIR-CKM-2021-00011,Anjali Aras,FIR-CKM-2021-00011-NOISE,FIR-CKM-2021-00011-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLG-2021-00050,Mohan Ayyar,FIR-BLG-2021-00050-NOISE,FIR-BLG-2021-00050-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2021-00255,Deepak Thakur,FIR-BLR-2021-00255-NOISE,FIR-BLR-2021-00255-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RBG-2021-00065,Tejas Joshi,FIR-RBG-2021-00065-NOISE,FIR-RBG-2021-00065-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BDR-2021-00017,Kavitha Adiga,FIR-BDR-2021-00017-NOISE,FIR-BDR-2021-00017-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RMN-2021-00015,Jyothi Kamath,FIR-RMN-2021-00015-NOISE,FIR-RMN-2021-00015-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HBL-2022-00001,Rekha Pillai,FIR-HBL-2022-00001-NOISE,FIR-HBL-2022-00001-NOISE,duplicate_fir,1.0,noise_injector
+FIR-HVR-2022-00001,Priya Vokkaliga,FIR-HVR-2022-00001-NOISE,FIR-HVR-2022-00001-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2022-00009,Nitya Shetty,FIR-BLR-2022-00009-NOISE,FIR-BLR-2022-00009-NOISE,duplicate_fir,1.0,noise_injector
+FIR-TKR-2022-00002,Amala Udupi,FIR-TKR-2022-00002-NOISE,FIR-TKR-2022-00002-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2022-00015,Pooja Verma,FIR-BLR-2022-00015-NOISE,FIR-BLR-2022-00015-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR-2022-00018,Gaurav Verma,FIR-BLR-2022-00018-NOISE,FIR-BLR-2022-00018-NOISE,duplicate_fir,1.0,noise_injector
+FIR-RMN-2022-00002,Naveen Krishnamurthy,FIR-RMN-2022-00002-NOISE,FIR-RMN-2022-00002-NOISE,duplicate_fir,1.0,noise_injector
+FIR-BLR2-2022-00011,Nitya Naik,FIR-BLR2-2022-00011-NOISE,FIR-BLR2-2022-00011-NOISE,duplicate_fir,1.0,noise_injector
+FIR-KLP-2022-00004,Radha Kamath,FIR-KLP-2022-00004-NOISE,FIR-KLP-2022-00004-NOISE,duplicate_fir,1.0,noise_injector
+CRM-0000000,Ravi Sharma,,Ravi Srm.,name_variant,1.0,alias_generator
+CRM-0000000,Ravi Sharma,,Ravi S.,name_variant,1.0,alias_generator
+CRM-0000001,Radha Tantri,,ಸ್ವಾತಿ ಉಡುಪ,kannada,1.0,alias_generator
+CRM-0000002,Umesh Verma,,a/k/a Umesh,name_variant,1.0,alias_generator
+CRM-0000003,Sangeetha Hegde,,Sangeetha Hgd.,name_variant,1.0,alias_generator
+CRM-0000003,Sangeetha Hegde,,Soingeeth Hegde,name_variant,1.0,alias_generator
+CRM-0000004,Jyothi Desai,,Jyothi,name_variant,1.0,alias_generator
+CRM-0000004,Jyothi Desai,,@Jyothi,name_variant,1.0,alias_generator
+CRM-0000005,Umesh Joshi,,Umesh J.,name_variant,1.0,alias_generator
+CRM-0000005,Umesh Joshi,,U. Joshi,name_variant,1.0,alias_generator
+CRM-0000006,Basavaraj Nambiar,,Besavaraj Nambiar,name_variant,1.0,alias_generator
+CRM-0000007,Deepak Shastri,,ಮೋಹನ್ ಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000007,Deepak Shastri,,D. Shastri,name_variant,1.0,alias_generator
+CRM-0000007,Deepak Shastri,,Deepak S.,name_variant,1.0,alias_generator
+CRM-0000008,Manjunath Singh,,Manjumath Singh,name_variant,1.0,alias_generator
+CRM-0000008,Manjunath Singh,,M. Singh,name_variant,1.0,alias_generator
+CRM-0000008,Manjunath Singh,,M. Nath Singh,name_variant,1.0,alias_generator
+CRM-0000009,Suresh Verma,,Suresh V.,name_variant,1.0,alias_generator
+CRM-0000009,Suresh Verma,,Sursh Verma,name_variant,1.0,alias_generator
+CRM-0000009,Suresh Verma,,ಪ್ರಶಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000010,Vidya Raju,,Vidy Raju,name_variant,1.0,alias_generator
+CRM-0000010,Vidya Raju,,@Vidya,name_variant,1.0,alias_generator
+CRM-0000011,Bharathi Patil,,ಮೀರಾ ಕಾಮತ್,kannada,1.0,alias_generator
+CRM-0000011,Bharathi Patil,,Bharathi P.,name_variant,1.0,alias_generator
+CRM-0000012,Naveen Nambiar,,Naveen N.,name_variant,1.0,alias_generator
+CRM-0000013,Sujatha Murthy,,Sujatha,name_variant,1.0,alias_generator
+CRM-0000013,Sujatha Murthy,,@Sujatha,name_variant,1.0,alias_generator
+CRM-0000014,Kiran Reddy,,Kiram Reddy,name_variant,1.0,alias_generator
+CRM-0000015,Nitya Ayyar,,N. Ayyar,name_variant,1.0,alias_generator
+CRM-0000016,Vinay Vokkaliga,,@Vinay,name_variant,1.0,alias_generator
+CRM-0000017,Anita Nambiar,,A. Nambiar,name_variant,1.0,alias_generator
+CRM-0000017,Anita Nambiar,,a/k/a Anita,name_variant,1.0,alias_generator
+CRM-0000017,Anita Nambiar,,Anita N.,name_variant,1.0,alias_generator
+CRM-0000018,Basavaraj Tantri,,Basavaraja Tantri,name_variant,1.0,alias_generator
+CRM-0000018,Basavaraj Tantri,,B. Tantri,name_variant,1.0,alias_generator
+CRM-0000018,Basavaraj Tantri,,Basavaraj T.,name_variant,1.0,alias_generator
+CRM-0000019,Anil Murthy,,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,kannada,1.0,alias_generator
+CRM-0000019,Anil Murthy,,Amil Murthy,name_variant,1.0,alias_generator
+CRM-0000020,Sujatha Raju,,Sujatha,name_variant,1.0,alias_generator
+CRM-0000021,Satish Sharma,,S. Sharma,name_variant,1.0,alias_generator
+CRM-0000021,Satish Sharma,,ನಾಗರಾಜ್ ನಾಯ್ಕ್,kannada,1.0,alias_generator
+CRM-0000021,Satish Sharma,,Satish S.,name_variant,1.0,alias_generator
+CRM-0000022,Kavitha Naik,,Kavitha,name_variant,1.0,alias_generator
+CRM-0000022,Kavitha Naik,,K. Naik,name_variant,1.0,alias_generator
+CRM-0000022,Kavitha Naik,,Kavitha Nk.,name_variant,1.0,alias_generator
+CRM-0000023,Tejas Kamath,,Tejas,name_variant,1.0,alias_generator
+CRM-0000023,Tejas Kamath,,Tejas K.,name_variant,1.0,alias_generator
+CRM-0000024,Satish Gowda,,alias Satish,name_variant,1.0,alias_generator
+CRM-0000024,Satish Gowda,,Set1sh Gowda,name_variant,1.0,alias_generator
+CRM-0000025,Satish Udupi,,Satish,name_variant,1.0,alias_generator
+CRM-0000025,Satish Udupi,,S. Udupi,name_variant,1.0,alias_generator
+CRM-0000025,Satish Udupi,,Satish U.,name_variant,1.0,alias_generator
+CRM-0000026,Abhishek Vokkaliga,,ರೋಹಿತ್ ಅರಸ್,kannada,1.0,alias_generator
+CRM-0000026,Abhishek Vokkaliga,,Abhishek V.,name_variant,1.0,alias_generator
+CRM-0000027,Deepak Bhat,,Deepak Bht.,name_variant,1.0,alias_generator
+CRM-0000027,Deepak Bhat,,Deepak,name_variant,1.0,alias_generator
+CRM-0000027,Deepak Bhat,,Deepak B.,name_variant,1.0,alias_generator
+CRM-0000028,Shivakumar Lingayat,,alias Shivakumar,name_variant,1.0,alias_generator
+CRM-0000028,Shivakumar Lingayat,,ರಾಘವೇಂದ್ರ ವೊಕ್ಕಲಿಗ,kannada,1.0,alias_generator
+CRM-0000029,Deepak Raju,,Deepak,name_variant,1.0,alias_generator
+CRM-0000030,Naveen Adiga,,Naveen A.,name_variant,1.0,alias_generator
+CRM-0000030,Naveen Adiga,,N. Adiga,name_variant,1.0,alias_generator
+CRM-0000030,Naveen Adiga,,ರಾಘವೇಂದ್ರ ಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000031,Ajay Bhat,,Ejoy Bhat,name_variant,1.0,alias_generator
+CRM-0000031,Ajay Bhat,,Ajay,name_variant,1.0,alias_generator
+CRM-0000032,Vidya Sharma,,Vidya,name_variant,1.0,alias_generator
+CRM-0000032,Vidya Sharma,,Vidya S.,name_variant,1.0,alias_generator
+CRM-0000032,Vidya Sharma,,a/k/a Vidya,name_variant,1.0,alias_generator
+CRM-0000033,Ganesh Murthy,,Gaesh Murthy,name_variant,1.0,alias_generator
+CRM-0000033,Ganesh Murthy,,Ganesh M.,name_variant,1.0,alias_generator
+CRM-0000034,Pooja Udupi,,P. Udupi,name_variant,1.0,alias_generator
+CRM-0000034,Pooja Udupi,,Pooja U.,name_variant,1.0,alias_generator
+CRM-0000034,Pooja Udupi,,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000035,Rekha Adiga,,a/k/a Rekha,name_variant,1.0,alias_generator
+CRM-0000036,Umesh Nayak,,ಅಜಯ್ ಅಯ್ಯರ್,kannada,1.0,alias_generator
+CRM-0000036,Umesh Nayak,,U. Nayak,name_variant,1.0,alias_generator
+CRM-0000037,Sujatha Tantri,,Sujatha T.,name_variant,1.0,alias_generator
+CRM-0000037,Sujatha Tantri,,ಗೀತಾ ಕುಮಾರ್,kannada,1.0,alias_generator
+CRM-0000038,Ganesh Bhat,,Ganesh,name_variant,1.0,alias_generator
+CRM-0000038,Ganesh Bhat,,a/k/a Ganesh,name_variant,1.0,alias_generator
+CRM-0000038,Ganesh Bhat,,Gansh Bhat,name_variant,1.0,alias_generator
+CRM-0000039,Gaurav Rao,,Gaurav R.,name_variant,1.0,alias_generator
+CRM-0000040,Mahesh Singh,,a/k/a Mahesh,name_variant,1.0,alias_generator
+CRM-0000041,Ramesh Joshi,,Ram Joshi,name_variant,1.0,alias_generator
+CRM-0000041,Ramesh Joshi,,R. Joshi,name_variant,1.0,alias_generator
+CRM-0000041,Ramesh Joshi,,ಅಜಯ್ ರಾವ್,kannada,1.0,alias_generator
+CRM-0000042,Ravi Hegde,,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000042,Ravi Hegde,,Ravi H.,name_variant,1.0,alias_generator
+CRM-0000043,Ganesh Udupi,,ರಾಘವೇಂದ್ರ ಕಾಮತ್,kannada,1.0,alias_generator
+CRM-0000044,Amala Naik,,Amala N.,name_variant,1.0,alias_generator
+CRM-0000045,Shruthi Thakur,,Shruthi T.,name_variant,1.0,alias_generator
+CRM-0000045,Shruthi Thakur,,Shruthi,name_variant,1.0,alias_generator
+CRM-0000045,Shruthi Thakur,,ಮೀರಾ ರೆಡ್ಡಿ,kannada,1.0,alias_generator
+CRM-0000046,Prashanth Rao,,a/k/a Prashanth,name_variant,1.0,alias_generator
+CRM-0000047,Sujatha Gowda,,S. Gowda,name_variant,1.0,alias_generator
+CRM-0000048,Sneha Prabhu,,Sneha P.,name_variant,1.0,alias_generator
+CRM-0000048,Sneha Prabhu,,Snha Prabhu,name_variant,1.0,alias_generator
+CRM-0000049,Anil Shastri,,ಮಂಜುನಾಥ್ ರಾವ್,kannada,1.0,alias_generator
+CRM-0000050,Rohit Bhat,,ರೋಹಿತ್ ಹೆಗಡೆ,kannada,1.0,alias_generator
+CRM-0000050,Rohit Bhat,,Rohlt Bhat,name_variant,1.0,alias_generator
+CRM-0000051,Abhishek Hegde,,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000052,Mahesh Shastri,,M. Shastri,name_variant,1.0,alias_generator
+CRM-0000052,Mahesh Shastri,,ಗೌರವ್ ವೊಕ್ಕಲಿಗ,kannada,1.0,alias_generator
+CRM-0000053,Ravi Aras,,Ravi A.,name_variant,1.0,alias_generator
+CRM-0000053,Ravi Aras,,Ravi,name_variant,1.0,alias_generator
+CRM-0000053,Ravi Aras,,R. Aras,name_variant,1.0,alias_generator
+CRM-0000054,Yogesh Tantri,,ದೀಪಕ್ ಲಿಂಗಾಯತ್,kannada,1.0,alias_generator
+CRM-0000055,Bharathi Nambiar,,ಅನಿತಾ ಪಾಟೀಲ್,kannada,1.0,alias_generator
+CRM-0000056,Jyothi Udupi,,Jyothi,name_variant,1.0,alias_generator
+CRM-0000056,Jyothi Udupi,,Jyoth1 Udupi,name_variant,1.0,alias_generator
+CRM-0000056,Jyothi Udupi,,Jyothi U.,name_variant,1.0,alias_generator
+CRM-0000057,Raghavendra Nambiar,,ಶಿವಕುಮಾರ್ ಕುಮಾರ್,kannada,1.0,alias_generator
+CRM-0000057,Raghavendra Nambiar,,Raghavendra,name_variant,1.0,alias_generator
+CRM-0000057,Raghavendra Nambiar,,R. Nambiar,name_variant,1.0,alias_generator
+CRM-0000058,Gaurav Naik,,Gaurav,name_variant,1.0,alias_generator
+CRM-0000059,Prashanth Murthy,,Prashanth M.,name_variant,1.0,alias_generator
+CRM-0000059,Prashanth Murthy,,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,kannada,1.0,alias_generator
+CRM-0000060,Rohit Lingayat,,Rohit L.,name_variant,1.0,alias_generator
+CRM-0000061,Tejas Joshi,,Tejas,name_variant,1.0,alias_generator
+CRM-0000061,Tejas Joshi,,T. Joshi,name_variant,1.0,alias_generator
+CRM-0000061,Tejas Joshi,,Tejas J.,name_variant,1.0,alias_generator
+CRM-0000062,Harsh Murthy,,alias Harsh,name_variant,1.0,alias_generator
+CRM-0000062,Harsh Murthy,,Harsh M.,name_variant,1.0,alias_generator
+CRM-0000063,Amala Thakur,,Amala,name_variant,1.0,alias_generator
+CRM-0000063,Amala Thakur,,A. Thakur,name_variant,1.0,alias_generator
+CRM-0000064,Shruthi Reddy,,S. Reddy,name_variant,1.0,alias_generator
+CRM-0000064,Shruthi Reddy,,ದೀಪಾ ಅಡಿಗ,kannada,1.0,alias_generator
+CRM-0000064,Shruthi Reddy,,Shruthi R.,name_variant,1.0,alias_generator
+CRM-0000065,Tejas Joshi,,alias Tejas,name_variant,1.0,alias_generator
+CRM-0000066,Deepak Shastri,,a/k/a Deepak,name_variant,1.0,alias_generator
+CRM-0000066,Deepak Shastri,,ಶ್ರೀಕಾಂತ್ ನಾಯ್ಕ್,kannada,1.0,alias_generator
+CRM-0000066,Deepak Shastri,,D. Shastri,name_variant,1.0,alias_generator
+CRM-0000067,Suresh Shastri,,Suresh,name_variant,1.0,alias_generator
+CRM-0000067,Suresh Shastri,,Suresh S.,name_variant,1.0,alias_generator
+CRM-0000068,Ajay Swamy,,A. Swamy,name_variant,1.0,alias_generator
+CRM-0000068,Ajay Swamy,,alias Ajay,name_variant,1.0,alias_generator
+CRM-0000069,Raghavendra Lingayat,,ಸುರೇಶ್ ತಂತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000069,Raghavendra Lingayat,,R. Lingayat,name_variant,1.0,alias_generator
+CRM-0000069,Raghavendra Lingayat,,Raghovendra Lingayat,name_variant,1.0,alias_generator
+CRM-0000070,Jyothi Gowda,,Jyothi G.,name_variant,1.0,alias_generator
+CRM-0000071,Umesh Murthy,,Umesh M.,name_variant,1.0,alias_generator
+CRM-0000071,Umesh Murthy,,U. Murthy,name_variant,1.0,alias_generator
+CRM-0000071,Umesh Murthy,,Umesh,name_variant,1.0,alias_generator
+CRM-0000072,Shruthi Aras,,S. Aras,name_variant,1.0,alias_generator
+CRM-0000072,Shruthi Aras,,Shruthi,name_variant,1.0,alias_generator
+CRM-0000073,Tejas Kamath,,Tijas Kamath,name_variant,1.0,alias_generator
+CRM-0000073,Tejas Kamath,,ಉಮೇಶ್ ಪಾಟೀಲ್,kannada,1.0,alias_generator
+CRM-0000073,Tejas Kamath,,Tejas K.,name_variant,1.0,alias_generator
+CRM-0000074,Ravi Thakur,,Ravi,name_variant,1.0,alias_generator
+CRM-0000075,Anjali Vokkaliga,,Anjali,name_variant,1.0,alias_generator
+CRM-0000075,Anjali Vokkaliga,,Ejell Vokkaliga,name_variant,1.0,alias_generator
+CRM-0000076,Sangeetha Kumar,,Sangeetho Kumar,name_variant,1.0,alias_generator
+CRM-0000076,Sangeetha Kumar,,Sangeetha Kr.,name_variant,1.0,alias_generator
+CRM-0000077,Anil Rao,,Ainl Rao,name_variant,1.0,alias_generator
+CRM-0000077,Anil Rao,,@Anil,name_variant,1.0,alias_generator
+CRM-0000078,Umesh Singh,,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,kannada,1.0,alias_generator
+CRM-0000079,Sangeetha Gowda,,S. Gowda,name_variant,1.0,alias_generator
+CRM-0000079,Sangeetha Gowda,,Sangaetha Gowda,name_variant,1.0,alias_generator
+CRM-0000079,Sangeetha Gowda,,Sangeetha G.,name_variant,1.0,alias_generator
+CRM-0000080,Lakshmi Vokkaliga,,Lakshmi,name_variant,1.0,alias_generator
+CRM-0000080,Lakshmi Vokkaliga,,Lakshmi V.,name_variant,1.0,alias_generator
+CRM-0000080,Lakshmi Vokkaliga,,@Lakshmi,name_variant,1.0,alias_generator
+CRM-0000081,Madhu Patil,,Madhu P.,name_variant,1.0,alias_generator
+CRM-0000081,Madhu Patil,,ಲಕ್ಷ್ಮಿ ತಂತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000082,Tejas Kumar,,Tejas Kr.,name_variant,1.0,alias_generator
+CRM-0000083,Vikram Raju,,Vikram R.,name_variant,1.0,alias_generator
+CRM-0000083,Vikram Raju,,Vikram,name_variant,1.0,alias_generator
+CRM-0000083,Vikram Raju,,Vikra Raju,name_variant,1.0,alias_generator
+CRM-0000084,Kavitha Lingayat,,Kavitha L.,name_variant,1.0,alias_generator
+CRM-0000085,Mahesh Shetty,,ಮೋಹನ್ ಕಾಮತ್,kannada,1.0,alias_generator
+CRM-0000086,Srikanth Patil,,Srlkonth Patil,name_variant,1.0,alias_generator
+CRM-0000087,Pooja Tantri,,ಜ್ಯೋತಿ ಪ್ರಭು,kannada,1.0,alias_generator
+CRM-0000087,Pooja Tantri,,a/k/a Pooja,name_variant,1.0,alias_generator
+CRM-0000088,Prashanth Sharma,,Prashanth Srm.,name_variant,1.0,alias_generator
+CRM-0000088,Prashanth Sharma,,P. Sharma,name_variant,1.0,alias_generator
+CRM-0000089,Kiran Bhat,,Kiran,name_variant,1.0,alias_generator
+CRM-0000090,Sangeetha Udupi,,Sangeetha,name_variant,1.0,alias_generator
+CRM-0000090,Sangeetha Udupi,,Sangith Udupi,name_variant,1.0,alias_generator
+CRM-0000091,Prakash Kumar,,Prekash Kumar,name_variant,1.0,alias_generator
+CRM-0000091,Prakash Kumar,,P. Kumar,name_variant,1.0,alias_generator
+CRM-0000091,Prakash Kumar,,a/k/a Prakash,name_variant,1.0,alias_generator
+CRM-0000092,Yogesh Gowda,,@Yogesh,name_variant,1.0,alias_generator
+CRM-0000092,Yogesh Gowda,,Yogesh,name_variant,1.0,alias_generator
+CRM-0000092,Yogesh Gowda,,Y. Gowda,name_variant,1.0,alias_generator
+CRM-0000093,Saritha Krishnamurthy,,ಲಕ್ಷ್ಮಿ ನಂಬಿಯಾರ್,kannada,1.0,alias_generator
+CRM-0000093,Saritha Krishnamurthy,,a/k/a Saritha,name_variant,1.0,alias_generator
+CRM-0000094,Jyothi Prabhu,,Jyothi,name_variant,1.0,alias_generator
+CRM-0000094,Jyothi Prabhu,,@Jyothi,name_variant,1.0,alias_generator
+CRM-0000095,Gaurav Desai,,Gaurav D.,name_variant,1.0,alias_generator
+CRM-0000095,Gaurav Desai,,ದೀಪಕ್ ಕಾಮತ್,kannada,1.0,alias_generator
+CRM-0000095,Gaurav Desai,,G. Desai,name_variant,1.0,alias_generator
+CRM-0000096,Sandeep Aras,,ಶಿವಕುಮಾರ್ ಪ್ರಭು,kannada,1.0,alias_generator
+CRM-0000097,Akash Adiga,,a/k/a Akash,name_variant,1.0,alias_generator
+CRM-0000097,Akash Adiga,,ತೇಜಸ್ ಉಡುಪ,kannada,1.0,alias_generator
+CRM-0000097,Akash Adiga,,A. Adiga,name_variant,1.0,alias_generator
+CRM-0000098,Kiran Murthy,,Kiran M.,name_variant,1.0,alias_generator
+CRM-0000098,Kiran Murthy,,Klran Murthy,name_variant,1.0,alias_generator
+CRM-0000098,Kiran Murthy,,K. Murthy,name_variant,1.0,alias_generator
+CRM-0000099,Pooja Gowda,,P. Gowda,name_variant,1.0,alias_generator
+CRM-0000099,Pooja Gowda,,Paoja Gowda,name_variant,1.0,alias_generator
+CRM-0000099,Pooja Gowda,,ಪೂಜಾ ಶಾಸ್ತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000100,Naveen Vokkaliga,,ಹರ್ಷ ನಂಬಿಯಾರ್,kannada,1.0,alias_generator
+CRM-0000101,Kiran Kumar,,Kiran,name_variant,1.0,alias_generator
+CRM-0000102,Meera Udupi,,Meera,name_variant,1.0,alias_generator
+CRM-0000103,Shivakumar Shetty,,Shivakumara Shetty,name_variant,1.0,alias_generator
+CRM-0000103,Shivakumar Shetty,,Shivakumar S.,name_variant,1.0,alias_generator
+CRM-0000103,Shivakumar Shetty,,a/k/a Shivakumar,name_variant,1.0,alias_generator
+CRM-0000104,Basavaraj Rao,,Basavaraja Rao,name_variant,1.0,alias_generator
+CRM-0000104,Basavaraj Rao,,B. Rao,name_variant,1.0,alias_generator
+CRM-0000104,Basavaraj Rao,,Basavaraj,name_variant,1.0,alias_generator
+CRM-0000105,Amala Shetty,,Amala S.,name_variant,1.0,alias_generator
+CRM-0000105,Amala Shetty,,Amala Shty.,name_variant,1.0,alias_generator
+CRM-0000106,Jyothi Sharma,,Jyothi,name_variant,1.0,alias_generator
+CRM-0000106,Jyothi Sharma,,ರಾಧಾ ನಾಯ್ಕ್,kannada,1.0,alias_generator
+CRM-0000107,Suma Pillai,,Suma P.,name_variant,1.0,alias_generator
+CRM-0000107,Suma Pillai,,Sua Pillai,name_variant,1.0,alias_generator
+CRM-0000108,Jyothi Udupi,,J. Udupi,name_variant,1.0,alias_generator
+CRM-0000109,Sangeetha Thakur,,ಅನಿತಾ ಶೆಟ್ಟಿ,kannada,1.0,alias_generator
+CRM-0000109,Sangeetha Thakur,,S. Thakur,name_variant,1.0,alias_generator
+CRM-0000109,Sangeetha Thakur,,Songaetha Thakur,name_variant,1.0,alias_generator
+CRM-0000110,Gaurav Shastri,,G. Shastri,name_variant,1.0,alias_generator
+CRM-0000111,Sneha Lingayat,,Sneho Lingayat,name_variant,1.0,alias_generator
+CRM-0000112,Seeta Shetty,,Seeta,name_variant,1.0,alias_generator
+CRM-0000112,Seeta Shetty,,Seeta S.,name_variant,1.0,alias_generator
+CRM-0000112,Seeta Shetty,,ಗೀತಾ ನಂಬಿಯಾರ್,kannada,1.0,alias_generator
+CRM-0000113,Mohan Reddy,,Mohan Rdy.,name_variant,1.0,alias_generator
+CRM-0000114,Anil Shastri,,ಸತೀಶ್ ಶಾಸ್ತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000114,Anil Shastri,,A. Shastri,name_variant,1.0,alias_generator
+CRM-0000114,Anil Shastri,,@Anil,name_variant,1.0,alias_generator
+CRM-0000115,Lakshmi Shetty,,ಅಂಜಲಿ ಜೋಶಿ,kannada,1.0,alias_generator
+CRM-0000115,Lakshmi Shetty,,Lakshmi S.,name_variant,1.0,alias_generator
+CRM-0000116,Ravi Bhat,,ವಿನಯ್ ಭಟ್,kannada,1.0,alias_generator
+CRM-0000116,Ravi Bhat,,Ravi B.,name_variant,1.0,alias_generator
+CRM-0000117,Amala Krishnamurthy,,A. Krishnamurthy,name_variant,1.0,alias_generator
+CRM-0000117,Amala Krishnamurthy,,Amala,name_variant,1.0,alias_generator
+CRM-0000117,Amala Krishnamurthy,,ಸುಮ಼ಾ ಅಡಿಗ,kannada,1.0,alias_generator
+CRM-0000118,Vikram Lingayat,,Vikram,name_variant,1.0,alias_generator
+CRM-0000118,Vikram Lingayat,,Vikram L.,name_variant,1.0,alias_generator
+CRM-0000118,Vikram Lingayat,,V. Lingayat,name_variant,1.0,alias_generator
+CRM-0000119,Mohan Shastri,,ಯೋಗೇಶ್ ತಂತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000120,Shantha Swamy,,S. Swamy,name_variant,1.0,alias_generator
+CRM-0000120,Shantha Swamy,,Shintha Swamy,name_variant,1.0,alias_generator
+CRM-0000120,Shantha Swamy,,Shantha,name_variant,1.0,alias_generator
+CRM-0000121,Sandeep Kumar,,ತೇಜಸ್ ಶೆಟ್ಟಿ,kannada,1.0,alias_generator
+CRM-0000121,Sandeep Kumar,,S. Kumar,name_variant,1.0,alias_generator
+CRM-0000121,Sandeep Kumar,,a/k/a Sandeep,name_variant,1.0,alias_generator
+CRM-0000122,Swathi Verma,,ಕವಿತಾ ಕುಮಾರ್,kannada,1.0,alias_generator
+CRM-0000122,Swathi Verma,,Swathi,name_variant,1.0,alias_generator
+CRM-0000123,Manjunath Pillai,,Manjunath P.,name_variant,1.0,alias_generator
+CRM-0000123,Manjunath Pillai,,ಸಂದೀಪ್ ಅರಸ್,kannada,1.0,alias_generator
+CRM-0000123,Manjunath Pillai,,Manjunath,name_variant,1.0,alias_generator
+CRM-0000124,Tejas Desai,,ರೋಹಿತ್ ಜೋಶಿ,kannada,1.0,alias_generator
+CRM-0000124,Tejas Desai,,T. Desai,name_variant,1.0,alias_generator
+CRM-0000125,Ramesh Bhat,,R. Bhat,name_variant,1.0,alias_generator
+CRM-0000125,Ramesh Bhat,,Ramesh B.,name_variant,1.0,alias_generator
+CRM-0000125,Ramesh Bhat,,Ramsh Bhat,name_variant,1.0,alias_generator
+CRM-0000126,Arjun Raju,,@Arjun,name_variant,1.0,alias_generator
+CRM-0000126,Arjun Raju,,A. Raju,name_variant,1.0,alias_generator
+CRM-0000127,Lakshmi Singh,,Lakshmi S.,name_variant,1.0,alias_generator
+CRM-0000128,Mahesh Hegde,,ಗೌರವ್ ನಂಬಿಯಾರ್,kannada,1.0,alias_generator
+CRM-0000128,Mahesh Hegde,,Mahesh,name_variant,1.0,alias_generator
+CRM-0000129,Prakash Lingayat,,Prokash Lingayat,name_variant,1.0,alias_generator
+CRM-0000129,Prakash Lingayat,,P. Lingayat,name_variant,1.0,alias_generator
+CRM-0000129,Prakash Lingayat,,Prakash L.,name_variant,1.0,alias_generator
+CRM-0000130,Mohan Bhat,,ಹರ್ಷ ತಂತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000130,Mohan Bhat,,Mohan,name_variant,1.0,alias_generator
+CRM-0000130,Mohan Bhat,,M. Bhat,name_variant,1.0,alias_generator
+CRM-0000131,Anita Singh,,Anita S.,name_variant,1.0,alias_generator
+CRM-0000131,Anita Singh,,En1ta Singh,name_variant,1.0,alias_generator
+CRM-0000131,Anita Singh,,Anita Sg.,name_variant,1.0,alias_generator
+CRM-0000132,Srikanth Rao,,Srikanth R.,name_variant,1.0,alias_generator
+CRM-0000132,Srikanth Rao,,Srlkeinth Rao,name_variant,1.0,alias_generator
+CRM-0000133,Naveen Hegde,,Naveen H.,name_variant,1.0,alias_generator
+CRM-0000133,Naveen Hegde,,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,kannada,1.0,alias_generator
+CRM-0000133,Naveen Hegde,,Naveen,name_variant,1.0,alias_generator
+CRM-0000134,Akash Thakur,,alias Akash,name_variant,1.0,alias_generator
+CRM-0000135,Kavitha Desai,,K. Desai,name_variant,1.0,alias_generator
+CRM-0000135,Kavitha Desai,,Kavitha D.,name_variant,1.0,alias_generator
+CRM-0000135,Kavitha Desai,,alias Kavitha,name_variant,1.0,alias_generator
+CRM-0000136,Anita Kumar,,Amita Kumar,name_variant,1.0,alias_generator
+CRM-0000137,Geetha Kumar,,Geetha K.,name_variant,1.0,alias_generator
+CRM-0000138,Lakshmi Kumar,,Lakshmi K.,name_variant,1.0,alias_generator
+CRM-0000138,Lakshmi Kumar,,ನಿತ್ಯಾ ಶಾಸ್ತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000138,Lakshmi Kumar,,Lokshmi Kumar,name_variant,1.0,alias_generator
+CRM-0000139,Kiran Shastri,,Kiran,name_variant,1.0,alias_generator
+CRM-0000139,Kiran Shastri,,Kiran S.,name_variant,1.0,alias_generator
+CRM-0000140,Shantha Prabhu,,Shantha P.,name_variant,1.0,alias_generator
+CRM-0000141,Sangeetha Verma,,alias Sangeetha,name_variant,1.0,alias_generator
+CRM-0000141,Sangeetha Verma,,ಶೃತಿ ಅರಸ್,kannada,1.0,alias_generator
+CRM-0000141,Sangeetha Verma,,S. Verma,name_variant,1.0,alias_generator
+CRM-0000142,Manjunath Shetty,,Manjunatha Shetty,name_variant,1.0,alias_generator
+CRM-0000142,Manjunath Shetty,,Manjunath,name_variant,1.0,alias_generator
+CRM-0000143,Yogesh Nayak,,Yogesh N.,name_variant,1.0,alias_generator
+CRM-0000143,Yogesh Nayak,,Y. Nayak,name_variant,1.0,alias_generator
+CRM-0000143,Yogesh Nayak,,ವಿನಯ್ ನಂಬಿಯಾರ್,kannada,1.0,alias_generator
+CRM-0000144,Naveen Swamy,,Naveen,name_variant,1.0,alias_generator
+CRM-0000144,Naveen Swamy,,Naveen S.,name_variant,1.0,alias_generator
+CRM-0000144,Naveen Swamy,,Nevee Swamy,name_variant,1.0,alias_generator
+CRM-0000145,Ganesh Verma,,a/k/a Ganesh,name_variant,1.0,alias_generator
+CRM-0000145,Ganesh Verma,,Ganesh,name_variant,1.0,alias_generator
+CRM-0000145,Ganesh Verma,,Ganesh V.,name_variant,1.0,alias_generator
+CRM-0000146,Nagaraj Nambiar,,Nagaraj N.,name_variant,1.0,alias_generator
+CRM-0000147,Shruthi Tantri,,Shruthi,name_variant,1.0,alias_generator
+CRM-0000147,Shruthi Tantri,,Shruthi T.,name_variant,1.0,alias_generator
+CRM-0000147,Shruthi Tantri,,ಕವಿತಾ ನಾಯ್ಕ್,kannada,1.0,alias_generator
+CRM-0000148,Ramesh Hegde,,ಅಜಯ್ ಅಡಿಗ,kannada,1.0,alias_generator
+CRM-0000148,Ramesh Hegde,,Ramesh,name_variant,1.0,alias_generator
+CRM-0000149,Rekha Adiga,,R. Adiga,name_variant,1.0,alias_generator
+CRM-0000149,Rekha Adiga,,ಸುಮ಼ಾ ಸ್ವಾಮಿ,kannada,1.0,alias_generator
+CRM-0000150,Satish Murthy,,@Satish,name_variant,1.0,alias_generator
+CRM-0000150,Satish Murthy,,Satish M.,name_variant,1.0,alias_generator
+CRM-0000150,Satish Murthy,,Satish,name_variant,1.0,alias_generator
+CRM-0000151,Anita Joshi,,Anita J.,name_variant,1.0,alias_generator
+CRM-0000151,Anita Joshi,,ಸುಮ಼ಾ ಕಾಮತ್,kannada,1.0,alias_generator
+CRM-0000151,Anita Joshi,,A. Joshi,name_variant,1.0,alias_generator
+CRM-0000152,Vinay Singh,,Vinay S.,name_variant,1.0,alias_generator
+CRM-0000153,Kiran Thakur,,Kiran T.,name_variant,1.0,alias_generator
+CRM-0000153,Kiran Thakur,,K. Thakur,name_variant,1.0,alias_generator
+CRM-0000154,Sneha Lingayat,,Sneha,name_variant,1.0,alias_generator
+CRM-0000155,Naveen Singh,,ಅನಿಲ್ ಪ್ರಭು,kannada,1.0,alias_generator
+CRM-0000155,Naveen Singh,,Naveen Sg.,name_variant,1.0,alias_generator
+CRM-0000155,Naveen Singh,,N. Singh,name_variant,1.0,alias_generator
+CRM-0000156,Basavaraj Verma,,Basavaraj V.,name_variant,1.0,alias_generator
+CRM-0000157,Srikanth Hegde,,Sriknth Hegde,name_variant,1.0,alias_generator
+CRM-0000157,Srikanth Hegde,,Srikanth H.,name_variant,1.0,alias_generator
+CRM-0000158,Pooja Naik,,Pooja N.,name_variant,1.0,alias_generator
+CRM-0000159,Priya Verma,,Priya,name_variant,1.0,alias_generator
+CRM-0000159,Priya Verma,,Priya V.,name_variant,1.0,alias_generator
+CRM-0000159,Priya Verma,,@Priya,name_variant,1.0,alias_generator
+CRM-0000160,Anita Bhat,,Anita B.,name_variant,1.0,alias_generator
+CRM-0000161,Vinay Rao,,Vinay R.,name_variant,1.0,alias_generator
+CRM-0000162,Satish Aras,,ಅರ್ಜುನ್ ವೊಕ್ಕಲಿಗ,kannada,1.0,alias_generator
+CRM-0000162,Satish Aras,,Satish,name_variant,1.0,alias_generator
+CRM-0000163,Naveen Rao,,a/k/a Naveen,name_variant,1.0,alias_generator
+CRM-0000163,Naveen Rao,,ಆಕಾಶ್ ತಂತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000163,Naveen Rao,,Naveen R.,name_variant,1.0,alias_generator
+CRM-0000164,Prashanth Rao,,Proshanth Rao,name_variant,1.0,alias_generator
+CRM-0000164,Prashanth Rao,,P. Rao,name_variant,1.0,alias_generator
+CRM-0000165,Radha Aras,,Rdha Aras,name_variant,1.0,alias_generator
+CRM-0000165,Radha Aras,,Radha A.,name_variant,1.0,alias_generator
+CRM-0000166,Harsh Reddy,,H. Reddy,name_variant,1.0,alias_generator
+CRM-0000166,Harsh Reddy,,Harsh R.,name_variant,1.0,alias_generator
+CRM-0000166,Harsh Reddy,,Harsh,name_variant,1.0,alias_generator
+CRM-0000167,Akash Vokkaliga,,a/k/a Akash,name_variant,1.0,alias_generator
+CRM-0000168,Vikram Krishnamurthy,,V. Krishnamurthy,name_variant,1.0,alias_generator
+CRM-0000168,Vikram Krishnamurthy,,Vikram K.,name_variant,1.0,alias_generator
+CRM-0000169,Vinay Rao,,ನಾಗರಾಜ್ ಭಟ್,kannada,1.0,alias_generator
+CRM-0000169,Vinay Rao,,Vinay,name_variant,1.0,alias_generator
+CRM-0000169,Vinay Rao,,V1nay Rao,name_variant,1.0,alias_generator
+CRM-0000170,Shantha Vokkaliga,,@Shantha,name_variant,1.0,alias_generator
+CRM-0000170,Shantha Vokkaliga,,Shanthe Vokkaliga,name_variant,1.0,alias_generator
+CRM-0000170,Shantha Vokkaliga,,Shantha,name_variant,1.0,alias_generator
+CRM-0000171,Vikram Vokkaliga,,Vikram,name_variant,1.0,alias_generator
+CRM-0000171,Vikram Vokkaliga,,V. Vokkaliga,name_variant,1.0,alias_generator
+CRM-0000172,Sujatha Vokkaliga,,Sujatha,name_variant,1.0,alias_generator
+CRM-0000172,Sujatha Vokkaliga,,Sujetha Vokkaliga,name_variant,1.0,alias_generator
+CRM-0000172,Sujatha Vokkaliga,,Sujatha V.,name_variant,1.0,alias_generator
+CRM-0000173,Geetha Adiga,,Geetha A.,name_variant,1.0,alias_generator
+CRM-0000174,Nitya Rao,,N. Rao,name_variant,1.0,alias_generator
+CRM-0000174,Nitya Rao,,Nitya,name_variant,1.0,alias_generator
+CRM-0000175,Meera Krishnamurthy,,M. Krishnamurthy,name_variant,1.0,alias_generator
+CRM-0000175,Meera Krishnamurthy,,ಅನಿತಾ ಪಾಟೀಲ್,kannada,1.0,alias_generator
+CRM-0000176,Sneha Adiga,,Sneha,name_variant,1.0,alias_generator
+CRM-0000176,Sneha Adiga,,S. Adiga,name_variant,1.0,alias_generator
+CRM-0000176,Sneha Adiga,,@Sneha,name_variant,1.0,alias_generator
+CRM-0000177,Jyothi Shastri,,ಅಂಜಲಿ ರೆಡ್ಡಿ,kannada,1.0,alias_generator
+CRM-0000178,Madhu Lingayat,,ಶಾಂತಾ ಹೆಗಡೆ,kannada,1.0,alias_generator
+CRM-0000178,Madhu Lingayat,,Modhu Lingayat,name_variant,1.0,alias_generator
+CRM-0000178,Madhu Lingayat,,M. Lingayat,name_variant,1.0,alias_generator
+CRM-0000179,Shruthi Singh,,S. Singh,name_variant,1.0,alias_generator
+CRM-0000179,Shruthi Singh,,Shruthi S.,name_variant,1.0,alias_generator
+CRM-0000179,Shruthi Singh,,alias Shruthi,name_variant,1.0,alias_generator
+CRM-0000180,Raghavendra Joshi,,alias Raghavendra,name_variant,1.0,alias_generator
+CRM-0000181,Naveen Shastri,,Aveen Shastri,name_variant,1.0,alias_generator
+CRM-0000181,Naveen Shastri,,Naveen S.,name_variant,1.0,alias_generator
+CRM-0000182,Deepa Murthy,,D. Murthy,name_variant,1.0,alias_generator
+CRM-0000183,Mohan Nayak,,Maha Nayak,name_variant,1.0,alias_generator
+CRM-0000183,Mohan Nayak,,ಬಸವರಾಜ್ ಶಾಸ್ತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000183,Mohan Nayak,,Mohan N.,name_variant,1.0,alias_generator
+CRM-0000184,Vikram Shastri,,V. Shastri,name_variant,1.0,alias_generator
+CRM-0000185,Swathi Desai,,Swath1 Desai,name_variant,1.0,alias_generator
+CRM-0000185,Swathi Desai,,Swathi D.,name_variant,1.0,alias_generator
+CRM-0000185,Swathi Desai,,Swathi,name_variant,1.0,alias_generator
+CRM-0000186,Saritha Thakur,,Saritha T.,name_variant,1.0,alias_generator
+CRM-0000186,Saritha Thakur,,ಸ್ನೇಹಾ ಕಾಮತ್,kannada,1.0,alias_generator
+CRM-0000186,Saritha Thakur,,@Saritha,name_variant,1.0,alias_generator
+CRM-0000187,Bharathi Sharma,,Bharth Sharma,name_variant,1.0,alias_generator
+CRM-0000188,Pooja Joshi,,P. Joshi,name_variant,1.0,alias_generator
+CRM-0000188,Pooja Joshi,,Paoja Joshi,name_variant,1.0,alias_generator
+CRM-0000189,Basavaraj Murthy,,ಅಭಿಷೇಕ್ ತಂತ್ರಿ,kannada,1.0,alias_generator
+CRM-0000189,Basavaraj Murthy,,Besavarej Murthy,name_variant,1.0,alias_generator
+CRM-0000189,Basavaraj Murthy,,Bsavaraj Murthy,name_variant,1.0,alias_generator
+CRM-0000190,Sandeep Lingayat,,alias Sandeep,name_variant,1.0,alias_generator
+CRM-0000190,Sandeep Lingayat,,Sandeep L.,name_variant,1.0,alias_generator
+CRM-0000190,Sandeep Lingayat,,ಶಿವಕುಮಾರ್ ಲಿಂಗಾಯತ್,kannada,1.0,alias_generator
+CRM-0000191,Sangeetha Joshi,,S. Joshi,name_variant,1.0,alias_generator
+CRM-0000192,Yogesh Kumar,,Yogesh,name_variant,1.0,alias_generator
+CRM-0000192,Yogesh Kumar,,Yogesh K.,name_variant,1.0,alias_generator
+CRM-0000192,Yogesh Kumar,,Y. Kumar,name_variant,1.0,alias_generator
+CRM-0000193,Abhishek Krishnamurthy,,A. Krishnamurthy,name_variant,1.0,alias_generator
+CRM-0000194,Radha Kamath,,Radho Kamath,name_variant,1.0,alias_generator
+CRM-0000194,Radha Kamath,,Radha,name_variant,1.0,alias_generator
+CRM-0000195,Raghavendra Reddy,,Raghavandr Reddy,name_variant,1.0,alias_generator
+CRM-0000196,Priya Kumar,,Priya K.,name_variant,1.0,alias_generator
+CRM-0000196,Priya Kumar,,ಸುಜಾತಾ ಅರಸ್,kannada,1.0,alias_generator
+CRM-0000197,Amala Joshi,,Onala Joshi,name_variant,1.0,alias_generator
+CRM-0000197,Amala Joshi,,@Amala,name_variant,1.0,alias_generator
+CRM-0000198,Basavaraj Tantri,,Basavrj Tantri,name_variant,1.0,alias_generator
+CRM-0000198,Basavaraj Tantri,,Basavaraj T.,name_variant,1.0,alias_generator
+CRM-0000198,Basavaraj Tantri,,Basavaraj,name_variant,1.0,alias_generator
+CRM-0000199,Anil Prabhu,,Anil,name_variant,1.0,alias_generator
+CRM-0000200,Jyothi Patil,,Jyothi P.,name_variant,1.0,alias_generator
+CRM-0000201,Prakash Joshi,,Prakash J.,name_variant,1.0,alias_generator
+CRM-0000202,Sandeep Vokkaliga,,ಮೋಹನ್ ಭಟ್,kannada,1.0,alias_generator
+CRM-0000202,Sandeep Vokkaliga,,Sndeap Vokkaliga,name_variant,1.0,alias_generator
+CRM-0000203,Umesh Aras,,Umesh A.,name_variant,1.0,alias_generator
+CRM-0000204,Anjali Singh,,ಲಕ್ಷ್ಮಿ ಅಯ್ಯರ್,kannada,1.0,alias_generator
+CRM-0000204,Anjali Singh,,A. Singh,name_variant,1.0,alias_generator
+CRM-0000205,Anita Vokkaliga,,A. Vokkaliga,name_variant,1.0,alias_generator
+CRM-0000205,Anita Vokkaliga,,Anita,name_variant,1.0,alias_generator
+CRM-0000205,Anita Vokkaliga,,Anita V.,name_variant,1.0,alias_generator
+CRM-0000206,Manjunath Gowda,,@Manjunath,name_variant,1.0,alias_generator
+CRM-0000207,Shruthi Singh,,Shruthi S.,name_variant,1.0,alias_generator
+CRM-0000208,Anil Tantri,,A. Tantri,name_variant,1.0,alias_generator
+CRM-0000208,Anil Tantri,,Anil T.,name_variant,1.0,alias_generator
+CRM-0000209,Mohan Kamath,,Mohan,name_variant,1.0,alias_generator
+CRM-0000210,Swathi Desai,,ಶಾಂತಾ ಜೋಶಿ,kannada,1.0,alias_generator
+CRM-0000210,Swathi Desai,,Swathi D.,name_variant,1.0,alias_generator
+CRM-0000211,Prashanth Adiga,,P. Adiga,name_variant,1.0,alias_generator
+CRM-0000212,Kavitha Hegde,,Kavitha,name_variant,1.0,alias_generator
+CRM-0000212,Kavitha Hegde,,Kavitha H.,name_variant,1.0,alias_generator
+CRM-0000212,Kavitha Hegde,,K. Hegde,name_variant,1.0,alias_generator
+CRM-0000213,Srikanth Nayak,,S. Nayak,name_variant,1.0,alias_generator
+CRM-0000214,Sandeep Lingayat,,S. Lingayat,name_variant,1.0,alias_generator
+CRM-0000214,Sandeep Lingayat,,a/k/a Sandeep,name_variant,1.0,alias_generator
+CRM-0000214,Sandeep Lingayat,,Sandeep L.,name_variant,1.0,alias_generator
+CRM-0000215,Geetha Kumar,,Geetha K.,name_variant,1.0,alias_generator
+CRM-0000216,Sandeep Sharma,,ದೀಪಕ್ ದೇಸಾಯಿ,kannada,1.0,alias_generator
+CRM-0000216,Sandeep Sharma,,Sendeap Sharma,name_variant,1.0,alias_generator
+CRM-0000216,Sandeep Sharma,,S. Sharma,name_variant,1.0,alias_generator
+CRM-0000217,Madhu Adiga,,ಅನಿತಾ ಪಾಟೀಲ್,kannada,1.0,alias_generator
+CRM-0000217,Madhu Adiga,,alias Madhu,name_variant,1.0,alias_generator
+CRM-0000217,Madhu Adiga,,M. Adiga,name_variant,1.0,alias_generator
+CRM-0000218,Priya Pillai,,Priya,name_variant,1.0,alias_generator
+CRM-0000219,Vinay Shetty,,@Vinay,name_variant,1.0,alias_generator
+CRM-0000220,Ajay Prabhu,,@Ajay,name_variant,1.0,alias_generator
+CRM-0000220,Ajay Prabhu,,A. Prabhu,name_variant,1.0,alias_generator
+CRM-0000220,Ajay Prabhu,,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,kannada,1.0,alias_generator
+CRM-0000221,Swathi Nayak,,Swathi,name_variant,1.0,alias_generator
+CRM-0000221,Swathi Nayak,,S. Nayak,name_variant,1.0,alias_generator
+CRM-0000221,Swathi Nayak,,alias Swathi,name_variant,1.0,alias_generator
+CRM-0000222,Ramesh Gowda,,Ranash Gowda,name_variant,1.0,alias_generator
+CRM-0000223,Kiran Joshi,,ಶಿವಕುಮಾರ್ ವೊಕ್ಕಲಿಗ,kannada,1.0,alias_generator
+CRM-0000223,Kiran Joshi,,K. Joshi,name_variant,1.0,alias_generator
+CRM-0000224,Abhishek Adiga,,A. Adiga,name_variant,1.0,alias_generator
+CRM-0000225,Mahesh Gowda,,M. Gowda,name_variant,1.0,alias_generator
+CRM-0000225,Mahesh Gowda,,ನವೀನ್ ರಾವ್,kannada,1.0,alias_generator
+CRM-0000225,Mahesh Gowda,,Mahesh Gwd.,name_variant,1.0,alias_generator
+CRM-0000226,Prashanth Rao,,ತೇಜಸ್ ಗೌಡ,kannada,1.0,alias_generator
+CRM-0000227,Umesh Kamath,,ಸಂದೀಪ್ ಉಡುಪ,kannada,1.0,alias_generator
+CRM-0000228,Gaurav Sharma,,Gaurav Srm.,name_variant,1.0,alias_generator
+CRM-0000228,Gaurav Sharma,,Gaurav,name_variant,1.0,alias_generator
+CRM-0000229,Sandeep Singh,,Sandeep S.,name_variant,1.0,alias_generator
+CRM-0000229,Sandeep Singh,,S. Singh,name_variant,1.0,alias_generator
+CRM-0000230,Amala Shastri,,Amala S.,name_variant,1.0,alias_generator
+CRM-0000230,Amala Shastri,,A. Shastri,name_variant,1.0,alias_generator
+CRM-0000231,Naveen Desai,,Naveen D.,name_variant,1.0,alias_generator
+CRM-0000231,Naveen Desai,,Naveen,name_variant,1.0,alias_generator
+CRM-0000231,Naveen Desai,,N. Desai,name_variant,1.0,alias_generator
+CRM-0000232,Gaurav Aras,,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,kannada,1.0,alias_generator
+CRM-0000232,Gaurav Aras,,Gaurav A.,name_variant,1.0,alias_generator
+CRM-0000233,Nitya Pillai,,@Nitya,name_variant,1.0,alias_generator
+CRM-0000233,Nitya Pillai,,N. Pillai,name_variant,1.0,alias_generator
+CRM-0000234,Suma Rao,,S. Rao,name_variant,1.0,alias_generator
+CRM-0000234,Suma Rao,,Sum Rao,name_variant,1.0,alias_generator
+CRM-0000234,Suma Rao,,Suma,name_variant,1.0,alias_generator
+CRM-0000235,Umesh Shastri,,@Umesh,name_variant,1.0,alias_generator
+CRM-0000235,Umesh Shastri,,ಅರ್ಜುನ್ ಭಟ್,kannada,1.0,alias_generator
+CRM-0000235,Umesh Shastri,,Umash Shastri,name_variant,1.0,alias_generator
+CRM-0000236,Shivakumar Tantri,,ರಾಘವೇಂದ್ರ ಅರಸ್,kannada,1.0,alias_generator
+CRM-0000236,Shivakumar Tantri,,S. Tantri,name_variant,1.0,alias_generator
+CRM-0000236,Shivakumar Tantri,,Shivakumr Tantri,name_variant,1.0,alias_generator
+CRM-0000237,Shantha Prabhu,,Shanthe Prabhu,name_variant,1.0,alias_generator
+CRM-0000238,Anjali Sharma,,Anjali,name_variant,1.0,alias_generator
+CRM-0000238,Anjali Sharma,,ಪೂಜಾ ಪ್ರಭು,kannada,1.0,alias_generator
+CRM-0000239,Nagaraj Udupi,,a/k/a Nagaraj,name_variant,1.0,alias_generator
+CRM-0000239,Nagaraj Udupi,,ಪ್ರಶಾಂತ್ ರಾವ್,kannada,1.0,alias_generator
+CRM-0000240,Basavaraj Bhat,,B. Bhat,name_variant,1.0,alias_generator
+CRM-0000240,Basavaraj Bhat,,Bsavaraj Bhat,name_variant,1.0,alias_generator
+CRM-0000240,Basavaraj Bhat,,Besavaraj Bhat,name_variant,1.0,alias_generator
+CRM-0000241,Srikanth Shetty,,Srikanth Shty.,name_variant,1.0,alias_generator
+CRM-0000241,Srikanth Shetty,,alias Srikanth,name_variant,1.0,alias_generator
+CRM-0000242,Seeta Desai,,S. Desai,name_variant,1.0,alias_generator
+CRM-0000242,Seeta Desai,,a/k/a Seeta,name_variant,1.0,alias_generator
+CRM-0000242,Seeta Desai,,Seeta D.,name_variant,1.0,alias_generator
+CRM-0000243,Suma Joshi,,ಪ್ರಿಯಾ ನಂಬಿಯಾರ್,kannada,1.0,alias_generator
+CRM-0000243,Suma Joshi,,Sunna Joshi,name_variant,1.0,alias_generator
+CRM-0000244,Bharathi Krishnamurthy,,a/k/a Bharathi,name_variant,1.0,alias_generator
+CRM-0000244,Bharathi Krishnamurthy,,B. Krishnamurthy,name_variant,1.0,alias_generator
+CRM-0000245,Anita Desai,,Anita,name_variant,1.0,alias_generator
+CRM-0000245,Anita Desai,,A. Desai,name_variant,1.0,alias_generator
+CRM-0000245,Anita Desai,,Anita D.,name_variant,1.0,alias_generator

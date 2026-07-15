@@ -1,0 +1,6 @@
+﻿:ID,:LABEL,is_active,name,num_members,specialization,threat_level
+GANG-0000,Gang,True,Mysuru Cell 1,8,POSSESS,high
+GANG-0001,Gang,True,Rural Ring 2,6,RIOTING,high
+GANG-0002,Gang,False,Bengaluru Crew 3,12,VEH_THEFT,high
+GANG-0003,Gang,True,District Crew 4,14,TRESPASS,critical
+GANG-0004,Gang,True,Coastal Crew 5,10,POSSESS,high

@@ -1,0 +1,1144 @@
+﻿accused_id,fir_id,criminal_id,name_en,name_kn,age,gender,address,is_known,is_arrested,role
+ACC-FIR-BDR-2021-00001-000,FIR-BDR-2021-00001,CRM-0000184,Vikram Shastri,ಅನಿಲ್ ರೆಡ್ಡಿ,24,M,,true,false,principal
+ACC-FIR-BDR-2021-00001-001,FIR-BDR-2021-00001,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-BDR-2021-00001-002,FIR-BDR-2021-00001,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-HBL-2021-00001-000,FIR-HBL-2021-00001,CRM-0000122,Swathi Verma,ಕವಿತಾ ಕುಮಾರ್,48,F,,true,false,principal
+ACC-FIR-KLP-2021-00001-000,FIR-KLP-2021-00001,,Satish Joshi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00001-000,FIR-RBG-2021-00001,CRM-0000123,Manjunath Pillai,ಸಂದೀಪ್ ಅರಸ್,65,M,,false,false,principal
+ACC-FIR-YDG-2021-00001-000,FIR-YDG-2021-00001,,Ramesh Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00001-000,FIR-BLR-2021-00001,CRM-0000183,Mohan Nayak,ಬಸವರಾಜ್ ಶಾಸ್ತ್ರಿ,70,M,,false,false,principal
+ACC-FIR-BLR-2021-00002-000,FIR-BLR-2021-00002,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,false,true,principal
+ACC-FIR-CHB-2021-00001-000,FIR-CHB-2021-00001,CRM-0000095,Gaurav Desai,ದೀಪಕ್ ಕಾಮತ್,19,M,,true,false,principal
+ACC-FIR-RBG-2021-00002-000,FIR-RBG-2021-00002,,Yogesh Singh,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00001-000,FIR-MGL-2021-00001,CRM-0000160,Anita Bhat,ಜ್ಯೋತಿ ಕಾಮತ್,24,F,,false,false,principal
+ACC-FIR-BLR-2021-00003-000,FIR-BLR-2021-00003,CRM-0000236,Shivakumar Tantri,ರಾಘವೇಂದ್ರ ಅರಸ್,29,M,,true,false,principal
+ACC-FIR-BLR-2021-00004-000,FIR-BLR-2021-00004,CRM-0000176,Sneha Adiga,ಸುಜಾತಾ ಗೌಡ,17,F,,false,true,principal
+ACC-FIR-TKR-2021-00001-000,FIR-TKR-2021-00001,,Suresh Nambiar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00002-000,FIR-KLP-2021-00002,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,true,principal
+ACC-FIR-RBG-2021-00003-000,FIR-RBG-2021-00003,,Mohan Shetty,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00001-000,FIR-BLR2-2021-00001,,Vidya Singh,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLR-2021-00001-000,FIR-KLR-2021-00001,CRM-0000125,Ramesh Bhat,ಕಿರಣ್ ಅರಸ್,28,M,,false,false,principal
+ACC-FIR-MGL-2021-00002-000,FIR-MGL-2021-00002,CRM-0000090,Sangeetha Udupi,ಸುಮ಼ಾ ಅಯ್ಯರ್,41,F,,true,false,principal
+ACC-FIR-BLR-2021-00005-000,FIR-BLR-2021-00005,CRM-0000029,Deepak Raju,ಅಭಿಷೇಕ್ ಪ್ರಭು,70,M,,false,false,principal
+ACC-FIR-BLR-2021-00006-000,FIR-BLR-2021-00006,CRM-0000183,Mohan Nayak,ಬಸವರಾಜ್ ಶಾಸ್ತ್ರಿ,70,M,,false,true,principal
+ACC-FIR-MGL-2021-00003-000,FIR-MGL-2021-00003,CRM-0000013,Sujatha Murthy,ಮೀರಾ ಶೆಟ್ಟಿ,68,F,,false,true,principal
+ACC-FIR-BLR2-2021-00002-000,FIR-BLR2-2021-00002,CRM-0000148,Ramesh Hegde,ಅಜಯ್ ಅಡಿಗ,40,M,,true,false,principal
+ACC-FIR-BLR-2021-00007-000,FIR-BLR-2021-00007,CRM-0000076,Sangeetha Kumar,ಅನಿತಾ ದೇಸಾಯಿ,18,F,,true,false,principal
+ACC-FIR-BLR-2021-00008-000,FIR-BLR-2021-00008,,Rohit Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00009-000,FIR-BLR-2021-00009,CRM-0000231,Naveen Desai,ಅರ್ಜುನ್ ಲಿಂಗಾಯತ್,63,M,,true,false,principal
+ACC-FIR-KLP-2021-00003-000,FIR-KLP-2021-00003,,Vidya Kamath,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MGL-2021-00004-000,FIR-MGL-2021-00004,CRM-0000102,Meera Udupi,ಜ್ಯೋತಿ ಲಿಂಗಾಯತ್,33,F,,false,false,principal
+ACC-FIR-VKT-2021-00001-000,FIR-VKT-2021-00001,CRM-0000104,Basavaraj Rao,ಅಭಿಷೇಕ್ ನಾಯ್ಕ್,60,M,,false,false,principal
+ACC-FIR-MYS-2021-00001-000,FIR-MYS-2021-00001,,Manjunath Udupi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00005-000,FIR-MGL-2021-00005,CRM-0000084,Kavitha Lingayat,ಅಮಲಾ ರಾವ್,64,F,,true,false,principal
+ACC-FIR-BLR-2021-00010-000,FIR-BLR-2021-00010,CRM-0000122,Swathi Verma,ಕವಿತಾ ಕುಮಾರ್,48,F,,true,false,principal
+ACC-FIR-BLG-2021-00001-000,FIR-BLG-2021-00001,CRM-0000063,Amala Thakur,ನಿತ್ಯಾ ಮೂರ್ತಿ,38,F,,false,false,principal
+ACC-FIR-BLR-2021-00011-000,FIR-BLR-2021-00011,CRM-0000170,Shantha Vokkaliga,ಸರಿತಾ ನಾಯ್ಕ್,18,F,,true,false,principal
+ACC-FIR-BLG-2021-00002-000,FIR-BLG-2021-00002,,Seeta Shetty,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00002-000,FIR-HBL-2021-00002,CRM-0000241,Srikanth Shetty,ಸಂದೀಪ್ ಕುಮಾರ್,20,M,,true,false,principal
+ACC-FIR-BLR2-2021-00003-000,FIR-BLR2-2021-00003,CRM-0000147,Shruthi Tantri,ಕವಿತಾ ನಾಯ್ಕ್,71,F,,false,false,principal
+ACC-FIR-BLR2-2021-00003-001,FIR-BLR2-2021-00003,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,true,accomplice
+ACC-FIR-KLP-2021-00004-000,FIR-KLP-2021-00004,CRM-0000085,Mahesh Shetty,ಮೋಹನ್ ಕಾಮತ್,69,M,,true,false,principal
+ACC-FIR-BLR-2021-00012-000,FIR-BLR-2021-00012,,Vidya Aras,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00003-000,FIR-HBL-2021-00003,CRM-0000014,Kiran Reddy,ಗೌರವ್ ಅಯ್ಯರ್,21,M,,true,false,principal
+ACC-FIR-KLP-2021-00005-000,FIR-KLP-2021-00005,CRM-0000042,Ravi Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,27,M,,false,true,principal
+ACC-FIR-BLG-2021-00003-000,FIR-BLG-2021-00003,,Naveen Nayak,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00004-000,FIR-BLG-2021-00004,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,true,true,principal
+ACC-FIR-MGL-2021-00006-000,FIR-MGL-2021-00006,CRM-0000198,Basavaraj Tantri,ಕಿರಣ್ ಗೌಡ,17,M,,true,true,principal
+ACC-FIR-MGL-2021-00006-001,FIR-MGL-2021-00006,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,true,true,accomplice
+ACC-FIR-MGL-2021-00006-002,FIR-MGL-2021-00006,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,true,accomplice
+ACC-FIR-MGL-2021-00006-003,FIR-MGL-2021-00006,CRM-0000152,Vinay Singh,ಅಜಯ್ ಕೃಷ್ಣಮೂರ್ತಿ,16,M,,false,false,accomplice
+ACC-FIR-MGL-2021-00006-004,FIR-MGL-2021-00006,CRM-0000177,Jyothi Shastri,ಅಂಜಲಿ ರೆಡ್ಡಿ,17,F,,true,false,accomplice
+ACC-FIR-KLP-2021-00006-000,FIR-KLP-2021-00006,CRM-0000017,Anita Nambiar,ಮಧು ಅರಸ್,34,F,,true,false,principal
+ACC-FIR-KLR-2021-00002-000,FIR-KLR-2021-00002,CRM-0000169,Vinay Rao,ನಾಗರಾಜ್ ಭಟ್,42,M,,true,true,principal
+ACC-FIR-BDR-2021-00002-000,FIR-BDR-2021-00002,CRM-0000244,Bharathi Krishnamurthy,ಕವಿತಾ ರಾವ್,49,F,,true,false,principal
+ACC-FIR-SHV-2021-00001-000,FIR-SHV-2021-00001,CRM-0000218,Priya Pillai,ಜ್ಯೋತಿ ಅಯ್ಯರ್,52,F,,true,false,principal
+ACC-FIR-RCR-2021-00001-000,FIR-RCR-2021-00001,CRM-0000235,Umesh Shastri,ಅರ್ಜುನ್ ಭಟ್,43,M,,false,false,principal
+ACC-FIR-UDR-2021-00001-000,FIR-UDR-2021-00001,,Rekha Tantri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00013-000,FIR-BLR-2021-00013,CRM-0000199,Anil Prabhu,ಮಂಜುನಾಥ್ ಅರಸ್,22,M,,true,false,principal
+ACC-FIR-RBG-2021-00004-000,FIR-RBG-2021-00004,CRM-0000101,Kiran Kumar,ಬಸವರಾಜ್ ಕಾಮತ್,38,M,,true,true,principal
+ACC-FIR-BLR-2021-00014-000,FIR-BLR-2021-00014,CRM-0000096,Sandeep Aras,ಶಿವಕುಮಾರ್ ಪ್ರಭು,25,M,,true,false,principal
+ACC-FIR-BLRR-2021-00001-000,FIR-BLRR-2021-00001,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,true,principal
+ACC-FIR-VKT-2021-00002-000,FIR-VKT-2021-00002,,Radha Adiga,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00015-000,FIR-BLR-2021-00015,CRM-0000167,Akash Vokkaliga,ಅಭಿಷೇಕ್ ಮೂರ್ತಿ,31,M,,false,false,principal
+ACC-FIR-CHT-2021-00001-000,FIR-CHT-2021-00001,CRM-0000240,Basavaraj Bhat,ವಿಕ್ರಮ್ ಜೋಶಿ,71,M,,true,false,principal
+ACC-FIR-CHT-2021-00001-001,FIR-CHT-2021-00001,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-BLR-2021-00016-000,FIR-BLR-2021-00016,CRM-0000150,Satish Murthy,ರಾಘವೇಂದ್ರ ಅಡಿಗ,41,M,,true,true,principal
+ACC-FIR-BLR-2021-00017-000,FIR-BLR-2021-00017,,Shivakumar Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00005-000,FIR-RBG-2021-00005,,Vinay Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00007-000,FIR-MGL-2021-00007,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,true,true,principal
+ACC-FIR-BLR-2021-00018-000,FIR-BLR-2021-00018,CRM-0000054,Yogesh Tantri,ದೀಪಕ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-MGL-2021-00008-000,FIR-MGL-2021-00008,,Rekha Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00004-000,FIR-BLR2-2021-00004,CRM-0000187,Bharathi Sharma,ಸರಿತಾ ದೇಸಾಯಿ,43,F,,true,true,principal
+ACC-FIR-KLP-2021-00007-000,FIR-KLP-2021-00007,,Abhishek Singh,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLRR-2021-00002-000,FIR-BLRR-2021-00002,CRM-0000042,Ravi Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,27,M,,true,true,principal
+ACC-FIR-MYS-2021-00002-000,FIR-MYS-2021-00002,,Sangeetha Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-CHT-2021-00002-000,FIR-CHT-2021-00002,,Arjun Pillai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00019-000,FIR-BLR-2021-00019,CRM-0000200,Jyothi Patil,ಮೀರಾ ಶಾಸ್ತ್ರಿ,20,F,,false,false,principal
+ACC-FIR-BLR-2021-00020-000,FIR-BLR-2021-00020,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,true,false,principal
+ACC-FIR-BLG-2021-00005-000,FIR-BLG-2021-00005,CRM-0000205,Anita Vokkaliga,ಸುಮ಼ಾ ಗೌಡ,55,F,,true,false,principal
+ACC-FIR-RMN-2021-00001-000,FIR-RMN-2021-00001,CRM-0000009,Suresh Verma,ಪ್ರಶಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,47,M,,true,false,principal
+ACC-FIR-BLG-2021-00006-000,FIR-BLG-2021-00006,CRM-0000030,Naveen Adiga,ರಾಘವೇಂದ್ರ ಮೂರ್ತಿ,45,M,,true,true,principal
+ACC-FIR-KLP-2021-00008-000,FIR-KLP-2021-00008,CRM-0000079,Sangeetha Gowda,ನಿತ್ಯಾ ಕಾಮತ್,26,F,,true,false,principal
+ACC-FIR-BLG-2021-00007-000,FIR-BLG-2021-00007,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,true,true,principal
+ACC-FIR-BLR-2021-00021-000,FIR-BLR-2021-00021,CRM-0000066,Deepak Shastri,ಶ್ರೀಕಾಂತ್ ನಾಯ್ಕ್,67,M,,true,false,principal
+ACC-FIR-BLR-2021-00021-001,FIR-BLR-2021-00021,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-BLG-2021-00008-000,FIR-BLG-2021-00008,CRM-0000059,Prashanth Murthy,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,59,M,,false,false,principal
+ACC-FIR-RBG-2021-00006-000,FIR-RBG-2021-00006,,Mahesh Joshi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-UDR-2021-00002-000,FIR-UDR-2021-00002,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,true,false,principal
+ACC-FIR-MYS-2021-00003-000,FIR-MYS-2021-00003,,Bharathi Verma,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00022-000,FIR-BLR-2021-00022,CRM-0000091,Prakash Kumar,ವಿಕ್ರಮ್ ಉಡುಪ,48,M,,false,true,principal
+ACC-FIR-BLR-2021-00023-000,FIR-BLR-2021-00023,CRM-0000208,Anil Tantri,ಶಿವಕುಮಾರ್ ಹೆಗಡೆ,27,M,,false,true,principal
+ACC-FIR-MYS-2021-00004-000,FIR-MYS-2021-00004,CRM-0000225,Mahesh Gowda,ನವೀನ್ ರಾವ್,24,M,,true,false,principal
+ACC-FIR-KLP-2021-00009-000,FIR-KLP-2021-00009,,Priya Aras,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00024-000,FIR-BLR-2021-00024,,Nagaraj Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-UDR-2021-00003-000,FIR-UDR-2021-00003,CRM-0000178,Madhu Lingayat,ಶಾಂತಾ ಹೆಗಡೆ,18,F,,false,false,principal
+ACC-FIR-GBG-2021-00001-000,FIR-GBG-2021-00001,CRM-0000237,Shantha Prabhu,ಮಧು ಕಾಮತ್,48,F,,false,false,principal
+ACC-FIR-KLP-2021-00010-000,FIR-KLP-2021-00010,CRM-0000061,Tejas Joshi,ತೇಜಸ್ ಹೆಗಡೆ,39,M,,false,false,principal
+ACC-FIR-KLP-2021-00010-001,FIR-KLP-2021-00010,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-KLP-2021-00010-002,FIR-KLP-2021-00010,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,false,true,accomplice
+ACC-FIR-MGL-2021-00009-000,FIR-MGL-2021-00009,CRM-0000239,Nagaraj Udupi,ಪ್ರಶಾಂತ್ ರಾವ್,56,M,,true,true,principal
+ACC-FIR-BLR-2021-00025-000,FIR-BLR-2021-00025,CRM-0000133,Naveen Hegde,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,62,M,,true,false,principal
+ACC-FIR-BLR-2021-00026-000,FIR-BLR-2021-00026,CRM-0000230,Amala Shastri,ಸೀತಾ ಗೌಡ,43,F,,true,false,principal
+ACC-FIR-UDR-2021-00004-000,FIR-UDR-2021-00004,CRM-0000128,Mahesh Hegde,ಗೌರವ್ ನಂಬಿಯಾರ್,68,M,,true,true,principal
+ACC-FIR-BLR-2021-00027-000,FIR-BLR-2021-00027,,Saritha Shastri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00005-000,FIR-BLR2-2021-00005,,Basavaraj Naik,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-UDR-2021-00005-000,FIR-UDR-2021-00005,CRM-0000072,Shruthi Aras,ರೇಖಾ ಹೆಗಡೆ,31,F,,true,false,principal
+ACC-FIR-MGL-2021-00010-000,FIR-MGL-2021-00010,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,false,false,principal
+ACC-FIR-MGL-2021-00010-001,FIR-MGL-2021-00010,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-MGL-2021-00010-002,FIR-MGL-2021-00010,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,true,true,accomplice
+ACC-FIR-BLR-2021-00028-000,FIR-BLR-2021-00028,CRM-0000176,Sneha Adiga,ಸುಜಾತಾ ಗೌಡ,17,F,,false,false,principal
+ACC-FIR-MGL-2021-00011-000,FIR-MGL-2021-00011,CRM-0000239,Nagaraj Udupi,ಪ್ರಶಾಂತ್ ರಾವ್,56,M,,true,false,principal
+ACC-FIR-BLR-2021-00029-000,FIR-BLR-2021-00029,,Rajesh Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00030-000,FIR-BLR-2021-00030,CRM-0000054,Yogesh Tantri,ದೀಪಕ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-KLP-2021-00011-000,FIR-KLP-2021-00011,CRM-0000030,Naveen Adiga,ರಾಘವೇಂದ್ರ ಮೂರ್ತಿ,45,M,,true,true,principal
+ACC-FIR-MGL-2021-00012-000,FIR-MGL-2021-00012,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,true,true,principal
+ACC-FIR-MYS-2021-00005-000,FIR-MYS-2021-00005,,Abhishek Verma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00031-000,FIR-BLR-2021-00031,,Akash Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00032-000,FIR-BLR-2021-00032,CRM-0000062,Harsh Murthy,ಉಮೇಶ್ ಉಡುಪ,67,M,,true,false,principal
+ACC-FIR-BLR-2021-00033-000,FIR-BLR-2021-00033,CRM-0000096,Sandeep Aras,ಶಿವಕುಮಾರ್ ಪ್ರಭು,25,M,,true,false,principal
+ACC-FIR-BLG-2021-00009-000,FIR-BLG-2021-00009,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,principal
+ACC-FIR-BLR-2021-00034-000,FIR-BLR-2021-00034,,Nagaraj Shetty,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00004-000,FIR-HBL-2021-00004,CRM-0000234,Suma Rao,ಸಂಗೀತಾ ಪ್ರಭು,17,F,,false,false,principal
+ACC-FIR-KLP-2021-00012-000,FIR-KLP-2021-00012,CRM-0000200,Jyothi Patil,ಮೀರಾ ಶಾಸ್ತ್ರಿ,20,F,,false,false,principal
+ACC-FIR-RBG-2021-00007-000,FIR-RBG-2021-00007,CRM-0000076,Sangeetha Kumar,ಅನಿತಾ ದೇಸಾಯಿ,18,F,,true,false,principal
+ACC-FIR-RMN-2021-00002-000,FIR-RMN-2021-00002,CRM-0000009,Suresh Verma,ಪ್ರಶಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,47,M,,false,true,principal
+ACC-FIR-MDY-2021-00001-000,FIR-MDY-2021-00001,,Shivakumar Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00035-000,FIR-BLR-2021-00035,CRM-0000176,Sneha Adiga,ಸುಜಾತಾ ಗೌಡ,17,F,,true,false,principal
+ACC-FIR-BLR2-2021-00006-000,FIR-BLR2-2021-00006,,Naveen Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00006-000,FIR-MYS-2021-00006,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,false,false,principal
+ACC-FIR-MYS-2021-00006-001,FIR-MYS-2021-00006,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-MYS-2021-00006-002,FIR-MYS-2021-00006,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-BLR-2021-00036-000,FIR-BLR-2021-00036,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,false,false,principal
+ACC-FIR-BLG-2021-00010-000,FIR-BLG-2021-00010,CRM-0000151,Anita Joshi,ಸುಮ಼ಾ ಕಾಮತ್,44,F,,false,false,principal
+ACC-FIR-RBG-2021-00008-000,FIR-RBG-2021-00008,,Vidya Desai,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00037-000,FIR-BLR-2021-00037,,Sujatha Desai,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00038-000,FIR-BLR-2021-00038,CRM-0000003,Sangeetha Hegde,ಪೂಜಾ ಅರಸ್,73,F,,true,false,principal
+ACC-FIR-KLP-2021-00013-000,FIR-KLP-2021-00013,,Prakash Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00009-000,FIR-RBG-2021-00009,,Basavaraj Reddy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BDR-2021-00003-000,FIR-BDR-2021-00003,,Prakash Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00014-000,FIR-KLP-2021-00014,CRM-0000146,Nagaraj Nambiar,ಯೋಗೇಶ್ ಜೋಶಿ,51,M,,true,true,principal
+ACC-FIR-MGL-2021-00013-000,FIR-MGL-2021-00013,CRM-0000212,Kavitha Hegde,ಸ್ವಾತಿ ನಾಯ್ಕ್,40,F,,false,false,principal
+ACC-FIR-BLR-2021-00039-000,FIR-BLR-2021-00039,CRM-0000049,Anil Shastri,ಮಂಜುನಾಥ್ ರಾವ್,52,M,,true,false,principal
+ACC-FIR-HBL-2021-00005-000,FIR-HBL-2021-00005,,Swathi Singh,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLRR-2021-00003-000,FIR-BLRR-2021-00003,CRM-0000240,Basavaraj Bhat,ವಿಕ್ರಮ್ ಜೋಶಿ,71,M,,true,false,principal
+ACC-FIR-BLRR-2021-00003-001,FIR-BLRR-2021-00003,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-MGL-2021-00014-000,FIR-MGL-2021-00014,CRM-0000177,Jyothi Shastri,ಅಂಜಲಿ ರೆಡ್ಡಿ,17,F,,true,false,principal
+ACC-FIR-MGL-2021-00014-001,FIR-MGL-2021-00014,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,false,false,accomplice
+ACC-FIR-CHB-2021-00002-000,FIR-CHB-2021-00002,,Umesh Rao,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00007-000,FIR-BLR2-2021-00007,CRM-0000071,Umesh Murthy,ವಿನಯ್ ಅರಸ್,70,M,,true,true,principal
+ACC-FIR-SHV-2021-00002-000,FIR-SHV-2021-00002,CRM-0000055,Bharathi Nambiar,ಅನಿತಾ ಪಾಟೀಲ್,32,F,,false,false,principal
+ACC-FIR-BLR2-2021-00008-000,FIR-BLR2-2021-00008,CRM-0000103,Shivakumar Shetty,ಮೋಹನ್ ಉಡುಪ,30,M,,false,false,principal
+ACC-FIR-BLR2-2021-00008-001,FIR-BLR2-2021-00008,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-HBL-2021-00006-000,FIR-HBL-2021-00006,CRM-0000156,Basavaraj Verma,ಗೌರವ್ ಕಾಮತ್,22,M,,true,false,principal
+ACC-FIR-HBL-2021-00007-000,FIR-HBL-2021-00007,CRM-0000092,Yogesh Gowda,ಅಭಿಷೇಕ್ ಕೃಷ್ಣಮೂರ್ತಿ,51,M,,true,false,principal
+ACC-FIR-KLP-2021-00015-000,FIR-KLP-2021-00015,,Basavaraj Aras,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00008-000,FIR-HBL-2021-00008,CRM-0000224,Abhishek Adiga,ಶ್ರೀಕಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,45,M,,false,false,principal
+ACC-FIR-BLR-2021-00040-000,FIR-BLR-2021-00040,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,true,false,principal
+ACC-FIR-UDR-2021-00006-000,FIR-UDR-2021-00006,CRM-0000045,Shruthi Thakur,ಮೀರಾ ರೆಡ್ಡಿ,39,F,,false,false,principal
+ACC-FIR-BLR2-2021-00009-000,FIR-BLR2-2021-00009,CRM-0000114,Anil Shastri,ಸತೀಶ್ ಶಾಸ್ತ್ರಿ,45,M,,true,false,principal
+ACC-FIR-HBL-2021-00009-000,FIR-HBL-2021-00009,,Nagaraj Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00010-000,FIR-RBG-2021-00010,CRM-0000149,Rekha Adiga,ಸುಮ಼ಾ ಸ್ವಾಮಿ,57,F,,true,false,principal
+ACC-FIR-BLR2-2021-00010-000,FIR-BLR2-2021-00010,,Arjun Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HSN-2021-00001-000,FIR-HSN-2021-00001,CRM-0000070,Jyothi Gowda,ಸಂಗೀತಾ ಲಿಂಗಾಯತ್,31,F,,false,false,principal
+ACC-FIR-HSN-2021-00001-001,FIR-HSN-2021-00001,CRM-0000095,Gaurav Desai,ದೀಪಕ್ ಕಾಮತ್,19,M,,false,false,accomplice
+ACC-FIR-HSN-2021-00001-002,FIR-HSN-2021-00001,CRM-0000057,Raghavendra Nambiar,ಶಿವಕುಮಾರ್ ಕುಮಾರ್,72,M,,true,false,accomplice
+ACC-FIR-HSN-2021-00001-003,FIR-HSN-2021-00001,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,true,false,accomplice
+ACC-FIR-BLR-2021-00041-000,FIR-BLR-2021-00041,CRM-0000119,Mohan Shastri,ಯೋಗೇಶ್ ತಂತ್ರಿ,32,M,,false,false,principal
+ACC-FIR-BLR-2021-00042-000,FIR-BLR-2021-00042,,Meera Sharma,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-UDR-2021-00007-000,FIR-UDR-2021-00007,CRM-0000128,Mahesh Hegde,ಗೌರವ್ ನಂಬಿಯಾರ್,68,M,,false,false,principal
+ACC-FIR-BLR-2021-00043-000,FIR-BLR-2021-00043,CRM-0000036,Umesh Nayak,ಅಜಯ್ ಅಯ್ಯರ್,33,M,,true,true,principal
+ACC-FIR-RMN-2021-00003-000,FIR-RMN-2021-00003,CRM-0000005,Umesh Joshi,ವಿಕ್ರಮ್ ಪ್ರಭು,54,M,,false,false,principal
+ACC-FIR-BLR-2021-00044-000,FIR-BLR-2021-00044,CRM-0000093,Saritha Krishnamurthy,ಲಕ್ಷ್ಮಿ ನಂಬಿಯಾರ್,52,F,,true,true,principal
+ACC-FIR-VKT-2021-00003-000,FIR-VKT-2021-00003,,Prakash Bhat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-UDR-2021-00008-000,FIR-UDR-2021-00008,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,false,false,principal
+ACC-FIR-KLP-2021-00016-000,FIR-KLP-2021-00016,CRM-0000057,Raghavendra Nambiar,ಶಿವಕುಮಾರ್ ಕುಮಾರ್,72,M,,true,false,principal
+ACC-FIR-UDR-2021-00009-000,FIR-UDR-2021-00009,CRM-0000212,Kavitha Hegde,ಸ್ವಾತಿ ನಾಯ್ಕ್,40,F,,true,false,principal
+ACC-FIR-CKM-2021-00001-000,FIR-CKM-2021-00001,CRM-0000168,Vikram Krishnamurthy,ಬಸವರಾಜ್ ಶಾಸ್ತ್ರಿ,52,M,,false,false,principal
+ACC-FIR-MYS-2021-00007-000,FIR-MYS-2021-00007,,Tejas Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00008-000,FIR-MYS-2021-00008,,Rajesh Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RMN-2021-00004-000,FIR-RMN-2021-00004,,Swathi Sharma,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00045-000,FIR-BLR-2021-00045,,Nagaraj Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00011-000,FIR-BLR2-2021-00011,CRM-0000112,Seeta Shetty,ಗೀತಾ ನಂಬಿಯಾರ್,47,F,,true,true,principal
+ACC-FIR-MYS-2021-00009-000,FIR-MYS-2021-00009,,Sandeep Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00046-000,FIR-BLR-2021-00046,,Saritha Patil,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00047-000,FIR-BLR-2021-00047,,Vinay Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00012-000,FIR-BLR2-2021-00012,CRM-0000120,Shantha Swamy,ಜ್ಯೋತಿ ಭಟ್,49,F,,true,false,principal
+ACC-FIR-KLP-2021-00017-000,FIR-KLP-2021-00017,,Ravi Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00048-000,FIR-BLR-2021-00048,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,false,principal
+ACC-FIR-BLR-2021-00048-001,FIR-BLR-2021-00048,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-BLR-2021-00048-002,FIR-BLR-2021-00048,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-RBG-2021-00011-000,FIR-RBG-2021-00011,,Jyothi Prabhu,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLP-2021-00018-000,FIR-KLP-2021-00018,CRM-0000204,Anjali Singh,ಲಕ್ಷ್ಮಿ ಅಯ್ಯರ್,17,F,,false,true,principal
+ACC-FIR-KLP-2021-00018-001,FIR-KLP-2021-00018,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-CHB-2021-00003-000,FIR-CHB-2021-00003,,Geetha Rao,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00049-000,FIR-BLR-2021-00049,CRM-0000066,Deepak Shastri,ಶ್ರೀಕಾಂತ್ ನಾಯ್ಕ್,67,M,,true,false,principal
+ACC-FIR-BLR-2021-00049-001,FIR-BLR-2021-00049,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-KLP-2021-00019-000,FIR-KLP-2021-00019,,Prakash Patil,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-SHV-2021-00003-000,FIR-SHV-2021-00003,CRM-0000162,Satish Aras,ಅರ್ಜುನ್ ವೊಕ್ಕಲಿಗ,42,M,,false,false,principal
+ACC-FIR-BLR2-2021-00013-000,FIR-BLR2-2021-00013,CRM-0000187,Bharathi Sharma,ಸರಿತಾ ದೇಸಾಯಿ,43,F,,true,false,principal
+ACC-FIR-HBL-2021-00010-000,FIR-HBL-2021-00010,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,false,false,principal
+ACC-FIR-HBL-2021-00010-001,FIR-HBL-2021-00010,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-HBL-2021-00010-002,FIR-HBL-2021-00010,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-BDR-2021-00004-000,FIR-BDR-2021-00004,,Akash Bhat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00012-000,FIR-RBG-2021-00012,CRM-0000146,Nagaraj Nambiar,ಯೋಗೇಶ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-HBL-2021-00011-000,FIR-HBL-2021-00011,CRM-0000012,Naveen Nambiar,ಸತೀಶ್ ಹೆಗಡೆ,35,M,,true,false,principal
+ACC-FIR-MYS-2021-00010-000,FIR-MYS-2021-00010,CRM-0000033,Ganesh Murthy,ಮಂಜುನಾಥ್ ವೊಕ್ಕಲಿಗ,25,M,,true,false,principal
+ACC-FIR-BLR-2021-00050-000,FIR-BLR-2021-00050,CRM-0000003,Sangeetha Hegde,ಪೂಜಾ ಅರಸ್,73,F,,false,false,principal
+ACC-FIR-HBL-2021-00012-000,FIR-HBL-2021-00012,CRM-0000234,Suma Rao,ಸಂಗೀತಾ ಪ್ರಭು,17,F,,true,false,principal
+ACC-FIR-HBL-2021-00013-000,FIR-HBL-2021-00013,,Basavaraj Krishnamurthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00051-000,FIR-BLR-2021-00051,CRM-0000109,Sangeetha Thakur,ಅನಿತಾ ಶೆಟ್ಟಿ,53,F,,true,true,principal
+ACC-FIR-BLR2-2021-00014-000,FIR-BLR2-2021-00014,CRM-0000187,Bharathi Sharma,ಸರಿತಾ ದೇಸಾಯಿ,43,F,,false,false,principal
+ACC-FIR-RCR-2021-00002-000,FIR-RCR-2021-00002,,Swathi Shastri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MYS-2021-00011-000,FIR-MYS-2021-00011,,Madhu Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MYS-2021-00012-000,FIR-MYS-2021-00012,,Ajay Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00052-000,FIR-BLR-2021-00052,CRM-0000086,Srikanth Patil,ವಿನಯ್ ತಂತ್ರಿ,38,M,,false,false,principal
+ACC-FIR-BLR-2021-00053-000,FIR-BLR-2021-00053,CRM-0000170,Shantha Vokkaliga,ಸರಿತಾ ನಾಯ್ಕ್,18,F,,true,false,principal
+ACC-FIR-KLR-2021-00003-000,FIR-KLR-2021-00003,CRM-0000049,Anil Shastri,ಮಂಜುನಾಥ್ ರಾವ್,52,M,,false,false,principal
+ACC-FIR-BLR-2021-00054-000,FIR-BLR-2021-00054,,Anil Shetty,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00015-000,FIR-MGL-2021-00015,CRM-0000177,Jyothi Shastri,ಅಂಜಲಿ ರೆಡ್ಡಿ,17,F,,true,false,principal
+ACC-FIR-MGL-2021-00015-001,FIR-MGL-2021-00015,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,false,false,accomplice
+ACC-FIR-SHV-2021-00004-000,FIR-SHV-2021-00004,CRM-0000218,Priya Pillai,ಜ್ಯೋತಿ ಅಯ್ಯರ್,52,F,,false,true,principal
+ACC-FIR-MGL-2021-00016-000,FIR-MGL-2021-00016,CRM-0000189,Basavaraj Murthy,ಅಭಿಷೇಕ್ ತಂತ್ರಿ,26,M,,true,false,principal
+ACC-FIR-MGL-2021-00016-001,FIR-MGL-2021-00016,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLR-2021-00055-000,FIR-BLR-2021-00055,,Ravi Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00020-000,FIR-KLP-2021-00020,CRM-0000023,Tejas Kamath,ರಾಘವೇಂದ್ರ ಗೌಡ,64,M,,true,false,principal
+ACC-FIR-KLP-2021-00020-001,FIR-KLP-2021-00020,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-KLP-2021-00020-002,FIR-KLP-2021-00020,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,true,false,accomplice
+ACC-FIR-KLP-2021-00020-003,FIR-KLP-2021-00020,CRM-0000228,Gaurav Sharma,ಬಸವರಾಜ್ ಹೆಗಡೆ,71,M,,true,false,accomplice
+ACC-FIR-MYS-2021-00013-000,FIR-MYS-2021-00013,,Anil Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00056-000,FIR-BLR-2021-00056,,Rajesh Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00057-000,FIR-BLR-2021-00057,CRM-0000186,Saritha Thakur,ಸ್ನೇಹಾ ಕಾಮತ್,44,F,,false,false,principal
+ACC-FIR-CTV-2021-00001-000,FIR-CTV-2021-00001,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,false,principal
+ACC-FIR-BLR-2021-00058-000,FIR-BLR-2021-00058,CRM-0000176,Sneha Adiga,ಸುಜಾತಾ ಗೌಡ,17,F,,false,true,principal
+ACC-FIR-RBG-2021-00013-000,FIR-RBG-2021-00013,,Sneha Sharma,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-RBG-2021-00014-000,FIR-RBG-2021-00014,CRM-0000172,Sujatha Vokkaliga,ಸೀತಾ ಹೆಗಡೆ,29,F,,false,false,principal
+ACC-FIR-MGL-2021-00017-000,FIR-MGL-2021-00017,CRM-0000017,Anita Nambiar,ಮಧು ಅರಸ್,34,F,,false,true,principal
+ACC-FIR-KLP-2021-00021-000,FIR-KLP-2021-00021,CRM-0000217,Madhu Adiga,ಅನಿತಾ ಪಾಟೀಲ್,37,F,,false,true,principal
+ACC-FIR-BLR2-2021-00015-000,FIR-BLR2-2021-00015,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,false,true,principal
+ACC-FIR-BLR2-2021-00015-001,FIR-BLR2-2021-00015,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-MYS-2021-00014-000,FIR-MYS-2021-00014,,Akash Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00059-000,FIR-BLR-2021-00059,CRM-0000121,Sandeep Kumar,ತೇಜಸ್ ಶೆಟ್ಟಿ,17,M,,false,false,principal
+ACC-FIR-RCR-2021-00003-000,FIR-RCR-2021-00003,CRM-0000063,Amala Thakur,ನಿತ್ಯಾ ಮೂರ್ತಿ,38,F,,true,false,principal
+ACC-FIR-MDY-2021-00002-000,FIR-MDY-2021-00002,,Bharathi Gowda,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00060-000,FIR-BLR-2021-00060,CRM-0000063,Amala Thakur,ನಿತ್ಯಾ ಮೂರ್ತಿ,38,F,,false,true,principal
+ACC-FIR-CHB-2021-00004-000,FIR-CHB-2021-00004,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,false,false,principal
+ACC-FIR-CTV-2021-00002-000,FIR-CTV-2021-00002,,Geetha Pillai,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLR-2021-00004-000,FIR-KLR-2021-00004,CRM-0000060,Rohit Lingayat,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,61,M,,false,false,principal
+ACC-FIR-HBL-2021-00014-000,FIR-HBL-2021-00014,CRM-0000224,Abhishek Adiga,ಶ್ರೀಕಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,45,M,,true,true,principal
+ACC-FIR-BLR2-2021-00016-000,FIR-BLR2-2021-00016,CRM-0000243,Suma Joshi,ಪ್ರಿಯಾ ನಂಬಿಯಾರ್,42,F,,true,false,principal
+ACC-FIR-BLR2-2021-00017-000,FIR-BLR2-2021-00017,,Ajay Reddy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00061-000,FIR-BLR-2021-00061,CRM-0000065,Tejas Joshi,ಅಜಯ್ ಕಾಮತ್,42,M,,false,true,principal
+ACC-FIR-RBG-2021-00015-000,FIR-RBG-2021-00015,CRM-0000143,Yogesh Nayak,ವಿನಯ್ ನಂಬಿಯಾರ್,28,M,,false,false,principal
+ACC-FIR-KLP-2021-00022-000,FIR-KLP-2021-00022,CRM-0000023,Tejas Kamath,ರಾಘವೇಂದ್ರ ಗೌಡ,64,M,,false,false,principal
+ACC-FIR-KLP-2021-00022-001,FIR-KLP-2021-00022,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-KLP-2021-00022-002,FIR-KLP-2021-00022,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,false,false,accomplice
+ACC-FIR-KLP-2021-00022-003,FIR-KLP-2021-00022,CRM-0000228,Gaurav Sharma,ಬಸವರಾಜ್ ಹೆಗಡೆ,71,M,,false,false,accomplice
+ACC-FIR-BLR2-2021-00018-000,FIR-BLR2-2021-00018,CRM-0000243,Suma Joshi,ಪ್ರಿಯಾ ನಂಬಿಯಾರ್,42,F,,true,false,principal
+ACC-FIR-BLR-2021-00062-000,FIR-BLR-2021-00062,CRM-0000197,Amala Joshi,ಅನಿತಾ ವೊಕ್ಕಲಿಗ,31,F,,true,true,principal
+ACC-FIR-BLR-2021-00063-000,FIR-BLR-2021-00063,CRM-0000047,Sujatha Gowda,ನಿತ್ಯಾ ಹೆಗಡೆ,42,F,,false,false,principal
+ACC-FIR-DVG-2021-00001-000,FIR-DVG-2021-00001,CRM-0000145,Ganesh Verma,ಪ್ರಶಾಂತ್ ಅಡಿಗ,29,M,,false,false,principal
+ACC-FIR-MYS-2021-00015-000,FIR-MYS-2021-00015,,Radha Rao,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MDY-2021-00003-000,FIR-MDY-2021-00003,CRM-0000115,Lakshmi Shetty,ಅಂಜಲಿ ಜೋಶಿ,29,F,,true,false,principal
+ACC-FIR-KLP-2021-00023-000,FIR-KLP-2021-00023,,Raghavendra Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00016-000,FIR-MYS-2021-00016,CRM-0000170,Shantha Vokkaliga,ಸರಿತಾ ನಾಯ್ಕ್,18,F,,true,true,principal
+ACC-FIR-RBG-2021-00016-000,FIR-RBG-2021-00016,CRM-0000188,Pooja Joshi,ಪೂಜಾ ಅಡಿಗ,36,F,,false,false,principal
+ACC-FIR-RBG-2021-00016-001,FIR-RBG-2021-00016,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,true,accomplice
+ACC-FIR-RBG-2021-00016-002,FIR-RBG-2021-00016,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,true,false,accomplice
+ACC-FIR-RBG-2021-00016-003,FIR-RBG-2021-00016,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,true,accomplice
+ACC-FIR-RBG-2021-00016-004,FIR-RBG-2021-00016,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,true,false,accomplice
+ACC-FIR-MDY-2021-00004-000,FIR-MDY-2021-00004,CRM-0000119,Mohan Shastri,ಯೋಗೇಶ್ ತಂತ್ರಿ,32,M,,false,true,principal
+ACC-FIR-BLR-2021-00064-000,FIR-BLR-2021-00064,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,principal
+ACC-FIR-BDR-2021-00005-000,FIR-BDR-2021-00005,CRM-0000131,Anita Singh,ಸರಿತಾ ಪ್ರಭು,33,F,,true,true,principal
+ACC-FIR-BLG-2021-00011-000,FIR-BLG-2021-00011,CRM-0000025,Satish Udupi,ರಾಜೇಶ್ ಸ್ವಾಮಿ,70,M,,true,false,principal
+ACC-FIR-BLR-2021-00065-000,FIR-BLR-2021-00065,CRM-0000133,Naveen Hegde,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,62,M,,false,false,principal
+ACC-FIR-BLR2-2021-00019-000,FIR-BLR2-2021-00019,CRM-0000240,Basavaraj Bhat,ವಿಕ್ರಮ್ ಜೋಶಿ,71,M,,true,true,principal
+ACC-FIR-BLR2-2021-00019-001,FIR-BLR2-2021-00019,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLR2-2021-00020-000,FIR-BLR2-2021-00020,CRM-0000094,Jyothi Prabhu,ಸ್ವಾತಿ ಕಾಮತ್,39,F,,true,false,principal
+ACC-FIR-BLR-2021-00066-000,FIR-BLR-2021-00066,,Manjunath Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00067-000,FIR-BLR-2021-00067,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,false,false,principal
+ACC-FIR-BLR2-2021-00021-000,FIR-BLR2-2021-00021,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,false,principal
+ACC-FIR-BLR2-2021-00021-001,FIR-BLR2-2021-00021,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,true,accomplice
+ACC-FIR-BLR2-2021-00021-002,FIR-BLR2-2021-00021,CRM-0000147,Shruthi Tantri,ಕವಿತಾ ನಾಯ್ಕ್,71,F,,true,false,accomplice
+ACC-FIR-BLR2-2021-00021-003,FIR-BLR2-2021-00021,CRM-0000148,Ramesh Hegde,ಅಜಯ್ ಅಡಿಗ,40,M,,false,false,accomplice
+ACC-FIR-BLR2-2021-00021-004,FIR-BLR2-2021-00021,CRM-0000192,Yogesh Kumar,ಸಂದೀಪ್ ಅಯ್ಯರ್,48,M,,true,false,accomplice
+ACC-FIR-MYS-2021-00017-000,FIR-MYS-2021-00017,,Shivakumar Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00018-000,FIR-MYS-2021-00018,CRM-0000225,Mahesh Gowda,ನವೀನ್ ರಾವ್,24,M,,true,false,principal
+ACC-FIR-BSD-2021-00001-000,FIR-BSD-2021-00001,,Raghavendra Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00068-000,FIR-BLR-2021-00068,CRM-0000236,Shivakumar Tantri,ರಾಘವೇಂದ್ರ ಅರಸ್,29,M,,false,false,principal
+ACC-FIR-CTV-2021-00003-000,FIR-CTV-2021-00003,,Vidya Rao,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00022-000,FIR-BLR2-2021-00022,CRM-0000219,Vinay Shetty,ರಾಮೇಶ್ ರೆಡ್ಡಿ,66,M,,true,false,principal
+ACC-FIR-BLR-2021-00069-000,FIR-BLR-2021-00069,CRM-0000039,Gaurav Rao,ಸತೀಶ್ ಲಿಂಗಾಯತ್,74,M,,true,false,principal
+ACC-FIR-MYS-2021-00019-000,FIR-MYS-2021-00019,,Abhishek Verma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00015-000,FIR-HBL-2021-00015,CRM-0000045,Shruthi Thakur,ಮೀರಾ ರೆಡ್ಡಿ,39,F,,false,false,principal
+ACC-FIR-KPT-2021-00001-000,FIR-KPT-2021-00001,,Sneha Murthy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00016-000,FIR-HBL-2021-00016,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,false,true,principal
+ACC-FIR-HBL-2021-00016-001,FIR-HBL-2021-00016,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,true,accomplice
+ACC-FIR-MGL-2021-00018-000,FIR-MGL-2021-00018,CRM-0000172,Sujatha Vokkaliga,ಸೀತಾ ಹೆಗಡೆ,29,F,,false,false,principal
+ACC-FIR-HBL-2021-00017-000,FIR-HBL-2021-00017,CRM-0000210,Swathi Desai,ಶಾಂತಾ ಜೋಶಿ,30,F,,false,false,principal
+ACC-FIR-KLP-2021-00024-000,FIR-KLP-2021-00024,,Suresh Nambiar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00017-000,FIR-RBG-2021-00017,CRM-0000230,Amala Shastri,ಸೀತಾ ಗೌಡ,43,F,,false,false,principal
+ACC-FIR-RBG-2021-00018-000,FIR-RBG-2021-00018,CRM-0000076,Sangeetha Kumar,ಅನಿತಾ ದೇಸಾಯಿ,18,F,,false,false,principal
+ACC-FIR-BLR-2021-00070-000,FIR-BLR-2021-00070,,Basavaraj Rao,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MDY-2021-00005-000,FIR-MDY-2021-00005,,Vinay Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00071-000,FIR-BLR-2021-00071,,Rohit Singh,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00072-000,FIR-BLR-2021-00072,CRM-0000121,Sandeep Kumar,ತೇಜಸ್ ಶೆಟ್ಟಿ,17,M,,true,false,principal
+ACC-FIR-BLR-2021-00073-000,FIR-BLR-2021-00073,CRM-0000054,Yogesh Tantri,ದೀಪಕ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-HBL-2021-00018-000,FIR-HBL-2021-00018,,Anjali Thakur,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00074-000,FIR-BLR-2021-00074,,Anjali Kamath,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLR-2021-00005-000,FIR-KLR-2021-00005,CRM-0000089,Kiran Bhat,ಪ್ರಕಾಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,38,M,,false,true,principal
+ACC-FIR-BLR-2021-00075-000,FIR-BLR-2021-00075,CRM-0000127,Lakshmi Singh,ದೀಪಾ ಲಿಂಗಾಯತ್,25,F,,true,true,principal
+ACC-FIR-KLP-2021-00025-000,FIR-KLP-2021-00025,,Suresh Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00076-000,FIR-BLR-2021-00076,CRM-0000011,Bharathi Patil,ಮೀರಾ ಕಾಮತ್,50,F,,false,false,principal
+ACC-FIR-MGL-2021-00019-000,FIR-MGL-2021-00019,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,false,false,principal
+ACC-FIR-CKM-2021-00002-000,FIR-CKM-2021-00002,CRM-0000171,Vikram Vokkaliga,ಗೌರವ್ ನಾಯ್ಕ್,30,M,,false,true,principal
+ACC-FIR-RMN-2021-00005-000,FIR-RMN-2021-00005,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,true,false,principal
+ACC-FIR-DVG-2021-00002-000,FIR-DVG-2021-00002,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,false,true,principal
+ACC-FIR-BLR-2021-00077-000,FIR-BLR-2021-00077,CRM-0000003,Sangeetha Hegde,ಪೂಜಾ ಅರಸ್,73,F,,true,false,principal
+ACC-FIR-BLR-2021-00078-000,FIR-BLR-2021-00078,CRM-0000208,Anil Tantri,ಶಿವಕುಮಾರ್ ಹೆಗಡೆ,27,M,,false,false,principal
+ACC-FIR-MGL-2021-00020-000,FIR-MGL-2021-00020,CRM-0000230,Amala Shastri,ಸೀತಾ ಗೌಡ,43,F,,true,false,principal
+ACC-FIR-HBL-2021-00019-000,FIR-HBL-2021-00019,CRM-0000190,Sandeep Lingayat,ಶಿವಕುಮಾರ್ ಲಿಂಗಾಯತ್,34,M,,false,false,principal
+ACC-FIR-KLP-2021-00026-000,FIR-KLP-2021-00026,CRM-0000071,Umesh Murthy,ವಿನಯ್ ಅರಸ್,70,M,,true,false,principal
+ACC-FIR-MYS-2021-00020-000,FIR-MYS-2021-00020,CRM-0000138,Lakshmi Kumar,ನಿತ್ಯಾ ಶಾಸ್ತ್ರಿ,68,F,,true,false,principal
+ACC-FIR-KLP-2021-00027-000,FIR-KLP-2021-00027,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,false,false,principal
+ACC-FIR-BLR-2021-00079-000,FIR-BLR-2021-00079,CRM-0000200,Jyothi Patil,ಮೀರಾ ಶಾಸ್ತ್ರಿ,20,F,,true,true,principal
+ACC-FIR-BLG-2021-00012-000,FIR-BLG-2021-00012,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,true,false,principal
+ACC-FIR-BLR-2021-00080-000,FIR-BLR-2021-00080,CRM-0000086,Srikanth Patil,ವಿನಯ್ ತಂತ್ರಿ,38,M,,false,false,principal
+ACC-FIR-BLR-2021-00081-000,FIR-BLR-2021-00081,,Geetha Adiga,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00082-000,FIR-BLR-2021-00082,CRM-0000151,Anita Joshi,ಸುಮ಼ಾ ಕಾಮತ್,44,F,,false,false,principal
+ACC-FIR-BLR-2021-00083-000,FIR-BLR-2021-00083,,Akash Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-SHV-2021-00005-000,FIR-SHV-2021-00005,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,false,true,principal
+ACC-FIR-DVG-2021-00003-000,FIR-DVG-2021-00003,CRM-0000080,Lakshmi Vokkaliga,ಸುಜಾತಾ ಭಟ್,55,F,,false,false,principal
+ACC-FIR-MYS-2021-00021-000,FIR-MYS-2021-00021,,Ajay Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00084-000,FIR-BLR-2021-00084,,Ajay Joshi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00019-000,FIR-RBG-2021-00019,,Srikanth Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CKM-2021-00003-000,FIR-CKM-2021-00003,CRM-0000159,Priya Verma,ಅಮಲಾ ಜೋಶಿ,42,F,,false,false,principal
+ACC-FIR-BLR-2021-00085-000,FIR-BLR-2021-00085,CRM-0000170,Shantha Vokkaliga,ಸರಿತಾ ನಾಯ್ಕ್,18,F,,false,false,principal
+ACC-FIR-BLG-2021-00013-000,FIR-BLG-2021-00013,,Vikram Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00023-000,FIR-BLR2-2021-00023,CRM-0000173,Geetha Adiga,ಕವಿತಾ ದೇಸಾಯಿ,34,F,,true,false,principal
+ACC-FIR-BLR2-2021-00023-001,FIR-BLR2-2021-00023,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-BLR2-2021-00024-000,FIR-BLR2-2021-00024,,Gaurav Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00021-000,FIR-MGL-2021-00021,CRM-0000054,Yogesh Tantri,ದೀಪಕ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-BLG-2021-00014-000,FIR-BLG-2021-00014,,Arjun Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00086-000,FIR-BLR-2021-00086,,Rajesh Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BDR-2021-00006-000,FIR-BDR-2021-00006,,Manjunath Nayak,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00020-000,FIR-HBL-2021-00020,,Ganesh Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00020-000,FIR-RBG-2021-00020,CRM-0000239,Nagaraj Udupi,ಪ್ರಶಾಂತ್ ರಾವ್,56,M,,true,false,principal
+ACC-FIR-BLR-2021-00087-000,FIR-BLR-2021-00087,,Gaurav Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00022-000,FIR-MGL-2021-00022,CRM-0000088,Prashanth Sharma,ಪ್ರಶಾಂತ್ ಉಡುಪ,32,M,,true,false,principal
+ACC-FIR-SHV-2021-00006-000,FIR-SHV-2021-00006,CRM-0000083,Vikram Raju,ಅನಿಲ್ ಅರಸ್,64,M,,false,false,principal
+ACC-FIR-BLG-2021-00015-000,FIR-BLG-2021-00015,,Rajesh Murthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00088-000,FIR-BLR-2021-00088,,Basavaraj Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00089-000,FIR-BLR-2021-00089,CRM-0000146,Nagaraj Nambiar,ಯೋಗೇಶ್ ಜೋಶಿ,51,M,,true,true,principal
+ACC-FIR-BLR-2021-00090-000,FIR-BLR-2021-00090,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,true,true,principal
+ACC-FIR-BLR-2021-00090-001,FIR-BLR-2021-00090,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-UDR-2021-00010-000,FIR-UDR-2021-00010,,Prashanth Reddy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00091-000,FIR-BLR-2021-00091,CRM-0000003,Sangeetha Hegde,ಪೂಜಾ ಅರಸ್,73,F,,false,false,principal
+ACC-FIR-BLR-2021-00092-000,FIR-BLR-2021-00092,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,true,false,principal
+ACC-FIR-BLR-2021-00093-000,FIR-BLR-2021-00093,CRM-0000167,Akash Vokkaliga,ಅಭಿಷೇಕ್ ಮೂರ್ತಿ,31,M,,false,true,principal
+ACC-FIR-BLR2-2021-00025-000,FIR-BLR2-2021-00025,CRM-0000207,Shruthi Singh,ಸ್ವಾತಿ ಜೋಶಿ,33,F,,false,false,principal
+ACC-FIR-HBL-2021-00021-000,FIR-HBL-2021-00021,CRM-0000012,Naveen Nambiar,ಸತೀಶ್ ಹೆಗಡೆ,35,M,,true,true,principal
+ACC-FIR-CKM-2021-00004-000,FIR-CKM-2021-00004,CRM-0000171,Vikram Vokkaliga,ಗೌರವ್ ನಾಯ್ಕ್,30,M,,false,false,principal
+ACC-FIR-UDR-2021-00011-000,FIR-UDR-2021-00011,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,true,true,principal
+ACC-FIR-MYS-2021-00022-000,FIR-MYS-2021-00022,,Bharathi Naik,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00094-000,FIR-BLR-2021-00094,CRM-0000087,Pooja Tantri,ಜ್ಯೋತಿ ಪ್ರಭು,19,F,,false,false,principal
+ACC-FIR-RMN-2021-00006-000,FIR-RMN-2021-00006,,Satish Verma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00028-000,FIR-KLP-2021-00028,CRM-0000233,Nitya Pillai,ಶೃತಿ ಕುಮಾರ್,51,F,,false,true,principal
+ACC-FIR-BLR-2021-00095-000,FIR-BLR-2021-00095,CRM-0000183,Mohan Nayak,ಬಸವರಾಜ್ ಶಾಸ್ತ್ರಿ,70,M,,false,true,principal
+ACC-FIR-CHB-2021-00005-000,FIR-CHB-2021-00005,CRM-0000235,Umesh Shastri,ಅರ್ಜುನ್ ಭಟ್,43,M,,true,false,principal
+ACC-FIR-RMN-2021-00007-000,FIR-RMN-2021-00007,CRM-0000009,Suresh Verma,ಪ್ರಶಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,47,M,,false,true,principal
+ACC-FIR-BLG-2021-00016-000,FIR-BLG-2021-00016,,Ajay Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00096-000,FIR-BLR-2021-00096,CRM-0000048,Sneha Prabhu,ಅಮಲಾ ಉಡುಪ,66,F,,false,false,principal
+ACC-FIR-UDR-2021-00012-000,FIR-UDR-2021-00012,CRM-0000136,Anita Kumar,ಸುಮ಼ಾ ಗೌಡ,59,F,,true,false,principal
+ACC-FIR-RBG-2021-00021-000,FIR-RBG-2021-00021,,Umesh Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00097-000,FIR-BLR-2021-00097,,Bharathi Krishnamurthy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00098-000,FIR-BLR-2021-00098,CRM-0000194,Radha Kamath,ಗೀತಾ ಕುಮಾರ್,45,F,,true,false,principal
+ACC-FIR-HBL-2021-00022-000,FIR-HBL-2021-00022,CRM-0000044,Amala Naik,ಕವಿತಾ ಪ್ರಭು,52,F,,false,true,principal
+ACC-FIR-BLG-2021-00017-000,FIR-BLG-2021-00017,CRM-0000123,Manjunath Pillai,ಸಂದೀಪ್ ಅರಸ್,65,M,,true,false,principal
+ACC-FIR-BDR-2021-00007-000,FIR-BDR-2021-00007,CRM-0000184,Vikram Shastri,ಅನಿಲ್ ರೆಡ್ಡಿ,24,M,,true,false,principal
+ACC-FIR-BDR-2021-00007-001,FIR-BDR-2021-00007,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-UDR-2021-00013-000,FIR-UDR-2021-00013,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,true,false,principal
+ACC-FIR-BLR-2021-00099-000,FIR-BLR-2021-00099,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,false,false,principal
+ACC-FIR-BLG-2021-00018-000,FIR-BLG-2021-00018,,Ganesh Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00023-000,FIR-MGL-2021-00023,,Lakshmi Tantri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-CKM-2021-00005-000,FIR-CKM-2021-00005,CRM-0000159,Priya Verma,ಅಮಲಾ ಜೋಶಿ,42,F,,false,false,principal
+ACC-FIR-KLR-2021-00006-000,FIR-KLR-2021-00006,CRM-0000060,Rohit Lingayat,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,61,M,,false,false,principal
+ACC-FIR-KLP-2021-00029-000,FIR-KLP-2021-00029,CRM-0000233,Nitya Pillai,ಶೃತಿ ಕುಮಾರ್,51,F,,true,false,principal
+ACC-FIR-BLR2-2021-00026-000,FIR-BLR2-2021-00026,CRM-0000071,Umesh Murthy,ವಿನಯ್ ಅರಸ್,70,M,,true,false,principal
+ACC-FIR-KLP-2021-00030-000,FIR-KLP-2021-00030,CRM-0000238,Anjali Sharma,ಪೂಜಾ ಪ್ರಭು,67,F,,false,false,principal
+ACC-FIR-KLR-2021-00007-000,FIR-KLR-2021-00007,CRM-0000060,Rohit Lingayat,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,61,M,,true,false,principal
+ACC-FIR-KLP-2021-00031-000,FIR-KLP-2021-00031,CRM-0000134,Akash Thakur,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,47,M,,false,false,principal
+ACC-FIR-MYS-2021-00023-000,FIR-MYS-2021-00023,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,false,false,principal
+ACC-FIR-YDG-2021-00002-000,FIR-YDG-2021-00002,CRM-0000110,Gaurav Shastri,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,19,M,,true,true,principal
+ACC-FIR-BLR-2021-00100-000,FIR-BLR-2021-00100,,Swathi Nayak,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00023-000,FIR-HBL-2021-00023,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,true,false,principal
+ACC-FIR-HBL-2021-00023-001,FIR-HBL-2021-00023,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,true,accomplice
+ACC-FIR-HBL-2021-00023-002,FIR-HBL-2021-00023,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-BLRR-2021-00004-000,FIR-BLRR-2021-00004,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,principal
+ACC-FIR-RBG-2021-00022-000,FIR-RBG-2021-00022,CRM-0000123,Manjunath Pillai,ಸಂದೀಪ್ ಅರಸ್,65,M,,true,false,principal
+ACC-FIR-RBG-2021-00023-000,FIR-RBG-2021-00023,CRM-0000082,Tejas Kumar,ರಮೇಶ್ ಕಾಮತ್,39,M,,true,false,principal
+ACC-FIR-MYS-2021-00024-000,FIR-MYS-2021-00024,CRM-0000100,Naveen Vokkaliga,ಹರ್ಷ ನಂಬಿಯಾರ್,42,M,,false,false,principal
+ACC-FIR-BLR-2021-00101-000,FIR-BLR-2021-00101,CRM-0000195,Raghavendra Reddy,ಶ್ರೀಕಾಂತ್ ನಂಬಿಯಾರ್,68,M,,false,false,principal
+ACC-FIR-BLR-2021-00102-000,FIR-BLR-2021-00102,CRM-0000186,Saritha Thakur,ಸ್ನೇಹಾ ಕಾಮತ್,44,F,,false,false,principal
+ACC-FIR-MYS-2021-00025-000,FIR-MYS-2021-00025,CRM-0000075,Anjali Vokkaliga,ಜ್ಯೋತಿ ಜೋಶಿ,41,F,,true,false,principal
+ACC-FIR-HBL-2021-00024-000,FIR-HBL-2021-00024,CRM-0000204,Anjali Singh,ಲಕ್ಷ್ಮಿ ಅಯ್ಯರ್,17,F,,true,true,principal
+ACC-FIR-HBL-2021-00024-001,FIR-HBL-2021-00024,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,true,accomplice
+ACC-FIR-KLR-2021-00008-000,FIR-KLR-2021-00008,CRM-0000060,Rohit Lingayat,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,61,M,,false,false,principal
+ACC-FIR-CKM-2021-00006-000,FIR-CKM-2021-00006,CRM-0000171,Vikram Vokkaliga,ಗೌರವ್ ನಾಯ್ಕ್,30,M,,true,false,principal
+ACC-FIR-RBG-2021-00024-000,FIR-RBG-2021-00024,CRM-0000059,Prashanth Murthy,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,59,M,,true,false,principal
+ACC-FIR-MGL-2021-00024-000,FIR-MGL-2021-00024,CRM-0000039,Gaurav Rao,ಸತೀಶ್ ಲಿಂಗಾಯತ್,74,M,,false,true,principal
+ACC-FIR-BLR2-2021-00027-000,FIR-BLR2-2021-00027,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,false,false,principal
+ACC-FIR-CHB-2021-00006-000,FIR-CHB-2021-00006,CRM-0000127,Lakshmi Singh,ದೀಪಾ ಲಿಂಗಾಯತ್,25,F,,false,false,principal
+ACC-FIR-RBG-2021-00025-000,FIR-RBG-2021-00025,CRM-0000024,Satish Gowda,ತೇಜಸ್ ಕಾಮತ್,39,M,,false,false,principal
+ACC-FIR-BLR-2021-00103-000,FIR-BLR-2021-00103,CRM-0000047,Sujatha Gowda,ನಿತ್ಯಾ ಹೆಗಡೆ,42,F,,false,false,principal
+ACC-FIR-SHV-2021-00007-000,FIR-SHV-2021-00007,CRM-0000055,Bharathi Nambiar,ಅನಿತಾ ಪಾಟೀಲ್,32,F,,true,false,principal
+ACC-FIR-KLR-2021-00009-000,FIR-KLR-2021-00009,CRM-0000143,Yogesh Nayak,ವಿನಯ್ ನಂಬಿಯಾರ್,28,M,,false,false,principal
+ACC-FIR-BLR-2021-00104-000,FIR-BLR-2021-00104,CRM-0000074,Ravi Thakur,ಯೋಗೇಶ್ ಜೋಶಿ,22,M,,true,false,principal
+ACC-FIR-TKR-2021-00002-000,FIR-TKR-2021-00002,,Ajay Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00032-000,FIR-KLP-2021-00032,,Rekha Joshi,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00105-000,FIR-BLR-2021-00105,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,true,false,principal
+ACC-FIR-RBG-2021-00026-000,FIR-RBG-2021-00026,,Basavaraj Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HSN-2021-00002-000,FIR-HSN-2021-00002,CRM-0000010,Vidya Raju,ಸುಮ಼ಾ ವೊಕ್ಕಲಿಗ,50,F,,false,false,principal
+ACC-FIR-KLP-2021-00033-000,FIR-KLP-2021-00033,,Mohan Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00026-000,FIR-MYS-2021-00026,CRM-0000106,Jyothi Sharma,ರಾಧಾ ನಾಯ್ಕ್,42,F,,false,true,principal
+ACC-FIR-MYS-2021-00026-001,FIR-MYS-2021-00026,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,true,accomplice
+ACC-FIR-CTV-2021-00004-000,FIR-CTV-2021-00004,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,false,true,principal
+ACC-FIR-RCR-2021-00004-000,FIR-RCR-2021-00004,,Deepa Shastri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-TKR-2021-00003-000,FIR-TKR-2021-00003,CRM-0000178,Madhu Lingayat,ಶಾಂತಾ ಹೆಗಡೆ,18,F,,true,false,principal
+ACC-FIR-BLR-2021-00106-000,FIR-BLR-2021-00106,,Satish Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00107-000,FIR-BLR-2021-00107,CRM-0000127,Lakshmi Singh,ದೀಪಾ ಲಿಂಗಾಯತ್,25,F,,true,false,principal
+ACC-FIR-UDR-2021-00014-000,FIR-UDR-2021-00014,,Akash Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00019-000,FIR-BLG-2021-00019,CRM-0000042,Ravi Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,27,M,,true,false,principal
+ACC-FIR-BLG-2021-00020-000,FIR-BLG-2021-00020,CRM-0000079,Sangeetha Gowda,ನಿತ್ಯಾ ಕಾಮತ್,26,F,,true,false,principal
+ACC-FIR-UDR-2021-00015-000,FIR-UDR-2021-00015,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,true,false,principal
+ACC-FIR-UDR-2021-00016-000,FIR-UDR-2021-00016,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,false,true,principal
+ACC-FIR-BLR-2021-00108-000,FIR-BLR-2021-00108,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,true,false,principal
+ACC-FIR-HBL-2021-00025-000,FIR-HBL-2021-00025,,Naveen Naik,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00109-000,FIR-BLR-2021-00109,CRM-0000190,Sandeep Lingayat,ಶಿವಕುಮಾರ್ ಲಿಂಗಾಯತ್,34,M,,false,false,principal
+ACC-FIR-HBL-2021-00026-000,FIR-HBL-2021-00026,CRM-0000156,Basavaraj Verma,ಗೌರವ್ ಕಾಮತ್,22,M,,true,true,principal
+ACC-FIR-BLR2-2021-00028-000,FIR-BLR2-2021-00028,,Manjunath Pillai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-UDR-2021-00017-000,FIR-UDR-2021-00017,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,false,false,principal
+ACC-FIR-HBL-2021-00027-000,FIR-HBL-2021-00027,CRM-0000215,Geetha Kumar,ಶೃತಿ ಹೆಗಡೆ,74,F,,true,true,principal
+ACC-FIR-HVR-2021-00001-000,FIR-HVR-2021-00001,,Tejas Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00110-000,FIR-BLR-2021-00110,,Naveen Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00111-000,FIR-BLR-2021-00111,CRM-0000095,Gaurav Desai,ದೀಪಕ್ ಕಾಮತ್,19,M,,true,true,principal
+ACC-FIR-MYS-2021-00027-000,FIR-MYS-2021-00027,CRM-0000021,Satish Sharma,ನಾಗರಾಜ್ ನಾಯ್ಕ್,42,M,,false,true,principal
+ACC-FIR-RBG-2021-00027-000,FIR-RBG-2021-00027,,Srikanth Patil,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00028-000,FIR-MYS-2021-00028,CRM-0000100,Naveen Vokkaliga,ಹರ್ಷ ನಂಬಿಯಾರ್,42,M,,false,false,principal
+ACC-FIR-BLR-2021-00112-000,FIR-BLR-2021-00112,,Nitya Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00113-000,FIR-BLR-2021-00113,,Vidya Nayak,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLP-2021-00034-000,FIR-KLP-2021-00034,,Raghavendra Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00114-000,FIR-BLR-2021-00114,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,principal
+ACC-FIR-BLR-2021-00115-000,FIR-BLR-2021-00115,,Mahesh Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00029-000,FIR-BLR2-2021-00029,,Yogesh Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-VJP-2021-00001-000,FIR-VJP-2021-00001,,Yogesh Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00116-000,FIR-BLR-2021-00116,CRM-0000036,Umesh Nayak,ಅಜಯ್ ಅಯ್ಯರ್,33,M,,true,true,principal
+ACC-FIR-BLRR-2021-00005-000,FIR-BLRR-2021-00005,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,true,false,principal
+ACC-FIR-BLRR-2021-00005-001,FIR-BLRR-2021-00005,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,true,accomplice
+ACC-FIR-BLRR-2021-00005-002,FIR-BLRR-2021-00005,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,true,accomplice
+ACC-FIR-BLRR-2021-00005-003,FIR-BLRR-2021-00005,CRM-0000188,Pooja Joshi,ಪೂಜಾ ಅಡಿಗ,36,F,,false,false,accomplice
+ACC-FIR-BLRR-2021-00005-004,FIR-BLRR-2021-00005,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,false,false,accomplice
+ACC-FIR-HBL-2021-00028-000,FIR-HBL-2021-00028,CRM-0000062,Harsh Murthy,ಉಮೇಶ್ ಉಡುಪ,67,M,,false,false,principal
+ACC-FIR-BLR-2021-00117-000,FIR-BLR-2021-00117,CRM-0000167,Akash Vokkaliga,ಅಭಿಷೇಕ್ ಮೂರ್ತಿ,31,M,,false,true,principal
+ACC-FIR-RBG-2021-00028-000,FIR-RBG-2021-00028,CRM-0000020,Sujatha Raju,ಜ್ಯೋತಿ ಮೂರ್ತಿ,58,F,,true,true,principal
+ACC-FIR-BLR-2021-00118-000,FIR-BLR-2021-00118,CRM-0000092,Yogesh Gowda,ಅಭಿಷೇಕ್ ಕೃಷ್ಣಮೂರ್ತಿ,51,M,,true,false,principal
+ACC-FIR-BLR-2021-00119-000,FIR-BLR-2021-00119,CRM-0000057,Raghavendra Nambiar,ಶಿವಕುಮಾರ್ ಕುಮಾರ್,72,M,,false,true,principal
+ACC-FIR-BLR-2021-00119-001,FIR-BLR-2021-00119,CRM-0000095,Gaurav Desai,ದೀಪಕ್ ಕಾಮತ್,19,M,,false,false,accomplice
+ACC-FIR-BLR-2021-00119-002,FIR-BLR-2021-00119,CRM-0000070,Jyothi Gowda,ಸಂಗೀತಾ ಲಿಂಗಾಯತ್,31,F,,false,false,accomplice
+ACC-FIR-BLR-2021-00119-003,FIR-BLR-2021-00119,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,true,true,accomplice
+ACC-FIR-BLR-2021-00120-000,FIR-BLR-2021-00120,CRM-0000043,Ganesh Udupi,ರಾಘವೇಂದ್ರ ಕಾಮತ್,48,M,,true,false,principal
+ACC-FIR-BLG-2021-00021-000,FIR-BLG-2021-00021,CRM-0000180,Raghavendra Joshi,ವಿಕ್ರಮ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-BLR-2021-00121-000,FIR-BLR-2021-00121,CRM-0000012,Naveen Nambiar,ಸತೀಶ್ ಹೆಗಡೆ,35,M,,false,false,principal
+ACC-FIR-RBG-2021-00029-000,FIR-RBG-2021-00029,CRM-0000215,Geetha Kumar,ಶೃತಿ ಹೆಗಡೆ,74,F,,true,false,principal
+ACC-FIR-BLR-2021-00122-000,FIR-BLR-2021-00122,CRM-0000014,Kiran Reddy,ಗೌರವ್ ಅಯ್ಯರ್,21,M,,true,false,principal
+ACC-FIR-KLR-2021-00010-000,FIR-KLR-2021-00010,CRM-0000060,Rohit Lingayat,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,61,M,,true,false,principal
+ACC-FIR-UDR-2021-00018-000,FIR-UDR-2021-00018,,Prakash Hegde,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00022-000,FIR-BLG-2021-00022,CRM-0000192,Yogesh Kumar,ಸಂದೀಪ್ ಅಯ್ಯರ್,48,M,,false,false,principal
+ACC-FIR-BLG-2021-00022-001,FIR-BLG-2021-00022,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLG-2021-00022-002,FIR-BLG-2021-00022,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,false,accomplice
+ACC-FIR-BLG-2021-00022-003,FIR-BLG-2021-00022,CRM-0000147,Shruthi Tantri,ಕವಿತಾ ನಾಯ್ಕ್,71,F,,true,false,accomplice
+ACC-FIR-RBG-2021-00030-000,FIR-RBG-2021-00030,CRM-0000013,Sujatha Murthy,ಮೀರಾ ಶೆಟ್ಟಿ,68,F,,false,false,principal
+ACC-FIR-BLR-2021-00123-000,FIR-BLR-2021-00123,CRM-0000142,Manjunath Shetty,ಪ್ರಶಾಂತ್ ನಂಬಿಯಾರ್,19,M,,false,true,principal
+ACC-FIR-UDR-2021-00019-000,FIR-UDR-2021-00019,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,principal
+ACC-FIR-BLR-2021-00124-000,FIR-BLR-2021-00124,,Radha Prabhu,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-UDR-2021-00020-000,FIR-UDR-2021-00020,CRM-0000115,Lakshmi Shetty,ಅಂಜಲಿ ಜೋಶಿ,29,F,,false,false,principal
+ACC-FIR-TKR-2021-00004-000,FIR-TKR-2021-00004,,Prakash Singh,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00025-000,FIR-MGL-2021-00025,CRM-0000088,Prashanth Sharma,ಪ್ರಶಾಂತ್ ಉಡುಪ,32,M,,false,false,principal
+ACC-FIR-BLR-2021-00125-000,FIR-BLR-2021-00125,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,true,true,principal
+ACC-FIR-BLR-2021-00126-000,FIR-BLR-2021-00126,,Basavaraj Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00026-000,FIR-MGL-2021-00026,CRM-0000239,Nagaraj Udupi,ಪ್ರಶಾಂತ್ ರಾವ್,56,M,,true,false,principal
+ACC-FIR-BLR-2021-00127-000,FIR-BLR-2021-00127,,Manjunath Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00128-000,FIR-BLR-2021-00128,CRM-0000088,Prashanth Sharma,ಪ್ರಶಾಂತ್ ಉಡುಪ,32,M,,true,true,principal
+ACC-FIR-BLR2-2021-00030-000,FIR-BLR2-2021-00030,CRM-0000187,Bharathi Sharma,ಸರಿತಾ ದೇಸಾಯಿ,43,F,,true,true,principal
+ACC-FIR-BLR2-2021-00031-000,FIR-BLR2-2021-00031,,Vikram Udupi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00029-000,FIR-HBL-2021-00029,CRM-0000156,Basavaraj Verma,ಗೌರವ್ ಕಾಮತ್,22,M,,true,false,principal
+ACC-FIR-HBL-2021-00030-000,FIR-HBL-2021-00030,CRM-0000234,Suma Rao,ಸಂಗೀತಾ ಪ್ರಭು,17,F,,false,false,principal
+ACC-FIR-KLP-2021-00035-000,FIR-KLP-2021-00035,,Seeta Lingayat,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MGL-2021-00027-000,FIR-MGL-2021-00027,CRM-0000198,Basavaraj Tantri,ಕಿರಣ್ ಗೌಡ,17,M,,true,false,principal
+ACC-FIR-MGL-2021-00027-001,FIR-MGL-2021-00027,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,false,true,accomplice
+ACC-FIR-MGL-2021-00027-002,FIR-MGL-2021-00027,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,false,accomplice
+ACC-FIR-MGL-2021-00027-003,FIR-MGL-2021-00027,CRM-0000152,Vinay Singh,ಅಜಯ್ ಕೃಷ್ಣಮೂರ್ತಿ,16,M,,false,false,accomplice
+ACC-FIR-MGL-2021-00027-004,FIR-MGL-2021-00027,CRM-0000177,Jyothi Shastri,ಅಂಜಲಿ ರೆಡ್ಡಿ,17,F,,true,true,accomplice
+ACC-FIR-BLR-2021-00129-000,FIR-BLR-2021-00129,,Sandeep Hegde,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00032-000,FIR-BLR2-2021-00032,CRM-0000189,Basavaraj Murthy,ಅಭಿಷೇಕ್ ತಂತ್ರಿ,26,M,,false,true,principal
+ACC-FIR-BLR2-2021-00032-001,FIR-BLR2-2021-00032,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-MYS-2021-00029-000,FIR-MYS-2021-00029,CRM-0000100,Naveen Vokkaliga,ಹರ್ಷ ನಂಬಿಯಾರ್,42,M,,true,false,principal
+ACC-FIR-MGL-2021-00028-000,FIR-MGL-2021-00028,CRM-0000028,Shivakumar Lingayat,ರಾಘವೇಂದ್ರ ವೊಕ್ಕಲಿಗ,44,M,,false,false,principal
+ACC-FIR-HBL-2021-00031-000,FIR-HBL-2021-00031,CRM-0000014,Kiran Reddy,ಗೌರವ್ ಅಯ್ಯರ್,21,M,,false,false,principal
+ACC-FIR-BLR-2021-00130-000,FIR-BLR-2021-00130,CRM-0000125,Ramesh Bhat,ಕಿರಣ್ ಅರಸ್,28,M,,false,true,principal
+ACC-FIR-HBL-2021-00032-000,FIR-HBL-2021-00032,CRM-0000092,Yogesh Gowda,ಅಭಿಷೇಕ್ ಕೃಷ್ಣಮೂರ್ತಿ,51,M,,false,false,principal
+ACC-FIR-UDR-2021-00021-000,FIR-UDR-2021-00021,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,false,false,principal
+ACC-FIR-KLR-2021-00011-000,FIR-KLR-2021-00011,CRM-0000196,Priya Kumar,ಸುಜಾತಾ ಅರಸ್,26,F,,false,false,principal
+ACC-FIR-RCR-2021-00005-000,FIR-RCR-2021-00005,CRM-0000098,Kiran Murthy,ನಾಗರಾಜ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-UDR-2021-00022-000,FIR-UDR-2021-00022,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,false,false,principal
+ACC-FIR-BLR-2021-00131-000,FIR-BLR-2021-00131,,Gaurav Verma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RCR-2021-00006-000,FIR-RCR-2021-00006,CRM-0000216,Sandeep Sharma,ದೀಪಕ್ ದೇಸಾಯಿ,21,M,,false,false,principal
+ACC-FIR-BLR-2021-00132-000,FIR-BLR-2021-00132,,Harsh Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-DVG-2021-00004-000,FIR-DVG-2021-00004,CRM-0000133,Naveen Hegde,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,62,M,,true,false,principal
+ACC-FIR-UDR-2021-00023-000,FIR-UDR-2021-00023,,Rohit Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00023-000,FIR-BLG-2021-00023,,Vinay Murthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00030-000,FIR-MYS-2021-00030,CRM-0000208,Anil Tantri,ಶಿವಕುಮಾರ್ ಹೆಗಡೆ,27,M,,false,false,principal
+ACC-FIR-KLP-2021-00036-000,FIR-KLP-2021-00036,CRM-0000030,Naveen Adiga,ರಾಘವೇಂದ್ರ ಮೂರ್ತಿ,45,M,,true,false,principal
+ACC-FIR-RMN-2021-00008-000,FIR-RMN-2021-00008,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,true,false,principal
+ACC-FIR-MGL-2021-00029-000,FIR-MGL-2021-00029,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,false,false,principal
+ACC-FIR-BLR-2021-00133-000,FIR-BLR-2021-00133,,Rekha Gowda,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00134-000,FIR-BLR-2021-00134,,Prakash Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00024-000,FIR-BLG-2021-00024,CRM-0000097,Akash Adiga,ತೇಜಸ್ ಉಡುಪ,72,M,,true,true,principal
+ACC-FIR-HBL-2021-00033-000,FIR-HBL-2021-00033,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,true,true,principal
+ACC-FIR-HBL-2021-00033-001,FIR-HBL-2021-00033,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-RBG-2021-00031-000,FIR-RBG-2021-00031,CRM-0000222,Ramesh Gowda,ಅರ್ಜುನ್ ಭಟ್,60,M,,false,false,principal
+ACC-FIR-MGL-2021-00030-000,FIR-MGL-2021-00030,CRM-0000160,Anita Bhat,ಜ್ಯೋತಿ ಕಾಮತ್,24,F,,true,false,principal
+ACC-FIR-BLR-2021-00135-000,FIR-BLR-2021-00135,CRM-0000231,Naveen Desai,ಅರ್ಜುನ್ ಲಿಂಗಾಯತ್,63,M,,true,false,principal
+ACC-FIR-BLR-2021-00136-000,FIR-BLR-2021-00136,CRM-0000021,Satish Sharma,ನಾಗರಾಜ್ ನಾಯ್ಕ್,42,M,,false,false,principal
+ACC-FIR-KLP-2021-00037-000,FIR-KLP-2021-00037,,Umesh Murthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00031-000,FIR-MYS-2021-00031,CRM-0000119,Mohan Shastri,ಯೋಗೇಶ್ ತಂತ್ರಿ,32,M,,false,true,principal
+ACC-FIR-KDG-2021-00001-000,FIR-KDG-2021-00001,CRM-0000017,Anita Nambiar,ಮಧು ಅರಸ್,34,F,,true,false,principal
+ACC-FIR-BLR2-2021-00033-000,FIR-BLR2-2021-00033,CRM-0000052,Mahesh Shastri,ಗೌರವ್ ವೊಕ್ಕಲಿಗ,43,M,,true,false,principal
+ACC-FIR-BLR2-2021-00033-001,FIR-BLR2-2021-00033,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-BLR2-2021-00033-002,FIR-BLR2-2021-00033,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,false,accomplice
+ACC-FIR-BLR2-2021-00033-003,FIR-BLR2-2021-00033,CRM-0000147,Shruthi Tantri,ಕವಿತಾ ನಾಯ್ಕ್,71,F,,false,false,accomplice
+ACC-FIR-KLP-2021-00038-000,FIR-KLP-2021-00038,,Rajesh Nambiar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00137-000,FIR-BLR-2021-00137,CRM-0000162,Satish Aras,ಅರ್ಜುನ್ ವೊಕ್ಕಲಿಗ,42,M,,true,true,principal
+ACC-FIR-HBL-2021-00034-000,FIR-HBL-2021-00034,CRM-0000241,Srikanth Shetty,ಸಂದೀಪ್ ಕುಮಾರ್,20,M,,false,false,principal
+ACC-FIR-BLR-2021-00138-000,FIR-BLR-2021-00138,CRM-0000127,Lakshmi Singh,ದೀಪಾ ಲಿಂಗಾಯತ್,25,F,,true,false,principal
+ACC-FIR-RCR-2021-00007-000,FIR-RCR-2021-00007,,Prakash Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00139-000,FIR-BLR-2021-00139,CRM-0000031,Ajay Bhat,ರೋಹಿತ್ ಅಡಿಗ,31,M,,false,false,principal
+ACC-FIR-RBG-2021-00032-000,FIR-RBG-2021-00032,,Naveen Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00035-000,FIR-HBL-2021-00035,CRM-0000156,Basavaraj Verma,ಗೌರವ್ ಕಾಮತ್,22,M,,false,false,principal
+ACC-FIR-MDY-2021-00006-000,FIR-MDY-2021-00006,CRM-0000155,Naveen Singh,ಅನಿಲ್ ಪ್ರಭು,59,M,,false,false,principal
+ACC-FIR-HBL-2021-00036-000,FIR-HBL-2021-00036,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,false,false,principal
+ACC-FIR-HBL-2021-00036-001,FIR-HBL-2021-00036,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-HBL-2021-00037-000,FIR-HBL-2021-00037,CRM-0000012,Naveen Nambiar,ಸತೀಶ್ ಹೆಗಡೆ,35,M,,false,false,principal
+ACC-FIR-BLR-2021-00140-000,FIR-BLR-2021-00140,,Kiran Hegde,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BDR-2021-00008-000,FIR-BDR-2021-00008,,Deepak Hegde,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-SHV-2021-00008-000,FIR-SHV-2021-00008,CRM-0000098,Kiran Murthy,ನಾಗರಾಜ್ ಲಿಂಗಾಯತ್,50,M,,true,false,principal
+ACC-FIR-KLP-2021-00039-000,FIR-KLP-2021-00039,CRM-0000228,Gaurav Sharma,ಬಸವರಾಜ್ ಹೆಗಡೆ,71,M,,true,false,principal
+ACC-FIR-KLP-2021-00039-001,FIR-KLP-2021-00039,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,true,accomplice
+ACC-FIR-KLP-2021-00039-002,FIR-KLP-2021-00039,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,true,false,accomplice
+ACC-FIR-KLP-2021-00039-003,FIR-KLP-2021-00039,CRM-0000242,Seeta Desai,ಲಕ್ಷ್ಮಿ ನಾಯ್ಕ್,74,F,,false,false,accomplice
+ACC-FIR-BLR2-2021-00034-000,FIR-BLR2-2021-00034,CRM-0000070,Jyothi Gowda,ಸಂಗೀತಾ ಲಿಂಗಾಯತ್,31,F,,true,true,principal
+ACC-FIR-RBG-2021-00033-000,FIR-RBG-2021-00033,,Yogesh Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00141-000,FIR-BLR-2021-00141,CRM-0000025,Satish Udupi,ರಾಜೇಶ್ ಸ್ವಾಮಿ,70,M,,false,false,principal
+ACC-FIR-BLR2-2021-00035-000,FIR-BLR2-2021-00035,CRM-0000120,Shantha Swamy,ಜ್ಯೋತಿ ಭಟ್,49,F,,false,false,principal
+ACC-FIR-CHT-2021-00003-000,FIR-CHT-2021-00003,,Rekha Gowda,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00142-000,FIR-BLR-2021-00142,,Arjun Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00036-000,FIR-BLR2-2021-00036,CRM-0000148,Ramesh Hegde,ಅಜಯ್ ಅಡಿಗ,40,M,,false,false,principal
+ACC-FIR-BLR-2021-00143-000,FIR-BLR-2021-00143,,Anil Singh,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00037-000,FIR-BLR2-2021-00037,,Ramesh Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00031-000,FIR-MGL-2021-00031,CRM-0000219,Vinay Shetty,ರಾಮೇಶ್ ರೆಡ್ಡಿ,66,M,,false,false,principal
+ACC-FIR-BDR-2021-00009-000,FIR-BDR-2021-00009,CRM-0000129,Prakash Lingayat,ಶಿವಕುಮಾರ್ ಶಾಸ್ತ್ರಿ,74,M,,true,false,principal
+ACC-FIR-BLR-2021-00144-000,FIR-BLR-2021-00144,CRM-0000086,Srikanth Patil,ವಿನಯ್ ತಂತ್ರಿ,38,M,,true,false,principal
+ACC-FIR-BLR2-2021-00038-000,FIR-BLR2-2021-00038,CRM-0000173,Geetha Adiga,ಕವಿತಾ ದೇಸಾಯಿ,34,F,,true,true,principal
+ACC-FIR-BLR2-2021-00038-001,FIR-BLR2-2021-00038,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLR-2021-00145-000,FIR-BLR-2021-00145,CRM-0000065,Tejas Joshi,ಅಜಯ್ ಕಾಮತ್,42,M,,true,false,principal
+ACC-FIR-TKR-2021-00005-000,FIR-TKR-2021-00005,CRM-0000178,Madhu Lingayat,ಶಾಂತಾ ಹೆಗಡೆ,18,F,,true,false,principal
+ACC-FIR-BLR-2021-00146-000,FIR-BLR-2021-00146,CRM-0000113,Mohan Reddy,ಸಂದೀಪ್ ದೇಸಾಯಿ,59,M,,false,false,principal
+ACC-FIR-SHV-2021-00009-000,FIR-SHV-2021-00009,CRM-0000055,Bharathi Nambiar,ಅನಿತಾ ಪಾಟೀಲ್,32,F,,true,true,principal
+ACC-FIR-BLR2-2021-00039-000,FIR-BLR2-2021-00039,CRM-0000037,Sujatha Tantri,ಗೀತಾ ಕುಮಾರ್,34,F,,false,false,principal
+ACC-FIR-BLR2-2021-00039-001,FIR-BLR2-2021-00039,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLR2-2021-00039-002,FIR-BLR2-2021-00039,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,false,true,accomplice
+ACC-FIR-BLR-2021-00147-000,FIR-BLR-2021-00147,,Shivakumar Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00148-000,FIR-BLR-2021-00148,CRM-0000141,Sangeetha Verma,ಶೃತಿ ಅರಸ್,41,F,,true,false,principal
+ACC-FIR-BLR2-2021-00040-000,FIR-BLR2-2021-00040,,Nirmala Verma,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLP-2021-00040-000,FIR-KLP-2021-00040,CRM-0000048,Sneha Prabhu,ಅಮಲಾ ಉಡುಪ,66,F,,true,false,principal
+ACC-FIR-BLR-2021-00149-000,FIR-BLR-2021-00149,,Geetha Pillai,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00150-000,FIR-BLR-2021-00150,CRM-0000042,Ravi Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,27,M,,true,false,principal
+ACC-FIR-MYS-2021-00032-000,FIR-MYS-2021-00032,CRM-0000033,Ganesh Murthy,ಮಂಜುನಾಥ್ ವೊಕ್ಕಲಿಗ,25,M,,false,false,principal
+ACC-FIR-BLR-2021-00151-000,FIR-BLR-2021-00151,CRM-0000050,Rohit Bhat,ರೋಹಿತ್ ಹೆಗಡೆ,55,M,,true,false,principal
+ACC-FIR-BLR-2021-00152-000,FIR-BLR-2021-00152,CRM-0000149,Rekha Adiga,ಸುಮ಼ಾ ಸ್ವಾಮಿ,57,F,,false,false,principal
+ACC-FIR-BLR-2021-00153-000,FIR-BLR-2021-00153,CRM-0000016,Vinay Vokkaliga,ರಾಜೇಶ್ ರೆಡ್ಡಿ,64,M,,true,true,principal
+ACC-FIR-BLR-2021-00153-001,FIR-BLR-2021-00153,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-CKM-2021-00007-000,FIR-CKM-2021-00007,CRM-0000171,Vikram Vokkaliga,ಗೌರವ್ ನಾಯ್ಕ್,30,M,,false,false,principal
+ACC-FIR-BLG-2021-00025-000,FIR-BLG-2021-00025,,Rajesh Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00034-000,FIR-RBG-2021-00034,CRM-0000062,Harsh Murthy,ಉಮೇಶ್ ಉಡುಪ,67,M,,true,true,principal
+ACC-FIR-BDR-2021-00010-000,FIR-BDR-2021-00010,,Yogesh Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-SHV-2021-00010-000,FIR-SHV-2021-00010,CRM-0000055,Bharathi Nambiar,ಅನಿತಾ ಪಾಟೀಲ್,32,F,,true,true,principal
+ACC-FIR-BLR-2021-00154-000,FIR-BLR-2021-00154,,Prashanth Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CHT-2021-00004-000,FIR-CHT-2021-00004,,Manjunath Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00026-000,FIR-BLG-2021-00026,CRM-0000199,Anil Prabhu,ಮಂಜುನಾಥ್ ಅರಸ್,22,M,,true,false,principal
+ACC-FIR-MGL-2021-00032-000,FIR-MGL-2021-00032,CRM-0000145,Ganesh Verma,ಪ್ರಶಾಂತ್ ಅಡಿಗ,29,M,,true,false,principal
+ACC-FIR-BLR2-2021-00041-000,FIR-BLR2-2021-00041,CRM-0000058,Gaurav Naik,ತೇಜಸ್ ಮೂರ್ತಿ,38,M,,false,false,principal
+ACC-FIR-BLG-2021-00027-000,FIR-BLG-2021-00027,CRM-0000180,Raghavendra Joshi,ವಿಕ್ರಮ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-BLR-2021-00155-000,FIR-BLR-2021-00155,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,false,false,principal
+ACC-FIR-RBG-2021-00035-000,FIR-RBG-2021-00035,,Mahesh Krishnamurthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CHB-2021-00007-000,FIR-CHB-2021-00007,,Akash Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-UDR-2021-00024-000,FIR-UDR-2021-00024,CRM-0000032,Vidya Sharma,ಗೀತಾ ಲಿಂಗಾಯತ್,40,F,,true,false,principal
+ACC-FIR-HBL-2021-00038-000,FIR-HBL-2021-00038,CRM-0000022,Kavitha Naik,ಸೀತಾ ಕಾಮತ್,17,F,,false,false,principal
+ACC-FIR-RBG-2021-00036-000,FIR-RBG-2021-00036,CRM-0000200,Jyothi Patil,ಮೀರಾ ಶಾಸ್ತ್ರಿ,20,F,,true,false,principal
+ACC-FIR-HBL-2021-00039-000,FIR-HBL-2021-00039,CRM-0000094,Jyothi Prabhu,ಸ್ವಾತಿ ಕಾಮತ್,39,F,,true,false,principal
+ACC-FIR-CHB-2021-00008-000,FIR-CHB-2021-00008,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,false,true,principal
+ACC-FIR-BLR-2021-00156-000,FIR-BLR-2021-00156,,Seeta Patil,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00042-000,FIR-BLR2-2021-00042,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,false,false,principal
+ACC-FIR-MGL-2021-00033-000,FIR-MGL-2021-00033,CRM-0000088,Prashanth Sharma,ಪ್ರಶಾಂತ್ ಉಡುಪ,32,M,,false,false,principal
+ACC-FIR-RBG-2021-00037-000,FIR-RBG-2021-00037,CRM-0000146,Nagaraj Nambiar,ಯೋಗೇಶ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-RBG-2021-00038-000,FIR-RBG-2021-00038,CRM-0000245,Anita Desai,ಸ್ವಾತಿ ಪಾಟೀಲ್,47,F,,false,false,principal
+ACC-FIR-UDR-2021-00025-000,FIR-UDR-2021-00025,,Kavitha Thakur,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLP-2021-00041-000,FIR-KLP-2021-00041,CRM-0000016,Vinay Vokkaliga,ರಾಜೇಶ್ ರೆಡ್ಡಿ,64,M,,true,false,principal
+ACC-FIR-KLP-2021-00041-001,FIR-KLP-2021-00041,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,true,accomplice
+ACC-FIR-UDR-2021-00026-000,FIR-UDR-2021-00026,CRM-0000045,Shruthi Thakur,ಮೀರಾ ರೆಡ್ಡಿ,39,F,,false,false,principal
+ACC-FIR-BLR-2021-00157-000,FIR-BLR-2021-00157,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,true,true,principal
+ACC-FIR-MYS-2021-00033-000,FIR-MYS-2021-00033,CRM-0000195,Raghavendra Reddy,ಶ್ರೀಕಾಂತ್ ನಂಬಿಯಾರ್,68,M,,false,true,principal
+ACC-FIR-BLR-2021-00158-000,FIR-BLR-2021-00158,,Lakshmi Nambiar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00040-000,FIR-HBL-2021-00040,,Suresh Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RCR-2021-00008-000,FIR-RCR-2021-00008,,Priya Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-UDR-2021-00027-000,FIR-UDR-2021-00027,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,false,true,principal
+ACC-FIR-UDR-2021-00028-000,FIR-UDR-2021-00028,,Harsh Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00041-000,FIR-HBL-2021-00041,CRM-0000241,Srikanth Shetty,ಸಂದೀಪ್ ಕುಮಾರ್,20,M,,true,false,principal
+ACC-FIR-BLR-2021-00159-000,FIR-BLR-2021-00159,,Suresh Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00028-000,FIR-BLG-2021-00028,CRM-0000180,Raghavendra Joshi,ವಿಕ್ರಮ್ ಜೋಶಿ,51,M,,false,false,principal
+ACC-FIR-BLR-2021-00160-000,FIR-BLR-2021-00160,CRM-0000216,Sandeep Sharma,ದೀಪಕ್ ದೇಸಾಯಿ,21,M,,false,true,principal
+ACC-FIR-VJP-2021-00002-000,FIR-VJP-2021-00002,,Anita Rao,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00042-000,FIR-HBL-2021-00042,CRM-0000122,Swathi Verma,ಕವಿತಾ ಕುಮಾರ್,48,F,,true,false,principal
+ACC-FIR-BLR-2021-00161-000,FIR-BLR-2021-00161,CRM-0000195,Raghavendra Reddy,ಶ್ರೀಕಾಂತ್ ನಂಬಿಯಾರ್,68,M,,false,true,principal
+ACC-FIR-KLR-2021-00012-000,FIR-KLR-2021-00012,,Ravi Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-DVG-2021-00005-000,FIR-DVG-2021-00005,CRM-0000013,Sujatha Murthy,ಮೀರಾ ಶೆಟ್ಟಿ,68,F,,true,false,principal
+ACC-FIR-RCR-2021-00009-000,FIR-RCR-2021-00009,CRM-0000098,Kiran Murthy,ನಾಗರಾಜ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-BLR2-2021-00043-000,FIR-BLR2-2021-00043,,Kiran Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00029-000,FIR-BLG-2021-00029,CRM-0000075,Anjali Vokkaliga,ಜ್ಯೋತಿ ಜೋಶಿ,41,F,,true,false,principal
+ACC-FIR-BLR-2021-00162-000,FIR-BLR-2021-00162,CRM-0000043,Ganesh Udupi,ರಾಘವೇಂದ್ರ ಕಾಮತ್,48,M,,false,false,principal
+ACC-FIR-KLP-2021-00042-000,FIR-KLP-2021-00042,CRM-0000233,Nitya Pillai,ಶೃತಿ ಕುಮಾರ್,51,F,,true,false,principal
+ACC-FIR-MYS-2021-00034-000,FIR-MYS-2021-00034,,Lakshmi Reddy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MGL-2021-00034-000,FIR-MGL-2021-00034,,Sandeep Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00163-000,FIR-BLR-2021-00163,CRM-0000108,Jyothi Udupi,ಶೃತಿ ಕಾಮತ್,49,F,,false,false,principal
+ACC-FIR-MYS-2021-00035-000,FIR-MYS-2021-00035,CRM-0000083,Vikram Raju,ಅನಿಲ್ ಅರಸ್,64,M,,true,false,principal
+ACC-FIR-BLR-2021-00164-000,FIR-BLR-2021-00164,CRM-0000196,Priya Kumar,ಸುಜಾತಾ ಅರಸ್,26,F,,false,false,principal
+ACC-FIR-BLR-2021-00165-000,FIR-BLR-2021-00165,CRM-0000046,Prashanth Rao,ಗೌರವ್ ಶಾಸ್ತ್ರಿ,38,M,,true,true,principal
+ACC-FIR-CKM-2021-00008-000,FIR-CKM-2021-00008,CRM-0000107,Suma Pillai,ಕವಿತಾ ಪಾಟೀಲ್,46,F,,true,false,principal
+ACC-FIR-CKM-2021-00008-001,FIR-CKM-2021-00008,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-RBG-2021-00039-000,FIR-RBG-2021-00039,CRM-0000214,Sandeep Lingayat,ಹರ್ಷ ಕೃಷ್ಣಮೂರ್ತಿ,66,M,,true,false,principal
+ACC-FIR-VJP-2021-00003-000,FIR-VJP-2021-00003,CRM-0000244,Bharathi Krishnamurthy,ಕವಿತಾ ರಾವ್,49,F,,false,false,principal
+ACC-FIR-BLR-2021-00166-000,FIR-BLR-2021-00166,CRM-0000208,Anil Tantri,ಶಿವಕುಮಾರ್ ಹೆಗಡೆ,27,M,,false,false,principal
+ACC-FIR-UDR-2021-00029-000,FIR-UDR-2021-00029,CRM-0000212,Kavitha Hegde,ಸ್ವಾತಿ ನಾಯ್ಕ್,40,F,,true,true,principal
+ACC-FIR-MGL-2021-00035-000,FIR-MGL-2021-00035,CRM-0000145,Ganesh Verma,ಪ್ರಶಾಂತ್ ಅಡಿಗ,29,M,,true,true,principal
+ACC-FIR-BLR-2021-00167-000,FIR-BLR-2021-00167,,Tejas Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00168-000,FIR-BLR-2021-00168,,Ravi Aras,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00036-000,FIR-MYS-2021-00036,,Nitya Aras,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00043-000,FIR-HBL-2021-00043,,Rekha Krishnamurthy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-RMN-2021-00009-000,FIR-RMN-2021-00009,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,false,false,principal
+ACC-FIR-BLR2-2021-00044-000,FIR-BLR2-2021-00044,CRM-0000135,Kavitha Desai,ಅಮಲಾ ಅರಸ್,34,F,,true,false,principal
+ACC-FIR-BDR-2021-00011-000,FIR-BDR-2021-00011,CRM-0000227,Umesh Kamath,ಸಂದೀಪ್ ಉಡುಪ,37,M,,true,false,principal
+ACC-FIR-MYS-2021-00037-000,FIR-MYS-2021-00037,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,false,principal
+ACC-FIR-MYS-2021-00037-001,FIR-MYS-2021-00037,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,true,accomplice
+ACC-FIR-MYS-2021-00037-002,FIR-MYS-2021-00037,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,true,false,accomplice
+ACC-FIR-BLR-2021-00169-000,FIR-BLR-2021-00169,CRM-0000142,Manjunath Shetty,ಪ್ರಶಾಂತ್ ನಂಬಿಯಾರ್,19,M,,false,false,principal
+ACC-FIR-MGL-2021-00036-000,FIR-MGL-2021-00036,CRM-0000152,Vinay Singh,ಅಜಯ್ ಕೃಷ್ಣಮೂರ್ತಿ,16,M,,false,false,principal
+ACC-FIR-MGL-2021-00036-001,FIR-MGL-2021-00036,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,false,false,accomplice
+ACC-FIR-MGL-2021-00036-002,FIR-MGL-2021-00036,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,false,accomplice
+ACC-FIR-BLR-2021-00170-000,FIR-BLR-2021-00170,,Suresh Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RMN-2021-00010-000,FIR-RMN-2021-00010,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,false,false,principal
+ACC-FIR-BLR-2021-00171-000,FIR-BLR-2021-00171,CRM-0000096,Sandeep Aras,ಶಿವಕುಮಾರ್ ಪ್ರಭು,25,M,,true,false,principal
+ACC-FIR-BLR-2021-00172-000,FIR-BLR-2021-00172,CRM-0000091,Prakash Kumar,ವಿಕ್ರಮ್ ಉಡುಪ,48,M,,false,true,principal
+ACC-FIR-BLR2-2021-00045-000,FIR-BLR2-2021-00045,,Suresh Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00046-000,FIR-BLR2-2021-00046,CRM-0000189,Basavaraj Murthy,ಅಭಿಷೇಕ್ ತಂತ್ರಿ,26,M,,true,false,principal
+ACC-FIR-BLR2-2021-00046-001,FIR-BLR2-2021-00046,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,true,accomplice
+ACC-FIR-BLR2-2021-00046-002,FIR-BLR2-2021-00046,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,false,accomplice
+ACC-FIR-BDR-2021-00012-000,FIR-BDR-2021-00012,CRM-0000227,Umesh Kamath,ಸಂದೀಪ್ ಉಡುಪ,37,M,,true,false,principal
+ACC-FIR-UDR-2021-00030-000,FIR-UDR-2021-00030,CRM-0000220,Ajay Prabhu,ಬಸವರಾಜ್ ಲಿಂಗಾಯತ್,45,M,,true,true,principal
+ACC-FIR-RCR-2021-00010-000,FIR-RCR-2021-00010,CRM-0000098,Kiran Murthy,ನಾಗರಾಜ್ ಲಿಂಗಾಯತ್,50,M,,false,false,principal
+ACC-FIR-BLR-2021-00173-000,FIR-BLR-2021-00173,,Pooja Shastri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLR-2021-00013-000,FIR-KLR-2021-00013,CRM-0000169,Vinay Rao,ನಾಗರಾಜ್ ಭಟ್,42,M,,false,false,principal
+ACC-FIR-BDR-2021-00013-000,FIR-BDR-2021-00013,CRM-0000244,Bharathi Krishnamurthy,ಕವಿತಾ ರಾವ್,49,F,,true,false,principal
+ACC-FIR-MYS-2021-00038-000,FIR-MYS-2021-00038,CRM-0000225,Mahesh Gowda,ನವೀನ್ ರಾವ್,24,M,,true,false,principal
+ACC-FIR-BLG-2021-00030-000,FIR-BLG-2021-00030,CRM-0000188,Pooja Joshi,ಪೂಜಾ ಅಡಿಗ,36,F,,false,false,principal
+ACC-FIR-BLG-2021-00030-001,FIR-BLG-2021-00030,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-BLG-2021-00030-002,FIR-BLG-2021-00030,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,true,false,accomplice
+ACC-FIR-BLG-2021-00030-003,FIR-BLG-2021-00030,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,false,accomplice
+ACC-FIR-BLG-2021-00030-004,FIR-BLG-2021-00030,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,true,false,accomplice
+ACC-FIR-SHV-2021-00011-000,FIR-SHV-2021-00011,CRM-0000218,Priya Pillai,ಜ್ಯೋತಿ ಅಯ್ಯರ್,52,F,,false,false,principal
+ACC-FIR-VKT-2021-00004-000,FIR-VKT-2021-00004,CRM-0000060,Rohit Lingayat,ಶ್ರೀಕಾಂತ್ ಕುಮಾರ್,61,M,,true,true,principal
+ACC-FIR-RBG-2021-00040-000,FIR-RBG-2021-00040,,Nitya Bhat,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-RBG-2021-00041-000,FIR-RBG-2021-00041,,Anjali Vokkaliga,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00174-000,FIR-BLR-2021-00174,CRM-0000236,Shivakumar Tantri,ರಾಘವೇಂದ್ರ ಅರಸ್,29,M,,true,false,principal
+ACC-FIR-BLRR-2021-00006-000,FIR-BLRR-2021-00006,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,principal
+ACC-FIR-BLR-2021-00175-000,FIR-BLR-2021-00175,,Anil Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00037-000,FIR-MGL-2021-00037,CRM-0000088,Prashanth Sharma,ಪ್ರಶಾಂತ್ ಉಡುಪ,32,M,,false,false,principal
+ACC-FIR-MGL-2021-00038-000,FIR-MGL-2021-00038,,Deepak Adiga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00176-000,FIR-BLR-2021-00176,CRM-0000086,Srikanth Patil,ವಿನಯ್ ತಂತ್ರಿ,38,M,,false,false,principal
+ACC-FIR-RBG-2021-00042-000,FIR-RBG-2021-00042,CRM-0000185,Swathi Desai,ಸ್ವಾತಿ ಹೆಗಡೆ,23,F,,false,true,principal
+ACC-FIR-BLR2-2021-00047-000,FIR-BLR2-2021-00047,CRM-0000219,Vinay Shetty,ರಾಮೇಶ್ ರೆಡ್ಡಿ,66,M,,true,false,principal
+ACC-FIR-RBG-2021-00043-000,FIR-RBG-2021-00043,CRM-0000124,Tejas Desai,ರೋಹಿತ್ ಜೋಶಿ,42,M,,false,true,principal
+ACC-FIR-RBG-2021-00044-000,FIR-RBG-2021-00044,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,true,false,principal
+ACC-FIR-KLP-2021-00043-000,FIR-KLP-2021-00043,CRM-0000217,Madhu Adiga,ಅನಿತಾ ಪಾಟೀಲ್,37,F,,true,false,principal
+ACC-FIR-BLG-2021-00031-000,FIR-BLG-2021-00031,CRM-0000107,Suma Pillai,ಕವಿತಾ ಪಾಟೀಲ್,46,F,,true,true,principal
+ACC-FIR-BLG-2021-00031-001,FIR-BLG-2021-00031,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-BLR-2021-00177-000,FIR-BLR-2021-00177,CRM-0000047,Sujatha Gowda,ನಿತ್ಯಾ ಹೆಗಡೆ,42,F,,true,true,principal
+ACC-FIR-BLR-2021-00178-000,FIR-BLR-2021-00178,CRM-0000203,Umesh Aras,ಅನಿಲ್ ವೊಕ್ಕಲಿಗ,25,M,,false,false,principal
+ACC-FIR-UDR-2021-00031-000,FIR-UDR-2021-00031,,Harsh Nambiar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00179-000,FIR-BLR-2021-00179,CRM-0000127,Lakshmi Singh,ದೀಪಾ ಲಿಂಗಾಯತ್,25,F,,true,false,principal
+ACC-FIR-BLR-2021-00180-000,FIR-BLR-2021-00180,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,true,true,principal
+ACC-FIR-BLR-2021-00181-000,FIR-BLR-2021-00181,CRM-0000050,Rohit Bhat,ರೋಹಿತ್ ಹೆಗಡೆ,55,M,,false,false,principal
+ACC-FIR-BLR-2021-00182-000,FIR-BLR-2021-00182,CRM-0000105,Amala Shetty,ವಿದ್ಯಾ ಹೆಗಡೆ,23,F,,false,true,principal
+ACC-FIR-BDR-2021-00014-000,FIR-BDR-2021-00014,,Nirmala Hegde,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00183-000,FIR-BLR-2021-00183,,Ajay Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00048-000,FIR-BLR2-2021-00048,CRM-0000135,Kavitha Desai,ಅಮಲಾ ಅರಸ್,34,F,,true,true,principal
+ACC-FIR-DVG-2021-00006-000,FIR-DVG-2021-00006,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,true,false,principal
+ACC-FIR-DVG-2021-00006-001,FIR-DVG-2021-00006,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-MGL-2021-00039-000,FIR-MGL-2021-00039,,Gaurav Rao,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-TKR-2021-00006-000,FIR-TKR-2021-00006,CRM-0000178,Madhu Lingayat,ಶಾಂತಾ ಹೆಗಡೆ,18,F,,true,false,principal
+ACC-FIR-BLR-2021-00184-000,FIR-BLR-2021-00184,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,true,false,principal
+ACC-FIR-HBL-2021-00044-000,FIR-HBL-2021-00044,,Arjun Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00040-000,FIR-MGL-2021-00040,CRM-0000007,Deepak Shastri,ಮೋಹನ್ ಮೂರ್ತಿ,35,M,,true,true,principal
+ACC-FIR-BLG-2021-00032-000,FIR-BLG-2021-00032,,Rekha Prabhu,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00049-000,FIR-BLR2-2021-00049,CRM-0000010,Vidya Raju,ಸುಮ಼ಾ ವೊಕ್ಕಲಿಗ,50,F,,false,false,principal
+ACC-FIR-UDR-2021-00032-000,FIR-UDR-2021-00032,CRM-0000022,Kavitha Naik,ಸೀತಾ ಕಾಮತ್,17,F,,false,false,principal
+ACC-FIR-HBL-2021-00045-000,FIR-HBL-2021-00045,CRM-0000241,Srikanth Shetty,ಸಂದೀಪ್ ಕುಮಾರ್,20,M,,false,false,principal
+ACC-FIR-BLR-2021-00185-000,FIR-BLR-2021-00185,CRM-0000203,Umesh Aras,ಅನಿಲ್ ವೊಕ್ಕಲಿಗ,25,M,,true,false,principal
+ACC-FIR-UDR-2021-00033-000,FIR-UDR-2021-00033,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,true,false,principal
+ACC-FIR-MGL-2021-00041-000,FIR-MGL-2021-00041,CRM-0000090,Sangeetha Udupi,ಸುಮ಼ಾ ಅಯ್ಯರ್,41,F,,false,false,principal
+ACC-FIR-BLR-2021-00186-000,FIR-BLR-2021-00186,CRM-0000109,Sangeetha Thakur,ಅನಿತಾ ಶೆಟ್ಟಿ,53,F,,false,false,principal
+ACC-FIR-BLR-2021-00187-000,FIR-BLR-2021-00187,,Jyothi Rao,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00188-000,FIR-BLR-2021-00188,CRM-0000106,Jyothi Sharma,ರಾಧಾ ನಾಯ್ಕ್,42,F,,true,false,principal
+ACC-FIR-BLR-2021-00188-001,FIR-BLR-2021-00188,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,true,accomplice
+ACC-FIR-UDR-2021-00034-000,FIR-UDR-2021-00034,CRM-0000212,Kavitha Hegde,ಸ್ವಾತಿ ನಾಯ್ಕ್,40,F,,false,false,principal
+ACC-FIR-BLG-2021-00033-000,FIR-BLG-2021-00033,,Deepak Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-TKR-2021-00007-000,FIR-TKR-2021-00007,CRM-0000178,Madhu Lingayat,ಶಾಂತಾ ಹೆಗಡೆ,18,F,,true,false,principal
+ACC-FIR-RBG-2021-00045-000,FIR-RBG-2021-00045,,Anil Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00046-000,FIR-HBL-2021-00046,CRM-0000039,Gaurav Rao,ಸತೀಶ್ ಲಿಂಗಾಯತ್,74,M,,false,true,principal
+ACC-FIR-CTV-2021-00005-000,FIR-CTV-2021-00005,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,true,true,principal
+ACC-FIR-HBL-2021-00047-000,FIR-HBL-2021-00047,CRM-0000044,Amala Naik,ಕವಿತಾ ಪ್ರಭು,52,F,,false,false,principal
+ACC-FIR-BLR-2021-00189-000,FIR-BLR-2021-00189,CRM-0000001,Radha Tantri,ಸ್ವಾತಿ ಉಡುಪ,44,F,,false,false,principal
+ACC-FIR-VKT-2021-00005-000,FIR-VKT-2021-00005,CRM-0000104,Basavaraj Rao,ಅಭಿಷೇಕ್ ನಾಯ್ಕ್,60,M,,false,false,principal
+ACC-FIR-CHT-2021-00005-000,FIR-CHT-2021-00005,CRM-0000073,Tejas Kamath,ಉಮೇಶ್ ಪಾಟೀಲ್,33,M,,false,false,principal
+ACC-FIR-MDY-2021-00007-000,FIR-MDY-2021-00007,CRM-0000115,Lakshmi Shetty,ಅಂಜಲಿ ಜೋಶಿ,29,F,,false,false,principal
+ACC-FIR-BLR-2021-00190-000,FIR-BLR-2021-00190,CRM-0000225,Mahesh Gowda,ನವೀನ್ ರಾವ್,24,M,,false,false,principal
+ACC-FIR-RBG-2021-00046-000,FIR-RBG-2021-00046,,Prashanth Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00039-000,FIR-MYS-2021-00039,CRM-0000075,Anjali Vokkaliga,ಜ್ಯೋತಿ ಜೋಶಿ,41,F,,false,false,principal
+ACC-FIR-RMN-2021-00011-000,FIR-RMN-2021-00011,CRM-0000206,Manjunath Gowda,ಸಂದೀಪ್ ಲಿಂಗಾಯತ್,26,M,,false,false,principal
+ACC-FIR-BLG-2021-00034-000,FIR-BLG-2021-00034,CRM-0000043,Ganesh Udupi,ರಾಘವೇಂದ್ರ ಕಾಮತ್,48,M,,false,false,principal
+ACC-FIR-KLP-2021-00044-000,FIR-KLP-2021-00044,CRM-0000233,Nitya Pillai,ಶೃತಿ ಕುಮಾರ್,51,F,,true,false,principal
+ACC-FIR-BLR2-2021-00050-000,FIR-BLR2-2021-00050,CRM-0000244,Bharathi Krishnamurthy,ಕವಿತಾ ರಾವ್,49,F,,true,false,principal
+ACC-FIR-MYS-2021-00040-000,FIR-MYS-2021-00040,CRM-0000216,Sandeep Sharma,ದೀಪಕ್ ದೇಸಾಯಿ,21,M,,true,true,principal
+ACC-FIR-HBL-2021-00048-000,FIR-HBL-2021-00048,CRM-0000169,Vinay Rao,ನಾಗರಾಜ್ ಭಟ್,42,M,,true,true,principal
+ACC-FIR-BLR-2021-00191-000,FIR-BLR-2021-00191,CRM-0000047,Sujatha Gowda,ನಿತ್ಯಾ ಹೆಗಡೆ,42,F,,true,false,principal
+ACC-FIR-KLP-2021-00045-000,FIR-KLP-2021-00045,CRM-0000067,Suresh Shastri,ಪ್ರಕಾಶ್ ಹೆಗಡೆ,74,M,,true,false,principal
+ACC-FIR-MGL-2021-00042-000,FIR-MGL-2021-00042,,Deepak Krishnamurthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00049-000,FIR-HBL-2021-00049,CRM-0000097,Akash Adiga,ತೇಜಸ್ ಉಡುಪ,72,M,,false,false,principal
+ACC-FIR-HBL-2021-00050-000,FIR-HBL-2021-00050,,Satish Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HSN-2021-00003-000,FIR-HSN-2021-00003,CRM-0000245,Anita Desai,ಸ್ವಾತಿ ಪಾಟೀಲ್,47,F,,true,false,principal
+ACC-FIR-BLR-2021-00192-000,FIR-BLR-2021-00192,,Mohan Aras,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00043-000,FIR-MGL-2021-00043,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,false,false,principal
+ACC-FIR-VKT-2021-00006-000,FIR-VKT-2021-00006,CRM-0000230,Amala Shastri,ಸೀತಾ ಗೌಡ,43,F,,false,true,principal
+ACC-FIR-BLR-2021-00193-000,FIR-BLR-2021-00193,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,true,false,principal
+ACC-FIR-TKR-2021-00008-000,FIR-TKR-2021-00008,CRM-0000028,Shivakumar Lingayat,ರಾಘವೇಂದ್ರ ವೊಕ್ಕಲಿಗ,44,M,,false,false,principal
+ACC-FIR-SHV-2021-00012-000,FIR-SHV-2021-00012,CRM-0000055,Bharathi Nambiar,ಅನಿತಾ ಪಾಟೀಲ್,32,F,,true,false,principal
+ACC-FIR-UDR-2021-00035-000,FIR-UDR-2021-00035,,Rekha Krishnamurthy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2021-00051-000,FIR-HBL-2021-00051,CRM-0000039,Gaurav Rao,ಸತೀಶ್ ಲಿಂಗಾಯತ್,74,M,,true,false,principal
+ACC-FIR-RBG-2021-00047-000,FIR-RBG-2021-00047,CRM-0000222,Ramesh Gowda,ಅರ್ಜುನ್ ಭಟ್,60,M,,true,false,principal
+ACC-FIR-RBG-2021-00048-000,FIR-RBG-2021-00048,CRM-0000016,Vinay Vokkaliga,ರಾಜೇಶ್ ರೆಡ್ಡಿ,64,M,,false,false,principal
+ACC-FIR-RBG-2021-00048-001,FIR-RBG-2021-00048,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,true,accomplice
+ACC-FIR-BLG-2021-00035-000,FIR-BLG-2021-00035,,Naveen Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00046-000,FIR-KLP-2021-00046,CRM-0000016,Vinay Vokkaliga,ರಾಜೇಶ್ ರೆಡ್ಡಿ,64,M,,true,false,principal
+ACC-FIR-KLP-2021-00046-001,FIR-KLP-2021-00046,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-BLG-2021-00036-000,FIR-BLG-2021-00036,CRM-0000188,Pooja Joshi,ಪೂಜಾ ಅಡಿಗ,36,F,,false,false,principal
+ACC-FIR-BLR-2021-00194-000,FIR-BLR-2021-00194,CRM-0000014,Kiran Reddy,ಗೌರವ್ ಅಯ್ಯರ್,21,M,,true,false,principal
+ACC-FIR-UDR-2021-00036-000,FIR-UDR-2021-00036,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,true,false,principal
+ACC-FIR-KLP-2021-00047-000,FIR-KLP-2021-00047,CRM-0000016,Vinay Vokkaliga,ರಾಜೇಶ್ ರೆಡ್ಡಿ,64,M,,false,true,principal
+ACC-FIR-KLP-2021-00047-001,FIR-KLP-2021-00047,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-BLR-2021-00195-000,FIR-BLR-2021-00195,,Gaurav Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00048-000,FIR-KLP-2021-00048,CRM-0000030,Naveen Adiga,ರಾಘವೇಂದ್ರ ಮೂರ್ತಿ,45,M,,false,false,principal
+ACC-FIR-RCR-2021-00011-000,FIR-RCR-2021-00011,CRM-0000063,Amala Thakur,ನಿತ್ಯಾ ಮೂರ್ತಿ,38,F,,false,false,principal
+ACC-FIR-HBL-2021-00052-000,FIR-HBL-2021-00052,CRM-0000039,Gaurav Rao,ಸತೀಶ್ ಲಿಂಗಾಯತ್,74,M,,false,false,principal
+ACC-FIR-HBL-2021-00053-000,FIR-HBL-2021-00053,CRM-0000194,Radha Kamath,ಗೀತಾ ಕುಮಾರ್,45,F,,true,false,principal
+ACC-FIR-KLP-2021-00049-000,FIR-KLP-2021-00049,CRM-0000016,Vinay Vokkaliga,ರಾಜೇಶ್ ರೆಡ್ಡಿ,64,M,,false,false,principal
+ACC-FIR-KLP-2021-00049-001,FIR-KLP-2021-00049,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,true,accomplice
+ACC-FIR-HBL-2021-00054-000,FIR-HBL-2021-00054,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,true,false,principal
+ACC-FIR-HBL-2021-00054-001,FIR-HBL-2021-00054,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-MGL-2021-00044-000,FIR-MGL-2021-00044,CRM-0000154,Sneha Lingayat,ನಿರ್ಮಲಾ ನಾಯ್ಕ್,67,F,,false,false,principal
+ACC-FIR-BLR-2021-00196-000,FIR-BLR-2021-00196,,Ravi Reddy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RMN-2021-00012-000,FIR-RMN-2021-00012,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,false,principal
+ACC-FIR-BLR2-2021-00051-000,FIR-BLR2-2021-00051,CRM-0000243,Suma Joshi,ಪ್ರಿಯಾ ನಂಬಿಯಾರ್,42,F,,true,false,principal
+ACC-FIR-BLR-2021-00197-000,FIR-BLR-2021-00197,,Mohan Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00198-000,FIR-BLR-2021-00198,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,false,false,principal
+ACC-FIR-MGL-2021-00045-000,FIR-MGL-2021-00045,CRM-0000239,Nagaraj Udupi,ಪ್ರಶಾಂತ್ ರಾವ್,56,M,,true,false,principal
+ACC-FIR-UDR-2021-00037-000,FIR-UDR-2021-00037,,Deepak Bhat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00041-000,FIR-MYS-2021-00041,CRM-0000138,Lakshmi Kumar,ನಿತ್ಯಾ ಶಾಸ್ತ್ರಿ,68,F,,true,false,principal
+ACC-FIR-HBL-2021-00055-000,FIR-HBL-2021-00055,,Suma Bhat,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00052-000,FIR-BLR2-2021-00052,CRM-0000240,Basavaraj Bhat,ವಿಕ್ರಮ್ ಜೋಶಿ,71,M,,false,true,principal
+ACC-FIR-BLR2-2021-00052-001,FIR-BLR2-2021-00052,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-RCR-2021-00012-000,FIR-RCR-2021-00012,,Lakshmi Joshi,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-CHB-2021-00009-000,FIR-CHB-2021-00009,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,true,false,principal
+ACC-FIR-CHB-2021-00009-001,FIR-CHB-2021-00009,CRM-0000095,Gaurav Desai,ದೀಪಕ್ ಕಾಮತ್,19,M,,false,true,accomplice
+ACC-FIR-RBG-2021-00049-000,FIR-RBG-2021-00049,CRM-0000056,Jyothi Udupi,ರಾಧಾ ಮೂರ್ತಿ,22,F,,false,true,principal
+ACC-FIR-KDG-2021-00002-000,FIR-KDG-2021-00002,CRM-0000155,Naveen Singh,ಅನಿಲ್ ಪ್ರಭು,59,M,,false,false,principal
+ACC-FIR-CTV-2021-00006-000,FIR-CTV-2021-00006,,Nagaraj Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00056-000,FIR-HBL-2021-00056,CRM-0000014,Kiran Reddy,ಗೌರವ್ ಅಯ್ಯರ್,21,M,,false,true,principal
+ACC-FIR-BLR-2021-00199-000,FIR-BLR-2021-00199,,Shivakumar Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00200-000,FIR-BLR-2021-00200,CRM-0000141,Sangeetha Verma,ಶೃತಿ ಅರಸ್,41,F,,false,false,principal
+ACC-FIR-RBG-2021-00050-000,FIR-RBG-2021-00050,,Satish Joshi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00051-000,FIR-RBG-2021-00051,,Ravi Murthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00042-000,FIR-MYS-2021-00042,,Umesh Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CHT-2021-00006-000,FIR-CHT-2021-00006,,Akash Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00037-000,FIR-BLG-2021-00037,CRM-0000180,Raghavendra Joshi,ವಿಕ್ರಮ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-RBG-2021-00052-000,FIR-RBG-2021-00052,,Naveen Bhat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00038-000,FIR-BLG-2021-00038,CRM-0000188,Pooja Joshi,ಪೂಜಾ ಅಡಿಗ,36,F,,false,true,principal
+ACC-FIR-BLG-2021-00038-001,FIR-BLG-2021-00038,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-BLG-2021-00038-002,FIR-BLG-2021-00038,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-BLG-2021-00038-003,FIR-BLG-2021-00038,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,true,accomplice
+ACC-FIR-BLG-2021-00038-004,FIR-BLG-2021-00038,CRM-0000034,Pooja Udupi,ಶಾಂತಾ ಕೃಷ್ಣಮೂರ್ತಿ,30,F,,true,false,accomplice
+ACC-FIR-UDR-2021-00038-000,FIR-UDR-2021-00038,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,false,false,principal
+ACC-FIR-BLR-2021-00201-000,FIR-BLR-2021-00201,,Srikanth Rao,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00202-000,FIR-BLR-2021-00202,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,true,true,principal
+ACC-FIR-BLR-2021-00202-001,FIR-BLR-2021-00202,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-BLG-2021-00039-000,FIR-BLG-2021-00039,CRM-0000162,Satish Aras,ಅರ್ಜುನ್ ವೊಕ್ಕಲಿಗ,42,M,,true,false,principal
+ACC-FIR-BLR2-2021-00053-000,FIR-BLR2-2021-00053,,Umesh Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00054-000,FIR-BLR2-2021-00054,CRM-0000071,Umesh Murthy,ವಿನಯ್ ಅರಸ್,70,M,,false,false,principal
+ACC-FIR-UDR-2021-00039-000,FIR-UDR-2021-00039,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,true,true,principal
+ACC-FIR-BLG-2021-00040-000,FIR-BLG-2021-00040,,Kiran Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CHB-2021-00010-000,FIR-CHB-2021-00010,CRM-0000113,Mohan Reddy,ಸಂದೀಪ್ ದೇಸಾಯಿ,59,M,,true,false,principal
+ACC-FIR-MGL-2021-00046-000,FIR-MGL-2021-00046,,Jyothi Vokkaliga,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00203-000,FIR-BLR-2021-00203,CRM-0000210,Swathi Desai,ಶಾಂತಾ ಜೋಶಿ,30,F,,true,false,principal
+ACC-FIR-KLP-2021-00050-000,FIR-KLP-2021-00050,,Harsh Murthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00204-000,FIR-BLR-2021-00204,CRM-0000202,Sandeep Vokkaliga,ಮೋಹನ್ ಭಟ್,24,M,,false,false,principal
+ACC-FIR-RCR-2021-00013-000,FIR-RCR-2021-00013,,Anil Bhat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00053-000,FIR-RBG-2021-00053,CRM-0000211,Prashanth Adiga,ಮೋಹನ್ ಕುಮಾರ್,52,M,,false,false,principal
+ACC-FIR-CHB-2021-00011-000,FIR-CHB-2021-00011,CRM-0000235,Umesh Shastri,ಅರ್ಜುನ್ ಭಟ್,43,M,,true,false,principal
+ACC-FIR-RBG-2021-00054-000,FIR-RBG-2021-00054,CRM-0000091,Prakash Kumar,ವಿಕ್ರಮ್ ಉಡುಪ,48,M,,true,false,principal
+ACC-FIR-KLP-2021-00051-000,FIR-KLP-2021-00051,CRM-0000092,Yogesh Gowda,ಅಭಿಷೇಕ್ ಕೃಷ್ಣಮೂರ್ತಿ,51,M,,false,false,principal
+ACC-FIR-HBL-2021-00057-000,FIR-HBL-2021-00057,,Sandeep Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00205-000,FIR-BLR-2021-00205,CRM-0000222,Ramesh Gowda,ಅರ್ಜುನ್ ಭಟ್,60,M,,false,true,principal
+ACC-FIR-BLR-2021-00206-000,FIR-BLR-2021-00206,CRM-0000073,Tejas Kamath,ಉಮೇಶ್ ಪಾಟೀಲ್,33,M,,true,false,principal
+ACC-FIR-HBL-2021-00058-000,FIR-HBL-2021-00058,,Gaurav Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2021-00055-000,FIR-RBG-2021-00055,,Bharathi Reddy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-UDR-2021-00040-000,FIR-UDR-2021-00040,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,true,false,principal
+ACC-FIR-RBG-2021-00056-000,FIR-RBG-2021-00056,,Ganesh Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00207-000,FIR-BLR-2021-00207,CRM-0000097,Akash Adiga,ತೇಜಸ್ ಉಡುಪ,72,M,,false,false,principal
+ACC-FIR-BLG-2021-00041-000,FIR-BLG-2021-00041,CRM-0000033,Ganesh Murthy,ಮಂಜುನಾಥ್ ವೊಕ್ಕಲಿಗ,25,M,,false,false,principal
+ACC-FIR-BLRR-2021-00007-000,FIR-BLRR-2021-00007,CRM-0000174,Nitya Rao,ಸಂಗೀತಾ ಅಡಿಗ,39,F,,false,false,principal
+ACC-FIR-BDR-2021-00015-000,FIR-BDR-2021-00015,CRM-0000244,Bharathi Krishnamurthy,ಕವಿತಾ ರಾವ್,49,F,,true,false,principal
+ACC-FIR-BLG-2021-00042-000,FIR-BLG-2021-00042,CRM-0000205,Anita Vokkaliga,ಸುಮ಼ಾ ಗೌಡ,55,F,,true,false,principal
+ACC-FIR-RMN-2021-00013-000,FIR-RMN-2021-00013,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,false,false,principal
+ACC-FIR-RBG-2021-00057-000,FIR-RBG-2021-00057,,Manjunath Thakur,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00208-000,FIR-BLR-2021-00208,,Raghavendra Joshi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00047-000,FIR-MGL-2021-00047,,Rajesh Udupi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00209-000,FIR-BLR-2021-00209,CRM-0000224,Abhishek Adiga,ಶ್ರೀಕಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,45,M,,true,true,principal
+ACC-FIR-BLR-2021-00210-000,FIR-BLR-2021-00210,,Kiran Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00055-000,FIR-BLR2-2021-00055,CRM-0000058,Gaurav Naik,ತೇಜಸ್ ಮೂರ್ತಿ,38,M,,false,true,principal
+ACC-FIR-BLR2-2021-00056-000,FIR-BLR2-2021-00056,,Seeta Desai,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00211-000,FIR-BLR-2021-00211,,Ramesh Naik,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00059-000,FIR-HBL-2021-00059,,Gaurav Vokkaliga,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HSN-2021-00004-000,FIR-HSN-2021-00004,,Ravi Aras,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00057-000,FIR-BLR2-2021-00057,CRM-0000103,Shivakumar Shetty,ಮೋಹನ್ ಉಡುಪ,30,M,,true,true,principal
+ACC-FIR-BLR2-2021-00057-001,FIR-BLR2-2021-00057,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,true,accomplice
+ACC-FIR-DVG-2021-00007-000,FIR-DVG-2021-00007,,Kiran Nambiar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00212-000,FIR-BLR-2021-00212,CRM-0000230,Amala Shastri,ಸೀತಾ ಗೌಡ,43,F,,true,true,principal
+ACC-FIR-BLR2-2021-00058-000,FIR-BLR2-2021-00058,CRM-0000237,Shantha Prabhu,ಮಧು ಕಾಮತ್,48,F,,true,false,principal
+ACC-FIR-BLG-2021-00043-000,FIR-BLG-2021-00043,CRM-0000050,Rohit Bhat,ರೋಹಿತ್ ಹೆಗಡೆ,55,M,,true,false,principal
+ACC-FIR-CHT-2021-00007-000,FIR-CHT-2021-00007,CRM-0000196,Priya Kumar,ಸುಜಾತಾ ಅರಸ್,26,F,,true,true,principal
+ACC-FIR-BLR2-2021-00059-000,FIR-BLR2-2021-00059,CRM-0000207,Shruthi Singh,ಸ್ವಾತಿ ಜೋಶಿ,33,F,,false,true,principal
+ACC-FIR-KLP-2021-00052-000,FIR-KLP-2021-00052,,Priya Prabhu,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR2-2021-00060-000,FIR-BLR2-2021-00060,CRM-0000243,Suma Joshi,ಪ್ರಿಯಾ ನಂಬಿಯಾರ್,42,F,,true,false,principal
+ACC-FIR-DVG-2021-00008-000,FIR-DVG-2021-00008,,Swathi Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLP-2021-00053-000,FIR-KLP-2021-00053,,Ajay Verma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00213-000,FIR-BLR-2021-00213,CRM-0000195,Raghavendra Reddy,ಶ್ರೀಕಾಂತ್ ನಂಬಿಯಾರ್,68,M,,false,true,principal
+ACC-FIR-HBL-2021-00060-000,FIR-HBL-2021-00060,CRM-0000039,Gaurav Rao,ಸತೀಶ್ ಲಿಂಗಾಯತ್,74,M,,true,true,principal
+ACC-FIR-BLR-2021-00214-000,FIR-BLR-2021-00214,,Vinay Udupi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00061-000,FIR-BLR2-2021-00061,,Akash Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00043-000,FIR-MYS-2021-00043,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,false,true,principal
+ACC-FIR-MYS-2021-00043-001,FIR-MYS-2021-00043,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,true,accomplice
+ACC-FIR-BLR-2021-00215-000,FIR-BLR-2021-00215,CRM-0000155,Naveen Singh,ಅನಿಲ್ ಪ್ರಭು,59,M,,false,false,principal
+ACC-FIR-BLR-2021-00216-000,FIR-BLR-2021-00216,CRM-0000151,Anita Joshi,ಸುಮ಼ಾ ಕಾಮತ್,44,F,,true,false,principal
+ACC-FIR-RBG-2021-00058-000,FIR-RBG-2021-00058,CRM-0000020,Sujatha Raju,ಜ್ಯೋತಿ ಮೂರ್ತಿ,58,F,,true,false,principal
+ACC-FIR-BLR-2021-00217-000,FIR-BLR-2021-00217,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,true,false,principal
+ACC-FIR-BLR-2021-00218-000,FIR-BLR-2021-00218,CRM-0000031,Ajay Bhat,ರೋಹಿತ್ ಅಡಿಗ,31,M,,true,false,principal
+ACC-FIR-BLRR-2021-00008-000,FIR-BLRR-2021-00008,,Deepak Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00219-000,FIR-BLR-2021-00219,CRM-0000120,Shantha Swamy,ಜ್ಯೋತಿ ಭಟ್,49,F,,true,false,principal
+ACC-FIR-RBG-2021-00059-000,FIR-RBG-2021-00059,CRM-0000080,Lakshmi Vokkaliga,ಸುಜಾತಾ ಭಟ್,55,F,,false,false,principal
+ACC-FIR-HBL-2021-00061-000,FIR-HBL-2021-00061,CRM-0000194,Radha Kamath,ಗೀತಾ ಕುಮಾರ್,45,F,,false,false,principal
+ACC-FIR-CHB-2021-00012-000,FIR-CHB-2021-00012,CRM-0000057,Raghavendra Nambiar,ಶಿವಕುಮಾರ್ ಕುಮಾರ್,72,M,,false,true,principal
+ACC-FIR-MYS-2021-00044-000,FIR-MYS-2021-00044,CRM-0000235,Umesh Shastri,ಅರ್ಜುನ್ ಭಟ್,43,M,,true,true,principal
+ACC-FIR-MYS-2021-00045-000,FIR-MYS-2021-00045,CRM-0000024,Satish Gowda,ತೇಜಸ್ ಕಾಮತ್,39,M,,false,false,principal
+ACC-FIR-RBG-2021-00060-000,FIR-RBG-2021-00060,CRM-0000005,Umesh Joshi,ವಿಕ್ರಮ್ ಪ್ರಭು,54,M,,false,false,principal
+ACC-FIR-UDR-2021-00041-000,FIR-UDR-2021-00041,,Prashanth Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00220-000,FIR-BLR-2021-00220,,Rekha Prabhu,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BDR-2021-00016-000,FIR-BDR-2021-00016,CRM-0000227,Umesh Kamath,ಸಂದೀಪ್ ಉಡುಪ,37,M,,true,true,principal
+ACC-FIR-BLR2-2021-00062-000,FIR-BLR2-2021-00062,CRM-0000154,Sneha Lingayat,ನಿರ್ಮಲಾ ನಾಯ್ಕ್,67,F,,true,true,principal
+ACC-FIR-BLR-2021-00221-000,FIR-BLR-2021-00221,CRM-0000007,Deepak Shastri,ಮೋಹನ್ ಮೂರ್ತಿ,35,M,,false,false,principal
+ACC-FIR-MGL-2021-00048-000,FIR-MGL-2021-00048,CRM-0000044,Amala Naik,ಕವಿತಾ ಪ್ರಭು,52,F,,true,false,principal
+ACC-FIR-BLR-2021-00222-000,FIR-BLR-2021-00222,,Yogesh Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CHB-2021-00013-000,FIR-CHB-2021-00013,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,false,false,principal
+ACC-FIR-BLR-2021-00223-000,FIR-BLR-2021-00223,CRM-0000123,Manjunath Pillai,ಸಂದೀಪ್ ಅರಸ್,65,M,,true,true,principal
+ACC-FIR-MGL-2021-00049-000,FIR-MGL-2021-00049,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,false,false,principal
+ACC-FIR-KLP-2021-00054-000,FIR-KLP-2021-00054,CRM-0000167,Akash Vokkaliga,ಅಭಿಷೇಕ್ ಮೂರ್ತಿ,31,M,,false,false,principal
+ACC-FIR-HBL-2021-00062-000,FIR-HBL-2021-00062,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,false,false,principal
+ACC-FIR-HBL-2021-00062-001,FIR-HBL-2021-00062,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,true,accomplice
+ACC-FIR-BLG-2021-00044-000,FIR-BLG-2021-00044,CRM-0000124,Tejas Desai,ರೋಹಿತ್ ಜೋಶಿ,42,M,,true,false,principal
+ACC-FIR-HSN-2021-00005-000,FIR-HSN-2021-00005,,Bharathi Udupi,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-RMN-2021-00014-000,FIR-RMN-2021-00014,CRM-0000206,Manjunath Gowda,ಸಂದೀಪ್ ಲಿಂಗಾಯತ್,26,M,,true,false,principal
+ACC-FIR-KLP-2021-00055-000,FIR-KLP-2021-00055,,Ramesh Hegde,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MYS-2021-00046-000,FIR-MYS-2021-00046,CRM-0000225,Mahesh Gowda,ನವೀನ್ ರಾವ್,24,M,,true,true,principal
+ACC-FIR-BLR-2021-00224-000,FIR-BLR-2021-00224,CRM-0000170,Shantha Vokkaliga,ಸರಿತಾ ನಾಯ್ಕ್,18,F,,false,true,principal
+ACC-FIR-MYS-2021-00047-000,FIR-MYS-2021-00047,,Ganesh Krishnamurthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RCR-2021-00014-000,FIR-RCR-2021-00014,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,principal
+ACC-FIR-RBG-2021-00061-000,FIR-RBG-2021-00061,CRM-0000073,Tejas Kamath,ಉಮೇಶ್ ಪಾಟೀಲ್,33,M,,false,false,principal
+ACC-FIR-MYS-2021-00048-000,FIR-MYS-2021-00048,CRM-0000002,Umesh Verma,ಮಂಜುನಾಥ್ ಅರಸ್,36,M,,true,false,principal
+ACC-FIR-MYS-2021-00048-001,FIR-MYS-2021-00048,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,false,accomplice
+ACC-FIR-MYS-2021-00048-002,FIR-MYS-2021-00048,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,false,accomplice
+ACC-FIR-BLR-2021-00225-000,FIR-BLR-2021-00225,,Nagaraj Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00226-000,FIR-BLR-2021-00226,,Ravi Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-SHV-2021-00013-000,FIR-SHV-2021-00013,CRM-0000243,Suma Joshi,ಪ್ರಿಯಾ ನಂಬಿಯಾರ್,42,F,,true,false,principal
+ACC-FIR-BLR-2021-00227-000,FIR-BLR-2021-00227,,Deepa Pillai,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00228-000,FIR-BLR-2021-00228,,Mahesh Nayak,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00050-000,FIR-MGL-2021-00050,CRM-0000152,Vinay Singh,ಅಜಯ್ ಕೃಷ್ಣಮೂರ್ತಿ,16,M,,false,true,principal
+ACC-FIR-MGL-2021-00050-001,FIR-MGL-2021-00050,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,false,false,accomplice
+ACC-FIR-MGL-2021-00050-002,FIR-MGL-2021-00050,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,false,false,accomplice
+ACC-FIR-MYS-2021-00049-000,FIR-MYS-2021-00049,CRM-0000075,Anjali Vokkaliga,ಜ್ಯೋತಿ ಜೋಶಿ,41,F,,false,false,principal
+ACC-FIR-BLG-2021-00045-000,FIR-BLG-2021-00045,CRM-0000162,Satish Aras,ಅರ್ಜುನ್ ವೊಕ್ಕಲಿಗ,42,M,,false,false,principal
+ACC-FIR-BLR-2021-00229-000,FIR-BLR-2021-00229,CRM-0000190,Sandeep Lingayat,ಶಿವಕುಮಾರ್ ಲಿಂಗಾಯತ್,34,M,,true,false,principal
+ACC-FIR-HBL-2021-00063-000,FIR-HBL-2021-00063,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,true,true,principal
+ACC-FIR-HBL-2021-00063-001,FIR-HBL-2021-00063,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-KLP-2021-00056-000,FIR-KLP-2021-00056,CRM-0000217,Madhu Adiga,ಅನಿತಾ ಪಾಟೀಲ್,37,F,,true,false,principal
+ACC-FIR-BLR-2021-00230-000,FIR-BLR-2021-00230,,Ravi Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00051-000,FIR-MGL-2021-00051,CRM-0000216,Sandeep Sharma,ದೀಪಕ್ ದೇಸಾಯಿ,21,M,,false,false,principal
+ACC-FIR-BLR2-2021-00063-000,FIR-BLR2-2021-00063,CRM-0000173,Geetha Adiga,ಕವಿತಾ ದೇಸಾಯಿ,34,F,,true,false,principal
+ACC-FIR-BLR2-2021-00063-001,FIR-BLR2-2021-00063,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-MGL-2021-00052-000,FIR-MGL-2021-00052,CRM-0000160,Anita Bhat,ಜ್ಯೋತಿ ಕಾಮತ್,24,F,,true,false,principal
+ACC-FIR-BLR-2021-00231-000,FIR-BLR-2021-00231,CRM-0000048,Sneha Prabhu,ಅಮಲಾ ಉಡುಪ,66,F,,false,false,principal
+ACC-FIR-UDR-2021-00042-000,FIR-UDR-2021-00042,CRM-0000114,Anil Shastri,ಸತೀಶ್ ಶಾಸ್ತ್ರಿ,45,M,,false,true,principal
+ACC-FIR-RCR-2021-00015-000,FIR-RCR-2021-00015,CRM-0000197,Amala Joshi,ಅನಿತಾ ವೊಕ್ಕಲಿಗ,31,F,,true,false,principal
+ACC-FIR-CTV-2021-00007-000,FIR-CTV-2021-00007,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,true,false,principal
+ACC-FIR-BLR-2021-00232-000,FIR-BLR-2021-00232,CRM-0000134,Akash Thakur,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,47,M,,true,false,principal
+ACC-FIR-BLR-2021-00233-000,FIR-BLR-2021-00233,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,true,true,principal
+ACC-FIR-CTV-2021-00008-000,FIR-CTV-2021-00008,CRM-0000083,Vikram Raju,ಅನಿಲ್ ಅರಸ್,64,M,,true,true,principal
+ACC-FIR-CKM-2021-00009-000,FIR-CKM-2021-00009,CRM-0000086,Srikanth Patil,ವಿನಯ್ ತಂತ್ರಿ,38,M,,true,false,principal
+ACC-FIR-KLP-2021-00057-000,FIR-KLP-2021-00057,,Naveen Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00064-000,FIR-HBL-2021-00064,CRM-0000122,Swathi Verma,ಕವಿತಾ ಕುಮಾರ್,48,F,,true,false,principal
+ACC-FIR-CHB-2021-00014-000,FIR-CHB-2021-00014,,Satish Shetty,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2021-00053-000,FIR-MGL-2021-00053,CRM-0000090,Sangeetha Udupi,ಸುಮ಼ಾ ಅಯ್ಯರ್,41,F,,true,true,principal
+ACC-FIR-MGL-2021-00054-000,FIR-MGL-2021-00054,CRM-0000162,Satish Aras,ಅರ್ಜುನ್ ವೊಕ್ಕಲಿಗ,42,M,,false,false,principal
+ACC-FIR-MGL-2021-00055-000,FIR-MGL-2021-00055,CRM-0000160,Anita Bhat,ಜ್ಯೋತಿ ಕಾಮತ್,24,F,,true,false,principal
+ACC-FIR-BLR-2021-00234-000,FIR-BLR-2021-00234,CRM-0000001,Radha Tantri,ಸ್ವಾತಿ ಉಡುಪ,44,F,,true,false,principal
+ACC-FIR-BLR-2021-00235-000,FIR-BLR-2021-00235,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,true,principal
+ACC-FIR-MGL-2021-00056-000,FIR-MGL-2021-00056,CRM-0000160,Anita Bhat,ಜ್ಯೋತಿ ಕಾಮತ್,24,F,,false,false,principal
+ACC-FIR-BLR2-2021-00064-000,FIR-BLR2-2021-00064,CRM-0000074,Ravi Thakur,ಯೋಗೇಶ್ ಜೋಶಿ,22,M,,false,false,principal
+ACC-FIR-KLP-2021-00058-000,FIR-KLP-2021-00058,CRM-0000030,Naveen Adiga,ರಾಘವೇಂದ್ರ ಮೂರ್ತಿ,45,M,,true,false,principal
+ACC-FIR-BLG-2021-00046-000,FIR-BLG-2021-00046,CRM-0000180,Raghavendra Joshi,ವಿಕ್ರಮ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-BLG-2021-00047-000,FIR-BLG-2021-00047,,Vikram Aras,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2021-00065-000,FIR-HBL-2021-00065,CRM-0000044,Amala Naik,ಕವಿತಾ ಪ್ರಭು,52,F,,false,false,principal
+ACC-FIR-BLR2-2021-00065-000,FIR-BLR2-2021-00065,CRM-0000189,Basavaraj Murthy,ಅಭಿಷೇಕ್ ತಂತ್ರಿ,26,M,,true,false,principal
+ACC-FIR-BLR2-2021-00065-001,FIR-BLR2-2021-00065,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,true,accomplice
+ACC-FIR-HBL-2021-00066-000,FIR-HBL-2021-00066,CRM-0000020,Sujatha Raju,ಜ್ಯೋತಿ ಮೂರ್ತಿ,58,F,,true,false,principal
+ACC-FIR-BLR-2021-00236-000,FIR-BLR-2021-00236,CRM-0000142,Manjunath Shetty,ಪ್ರಶಾಂತ್ ನಂಬಿಯಾರ್,19,M,,false,false,principal
+ACC-FIR-MGL-2021-00057-000,FIR-MGL-2021-00057,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,false,false,principal
+ACC-FIR-MGL-2021-00058-000,FIR-MGL-2021-00058,CRM-0000058,Gaurav Naik,ತೇಜಸ್ ಮೂರ್ತಿ,38,M,,true,false,principal
+ACC-FIR-CTV-2021-00009-000,FIR-CTV-2021-00009,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,false,false,principal
+ACC-FIR-UDR-2021-00043-000,FIR-UDR-2021-00043,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,true,false,principal
+ACC-FIR-CHT-2021-00008-000,FIR-CHT-2021-00008,CRM-0000138,Lakshmi Kumar,ನಿತ್ಯಾ ಶಾಸ್ತ್ರಿ,68,F,,true,false,principal
+ACC-FIR-BLR-2021-00237-000,FIR-BLR-2021-00237,CRM-0000208,Anil Tantri,ಶಿವಕುಮಾರ್ ಹೆಗಡೆ,27,M,,false,true,principal
+ACC-FIR-BLR-2021-00238-000,FIR-BLR-2021-00238,CRM-0000135,Kavitha Desai,ಅಮಲಾ ಅರಸ್,34,F,,false,true,principal
+ACC-FIR-BLR-2021-00239-000,FIR-BLR-2021-00239,,Harsh Udupi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2021-00066-000,FIR-BLR2-2021-00066,CRM-0000052,Mahesh Shastri,ಗೌರವ್ ವೊಕ್ಕಲಿಗ,43,M,,false,true,principal
+ACC-FIR-BLR2-2021-00066-001,FIR-BLR2-2021-00066,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLR2-2021-00066-002,FIR-BLR2-2021-00066,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,false,accomplice
+ACC-FIR-BLR2-2021-00066-003,FIR-BLR2-2021-00066,CRM-0000147,Shruthi Tantri,ಕವಿತಾ ನಾಯ್ಕ್,71,F,,true,false,accomplice
+ACC-FIR-BLR-2021-00240-000,FIR-BLR-2021-00240,CRM-0000195,Raghavendra Reddy,ಶ್ರೀಕಾಂತ್ ನಂಬಿಯಾರ್,68,M,,false,false,principal
+ACC-FIR-MDY-2021-00008-000,FIR-MDY-2021-00008,CRM-0000146,Nagaraj Nambiar,ಯೋಗೇಶ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-BLR-2021-00241-000,FIR-BLR-2021-00241,CRM-0000134,Akash Thakur,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,47,M,,true,true,principal
+ACC-FIR-BLR-2021-00242-000,FIR-BLR-2021-00242,CRM-0000173,Geetha Adiga,ಕವಿತಾ ದೇಸಾಯಿ,34,F,,false,false,principal
+ACC-FIR-BLR-2021-00242-001,FIR-BLR-2021-00242,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-RBG-2021-00062-000,FIR-RBG-2021-00062,CRM-0000101,Kiran Kumar,ಬಸವರಾಜ್ ಕಾಮತ್,38,M,,true,false,principal
+ACC-FIR-HBL-2021-00067-000,FIR-HBL-2021-00067,CRM-0000051,Abhishek Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,25,M,,true,false,principal
+ACC-FIR-KLP-2021-00059-000,FIR-KLP-2021-00059,CRM-0000023,Tejas Kamath,ರಾಘವೇಂದ್ರ ಗೌಡ,64,M,,true,false,principal
+ACC-FIR-KLP-2021-00059-001,FIR-KLP-2021-00059,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,true,false,accomplice
+ACC-FIR-KLP-2021-00059-002,FIR-KLP-2021-00059,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,true,false,accomplice
+ACC-FIR-KLP-2021-00059-003,FIR-KLP-2021-00059,CRM-0000228,Gaurav Sharma,ಬಸವರಾಜ್ ಹೆಗಡೆ,71,M,,false,false,accomplice
+ACC-FIR-KLP-2021-00060-000,FIR-KLP-2021-00060,,Nagaraj Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00243-000,FIR-BLR-2021-00243,CRM-0000216,Sandeep Sharma,ದೀಪಕ್ ದೇಸಾಯಿ,21,M,,true,true,principal
+ACC-FIR-HSN-2021-00006-000,FIR-HSN-2021-00006,CRM-0000092,Yogesh Gowda,ಅಭಿಷೇಕ್ ಕೃಷ್ಣಮೂರ್ತಿ,51,M,,false,true,principal
+ACC-FIR-BLR-2021-00244-000,FIR-BLR-2021-00244,CRM-0000105,Amala Shetty,ವಿದ್ಯಾ ಹೆಗಡೆ,23,F,,false,false,principal
+ACC-FIR-UDR-2021-00044-000,FIR-UDR-2021-00044,CRM-0000213,Srikanth Nayak,ಗಣೇಶ್ ನಾಯ್ಕ್,57,M,,false,false,principal
+ACC-FIR-UDR-2021-00044-001,FIR-UDR-2021-00044,CRM-0000095,Gaurav Desai,ದೀಪಕ್ ಕಾಮತ್,19,M,,true,false,accomplice
+ACC-FIR-UDR-2021-00044-002,FIR-UDR-2021-00044,CRM-0000070,Jyothi Gowda,ಸಂಗೀತಾ ಲಿಂಗಾಯತ್,31,F,,false,false,accomplice
+ACC-FIR-MYS-2021-00050-000,FIR-MYS-2021-00050,CRM-0000194,Radha Kamath,ಗೀತಾ ಕುಮಾರ್,45,F,,false,false,principal
+ACC-FIR-KLP-2021-00061-000,FIR-KLP-2021-00061,CRM-0000217,Madhu Adiga,ಅನಿತಾ ಪಾಟೀಲ್,37,F,,false,false,principal
+ACC-FIR-CKM-2021-00010-000,FIR-CKM-2021-00010,CRM-0000168,Vikram Krishnamurthy,ಬಸವರಾಜ್ ಶಾಸ್ತ್ರಿ,52,M,,false,false,principal
+ACC-FIR-MYS-2021-00051-000,FIR-MYS-2021-00051,CRM-0000133,Naveen Hegde,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,62,M,,false,true,principal
+ACC-FIR-RBG-2021-00063-000,FIR-RBG-2021-00063,CRM-0000172,Sujatha Vokkaliga,ಸೀತಾ ಹೆಗಡೆ,29,F,,true,true,principal
+ACC-FIR-CHT-2021-00009-000,FIR-CHT-2021-00009,CRM-0000187,Bharathi Sharma,ಸರಿತಾ ದೇಸಾಯಿ,43,F,,true,true,principal
+ACC-FIR-HBL-2021-00068-000,FIR-HBL-2021-00068,CRM-0000051,Abhishek Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,25,M,,false,true,principal
+ACC-FIR-BLRR-2021-00009-000,FIR-BLRR-2021-00009,,Ajay Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KDG-2021-00003-000,FIR-KDG-2021-00003,CRM-0000017,Anita Nambiar,ಮಧು ಅರಸ್,34,F,,false,false,principal
+ACC-FIR-MYS-2021-00052-000,FIR-MYS-2021-00052,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,false,principal
+ACC-FIR-MYS-2021-00052-001,FIR-MYS-2021-00052,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-CHT-2021-00010-000,FIR-CHT-2021-00010,CRM-0000138,Lakshmi Kumar,ನಿತ್ಯಾ ಶಾಸ್ತ್ರಿ,68,F,,true,true,principal
+ACC-FIR-MYS-2021-00053-000,FIR-MYS-2021-00053,,Priya Rao,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLG-2021-00048-000,FIR-BLG-2021-00048,CRM-0000180,Raghavendra Joshi,ವಿಕ್ರಮ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-BLR-2021-00245-000,FIR-BLR-2021-00245,CRM-0000014,Kiran Reddy,ಗೌರವ್ ಅಯ್ಯರ್,21,M,,true,false,principal
+ACC-FIR-BLR2-2021-00067-000,FIR-BLR2-2021-00067,CRM-0000112,Seeta Shetty,ಗೀತಾ ನಂಬಿಯಾರ್,47,F,,true,false,principal
+ACC-FIR-MYS-2021-00054-000,FIR-MYS-2021-00054,,Madhu Tantri,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-UDR-2021-00045-000,FIR-UDR-2021-00045,,Rajesh Ayyar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-VKT-2021-00007-000,FIR-VKT-2021-00007,,Sangeetha Ayyar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00246-000,FIR-BLR-2021-00246,CRM-0000167,Akash Vokkaliga,ಅಭಿಷೇಕ್ ಮೂರ್ತಿ,31,M,,true,true,principal
+ACC-FIR-MGL-2021-00059-000,FIR-MGL-2021-00059,CRM-0000053,Ravi Aras,ಅರ್ಜುನ್ ಮೂರ್ತಿ,65,M,,true,false,principal
+ACC-FIR-CKM-2021-00011-000,FIR-CKM-2021-00011,CRM-0000159,Priya Verma,ಅಮಲಾ ಜೋಶಿ,42,F,,true,false,principal
+ACC-FIR-BLR2-2021-00068-000,FIR-BLR2-2021-00068,CRM-0000037,Sujatha Tantri,ಗೀತಾ ಕುಮಾರ್,34,F,,false,true,principal
+ACC-FIR-BLR2-2021-00068-001,FIR-BLR2-2021-00068,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,true,accomplice
+ACC-FIR-BLR2-2021-00068-002,FIR-BLR2-2021-00068,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,false,true,accomplice
+ACC-FIR-BLR2-2021-00068-003,FIR-BLR2-2021-00068,CRM-0000147,Shruthi Tantri,ಕವಿತಾ ನಾಯ್ಕ್,71,F,,false,false,accomplice
+ACC-FIR-VKT-2021-00008-000,FIR-VKT-2021-00008,CRM-0000204,Anjali Singh,ಲಕ್ಷ್ಮಿ ಅಯ್ಯರ್,17,F,,true,false,principal
+ACC-FIR-VKT-2021-00008-001,FIR-VKT-2021-00008,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-HBL-2021-00069-000,FIR-HBL-2021-00069,CRM-0000026,Abhishek Vokkaliga,ರೋಹಿತ್ ಅರಸ್,18,M,,true,false,principal
+ACC-FIR-BLR-2021-00247-000,FIR-BLR-2021-00247,CRM-0000149,Rekha Adiga,ಸುಮ಼ಾ ಸ್ವಾಮಿ,57,F,,false,false,principal
+ACC-FIR-BLR-2021-00248-000,FIR-BLR-2021-00248,CRM-0000091,Prakash Kumar,ವಿಕ್ರಮ್ ಉಡುಪ,48,M,,false,false,principal
+ACC-FIR-BLR-2021-00249-000,FIR-BLR-2021-00249,CRM-0000135,Kavitha Desai,ಅಮಲಾ ಅರಸ್,34,F,,false,true,principal
+ACC-FIR-HBL-2021-00070-000,FIR-HBL-2021-00070,CRM-0000210,Swathi Desai,ಶಾಂತಾ ಜೋಶಿ,30,F,,true,false,principal
+ACC-FIR-UDR-2021-00046-000,FIR-UDR-2021-00046,CRM-0000032,Vidya Sharma,ಗೀತಾ ಲಿಂಗಾಯತ್,40,F,,false,false,principal
+ACC-FIR-BLR-2021-00250-000,FIR-BLR-2021-00250,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,true,false,principal
+ACC-FIR-BLG-2021-00049-000,FIR-BLG-2021-00049,CRM-0000124,Tejas Desai,ರೋಹಿತ್ ಜೋಶಿ,42,M,,true,false,principal
+ACC-FIR-BLG-2021-00050-000,FIR-BLG-2021-00050,,Prakash Shastri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLR-2021-00014-000,FIR-KLR-2021-00014,CRM-0000224,Abhishek Adiga,ಶ್ರೀಕಾಂತ್ ಕೃಷ್ಣಮೂರ್ತಿ,45,M,,true,false,principal
+ACC-FIR-MYS-2021-00055-000,FIR-MYS-2021-00055,CRM-0000185,Swathi Desai,ಸ್ವಾತಿ ಹೆಗಡೆ,23,F,,true,true,principal
+ACC-FIR-MGL-2021-00060-000,FIR-MGL-2021-00060,CRM-0000146,Nagaraj Nambiar,ಯೋಗೇಶ್ ಜೋಶಿ,51,M,,true,false,principal
+ACC-FIR-BLR2-2021-00069-000,FIR-BLR2-2021-00069,CRM-0000173,Geetha Adiga,ಕವಿತಾ ದೇಸಾಯಿ,34,F,,true,false,principal
+ACC-FIR-BLR2-2021-00069-001,FIR-BLR2-2021-00069,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-RBG-2021-00064-000,FIR-RBG-2021-00064,CRM-0000048,Sneha Prabhu,ಅಮಲಾ ಉಡುಪ,66,F,,false,true,principal
+ACC-FIR-BLR2-2021-00070-000,FIR-BLR2-2021-00070,CRM-0000185,Swathi Desai,ಸ್ವಾತಿ ಹೆಗಡೆ,23,F,,false,true,principal
+ACC-FIR-MGL-2021-00061-000,FIR-MGL-2021-00061,,Radha Thakur,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MYS-2021-00056-000,FIR-MYS-2021-00056,CRM-0000033,Ganesh Murthy,ಮಂಜುನಾಥ್ ವೊಕ್ಕಲಿಗ,25,M,,true,false,principal
+ACC-FIR-MDY-2021-00009-000,FIR-MDY-2021-00009,CRM-0000237,Shantha Prabhu,ಮಧು ಕಾಮತ್,48,F,,false,false,principal
+ACC-FIR-BLR-2021-00251-000,FIR-BLR-2021-00251,CRM-0000109,Sangeetha Thakur,ಅನಿತಾ ಶೆಟ್ಟಿ,53,F,,true,false,principal
+ACC-FIR-CHB-2021-00015-000,FIR-CHB-2021-00015,CRM-0000057,Raghavendra Nambiar,ಶಿವಕುಮಾರ್ ಕುಮಾರ್,72,M,,true,false,principal
+ACC-FIR-BLR-2021-00252-000,FIR-BLR-2021-00252,,Radha Ayyar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-MGL-2021-00062-000,FIR-MGL-2021-00062,CRM-0000178,Madhu Lingayat,ಶಾಂತಾ ಹೆಗಡೆ,18,F,,true,false,principal
+ACC-FIR-BLR-2021-00253-000,FIR-BLR-2021-00253,,Harsh Joshi,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2021-00051-000,FIR-BLG-2021-00051,CRM-0000082,Tejas Kumar,ರಮೇಶ್ ಕಾಮತ್,39,M,,false,false,principal
+ACC-FIR-BLR-2021-00254-000,FIR-BLR-2021-00254,,Basavaraj Rao,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00255-000,FIR-BLR-2021-00255,CRM-0000166,Harsh Reddy,ಅನಿಲ್ ಶೆಟ್ಟಿ,39,M,,false,false,principal
+ACC-FIR-BLR-2021-00256-000,FIR-BLR-2021-00256,,Anjali Shetty,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2021-00257-000,FIR-BLR-2021-00257,CRM-0000132,Srikanth Rao,ಪ್ರಕಾಶ್ ಶೆಟ್ಟಿ,60,M,,true,false,principal
+ACC-FIR-BLR-2021-00258-000,FIR-BLR-2021-00258,CRM-0000090,Sangeetha Udupi,ಸುಮ಼ಾ ಅಯ್ಯರ್,41,F,,true,false,principal
+ACC-FIR-RBG-2021-00065-000,FIR-RBG-2021-00065,,Abhishek Raju,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BDR-2021-00017-000,FIR-BDR-2021-00017,CRM-0000143,Yogesh Nayak,ವಿನಯ್ ನಂಬಿಯಾರ್,28,M,,false,false,principal
+ACC-FIR-RMN-2021-00015-000,FIR-RMN-2021-00015,CRM-0000206,Manjunath Gowda,ಸಂದೀಪ್ ಲಿಂಗಾಯತ್,26,M,,true,true,principal
+ACC-FIR-HBL-2021-00071-000,FIR-HBL-2021-00071,,Akash Bhat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KLP-2021-00062-000,FIR-KLP-2021-00062,,Gaurav Lingayat,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2021-00259-000,FIR-BLR-2021-00259,CRM-0000094,Jyothi Prabhu,ಸ್ವಾತಿ ಕಾಮತ್,39,F,,false,false,principal
+ACC-FIR-BLR-2021-00260-000,FIR-BLR-2021-00260,CRM-0000054,Yogesh Tantri,ದೀಪಕ್ ಲಿಂಗಾಯತ್,50,M,,true,false,principal
+ACC-FIR-BLR2-2022-00001-000,FIR-BLR2-2022-00001,CRM-0000207,Shruthi Singh,ಸ್ವಾತಿ ಜೋಶಿ,33,F,,false,false,principal
+ACC-FIR-HBL-2022-00001-000,FIR-HBL-2022-00001,CRM-0000051,Abhishek Hegde,ನಾಗರಾಜ್ ಕೃಷ್ಣಮೂರ್ತಿ,25,M,,true,false,principal
+ACC-FIR-HVR-2022-00001-000,FIR-HVR-2022-00001,,Jyothi Kumar,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-HBL-2022-00002-000,FIR-HBL-2022-00002,,Ramesh Krishnamurthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2022-00001-000,FIR-BLR-2022-00001,,Kiran Krishnamurthy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-MGL-2022-00001-000,FIR-MGL-2022-00001,CRM-0000241,Srikanth Shetty,ಸಂದೀಪ್ ಕುಮಾರ್,20,M,,true,false,principal
+ACC-FIR-HBL-2022-00003-000,FIR-HBL-2022-00003,CRM-0000022,Kavitha Naik,ಸೀತಾ ಕಾಮತ್,17,F,,false,false,principal
+ACC-FIR-BLR-2022-00002-000,FIR-BLR-2022-00002,CRM-0000129,Prakash Lingayat,ಶಿವಕುಮಾರ್ ಶಾಸ್ತ್ರಿ,74,M,,false,false,principal
+ACC-FIR-KLP-2022-00001-000,FIR-KLP-2022-00001,CRM-0000217,Madhu Adiga,ಅನಿತಾ ಪಾಟೀಲ್,37,F,,true,true,principal
+ACC-FIR-HBL-2022-00004-000,FIR-HBL-2022-00004,CRM-0000190,Sandeep Lingayat,ಶಿವಕುಮಾರ್ ಲಿಂಗಾಯತ್,34,M,,false,true,principal
+ACC-FIR-BLR-2022-00003-000,FIR-BLR-2022-00003,CRM-0000226,Prashanth Rao,ತೇಜಸ್ ಗೌಡ,68,M,,true,false,principal
+ACC-FIR-RCR-2022-00001-000,FIR-RCR-2022-00001,,Sandeep Aras,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2022-00002-000,FIR-BLR2-2022-00002,CRM-0000114,Anil Shastri,ಸತೀಶ್ ಶಾಸ್ತ್ರಿ,45,M,,false,false,principal
+ACC-FIR-BLR-2022-00004-000,FIR-BLR-2022-00004,CRM-0000031,Ajay Bhat,ರೋಹಿತ್ ಅಡಿಗ,31,M,,true,false,principal
+ACC-FIR-MYS-2022-00001-000,FIR-MYS-2022-00001,CRM-0000021,Satish Sharma,ನಾಗರಾಜ್ ನಾಯ್ಕ್,42,M,,false,true,principal
+ACC-FIR-BLR-2022-00005-000,FIR-BLR-2022-00005,CRM-0000195,Raghavendra Reddy,ಶ್ರೀಕಾಂತ್ ನಂಬಿಯಾರ್,68,M,,true,true,principal
+ACC-FIR-BLRR-2022-00001-000,FIR-BLRR-2022-00001,,Raghavendra Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HSN-2022-00001-000,FIR-HSN-2022-00001,CRM-0000184,Vikram Shastri,ಅನಿಲ್ ರೆಡ್ಡಿ,24,M,,true,false,principal
+ACC-FIR-HSN-2022-00001-001,FIR-HSN-2022-00001,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,false,true,accomplice
+ACC-FIR-HSN-2022-00001-002,FIR-HSN-2022-00001,CRM-0000221,Swathi Nayak,ಸರಿತಾ ರಾವ್,20,F,,false,true,accomplice
+ACC-FIR-SHV-2022-00001-000,FIR-SHV-2022-00001,CRM-0000187,Bharathi Sharma,ಸರಿತಾ ದೇಸಾಯಿ,43,F,,false,false,principal
+ACC-FIR-HSN-2022-00002-000,FIR-HSN-2022-00002,CRM-0000245,Anita Desai,ಸ್ವಾತಿ ಪಾಟೀಲ್,47,F,,true,false,principal
+ACC-FIR-HBL-2022-00005-000,FIR-HBL-2022-00005,CRM-0000131,Anita Singh,ಸರಿತಾ ಪ್ರಭು,33,F,,true,true,principal
+ACC-FIR-CHB-2022-00001-000,FIR-CHB-2022-00001,CRM-0000235,Umesh Shastri,ಅರ್ಜುನ್ ಭಟ್,43,M,,false,true,principal
+ACC-FIR-BLR-2022-00006-000,FIR-BLR-2022-00006,CRM-0000129,Prakash Lingayat,ಶಿವಕುಮಾರ್ ಶಾಸ್ತ್ರಿ,74,M,,true,false,principal
+ACC-FIR-SHV-2022-00002-000,FIR-SHV-2022-00002,CRM-0000040,Mahesh Singh,ಕಿರಣ್ ಗೌಡ,42,M,,true,false,principal
+ACC-FIR-HBL-2022-00006-000,FIR-HBL-2022-00006,CRM-0000199,Anil Prabhu,ಮಂಜುನಾಥ್ ಅರಸ್,22,M,,true,true,principal
+ACC-FIR-BLR-2022-00007-000,FIR-BLR-2022-00007,CRM-0000186,Saritha Thakur,ಸ್ನೇಹಾ ಕಾಮತ್,44,F,,true,true,principal
+ACC-FIR-BLR-2022-00008-000,FIR-BLR-2022-00008,CRM-0000011,Bharathi Patil,ಮೀರಾ ಕಾಮತ್,50,F,,true,false,principal
+ACC-FIR-CHB-2022-00002-000,FIR-CHB-2022-00002,,Harsh Desai,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-HBL-2022-00007-000,FIR-HBL-2022-00007,,Satish Prabhu,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2022-00003-000,FIR-BLR2-2022-00003,CRM-0000058,Gaurav Naik,ತೇಜಸ್ ಮೂರ್ತಿ,38,M,,false,false,principal
+ACC-FIR-HBL-2022-00008-000,FIR-HBL-2022-00008,CRM-0000190,Sandeep Lingayat,ಶಿವಕುಮಾರ್ ಲಿಂಗಾಯತ್,34,M,,false,false,principal
+ACC-FIR-BLR-2022-00009-000,FIR-BLR-2022-00009,CRM-0000006,Basavaraj Nambiar,ಶಿವಕುಮಾರ್ ಅಯ್ಯರ್,16,M,,true,false,principal
+ACC-FIR-UDR-2022-00001-000,FIR-UDR-2022-00001,CRM-0000128,Mahesh Hegde,ಗೌರವ್ ನಂಬಿಯಾರ್,68,M,,true,false,principal
+ACC-FIR-TKR-2022-00001-000,FIR-TKR-2022-00001,,Mahesh Tantri,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2022-00010-000,FIR-BLR-2022-00010,CRM-0000203,Umesh Aras,ಅನಿಲ್ ವೊಕ್ಕಲಿಗ,25,M,,true,true,principal
+ACC-FIR-RMN-2022-00001-000,FIR-RMN-2022-00001,CRM-0000139,Kiran Shastri,ವಿನಯ್ ಹೆಗಡೆ,18,M,,false,false,principal
+ACC-FIR-UDR-2022-00002-000,FIR-UDR-2022-00002,,Satish Hegde,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2022-00011-000,FIR-BLR-2022-00011,CRM-0000186,Saritha Thakur,ಸ್ನೇಹಾ ಕಾಮತ್,44,F,,true,false,principal
+ACC-FIR-BLR-2022-00012-000,FIR-BLR-2022-00012,CRM-0000133,Naveen Hegde,ರೋಹಿತ್ ಕೃಷ್ಣಮೂರ್ತಿ,62,M,,false,false,principal
+ACC-FIR-BLR2-2022-00004-000,FIR-BLR2-2022-00004,CRM-0000237,Shantha Prabhu,ಮಧು ಕಾಮತ್,48,F,,true,false,principal
+ACC-FIR-BLR2-2022-00005-000,FIR-BLR2-2022-00005,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,true,true,principal
+ACC-FIR-BLR2-2022-00005-001,FIR-BLR2-2022-00005,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-CHT-2022-00001-000,FIR-CHT-2022-00001,CRM-0000196,Priya Kumar,ಸುಜಾತಾ ಅರಸ್,26,F,,true,true,principal
+ACC-FIR-UDR-2022-00003-000,FIR-UDR-2022-00003,,Nitya Krishnamurthy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-SHV-2022-00003-000,FIR-SHV-2022-00003,CRM-0000218,Priya Pillai,ಜ್ಯೋತಿ ಅಯ್ಯರ್,52,F,,true,false,principal
+ACC-FIR-UDR-2022-00004-000,FIR-UDR-2022-00004,,Naveen Verma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-RBG-2022-00001-000,FIR-RBG-2022-00001,,Mohan Kamath,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLG-2022-00001-000,FIR-BLG-2022-00001,,Amala Raju,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-KLP-2022-00002-000,FIR-KLP-2022-00002,CRM-0000193,Abhishek Krishnamurthy,ದೀಪಕ್ ಹೆಗಡೆ,56,M,,false,false,principal
+ACC-FIR-KLP-2022-00002-001,FIR-KLP-2022-00002,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-BLG-2022-00002-000,FIR-BLG-2022-00002,CRM-0000205,Anita Vokkaliga,ಸುಮ಼ಾ ಗೌಡ,55,F,,true,true,principal
+ACC-FIR-BLR-2022-00013-000,FIR-BLR-2022-00013,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,false,true,principal
+ACC-FIR-TKR-2022-00002-000,FIR-TKR-2022-00002,,Ravi Kumar,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-CHB-2022-00003-000,FIR-CHB-2022-00003,CRM-0000235,Umesh Shastri,ಅರ್ಜುನ್ ಭಟ್,43,M,,false,false,principal
+ACC-FIR-BLR2-2022-00006-000,FIR-BLR2-2022-00006,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,false,principal
+ACC-FIR-MYS-2022-00002-000,FIR-MYS-2022-00002,,Vikram Swamy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2022-00014-000,FIR-BLR-2022-00014,CRM-0000186,Saritha Thakur,ಸ್ನೇಹಾ ಕಾಮತ್,44,F,,false,false,principal
+ACC-FIR-MYS-2022-00003-000,FIR-MYS-2022-00003,,Manjunath Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR2-2022-00007-000,FIR-BLR2-2022-00007,CRM-0000111,Sneha Lingayat,ಸರಿತಾ ಅಯ್ಯರ್,31,F,,false,false,principal
+ACC-FIR-BLR2-2022-00007-001,FIR-BLR2-2022-00007,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,false,false,accomplice
+ACC-FIR-BLR-2022-00015-000,FIR-BLR-2022-00015,CRM-0000142,Manjunath Shetty,ಪ್ರಶಾಂತ್ ನಂಬಿಯಾರ್,19,M,,false,false,principal
+ACC-FIR-BLR2-2022-00008-000,FIR-BLR2-2022-00008,CRM-0000058,Gaurav Naik,ತೇಜಸ್ ಮೂರ್ತಿ,38,M,,true,false,principal
+ACC-FIR-RBG-2022-00002-000,FIR-RBG-2022-00002,CRM-0000232,Gaurav Aras,ಪ್ರಶಾಂತ್ ಸ್ವಾಮಿ,72,M,,false,false,principal
+ACC-FIR-MYS-2022-00004-000,FIR-MYS-2022-00004,CRM-0000000,Ravi Sharma,ಮಂಜುನಾಥ್ ಉಡುಪ,50,M,,false,false,principal
+ACC-FIR-BLR-2022-00016-000,FIR-BLR-2022-00016,,Akash Reddy,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-BLR-2022-00017-000,FIR-BLR-2022-00017,CRM-0000204,Anjali Singh,ಲಕ್ಷ್ಮಿ ಅಯ್ಯರ್,17,F,,false,false,principal
+ACC-FIR-BLR-2022-00017-001,FIR-BLR-2022-00017,CRM-0000140,Shantha Prabhu,ಗೀತಾ ತಂತ್ರಿ,24,F,,false,false,accomplice
+ACC-FIR-BLR-2022-00018-000,FIR-BLR-2022-00018,,Mahesh Gowda,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-KDG-2022-00001-000,FIR-KDG-2022-00001,CRM-0000017,Anita Nambiar,ಮಧು ಅರಸ್,34,F,,false,false,principal
+ACC-FIR-BLR-2022-00019-000,FIR-BLR-2022-00019,CRM-0000096,Sandeep Aras,ಶಿವಕುಮಾರ್ ಪ್ರಭು,25,M,,true,false,principal
+ACC-FIR-HBL-2022-00009-000,FIR-HBL-2022-00009,CRM-0000038,Ganesh Bhat,ಬಸವರಾಜ್ ಗೌಡ,65,M,,true,false,principal
+ACC-FIR-HBL-2022-00009-001,FIR-HBL-2022-00009,CRM-0000175,Meera Krishnamurthy,ಅನಿತಾ ಪಾಟೀಲ್,49,F,,true,false,accomplice
+ACC-FIR-BLR2-2022-00009-000,FIR-BLR2-2022-00009,CRM-0000112,Seeta Shetty,ಗೀತಾ ನಂಬಿಯಾರ್,47,F,,false,false,principal
+ACC-FIR-KLP-2022-00003-000,FIR-KLP-2022-00003,CRM-0000001,Radha Tantri,ಸ್ವಾತಿ ಉಡುಪ,44,F,,true,true,principal
+ACC-FIR-RMN-2022-00002-000,FIR-RMN-2022-00002,CRM-0000206,Manjunath Gowda,ಸಂದೀಪ್ ಲಿಂಗಾಯತ್,26,M,,false,false,principal
+ACC-FIR-BLR-2022-00020-000,FIR-BLR-2022-00020,,Nagaraj Sharma,ಅಜ್ಞಾತ,,M,,false,false,principal
+ACC-FIR-SHV-2022-00004-000,FIR-SHV-2022-00004,CRM-0000055,Bharathi Nambiar,ಅನಿತಾ ಪಾಟೀಲ್,32,F,,true,true,principal
+ACC-FIR-MGL-2022-00002-000,FIR-MGL-2022-00002,,Rekha Krishnamurthy,ಅಜ್ಞಾತ,,F,,false,false,principal
+ACC-FIR-BLR-2022-00021-000,FIR-BLR-2022-00021,CRM-0000048,Sneha Prabhu,ಅಮಲಾ ಉಡುಪ,66,F,,false,false,principal
+ACC-FIR-BLR2-2022-00010-000,FIR-BLR2-2022-00010,CRM-0000173,Geetha Adiga,ಕವಿತಾ ದೇಸಾಯಿ,34,F,,true,false,principal
+ACC-FIR-BLR2-2022-00010-001,FIR-BLR2-2022-00010,CRM-0000209,Mohan Kamath,ರಾಮೇಶ್ ಭಟ್,70,M,,true,false,accomplice
+ACC-FIR-BLR2-2022-00011-000,FIR-BLR2-2022-00011,CRM-0000020,Sujatha Raju,ಜ್ಯೋತಿ ಮೂರ್ತಿ,58,F,,true,false,principal
+ACC-FIR-BLR-2022-00022-000,FIR-BLR-2022-00022,CRM-0000129,Prakash Lingayat,ಶಿವಕುಮಾರ್ ಶಾಸ್ತ್ರಿ,74,M,,true,false,principal
+ACC-FIR-KLP-2022-00004-000,FIR-KLP-2022-00004,CRM-0000152,Vinay Singh,ಅಜಯ್ ಕೃಷ್ಣಮೂರ್ತಿ,16,M,,true,false,principal
+ACC-FIR-KLP-2022-00004-001,FIR-KLP-2022-00004,CRM-0000181,Naveen Shastri,ಸತೀಶ್ ಕೃಷ್ಣಮೂರ್ತಿ,20,M,,true,false,accomplice
+ACC-FIR-KLP-2022-00004-002,FIR-KLP-2022-00004,CRM-0000019,Anil Murthy,ಮಂಜುನಾಥ್ ಲಿಂಗಾಯತ್,53,M,,true,false,accomplice
+ACC-FIR-BLR-2022-00023-000,FIR-BLR-2022-00023,CRM-0000141,Sangeetha Verma,ಶೃತಿ ಅರಸ್,41,F,,true,false,principal
