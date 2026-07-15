@@ -1,17 +1,19 @@
 NEXUS Knowledge Graph — Neo4j Import Summary
 ==================================================
 
-Total Nodes:       10,369
-Total Edges:       7,695
+Total Nodes:       10,479
+Total Edges:       9,351
 
 Node Breakdown:
-  District                   14
-  Evidence                2,354
-  FIR                     1,001
+  District                   11
+  Evidence                2,337
+  FIR                     1,002
   Gang                        5
-  Officer                 3,948
-  Person                  2,415
+  Officer                 3,801
+  Person                  2,472
+  Phone                     168
   Station                   632
+  Vehicle                    51
 
 Neo4j Import Command:
   neo4j-admin database import full \
@@ -21,6 +23,8 @@ Neo4j Import Command:
     --nodes=Gang=nodes_gang.csv \
     --nodes=District=nodes_district.csv \
     --nodes=FIR=nodes_fir.csv \
+    --nodes=Phone=nodes_phone.csv \
+    --nodes=Vehicle=nodes_vehicle.csv \
     --nodes=Evidence=nodes_evidence.csv \
     --relationships=relationships.csv \
     --overwrite-destination=true nexus

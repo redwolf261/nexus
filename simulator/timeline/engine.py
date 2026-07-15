@@ -8,7 +8,7 @@ Day-by-day simulation loop that:
   - Produces an ordered list of raw crime events
 """
 from __future__ import annotations
-import random
+import numpy as np
 import logging
 from datetime import date, timedelta
 from typing import List, Dict, Callable, Optional
@@ -32,7 +32,7 @@ class SimulationEngine:
     def __init__(
         self,
         settings: Settings,
-        rng: random.Random,
+        rng: np.random.Generator,
         criminals: List[CriminalProfile],
         stations: List[Station],
         career_manager: CareerManager,
@@ -45,6 +45,9 @@ class SimulationEngine:
         self.career_manager = career_manager
         self.coord_sampler = coord_sampler
         self.calendar = KarnatakaCalendar()
+        
+        from simulator.timeline.campaigns import CampaignManager
+        self.campaign_manager = CampaignManager(rng)
 
         # Crime generator callbacks: fn(day_ctx, active_criminals, rng, coord_sampler) → List[raw_event]
         self._crime_generators: List[Callable] = []
@@ -52,6 +55,10 @@ class SimulationEngine:
         # Results
         self.raw_crime_events: List[dict] = []
         self.simulation_days: List[DayContext] = []
+        
+        # Dynamic Police Response (Patrol Surges)
+        self.district_crime_history: Dict[str, List[int]] = {s.district_id: [] for s in stations}
+        self.active_surges: Dict[str, int] = {} # district_id -> days_remaining
 
     def register_crime_generator(self, fn: Callable) -> None:
         """Register a callback that generates crimes for a given day."""
@@ -83,7 +90,7 @@ class SimulationEngine:
             self.simulation_days.append(day_ctx)
 
             # Advance career states
-            self.career_manager.tick(current_date, self.criminals)
+            self.career_manager.tick(current_date, self.criminals, self.stations)
 
             # Get active criminals for today
             active_today = [
@@ -99,6 +106,7 @@ class SimulationEngine:
 
             # Generate crimes via registered generators
             day_events: List[dict] = []
+            executing_campaigns = self.campaign_manager.tick(current_date, active_today, self.stations)
             remaining = today_crimes
             for gen in self._crime_generators:
                 if remaining <= 0:
@@ -110,12 +118,42 @@ class SimulationEngine:
                     coord_sampler=self.coord_sampler,
                     stations=self.stations,
                     count=remaining,
+                    campaigns=executing_campaigns,
+                    active_surges=self.active_surges
                 )
                 day_events.extend(events)
                 remaining -= len(events)
 
             self.raw_crime_events.extend(day_events)
             crimes_generated += len(day_events)
+            
+            # Update Police Response Feedback Loop
+            # 1. Tally today's crimes per district
+            today_tally = {d: 0 for d in self.district_crime_history}
+            for e in day_events:
+                # Assuming CrimeEvent has district_id property, but here it's an object
+                if hasattr(e, 'district_id'):
+                    d = e.district_id
+                    if d in today_tally:
+                        today_tally[d] += 1
+            
+            # 2. Update history and check surges
+            for d, history in self.district_crime_history.items():
+                history.append(today_tally[d])
+                if len(history) > 7:
+                    history.pop(0)
+                    
+                # If last 7 days > 15 crimes (example threshold), trigger surge
+                if sum(history) > 15:
+                    self.active_surges[d] = 5 # 5 day surge
+                    
+                # Decrement active surges
+                if d in self.active_surges:
+                    self.active_surges[d] -= 1
+                    if self.active_surges[d] <= 0:
+                        del self.active_surges[d]
+                        # Reset history so we don't immediately trigger again
+                        self.district_crime_history[d] = [0]*7
 
             if day_count % 30 == 0:
                 logger.info(

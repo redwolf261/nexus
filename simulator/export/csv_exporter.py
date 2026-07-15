@@ -83,6 +83,7 @@ def export_all_csv(sim_data: dict, output_dir: Path) -> Dict[str, int]:
     table_map = {
         "districts":        "districts.csv",
         "stations":         "stations.csv",
+        "pois":             "pois.csv",
         "officers":         "officers.csv",
         "citizens":         "persons.csv",
         "criminals":        "criminals.csv",
@@ -98,6 +99,24 @@ def export_all_csv(sim_data: dict, output_dir: Path) -> Dict[str, int]:
         "modus_operandi":   "modus_operandi.csv",
         "entity_resolution":"entity_resolution.csv",
         "noisy_firs":       "firs_with_noise.csv",
+        "vehicles":         "vehicles.csv",
+        "phones":           "phones.csv",
+        "cdrs":             "cdrs.csv",
+        "campaigns":        "ground_truth_campaigns.csv",
+        "investigation_logs": "investigation_logs.csv",
+        "financial_transactions": "financial_transactions.csv",
+        "intelligence_tips": "intelligence_tips.csv",
+        "social_ties":      "social_network.csv",
+        "masterminds":      "ground_truth_masterminds.csv",
+        "court_cases":      "court_cases.csv",
+        "informants":       "informants.csv",
+        "cell_towers":      "cell_towers.csv",
+        "cctv_cameras":     "cctv_cameras.csv",
+        "anpr_cameras":     "anpr_cameras.csv",
+        "cell_pings":       "cell_tower_pings.csv",
+        "vehicle_gps":      "vehicle_gps.csv",
+        "cctv_logs":        "cctv_logs.csv",
+        "anpr_logs":        "anpr_logs.csv",
     }
 
     for key, filename in table_map.items():
@@ -116,6 +135,8 @@ def export_all_csv(sim_data: dict, output_dir: Path) -> Dict[str, int]:
             written[key] = _write_csv(data, path, flat_fn=_flatten_mo)
         elif key in {"entity_resolution"}:
             written[key] = _write_csv(data, path)  # Already dicts
+        elif key in {"masterminds"}:
+            written[key] = _write_csv(data, path, flat_fn=_flatten_mastermind)
         else:
             written[key] = _write_csv(data, path)
 
@@ -202,4 +223,15 @@ def _flatten_mo(mo) -> dict:
         "is_solo": mo.is_solo,
         "uses_vehicle_escape": mo.uses_vehicle_escape,
         "is_violent": mo.is_violent,
+    }
+
+def _flatten_mastermind(m) -> dict:
+    return {
+        "mastermind_id": m.mastermind_id,
+        "citizen_id": m.citizen_id,
+        "name_en": m.name_en,
+        "alias": m.alias,
+        "wealth_level": m.wealth_level,
+        "controlled_gang_ids": "|".join(m.controlled_gang_ids),
+        "front_business": m.front_business
     }

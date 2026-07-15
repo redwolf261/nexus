@@ -12,7 +12,7 @@ Applies realistic data quality imperfections to the generated datasets:
 Every noisy record maintains a link back to the clean canonical record.
 """
 from __future__ import annotations
-import random
+import numpy as np
 import copy
 from dataclasses import asdict
 from datetime import date
@@ -49,7 +49,7 @@ class NoiseInjector:
     Maintains a noise_map for traceability.
     """
 
-    def __init__(self, rng: random.Random, noise_fraction: float = 0.15) -> None:
+    def __init__(self, rng: np.random.Generator, noise_fraction: float = 0.15) -> None:
         self.rng = rng
         self.noise_fraction = noise_fraction
         self.alias_gen = AliasGenerator(rng)
@@ -68,8 +68,8 @@ class NoiseInjector:
 
             # Pick a noise type
             noise_type = self.rng.choice([
-                "missing_fields", "ocr_error", "gps_jitter",
-                "date_format", "duplicate", "alias_name",
+                "missing_fields", "ocr_error", "gps_jitter", "missing_gps",
+                "date_format", "duplicate", "alias_name", "inconsistent_address"
             ])
 
             noisy_fir = self._clone_fir(fir)
@@ -78,12 +78,17 @@ class NoiseInjector:
 
             if noise_type == "missing_fields":
                 self._apply_missing_fields(noisy_fir)
+                if noisy_fir.phone_ids and self.rng.random() < 0.5:
+                    noisy_fir.phone_ids = []  # drop linked phones
             elif noise_type == "ocr_error":
                 noisy_fir.complainant_name = self._ocr_corrupt_text(fir.complainant_name)
                 noisy_fir.description_en = self._ocr_corrupt_text(fir.description_en[:100])
             elif noise_type == "gps_jitter":
                 noisy_fir.latitude  = round(fir.latitude  + self.rng.uniform(-0.01, 0.01), 6)
                 noisy_fir.longitude = round(fir.longitude + self.rng.uniform(-0.01, 0.01), 6)
+            elif noise_type == "missing_gps":
+                noisy_fir.latitude = None
+                noisy_fir.longitude = None
             elif noise_type == "date_format":
                 # Date stored as alternative string representation (handled in export)
                 pass
@@ -94,6 +99,12 @@ class NoiseInjector:
                 aliases = self.alias_gen.generate_aliases(fir.complainant_name, "", num_aliases=1)
                 if aliases:
                     noisy_fir.complainant_name = aliases[0]
+            elif noise_type == "inconsistent_address":
+                addr = fir.complainant_address
+                addr = addr.replace("Road", "Rd").replace("Street", "St").replace("Cross", "Crs")
+                if self.rng.random() < 0.5:
+                    addr = addr[:-7] # Drop pincode e.g. " - 560001"
+                noisy_fir.complainant_address = addr
 
             noisy_firs.append(noisy_fir)
 
@@ -109,7 +120,7 @@ class NoiseInjector:
         """
         alias_map: Dict[str, List[str]] = {}
         for criminal in criminals:
-            num_aliases = self.rng.randint(1, 3)
+            num_aliases = int(self.rng.integers(1, 3 + 1))
             aliases = self.alias_gen.generate_aliases(
                 criminal.name_en, criminal.name_kn, num_aliases
             )

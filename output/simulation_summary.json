@@ -2,18 +2,18 @@
   "simulation_summary": {
     "total_districts": 31,
     "total_stations": 632,
-    "total_officers": 3948,
+    "total_officers": 3801,
     "total_citizens": 5000,
-    "total_criminals": 246,
+    "total_criminals": 245,
     "total_gangs": 5,
-    "total_firs": 1001,
-    "total_victims": 2169,
-    "total_accused": 1143,
-    "total_evidence": 2354,
-    "total_arrests": 296,
-    "total_chargesheets": 158,
-    "total_patrol_logs": 168112,
-    "total_cctv_events": 747,
-    "entity_resolution_records": 598
+    "total_firs": 1002,
+    "total_victims": 2227,
+    "total_accused": 1090,
+    "total_evidence": 2337,
+    "total_arrests": 309,
+    "total_chargesheets": 167,
+    "total_patrol_logs": 156736,
+    "total_cctv_events": 727,
+    "entity_resolution_records": 615
   }
 }

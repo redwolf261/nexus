@@ -59,6 +59,10 @@ class DayContext:
         is_weekend: bool,
         festival: Optional[str],
         season: str,
+        weather: str,
+        sports_event: Optional[str],
+        election: bool,
+        tourist_season: bool,
         crime_multipliers: Dict[str, float],
     ) -> None:
         self.date = date_
@@ -66,6 +70,10 @@ class DayContext:
         self.is_weekend = is_weekend
         self.festival = festival
         self.season = season
+        self.weather = weather
+        self.sports_event = sports_event
+        self.election = election
+        self.tourist_season = tourist_season
         self.crime_multipliers = crime_multipliers  # crime_type_id → multiplier
 
     @property
@@ -137,14 +145,48 @@ class KarnatakaCalendar:
                     festival_risk[crime_type] = max(festival_risk.get(crime_type, 1.0), mult)
 
         # Compute per-crime-type multipliers
+        # Dynamic Events (Weather, IPL, Elections)
+        import numpy as np
+        rng = np.random.default_rng(int(d.strftime("%Y%m%d")))
+        
         monthly_mult = MONTHLY_BASELINE.get(d.month, 1.0)
         weekend_mult = 1.15 if is_weekend else 1.0
         holiday_mult = 1.20 if is_holiday else 1.0
+        
+        season = self._get_season(d.month)
+        
+        weather = "Clear"
+        weather_mult = 1.0
+        if season == "monsoon":
+            if rng.random() < 0.3:
+                weather = "Heavy Rain"
+                weather_mult = 0.8 # Rain suppresses street crime
+            elif rng.random() < 0.5:
+                weather = "Light Rain"
+        elif season == "summer":
+            if rng.random() < 0.2:
+                weather = "Heatwave"
+                weather_mult = 1.1 # Heat increases tempers/assault
+                
+        sports_event = None
+        sports_mult = 1.0
+        if d.month in [4, 5] and is_weekend and rng.random() < 0.5:
+            sports_event = "IPL Match"
+            sports_mult = 1.2 # Match day spikes
+            
+        election = False
+        election_mult = 1.0
+        if d.year in [2018, 2019, 2023, 2024] and d.month == 5 and 10 <= d.day <= 15:
+            election = True
+            election_mult = 1.4 # Political violence / riots
+            
+        tourist_season = d.month in [11, 12, 1]
+        tourist_mult = 1.1 if tourist_season else 1.0
 
         crime_multipliers: Dict[str, float] = {}
         for cat in CRIME_CATEGORIES:
             ctype = cat["id"]
-            base = monthly_mult * weekend_mult * holiday_mult
+            base = monthly_mult * weekend_mult * holiday_mult * weather_mult * sports_mult * election_mult * tourist_mult
             fest_mod = festival_risk.get(ctype, 1.0)
             crime_multipliers[ctype] = round(base * fest_mod, 3)
 
@@ -153,6 +195,10 @@ class KarnatakaCalendar:
             is_holiday=is_holiday,
             is_weekend=is_weekend,
             festival=active_festival,
-            season=self._get_season(d.month),
+            season=season,
+            weather=weather,
+            sports_event=sports_event,
+            election=election,
+            tourist_season=tourist_season,
             crime_multipliers=crime_multipliers,
         )

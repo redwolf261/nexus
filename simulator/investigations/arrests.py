@@ -4,51 +4,17 @@ Generates arrest records, bail records, and chargesheet filings
 linked to FIRs and accused persons.
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import List, Optional, Dict
 
 from simulator.crimes.fir import FIR, Accused
+from simulator.schemas.investigations import ArrestRecord, Chargesheet
 
 
-@dataclass
-class ArrestRecord:
-    arrest_id: str
-    fir_id: str
-    accused_id: str
-    criminal_id: Optional[str]
-    accused_name: str
-    arresting_officer_id: Optional[str]
-    arrest_date: date
-    arrest_location: str
-    district_id: str
-    station_id: str
-    arrest_type: str        # "preventive" | "warrant" | "suo_moto"
-    is_juvenile: bool
-    remand_days: int
-    bail_granted: bool
-    bail_date: Optional[date]
-    bail_amount_inr: float
-    bail_court: Optional[str]
-    is_convicted: bool
-    conviction_date: Optional[date]
-    sentence: Optional[str]
 
 
-@dataclass
-class Chargesheet:
-    chargesheet_id: str
-    fir_id: str
-    filed_date: date
-    filing_officer_id: Optional[str]
-    court_name: str
-    court_case_number: str
-    ipc_sections: List[str]
-    num_accused_charged: int
-    accused_ids: List[str]
-    status: str             # "filed" | "pending_trial" | "convicted" | "acquitted"
-    next_hearing_date: Optional[date]
 
 
 COURTS = [
@@ -67,7 +33,7 @@ SENTENCES = [
 def generate_arrests(
     firs: List[FIR],
     officers_by_station: Dict[str, list],
-    rng: random.Random,
+    rng: np.random.Generator,
 ) -> tuple[List[ArrestRecord], List[Chargesheet]]:
     """
     Generate arrest records for FIRs with known accused.
@@ -86,7 +52,7 @@ def generate_arrests(
             continue
 
         # Arrests per FIR (1-3)
-        num_arrests = rng.randint(1, min(3, fir.num_accused))
+        num_arrests = int(rng.integers(1, min(3, fir.num_accused + 1)))
         fir_arrests: List[ArrestRecord] = []
 
         station_offs = officers_by_station.get(fir.station_id, [])
@@ -95,16 +61,16 @@ def generate_arrests(
         for i in range(num_arrests):
             accused = fir.accused_list[i] if i < len(fir.accused_list) else None
 
-            arrest_delay = rng.randint(0, 30)  # days after FIR
+            arrest_delay = int(rng.integers(0, 30 + 1))  # days after FIR
             arrest_date = fir.reported_date + timedelta(days=arrest_delay)
 
-            remand_days = rng.randint(1, 15)
+            remand_days = int(rng.integers(1, 15 + 1))
             bail_granted = rng.random() < 0.65
-            bail_date = arrest_date + timedelta(days=rng.randint(7, 90)) if bail_granted else None
+            bail_date = arrest_date + timedelta(days=int(rng.integers(7, 90 + 1))) if bail_granted else None
             bail_amount = rng.choice([10_000, 25_000, 50_000, 100_000, 200_000]) if bail_granted else 0.0
 
             is_convicted = (not bail_granted) and rng.random() < 0.30
-            conviction_date = arrest_date + timedelta(days=rng.randint(180, 900)) if is_convicted else None
+            conviction_date = arrest_date + timedelta(days=int(rng.integers(180, 900 + 1))) if is_convicted else None
 
             district_code = fir.district_id.replace("KA-", "").replace("-", "")
             court = rng.choice(COURTS)
@@ -137,7 +103,7 @@ def generate_arrests(
 
         # Chargesheet
         if fir_arrests and rng.random() < 0.55:
-            cs_date = fir.reported_date + timedelta(days=rng.randint(30, 90))
+            cs_date = fir.reported_date + timedelta(days=int(rng.integers(30, 90 + 1)))
             filing_off = arresting_off
 
             chargesheets.append(Chargesheet(
@@ -146,16 +112,15 @@ def generate_arrests(
                 filed_date=cs_date,
                 filing_officer_id=filing_off,
                 court_name=rng.choice(COURTS),
-                court_case_number=f"CC/{rng.randint(1, 9999)}/{fir.occurred_date.year}",
+                court_case_number=f"CC/{int(rng.integers(1, 9999 + 1))}/{fir.occurred_date.year}",
                 ipc_sections=fir.ipc_sections,
                 num_accused_charged=len(fir_arrests),
                 accused_ids=[a.accused_id for a in fir_arrests],
-                status=rng.choices(
-                    ["filed", "pending_trial", "convicted", "acquitted"],
-                    weights=[40, 35, 15, 10],
-                    k=1,
-                )[0],
-                next_hearing_date=cs_date + timedelta(days=rng.randint(30, 180)),
+                status=rng.choice(
+                    ["absconding", "arrested", "dead"],
+                    p=[0.70, 0.28, 0.02]
+                ),
+                next_hearing_date=cs_date + timedelta(days=int(rng.integers(30, 180 + 1))),
             ))
             cs_counter += 1
 

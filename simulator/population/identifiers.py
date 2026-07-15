@@ -10,7 +10,7 @@ Generates realistic Indian identifiers:
 All identifiers are tracked to avoid duplicates within a simulation run.
 """
 from __future__ import annotations
-import random
+import numpy as np
 import string
 from typing import Set
 
@@ -23,7 +23,7 @@ class IdentifierFactory:
     All generated IDs are tracked in sets to prevent duplicates.
     """
 
-    def __init__(self, rng: random.Random) -> None:
+    def __init__(self, rng: np.random.Generator) -> None:
         self.rng = rng
         self._used_phones: Set[str] = set()
         self._used_vehicles: Set[str] = set()
@@ -35,7 +35,7 @@ class IdentifierFactory:
         """10-digit Indian mobile number starting with 6-9."""
         while True:
             prefix = self.rng.choice(["6", "7", "8", "9"])
-            rest = "".join(str(self.rng.randint(0, 9)) for _ in range(9))
+            rest = "".join(str(int(self.rng.integers(0, 9 + 1))) for _ in range(9))
             number = prefix + rest
             if number not in self._used_phones:
                 self._used_phones.add(number)
@@ -47,7 +47,7 @@ class IdentifierFactory:
             rto = rto_code or self.rng.choice(KARNATAKA_RTO_CODES)
             series = self.rng.choice(list(string.ascii_uppercase))
             series2 = self.rng.choice(list(string.ascii_uppercase))
-            number = f"{self.rng.randint(1000, 9999)}"
+            number = f"{int(self.rng.integers(1000, 9999 + 1))}"
             reg = f"{rto} {series}{series2} {number}"
             if reg not in self._used_vehicles:
                 self._used_vehicles.add(reg)
@@ -56,8 +56,8 @@ class IdentifierFactory:
     def aadhaar(self) -> str:
         """12-digit fake Aadhaar number. First digit 2-9 (not 0 or 1)."""
         while True:
-            first = str(self.rng.randint(2, 9))
-            rest = "".join(str(self.rng.randint(0, 9)) for _ in range(11))
+            first = str(int(self.rng.integers(2, 9 + 1)))
+            rest = "".join(str(int(self.rng.integers(0, 9 + 1))) for _ in range(11))
             uid = first + rest
             if uid not in self._used_aadhaar:
                 self._used_aadhaar.add(uid)
@@ -67,8 +67,8 @@ class IdentifierFactory:
         """Karnataka DL number in KA-XX-YYYY-NNNNNNN format."""
         while True:
             rto = (rto_code or self.rng.choice(KARNATAKA_RTO_CODES)).replace("KA-", "")
-            year = self.rng.randint(2005, 2024)
-            seq = self.rng.randint(1000000, 9999999)
+            year = int(self.rng.integers(2005, 2024 + 1))
+            seq = int(self.rng.integers(1000000, 9999999 + 1))
             dl = f"KA{rto.replace('-','')}{year}{seq}"
             if dl not in self._used_dl:
                 self._used_dl.add(dl)
@@ -77,8 +77,8 @@ class IdentifierFactory:
     def bank_account(self) -> str:
         """11–16 digit fake bank account number."""
         while True:
-            length = self.rng.randint(11, 16)
-            account = "".join(str(self.rng.randint(0, 9)) for _ in range(length))
+            length = int(self.rng.integers(11, 16 + 1))
+            account = "".join(str(int(self.rng.integers(0, 9 + 1))) for _ in range(length))
             if account not in self._used_accounts:
                 self._used_accounts.add(account)
                 return account
@@ -87,12 +87,12 @@ class IdentifierFactory:
         """Sample IFSC code."""
         banks = ["SBIN", "CNRB", "UBIN", "HDFC", "ICIC", "KARB", "VIJB", "CORP", "BKID"]
         bank = self.rng.choice(banks)
-        branch = "0" + "".join(str(self.rng.randint(0, 9)) for _ in range(5))
+        branch = "0" + "".join(str(int(self.rng.integers(0, 9 + 1))) for _ in range(5))
         return f"{bank}{branch}"
 
     def upi_id(self, name: str, phone: str) -> str:
         """Generate a UPI ID."""
-        style = self.rng.randint(0, 2)
+        style = int(self.rng.integers(0, 2 + 1))
         if style == 0:
             return f"{phone}@upi"
         elif style == 1:

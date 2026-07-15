@@ -1,95 +1,120 @@
-17:14:42 | INFO     | nexus.run | ======================================================================
-17:14:42 | INFO     | nexus.run |   NEXUS Synthetic Crime World Simulator
-17:14:42 | INFO     | nexus.run |   Karnataka State Police Datathon 2026 — Track 2
-17:14:42 | INFO     | nexus.run |   Author: Rivan Avinash Shetty (@redwolf261)
-17:14:42 | INFO     | nexus.run | ======================================================================
-17:14:42 | INFO     | nexus.run |   Scale:  small
-17:14:42 | INFO     | nexus.run |   Seed:   42
-17:14:42 | INFO     | nexus.run |   Output: output
-17:14:42 | INFO     | nexus.run |   Formats: csv, json, neo4j, geojson
-17:14:42 | INFO     | nexus.run |   Noise:  enabled
-17:14:42 | INFO     | nexus.run | ======================================================================
-17:14:42 | INFO     | nexus.simulator | [*] NEXUS Simulator | Scale: small | Seed: 42 | Target FIRs: 1,000
-17:14:42 | INFO     | nexus.simulator | Phase 1/11: Building Karnataka geography...
-17:14:42 | INFO     | nexus.simulator |   >> 31 districts | 632 stations | 15913 locations
-17:14:42 | INFO     | nexus.simulator | Phase 2/11: Generating population...
-17:14:42 | INFO     | nexus.simulator |   >> 5,000 citizens | 3,948 officers
-17:14:42 | INFO     | nexus.simulator | Phase 3/11: Building criminal profiles...
-17:14:42 | INFO     | nexus.simulator |   >> 246 criminal profiles
-17:14:42 | INFO     | nexus.simulator | Phase 4/11: Forming gangs...
-17:14:42 | INFO     | nexus.simulator |   >> 5 gangs | Career manager initialized
-17:14:42 | INFO     | nexus.simulator | Phase 5/11: Running simulation timeline...
-17:14:42 | INFO     | simulator.timeline.engine | Simulation start: 2021-01-01 | Target FIRs: 1000
-17:14:42 | INFO     | simulator.timeline.engine | Day    0 | 2021-01-01 | Crimes today:   2 | Total:      2/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day   30 | 2021-01-31 | Crimes today:   3 | Total:     73/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day   60 | 2021-03-02 | Crimes today:   3 | Total:    135/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day   90 | 2021-04-01 | Crimes today:   2 | Total:    224/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  120 | 2021-05-01 | Crimes today:   3 | Total:    294/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  150 | 2021-05-31 | Crimes today:   2 | Total:    363/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  180 | 2021-06-30 | Crimes today:   2 | Total:    423/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  210 | 2021-07-30 | Crimes today:   2 | Total:    483/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  240 | 2021-08-29 | Crimes today:   2 | Total:    544/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  270 | 2021-09-28 | Crimes today:   3 | Total:    633/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  300 | 2021-10-28 | Crimes today:   3 | Total:    728/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  330 | 2021-11-27 | Crimes today:   3 | Total:    819/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  360 | 2021-12-27 | Crimes today:   3 | Total:    910/1000
-17:14:42 | INFO     | simulator.timeline.engine | Day  390 | 2022-01-26 | Crimes today:   3 | Total:    983/1000
-17:14:42 | INFO     | simulator.timeline.engine | Simulation complete. Days: 399 | Crimes: 1001
-17:14:42 | INFO     | nexus.simulator |   >> 1,001 crime events generated over 399 days
-17:14:42 | INFO     | nexus.simulator | Phase 6/11: Assembling FIRs...
-17:14:42 | INFO     | nexus.simulator |   >> 1,001 FIRs | 2,169 victims | 1,143 accused
-17:14:42 | INFO     | nexus.simulator | Phase 7/11: Generating investigations...
-17:14:44 | INFO     | nexus.simulator |   >> 2,354 evidence | 296 arrests | 158 chargesheets | 168,112 patrols | 747 CCTV events
-17:14:44 | INFO     | nexus.simulator | Phase 8/11: Building knowledge graph...
-17:14:44 | INFO     | simulator.graph.builder | Adding 632 station nodes...
-17:14:44 | INFO     | simulator.graph.builder | Adding 3948 officer nodes...
-17:14:44 | INFO     | simulator.graph.builder | Adding 246 criminal nodes...
-17:14:44 | INFO     | simulator.graph.builder | Adding 5 gang nodes...
-17:14:44 | INFO     | simulator.graph.builder | Adding 1001 FIR nodes...
-17:14:44 | INFO     | simulator.graph.builder | Adding 2354 evidence nodes...
-17:14:45 | INFO     | nexus.simulator |   >> 10,369 graph nodes | 7,695 graph edges
-17:14:45 | INFO     | nexus.simulator | Phase 9/11: Injecting noise...
-17:14:45 | INFO     | nexus.simulator |   >> 96 noisy FIRs | 246 criminals aliased | 598 ER records
-17:14:45 | INFO     | nexus.simulator | Phase 10/11: Validating simulation...
-17:14:45 | INFO     | simulator.validation.validator | Running simulation validation...
-17:14:45 | INFO     | simulator.validation.validator | Validation complete: 0 errors, 0 warnings
-17:14:45 | INFO     | nexus.simulator |   Validation [PASSED] | Errors: 0 | Warnings: 0
-17:14:45 | INFO     | nexus.simulator | Phase 11/11: Exporting datasets...
-17:14:45 | WARNING  | simulator.export.parquet_exporter | pyarrow not installed. Parquet export will be skipped.
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 31 rows -> districts.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 632 rows -> stations.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 3,948 rows -> officers.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 5,000 rows -> persons.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 246 rows -> criminals.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 5 rows -> gangs.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 1,001 rows -> firs.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 2,169 rows -> victims.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 1,143 rows -> accused.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 2,354 rows -> evidence.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 296 rows -> arrests.csv
-17:14:45 | INFO     | simulator.export.csv_exporter |   Wrote 158 rows -> chargesheets.csv
-17:14:49 | INFO     | simulator.export.csv_exporter |   Wrote 168,112 rows -> patrol_logs.csv
-17:14:49 | INFO     | simulator.export.csv_exporter |   Wrote 747 rows -> cctv_events.csv
-17:14:49 | INFO     | simulator.export.csv_exporter |   Wrote 1,001 rows -> modus_operandi.csv
-17:14:49 | INFO     | simulator.export.csv_exporter |   Wrote 598 rows -> entity_resolution.csv
-17:14:49 | INFO     | simulator.export.csv_exporter |   Wrote 96 rows -> firs_with_noise.csv
-17:14:49 | INFO     | simulator.export.csv_exporter | CSV export complete. 187,537 total rows across 17 tables.
-17:14:49 | INFO     | simulator.export.json_exporter |   Wrote simulation summary -> simulation_summary.json
-17:14:49 | INFO     | simulator.export.json_exporter |   Wrote gang network -> gang_network.json
-17:14:49 | INFO     | simulator.export.json_exporter |   Wrote crime statistics -> crime_statistics.json
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 632 Station nodes -> nodes_station.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 3,948 Officer nodes -> nodes_officer.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 2,415 Person nodes -> nodes_person.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 5 Gang nodes -> nodes_gang.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 14 District nodes -> nodes_district.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 1,001 FIR nodes -> nodes_fir.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 2,354 Evidence nodes -> nodes_evidence.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Wrote 7,695 relationships -> relationships.csv
-17:14:49 | INFO     | simulator.graph.neo4j_export |   Import summary -> import_summary.txt
-17:14:49 | INFO     | simulator.export.geojson_exporter |   Wrote 1,001 features -> crimes.geojson
-17:14:49 | INFO     | simulator.export.geojson_exporter |   Wrote 632 features -> stations.geojson
-17:14:49 | INFO     | simulator.export.geojson_exporter |   Wrote 379 features -> hotspots.geojson
-17:14:49 | INFO     | simulator.export.geojson_exporter |   Built 379 hotspot grid cells
-17:14:49 | INFO     | nexus.simulator | [DONE] NEXUS simulation complete. Output: C:\Users\Rivan\Projects\Nexus\output
-17:14:49 | INFO     | nexus.run | [DONE] Total runtime: 7.5s (0.1 min)
-17:14:49 | INFO     | nexus.run |        Output directory: C:\Users\Rivan\Projects\Nexus\output
+19:02:08 | INFO     | nexus.run | ======================================================================
+19:02:08 | INFO     | nexus.run |   NEXUS Synthetic Crime World Simulator
+19:02:08 | INFO     | nexus.run |   Karnataka State Police Datathon 2026 — Track 2
+19:02:08 | INFO     | nexus.run |   Author: Rivan Avinash Shetty (@redwolf261)
+19:02:08 | INFO     | nexus.run | ======================================================================
+19:02:08 | INFO     | nexus.run |   Scale:  small
+19:02:08 | INFO     | nexus.run |   Seed:   42
+19:02:08 | INFO     | nexus.run |   Output: output
+19:02:08 | INFO     | nexus.run |   Formats: csv, json, neo4j, geojson
+19:02:08 | INFO     | nexus.run |   Noise:  enabled
+19:02:08 | INFO     | nexus.run | ======================================================================
+19:02:09 | INFO     | nexus.simulator | [*] NEXUS Simulator | Scale: small | Seed: 42 | Target FIRs: 1,000
+19:02:09 | INFO     | nexus.simulator | Phase 1/11: Building Karnataka geography...
+19:02:09 | INFO     | nexus.simulator |   >> 31 districts | 632 stations | 15545 locations | 3882 POIs
+19:02:09 | INFO     | nexus.simulator |   >> 3189 Cell Towers | 12283 CCTV Cameras | 1258 ANPR Cameras
+19:02:09 | INFO     | nexus.simulator | Phase 2/11: Generating population...
+19:02:12 | INFO     | nexus.simulator |   >> 5,000 citizens | 3,801 officers
+19:02:12 | INFO     | nexus.simulator | Phase 3/11: Building criminal profiles...
+19:02:12 | INFO     | nexus.simulator |   >> 245 criminal profiles | 1,599 vehicles | 4,135 phones
+19:02:12 | INFO     | nexus.simulator | Phase 3.5/11: Generating Social Networks & Masterminds...
+19:02:13 | INFO     | nexus.simulator |   >> 990 social ties
+19:02:13 | INFO     | nexus.simulator | Phase 4/11: Forming gangs...
+19:02:13 | INFO     | nexus.simulator |   >> 5 gangs formed | 53 gang members
+19:02:13 | INFO     | nexus.simulator |   >> 5 hidden masterminds overseeing gangs
+19:02:13 | INFO     | nexus.simulator | Phase 5/11: Running simulation timeline...
+19:02:13 | INFO     | simulator.timeline.engine | Simulation start: 2021-01-01 | Target FIRs: 1000
+19:02:13 | INFO     | simulator.timeline.engine | Day    0 | 2021-01-01 | Crimes today:   3 | Total:      3/1000
+19:02:13 | INFO     | simulator.timeline.engine | Day   30 | 2021-01-31 | Crimes today:   3 | Total:     93/1000
+19:02:13 | INFO     | simulator.timeline.engine | Day   60 | 2021-03-02 | Crimes today:   3 | Total:    162/1000
+19:02:13 | INFO     | simulator.timeline.engine | Day   90 | 2021-04-01 | Crimes today:   3 | Total:    252/1000
+19:02:13 | INFO     | simulator.timeline.engine | Day  120 | 2021-05-01 | Crimes today:   4 | Total:    331/1000
+19:02:13 | INFO     | simulator.timeline.engine | Day  150 | 2021-05-31 | Crimes today:   3 | Total:    407/1000
+19:02:13 | INFO     | simulator.timeline.engine | Day  180 | 2021-06-30 | Crimes today:   3 | Total:    465/1000
+19:02:14 | INFO     | simulator.timeline.engine | Day  210 | 2021-07-30 | Crimes today:   2 | Total:    544/1000
+19:02:14 | INFO     | simulator.timeline.engine | Day  240 | 2021-08-29 | Crimes today:   2 | Total:    598/1000
+19:02:14 | INFO     | simulator.timeline.engine | Day  270 | 2021-09-28 | Crimes today:   3 | Total:    675/1000
+19:02:14 | INFO     | simulator.timeline.engine | Day  300 | 2021-10-28 | Crimes today:   3 | Total:    770/1000
+19:02:14 | INFO     | simulator.timeline.engine | Day  330 | 2021-11-27 | Crimes today:   4 | Total:    875/1000
+19:02:14 | INFO     | simulator.timeline.engine | Day  360 | 2021-12-27 | Crimes today:   3 | Total:    969/1000
+19:02:14 | INFO     | simulator.timeline.engine | Simulation complete. Days: 372 | Crimes: 1002
+19:02:14 | INFO     | nexus.simulator |   >> 1,002 crime events generated over 372 days | 39 campaigns
+19:02:14 | INFO     | nexus.simulator | Phase 6/11: Assembling FIRs...
+19:02:15 | INFO     | nexus.simulator |   >> 1,002 FIRs | 2,227 victims | 1,090 accused
+19:02:15 | INFO     | nexus.simulator | Phase 7/11: Generating investigations...
+19:02:42 | INFO     | nexus.simulator |   >> 2,337 evidence | 309 arrests | 167 chargesheets | 156,736 patrols | 727 CCTV events | 74 CDRs | 5,126 investigation logs | 14 financial tx | 15 intel tips
+19:02:42 | INFO     | nexus.simulator |   >> 167 court cases | 100 informants | 7,110 cell pings | 9,325 GPS pings | 6,604 CCTV logs | 769 ANPR logs
+19:02:42 | INFO     | nexus.simulator | Phase 8/11: Building knowledge graph...
+19:02:43 | INFO     | simulator.graph.builder | Adding 632 station nodes...
+19:02:43 | INFO     | simulator.graph.builder | Adding 3801 officer nodes...
+19:02:43 | INFO     | simulator.graph.builder | Adding 245 criminal nodes...
+19:02:43 | INFO     | simulator.graph.builder | Adding 5 gang nodes...
+19:02:43 | INFO     | simulator.graph.builder | Adding 1002 FIR nodes...
+19:02:43 | INFO     | simulator.graph.builder | Adding 2337 evidence nodes...
+19:02:43 | INFO     | nexus.simulator |   >> 10,479 graph nodes | 9,351 graph edges
+19:02:43 | INFO     | nexus.simulator | Phase 9/11: Injecting noise...
+19:02:43 | INFO     | nexus.simulator |   >> 120 noisy FIRs | 245 criminals aliased | 615 ER records
+19:02:43 | INFO     | nexus.simulator | Phase 10/11: Validating simulation...
+19:02:43 | INFO     | simulator.validation.validator | Running simulation validation...
+19:02:43 | INFO     | simulator.validation.validator | Validation complete: 0 errors, 0 warnings
+19:02:43 | INFO     | nexus.simulator |   Validation [PASSED] | Errors: 0 | Warnings: 0
+19:02:43 | INFO     | nexus.simulator | Phase 11/11: Exporting datasets...
+19:02:43 | WARNING  | simulator.export.parquet_exporter | pyarrow not installed. Parquet export will be skipped.
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 31 rows -> districts.csv
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 632 rows -> stations.csv
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 3,882 rows -> pois.csv
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 3,801 rows -> officers.csv
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 5,000 rows -> persons.csv
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 245 rows -> criminals.csv
+19:02:43 | INFO     | simulator.export.csv_exporter |   Wrote 5 rows -> gangs.csv
+19:02:44 | INFO     | simulator.export.csv_exporter |   Wrote 1,002 rows -> firs.csv
+19:02:44 | INFO     | simulator.export.csv_exporter |   Wrote 2,227 rows -> victims.csv
+19:02:44 | INFO     | simulator.export.csv_exporter |   Wrote 1,090 rows -> accused.csv
+19:02:44 | INFO     | simulator.export.csv_exporter |   Wrote 2,337 rows -> evidence.csv
+19:02:44 | INFO     | simulator.export.csv_exporter |   Wrote 309 rows -> arrests.csv
+19:02:44 | INFO     | simulator.export.csv_exporter |   Wrote 167 rows -> chargesheets.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 156,736 rows -> patrol_logs.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 727 rows -> cctv_events.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 1,002 rows -> modus_operandi.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 615 rows -> entity_resolution.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 120 rows -> firs_with_noise.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 1,599 rows -> vehicles.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 4,135 rows -> phones.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 74 rows -> cdrs.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 39 rows -> ground_truth_campaigns.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 5,126 rows -> investigation_logs.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 14 rows -> financial_transactions.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 15 rows -> intelligence_tips.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 990 rows -> social_network.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 5 rows -> ground_truth_masterminds.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 167 rows -> court_cases.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 100 rows -> informants.csv
+19:02:50 | INFO     | simulator.export.csv_exporter |   Wrote 3,189 rows -> cell_towers.csv
+19:02:51 | INFO     | simulator.export.csv_exporter |   Wrote 12,283 rows -> cctv_cameras.csv
+19:02:51 | INFO     | simulator.export.csv_exporter |   Wrote 1,258 rows -> anpr_cameras.csv
+19:02:51 | INFO     | simulator.export.csv_exporter |   Wrote 7,110 rows -> cell_tower_pings.csv
+19:02:51 | INFO     | simulator.export.csv_exporter |   Wrote 9,325 rows -> vehicle_gps.csv
+19:02:51 | INFO     | simulator.export.csv_exporter |   Wrote 6,604 rows -> cctv_logs.csv
+19:02:51 | INFO     | simulator.export.csv_exporter |   Wrote 769 rows -> anpr_logs.csv
+19:02:51 | INFO     | simulator.export.csv_exporter | CSV export complete. 232,730 total rows across 36 tables.
+19:02:51 | INFO     | simulator.export.json_exporter |   Wrote simulation summary -> simulation_summary.json
+19:02:51 | INFO     | simulator.export.json_exporter |   Wrote gang network -> gang_network.json
+19:02:51 | INFO     | simulator.export.json_exporter |   Wrote crime statistics -> crime_statistics.json
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 632 Station nodes -> nodes_station.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 3,801 Officer nodes -> nodes_officer.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 2,472 Person nodes -> nodes_person.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 5 Gang nodes -> nodes_gang.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 11 District nodes -> nodes_district.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 1,002 FIR nodes -> nodes_fir.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 168 Phone nodes -> nodes_phone.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 51 Vehicle nodes -> nodes_vehicle.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 2,337 Evidence nodes -> nodes_evidence.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Wrote 9,351 relationships -> relationships.csv
+19:02:51 | INFO     | simulator.graph.neo4j_export |   Import summary -> import_summary.txt
+19:02:51 | INFO     | simulator.export.geojson_exporter |   Wrote 1,002 features -> crimes.geojson
+19:02:51 | INFO     | simulator.export.geojson_exporter |   Wrote 632 features -> stations.geojson
+19:02:51 | INFO     | simulator.export.geojson_exporter |   Wrote 418 features -> hotspots.geojson
+19:02:51 | INFO     | simulator.export.geojson_exporter |   Built 418 hotspot grid cells
+19:02:51 | INFO     | nexus.simulator | [DONE] NEXUS simulation complete. Output: C:\Users\Rivan\Projects\Nexus\output
+19:02:51 | INFO     | nexus.run | [DONE] Total runtime: 42.7s (0.7 min)
+19:02:51 | INFO     | nexus.run |        Output directory: C:\Users\Rivan\Projects\Nexus\output

@@ -6,7 +6,7 @@ Manages state transitions for each criminal over simulation time:
   juvenile → emerging → active → experienced → notorious
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import List, Optional, Dict
@@ -42,7 +42,7 @@ class CareerManager:
     Updated per simulation tick.
     """
 
-    def __init__(self, criminals: List[CriminalProfile], rng: random.Random) -> None:
+    def __init__(self, criminals: List[CriminalProfile], rng: np.random.Generator) -> None:
         self.rng = rng
         self._states: Dict[str, CareerState] = {}
         self._events: Dict[str, List[CareerEvent]] = {}
@@ -80,7 +80,7 @@ class CareerManager:
         criminal.total_arrests += 1
 
         # Estimate bail date (7–90 days later)
-        days_to_bail = self.rng.randint(7, 90)
+        days_to_bail = int(self.rng.integers(7, 90 + 1))
         bail_date = arrest_date + timedelta(days=days_to_bail)
         self._bail_dates[criminal.criminal_id] = bail_date
 
@@ -93,12 +93,13 @@ class CareerManager:
             notes=f"Arrested in connection with FIR {fir_id}",
         ))
 
-    def tick(self, current_date: date, criminals: List[CriminalProfile]) -> None:
+    def tick(self, current_date: date, criminals: List[CriminalProfile], stations: List[Any] = None) -> None:
         """
         Advance criminal career states for the current simulation date.
         - Criminals on bail may return to active
         - Some criminals may retire
         - Absconders may resurface
+        - Active criminals may migrate districts or shift MO
         """
         for criminal in criminals:
             cid = criminal.criminal_id
@@ -113,7 +114,7 @@ class CareerManager:
                         criminal.is_currently_active = True
                         criminal.is_currently_arrested = False
                         # Cooling off period after bail before next crime
-                        cooling_days = self.rng.randint(14, 60)
+                        cooling_days = int(self.rng.integers(14, 60 + 1))
                         self._next_eligible[cid] = current_date + timedelta(days=cooling_days)
                         self._events[cid].append(CareerEvent(
                             criminal_id=cid,
@@ -137,6 +138,35 @@ class CareerManager:
                 # Small chance of absconding (flees jurisdiction)
                 elif criminal.risk_level == "very_high" and self.rng.random() < 0.0005:
                     self._states[cid] = CareerState.ABSCONDING
+                    
+                # Inter-district Migration: if highly arrested, flee to a new district
+                if criminal.total_arrests >= 3 and self.rng.random() < 0.05 and stations:
+                    new_station = self.rng.choice(stations)
+                    criminal.district_id = new_station.district_id
+                    criminal.district_name = new_station.district_name
+                    criminal.station_id = new_station.station_id
+                    criminal.home_lat = new_station.latitude + self.rng.uniform(-0.05, 0.05)
+                    criminal.home_lng = new_station.longitude + self.rng.uniform(-0.05, 0.05)
+                    self._events[cid].append(CareerEvent(
+                        criminal_id=cid,
+                        event_date=current_date,
+                        event_type="migrated",
+                        fir_id=None,
+                        station_id=new_station.station_id,
+                        notes=f"Migrated to {new_station.district_name} due to police heat.",
+                    ))
+                    
+                # Changing MO: criminals evolve their tactics over time
+                if criminal.modus_operandi and self.rng.random() < 0.01:
+                    if self.rng.random() < 0.5:
+                        criminal.modus_operandi.time_slot = self.rng.choice([
+                            "morning_0600_0900", "mid_morning_0900_1200", 
+                            "afternoon_1200_1600", "night_1900_2200", "late_night_2200_0400"
+                        ])
+                    else:
+                        criminal.modus_operandi.target_type = self.rng.choice([
+                            "residential", "commercial", "street", "highway", "bank"
+                        ])
 
     def can_offend_today(self, criminal_id: str, current_date: date) -> bool:
         """Check if criminal is eligible to commit a crime today."""

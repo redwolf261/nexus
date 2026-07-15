@@ -7,13 +7,14 @@ Generates synthetic CCTV event metadata linked to crime locations:
   - Linked FIR (if crime occurred nearby)
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta
 from typing import List, Optional
 
 from simulator.crimes.fir import FIR
 from simulator.geography.karnataka import Station
+from simulator.schemas.investigations import CCTVEvent
 
 
 CAMERA_TYPES = ["dome", "bullet", "ptz", "traffic_enforcement", "atm_internal", "bodycam"]
@@ -22,34 +23,13 @@ SILHOUETTE_CLASSES = ["male_adult", "female_adult", "juvenile", "group_2", "grou
 VEHICLE_COLORS = ["white", "black", "red", "blue", "silver", "grey", "green", "yellow", "orange"]
 
 
-@dataclass
-class CCTVEvent:
-    cctv_event_id: str
-    camera_id: str
-    camera_type: str
-    camera_owner: str
-    location_description: str
-    latitude: float
-    longitude: float
-    district_id: str
-    station_id: str
-    event_timestamp: datetime
-    vehicle_plate_captured: Optional[str]
-    vehicle_type: Optional[str]
-    vehicle_color: Optional[str]
-    person_silhouette_class: str
-    num_persons_captured: int
-    linked_fir_id: Optional[str]
-    is_primary_evidence: bool   # Directly links to FIR
-    footage_available: bool
-    footage_quality: str        # "clear" | "blurry" | "night_vision" | "corrupted"
 
 
 def generate_cctv_events(
     firs: List[FIR],
     stations: List[Station],
     id_factory,
-    rng: random.Random,
+    rng: np.random.Generator,
     coverage_fraction: float = 0.35,
 ) -> List[CCTVEvent]:
     """
@@ -72,13 +52,13 @@ def generate_cctv_events(
             continue
 
         # 1-3 cameras caught something
-        num_cameras = rng.randint(1, 3)
+        num_cameras = int(rng.integers(1, 3 + 1))
         for _ in range(num_cameras):
             has_vehicle = rng.random() < 0.60
 
             event_dt = datetime.combine(
                 fir.occurred_date,
-                time(rng.randint(0, 23), rng.randint(0, 59)),
+                time(int(rng.integers(0, 23 + 1)), int(rng.integers(0, 59 + 1))),
             )
 
             plate = id_factory.vehicle_registration() if has_vehicle else None
@@ -87,7 +67,7 @@ def generate_cctv_events(
 
             events.append(CCTVEvent(
                 cctv_event_id=f"CCTV-{event_counter:08d}",
-                camera_id=f"CAM-{station.district_id}-{rng.randint(1000, 9999)}",
+                camera_id=f"CAM-{station.district_id}-{int(rng.integers(1000, 9999 + 1))}",
                 camera_type=rng.choice(CAMERA_TYPES),
                 camera_owner=rng.choice(CAMERA_OWNERS),
                 location_description=f"Near crime scene, {station.taluk}, {station.district_name}",
@@ -100,15 +80,14 @@ def generate_cctv_events(
                 vehicle_type=vtype,
                 vehicle_color=vcolor,
                 person_silhouette_class=rng.choice(SILHOUETTE_CLASSES),
-                num_persons_captured=rng.randint(1, 4),
+                num_persons_captured=int(rng.integers(1, 4 + 1)),
                 linked_fir_id=fir.fir_id,
                 is_primary_evidence=rng.random() < 0.40,
                 footage_available=rng.random() < 0.70,
-                footage_quality=rng.choices(
-                    ["clear", "blurry", "night_vision", "corrupted"],
-                    weights=[45, 25, 20, 10],
-                    k=1,
-                )[0],
+                footage_quality=rng.choice(
+                    ["high_res", "medium_res", "low_res", "corrupted"],
+                    p=[0.3, 0.45, 0.2, 0.05]
+                ),
             ))
             event_counter += 1
 

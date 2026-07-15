@@ -33,4 +33,4 @@ def get_crime_duration_minutes(crime_id: str, rng) -> int:
     cat = CRIME_CATEGORY_MAP.get(crime_id, {})
     mn = cat.get("typical_duration_min", 5)
     mx = cat.get("typical_duration_max", 60)
-    return rng.randint(mn, mx)
+    return int(rng.integers(mn, mx + 1))

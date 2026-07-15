@@ -5,7 +5,7 @@ The fingerprint is derived from the criminal's profile MO template
 with slight random variation to simulate inconsistency in real crimes.
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass
 from typing import Optional
 
@@ -14,46 +14,14 @@ from simulator.config.constants import (
     MO_ESCAPE_VEHICLES, MO_WEAPONS, MO_STOLEN_PROPERTY, MO_NUM_OFFENDERS
 )
 from simulator.criminals.profiles import CriminalProfile, MoTemplate
+from simulator.schemas.crimes import MoFingerprint
 
 
-@dataclass
-class MoFingerprint:
-    """Per-crime MO fingerprint used for similarity analysis."""
-    crime_event_id: str
-    criminal_id: Optional[str]
-    entry_method: str
-    time_slot: str
-    target_type: str
-    escape_vehicle: str
-    weapon: str
-    stolen_property: str
-    num_offenders: int
-    operates_at_night: bool
-    # Derived similarity features (for DBSCAN/clustering)
-    is_solo: bool
-    uses_vehicle_escape: bool
-    is_violent: bool
-
-    def to_vector_dict(self) -> dict:
-        """Return a numeric encoding suitable for ML clustering."""
-        return {
-            "entry_method": MO_ENTRY_METHODS.index(self.entry_method) if self.entry_method in MO_ENTRY_METHODS else 0,
-            "time_slot": MO_TIME_SLOTS.index(self.time_slot) if self.time_slot in MO_TIME_SLOTS else 0,
-            "target_type": MO_TARGET_TYPES.index(self.target_type) if self.target_type in MO_TARGET_TYPES else 0,
-            "escape_vehicle": MO_ESCAPE_VEHICLES.index(self.escape_vehicle) if self.escape_vehicle in MO_ESCAPE_VEHICLES else 0,
-            "weapon": MO_WEAPONS.index(self.weapon) if self.weapon in MO_WEAPONS else 0,
-            "stolen_property": MO_STOLEN_PROPERTY.index(self.stolen_property) if self.stolen_property in MO_STOLEN_PROPERTY else 0,
-            "num_offenders": self.num_offenders,
-            "operates_at_night": int(self.operates_at_night),
-            "is_solo": int(self.is_solo),
-            "uses_vehicle_escape": int(self.uses_vehicle_escape),
-            "is_violent": int(self.is_violent),
-        }
 
 
 def generate_mo_fingerprint(
     crime_event_id: str,
-    rng: random.Random,
+    rng: np.random.Generator,
     criminal: Optional[CriminalProfile] = None,
     deviation_probability: float = 0.20,
 ) -> MoFingerprint:

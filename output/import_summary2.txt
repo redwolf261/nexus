@@ -1,0 +1,8 @@
+Campaigns: 39
+Masterminds: 5
+Informants: 100
+Tips: 15
+Gangs: 5
+Dormant Gangs: 1
+Vehicles: 1599
+Phones: 4135

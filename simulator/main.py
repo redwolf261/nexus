@@ -16,7 +16,7 @@ Runs all simulation phases in order:
 """
 from __future__ import annotations
 import logging
-import random
+import numpy as np
 import sys
 from datetime import date
 from pathlib import Path
@@ -68,7 +68,7 @@ def run_simulation(
         enable_noise=enable_noise,
     )
 
-    rng = random.Random(settings.seed)
+    rng = np.random.default_rng(settings.seed)
     logger.info(f"[*] NEXUS Simulator | Scale: {scale} | Seed: {seed} | Target FIRs: {settings.fir_count:,}")
 
     # ── Phase 1: Geography ────────────────────────────────────────────────
@@ -77,10 +77,18 @@ def run_simulation(
     from simulator.geography.locations import generate_locations
     from simulator.geography.coordinates import CoordinateSampler
 
+    from simulator.geography.pois import generate_pois
+
     districts, stations = build_geography(rng)
     locations = generate_locations(stations, rng, max_locations_per_station=20)
+    pois = generate_pois(stations, rng)
+    
+    from simulator.investigations.sensors import build_sensor_networks
+    towers, cctv_cams, anpr_cams = build_sensor_networks(stations, rng)
+    
     coord_sampler = CoordinateSampler(stations, rng)
-    logger.info(f"  >> {len(districts)} districts | {len(stations)} stations | {len(locations)} locations")
+    logger.info(f"  >> {len(districts)} districts | {len(stations)} stations | {len(locations)} locations | {len(pois)} POIs")
+    logger.info(f"  >> {len(towers)} Cell Towers | {len(cctv_cams)} CCTV Cameras | {len(anpr_cams)} ANPR Cameras")
 
     # ── Phase 2: Population ───────────────────────────────────────────────
     logger.info("Phase 2/11: Generating population...")
@@ -101,21 +109,39 @@ def run_simulation(
     # ── Phase 3: Criminal Profiles ────────────────────────────────────────
     logger.info("Phase 3/11: Building criminal profiles...")
     from simulator.criminals.profiles import generate_criminal_profiles
+    from simulator.population.devices import generate_devices
 
     criminals = generate_criminal_profiles(citizens, settings.criminal_fraction, rng)
-    logger.info(f"  >> {len(criminals):,} criminal profiles")
+    
+    vehicles, phones = generate_devices(citizens, criminals, rng, settings.sim_start_year)
+    vehicles_by_criminal = {c.criminal_id: c.vehicle_ids for c in criminals}
+    phones_by_criminal = {c.criminal_id: c.phone_ids for c in criminals}
+    
+    logger.info(f"  >> {len(criminals):,} criminal profiles | {len(vehicles):,} vehicles | {len(phones):,} phones")
+
+    # ── Phase 3.5: Social Networks & Masterminds ──────────────────────────
+    logger.info("Phase 3.5/11: Generating Social Networks & Masterminds...")
+    from simulator.population.relationships import generate_social_ties
+    from simulator.criminals.mastermind import generate_masterminds
+    
+    social_ties = generate_social_ties(citizens, criminals, rng, settings.sim_start_year)
+    logger.info(f"  >> {len(social_ties):,} social ties")
 
     # ── Phase 4: Gangs ────────────────────────────────────────────────────
     logger.info("Phase 4/11: Forming gangs...")
     from simulator.criminals.gangs import generate_gangs
     from simulator.criminals.career import CareerManager
+    from simulator.criminals.mastermind import generate_masterminds
 
     gangs = generate_gangs(criminals, settings.gang_count, rng, settings.sim_start_year)
     career_manager = CareerManager(criminals, rng)
     criminals_map = {c.criminal_id: c for c in criminals}
-    logger.info(f"  >> {len(gangs)} gangs | Career manager initialized")
+    logger.info(f"  >> {len(gangs)} gangs formed | {sum(len(g.member_criminal_ids) for g in gangs)} gang members")
+    
+    masterminds = generate_masterminds(citizens, gangs, rng, count=5)
+    logger.info(f"  >> {len(masterminds)} hidden masterminds overseeing gangs")
 
-    # ── Phase 5: Timeline + Crime Events ─────────────────────────────────
+    # ── Phase 5: Timeline Simulation ────────────────────────────────────────
     logger.info("Phase 5/11: Running simulation timeline...")
     from simulator.timeline.engine import SimulationEngine
     from simulator.crimes.events import generate_crime_events
@@ -128,12 +154,16 @@ def run_simulation(
         career_manager=career_manager,
         coord_sampler=coord_sampler,
     )
-    engine.register_crime_generator(generate_crime_events)
+    from functools import partial
+    engine.register_crime_generator(
+        partial(generate_crime_events, vehicles_by_criminal=vehicles_by_criminal, phones_by_criminal=phones_by_criminal, pois=pois)
+    )
     engine.run(target_fir_count=settings.fir_count)
 
     crime_events = engine.raw_crime_events
     sim_dates = [dc.date for dc in engine.simulation_days]
-    logger.info(f"  >> {len(crime_events):,} crime events generated over {len(sim_dates)} days")
+    campaigns = engine.campaign_manager.completed_campaigns + engine.campaign_manager.active_campaigns
+    logger.info(f"  >> {len(crime_events):,} crime events generated over {len(sim_dates)} days | {len(campaigns)} campaigns")
 
     # ── Phase 6: FIR Assembly ─────────────────────────────────────────────
     logger.info("Phase 6/11: Assembling FIRs...")
@@ -171,11 +201,36 @@ def run_simulation(
     cctv_events = []
     if settings.enable_cctv:
         cctv_events = generate_cctv_events(firs, stations, id_factory, rng)
+        
+    from simulator.investigations.telecom import generate_telecom_data
+    cdrs = generate_telecom_data(crime_events, criminals, rng)
+    
+    from simulator.investigations.sensors import generate_sensor_traces
+    cell_pings, vehicle_gps, cctv_logs, anpr_logs = generate_sensor_traces(
+        crime_events, towers, cctv_cams, anpr_cams, vehicles, rng
+    )
+    
+    from simulator.investigations.court import generate_court_cases
+    court_cases = generate_court_cases(chargesheets, rng)
+    
+    from simulator.investigations.lifecycle import generate_investigation_logs
+    investigation_logs = generate_investigation_logs(firs, evidence, arrests, chargesheets, rng)
+    
+    from simulator.investigations.intelligence_events import generate_intelligence_events, generate_informants
+    informants = generate_informants(rng, stations, count=100)
+    financial_tx, intel_tips = generate_intelligence_events(campaigns, criminals, stations, informants, rng)
 
     logger.info(
         f"  >> {len(evidence):,} evidence | {len(arrests):,} arrests | "
         f"{len(chargesheets):,} chargesheets | {len(patrol_logs):,} patrols | "
-        f"{len(cctv_events):,} CCTV events"
+        f"{len(cctv_events):,} CCTV events | {len(cdrs):,} CDRs | "
+        f"{len(investigation_logs):,} investigation logs | {len(financial_tx):,} financial tx | "
+        f"{len(intel_tips):,} intel tips"
+    )
+    logger.info(
+        f"  >> {len(court_cases):,} court cases | {len(informants):,} informants | "
+        f"{len(cell_pings):,} cell pings | {len(vehicle_gps):,} GPS pings | "
+        f"{len(cctv_logs):,} CCTV logs | {len(anpr_logs):,} ANPR logs"
     )
 
     # ── Phase 8: Graph Building ───────────────────────────────────────────
@@ -247,6 +302,7 @@ def run_simulation(
     sim_data = {
         "districts":        districts,
         "stations":         stations,
+        "pois":             pois,
         "officers":         officers,
         "citizens":         citizens,
         "criminals":        criminals,
@@ -262,6 +318,24 @@ def run_simulation(
         "modus_operandi":   mo_fingerprints,
         "entity_resolution":er_ground_truth.to_records(),
         "noisy_firs":       noisy_firs,
+        "vehicles":         vehicles,
+        "phones":           phones,
+        "cdrs":             cdrs,
+        "campaigns":        campaigns,
+        "investigation_logs": investigation_logs,
+        "financial_transactions": financial_tx,
+        "intelligence_tips": intel_tips,
+        "social_ties":      social_ties,
+        "masterminds":      masterminds,
+        "court_cases":      court_cases,
+        "informants":       informants,
+        "cell_towers":      towers,
+        "cctv_cameras":     cctv_cams,
+        "anpr_cameras":     anpr_cams,
+        "cell_pings":       cell_pings,
+        "vehicle_gps":      vehicle_gps,
+        "cctv_logs":        cctv_logs,
+        "anpr_logs":        anpr_logs,
     }
 
     if settings.export_csv:

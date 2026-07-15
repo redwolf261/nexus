@@ -8,7 +8,7 @@ Selects a fraction of citizens to become criminals and assigns them:
   - Vehicle + phone associations
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict
 
@@ -18,6 +18,9 @@ from simulator.config.constants import (
     MO_STOLEN_PROPERTY, MO_NUM_OFFENDERS, GANG_SPECIALIZATIONS,
 )
 from simulator.population.citizens import Citizen
+from simulator.schemas.criminals import MoTemplate, CriminalProfile
+from simulator.schemas.criminals import MoTemplate, CriminalProfile
+from simulator.schemas.criminals import MoTemplate, CriminalProfile
 
 
 RISK_LEVELS = ["low", "medium", "high", "very_high"]
@@ -34,67 +37,11 @@ EXPERTISE_MAP: Dict[str, List[str]] = {
 CAREER_STAGES = ["juvenile", "emerging", "active", "experienced", "notorious", "retired", "arrested"]
 
 
-@dataclass
-class MoTemplate:
-    """Structured Modus Operandi fingerprint for a criminal."""
-    entry_method: str
-    preferred_time_slot: str
-    target_type: str
-    escape_vehicle: str
-    weapon: str
-    stolen_property: str
-    typical_num_offenders: int
-    uses_accomplices: bool
-    operates_at_night: bool
-
-    def to_dict(self) -> dict:
-        return {
-            "entry_method": self.entry_method,
-            "preferred_time_slot": self.preferred_time_slot,
-            "target_type": self.target_type,
-            "escape_vehicle": self.escape_vehicle,
-            "weapon": self.weapon,
-            "stolen_property": self.stolen_property,
-            "typical_num_offenders": self.typical_num_offenders,
-            "uses_accomplices": self.uses_accomplices,
-            "operates_at_night": self.operates_at_night,
-        }
 
 
-@dataclass
-class CriminalProfile:
-    criminal_id: str
-    citizen_id: str
-    name_en: str
-    name_kn: str
-    age: int
-    gender: str
-    district_id: str
-    district_name: str
-    station_id: str
-    home_lat: float
-    home_lng: float
-    risk_level: str
-    expertise: str              # property | violent | fraud | narcotics | opportunistic
-    preferred_crime_types: List[str]
-    operating_radius_km: float
-    modus_operandi: MoTemplate
-    recidivism_probability: float
-    career_stage: str
-    is_gang_member: bool = False
-    gang_id: Optional[str] = None
-    is_gang_leader: bool = False
-    vehicle_ids: List[str] = field(default_factory=list)
-    phone_ids: List[str] = field(default_factory=list)
-    known_associates: List[str] = field(default_factory=list)   # criminal_ids
-    alias_names: List[str] = field(default_factory=list)
-    total_crimes_committed: int = 0
-    total_arrests: int = 0
-    is_currently_active: bool = True
-    is_currently_arrested: bool = False
 
 
-def _build_mo_template(rng: random.Random, expertise: str, risk_level: str) -> MoTemplate:
+def _build_mo_template(rng: np.random.Generator, expertise: str, risk_level: str) -> MoTemplate:
     """Build a consistent MO template for a given criminal expertise."""
     is_violent = expertise == "violent"
     is_fraud = expertise == "fraud"
@@ -128,7 +75,7 @@ def _build_mo_template(rng: random.Random, expertise: str, risk_level: str) -> M
 def generate_criminal_profiles(
     citizens: List[Citizen],
     criminal_fraction: float,
-    rng: random.Random,
+    rng: np.random.Generator,
 ) -> List[CriminalProfile]:
     """
     Select a fraction of adult citizens to become criminals.
@@ -137,19 +84,18 @@ def generate_criminal_profiles(
     # Select eligible adults only (age 16+)
     eligible = [c for c in citizens if c.age >= 16]
     n_criminals = int(len(eligible) * criminal_fraction)
-    selected = rng.sample(eligible, min(n_criminals, len(eligible)))
+    selected = list(rng.choice(eligible, size=min(n_criminals, len(eligible)), replace=False))
 
     profiles: List[CriminalProfile] = []
 
     for idx, citizen in enumerate(selected):
-        risk = rng.choices(RISK_LEVELS, weights=[0.35, 0.35, 0.20, 0.10], k=1)[0]
-        expertise = rng.choices(
+        risk = rng.choice(RISK_LEVELS, p=[0.35, 0.35, 0.20, 0.10])
+        expertise = rng.choice(
             list(EXPERTISE_MAP.keys()),
-            weights=[0.40, 0.25, 0.20, 0.08, 0.07],
-            k=1,
-        )[0]
+            p=[0.40, 0.25, 0.20, 0.08, 0.07]
+        )
 
-        preferred_crimes = rng.sample(EXPERTISE_MAP[expertise], min(3, len(EXPERTISE_MAP[expertise])))
+        preferred_crimes = list(rng.choice(EXPERTISE_MAP[expertise], size=min(3, len(EXPERTISE_MAP[expertise])), replace=False))
 
         # Operating radius depends on risk and crime type
         radius_map = {"low": 10, "medium": 30, "high": 80, "very_high": 200}
@@ -158,11 +104,10 @@ def generate_criminal_profiles(
 
         recidivism_prob = {"low": 0.25, "medium": 0.45, "high": 0.65, "very_high": 0.80}[risk]
 
-        career_stage = rng.choices(
+        career_stage = rng.choice(
             CAREER_STAGES,
-            weights=[0.05, 0.15, 0.35, 0.25, 0.10, 0.05, 0.05],
-            k=1,
-        )[0]
+            p=[0.05, 0.15, 0.35, 0.25, 0.10, 0.05, 0.05]
+        )
 
         mo = _build_mo_template(rng, expertise, risk)
 
@@ -187,7 +132,7 @@ def generate_criminal_profiles(
             career_stage=career_stage,
             is_currently_active=career_stage not in {"retired", "arrested"},
             is_currently_arrested=career_stage == "arrested",
-            total_crimes_committed=rng.randint(0, {"low": 3, "medium": 8, "high": 20, "very_high": 50}[risk]),
+            total_crimes_committed=int(rng.integers(0, {"low": 3, "medium": 8, "high": 20, "very_high": 50}[risk] + 1)),
         ))
 
     return profiles

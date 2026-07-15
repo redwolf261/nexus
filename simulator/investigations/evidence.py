@@ -8,43 +8,18 @@ Generates evidence records per FIR with:
   - Recovery status
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import List, Optional, Dict
 
 from simulator.config.constants import EVIDENCE_TYPES
 from simulator.crimes.fir import FIR
+from simulator.schemas.investigations import ChainOfCustodyEntry, Evidence
 
 
-@dataclass
-class ChainOfCustodyEntry:
-    handler_id: str       # officer_id or lab_id
-    handler_type: str     # "officer" | "forensic_lab" | "court"
-    received_date: date
-    action: str           # "collected" | "analyzed" | "submitted" | "produced_in_court"
-    notes: str
 
 
-@dataclass
-class Evidence:
-    evidence_id: str
-    fir_id: str
-    evidence_type: str
-    description: str
-    collection_date: date
-    collection_officer_id: Optional[str]
-    collection_location: str
-    condition: str          # "good" | "damaged" | "partial" | "contaminated"
-    is_forensic: bool
-    forensic_report_id: Optional[str]
-    lab_name: Optional[str]
-    lab_received_date: Optional[date]
-    lab_result: Optional[str]
-    is_recovered_property: bool
-    estimated_value_inr: float
-    chain_of_custody: List[ChainOfCustodyEntry] = field(default_factory=list)
-    tags: List[str] = field(default_factory=list)  # searchable tags
 
 
 FORENSIC_LABS = [
@@ -148,19 +123,36 @@ CRIME_EVIDENCE_MAP: Dict[str, List[str]] = {
 def generate_evidence(
     firs: List[FIR],
     officers_by_station: Dict[str, list],
-    rng: random.Random,
+    rng: np.random.Generator,
 ) -> List[Evidence]:
     """Generate 1–6 evidence records per FIR."""
     all_evidence: List[Evidence] = []
     evidence_counter = 0
+    
+    # Cache to reuse specific evidence objects across FIRs in the same campaign
+    campaign_evidence_cache: Dict[str, Dict[str, str]] = {}
 
     for fir in firs:
+        camp_cache = {}
+        if fir.campaign_id:
+            if fir.campaign_id not in campaign_evidence_cache:
+                campaign_evidence_cache[fir.campaign_id] = {}
+            camp_cache = campaign_evidence_cache[fir.campaign_id]
+            
         evidence_types_for_crime = CRIME_EVIDENCE_MAP.get(fir.crime_type, CRIME_EVIDENCE_MAP["DEFAULT"])
-        num_evidence = rng.randint(1, min(6, len(evidence_types_for_crime)))
-        selected_types = rng.sample(evidence_types_for_crime, min(num_evidence, len(evidence_types_for_crime)))
+        num_evidence = int(rng.integers(1, min(6, len(evidence_types_for_crime)) + 1))
+        selected_types = list(rng.choice(evidence_types_for_crime, size=min(num_evidence, len(evidence_types_for_crime)), replace=False))
 
         for etype in selected_types:
-            collection_delay = rng.randint(0, 7)
+            # Check if this campaign already has this evidence type (e.g. same fingerprint or vehicle CCTV)
+            evidence_id = None
+            if etype in camp_cache and rng.random() < 0.6:  # 60% chance to reuse evidence in same campaign
+                evidence_id = camp_cache[etype]
+            else:
+                evidence_id = f"EVI-{evidence_counter:08d}"
+                evidence_counter += 1
+                camp_cache[etype] = evidence_id
+            collection_delay = int(rng.integers(0, 7 + 1))
             collection_date = fir.reported_date + timedelta(days=collection_delay)
 
             # Collecting officer
@@ -169,7 +161,7 @@ def generate_evidence(
 
             is_forensic = etype in {"forensic_report", "dna_sample", "fingerprints", "ballistic"}
             lab_name = rng.choice(FORENSIC_LABS) if is_forensic else None
-            lab_received = collection_date + timedelta(days=rng.randint(1, 14)) if is_forensic else None
+            lab_received = collection_date + timedelta(days=int(rng.integers(1, 14 + 1))) if is_forensic else None
             lab_result = None
             if is_forensic and lab_received:
                 result_options = [
@@ -213,14 +205,14 @@ def generate_evidence(
                 tags.append("recovered_property")
 
             all_evidence.append(Evidence(
-                evidence_id=f"EVI-{evidence_counter:08d}",
+                evidence_id=evidence_id,
                 fir_id=fir.fir_id,
                 evidence_type=etype,
                 description=description,
                 collection_date=collection_date,
                 collection_officer_id=coll_officer_id,
                 collection_location=f"Crime scene near lat:{fir.latitude}, lng:{fir.longitude}",
-                condition=rng.choices(["good", "damaged", "partial", "contaminated"], weights=[60, 15, 20, 5], k=1)[0],
+                condition=rng.choice(["good", "damaged", "partial", "contaminated"], p=[0.6, 0.15, 0.2, 0.05]),
                 is_forensic=is_forensic,
                 forensic_report_id=forensic_report_id,
                 lab_name=lab_name,
@@ -231,6 +223,5 @@ def generate_evidence(
                 chain_of_custody=custody_chain,
                 tags=tags,
             ))
-            evidence_counter += 1
 
     return all_evidence

@@ -1,0 +1,1600 @@
+﻿vehicle_id,owner_id,license_plate,make,model,color,type,registration_year,is_stolen
+VEH-00000000,CIT-00000003,KA 10 P 1381,Toyota,Model X,black,car,2010,false
+VEH-00000001,CIT-00000010,KA 18 A 6250,Maruti Suzuki,Model X,blue,car,2012,false
+VEH-00000002,CIT-00000014,KA 40 B 9205,Hero,Model X,grey,motorcycle,2017,false
+VEH-00000003,CIT-00000020,KA 01 A 4589,Honda,Model X,black,motorcycle,2014,false
+VEH-00000004,CIT-00000027,KA 15 A 7911,Honda,Model X,grey,motorcycle,2006,false
+VEH-00000005,CIT-00000028,KA 27 A 1276,Hero,Model X,blue,motorcycle,2016,false
+VEH-00000006,CIT-00000030,KA 23 N 2240,Hyundai,Model X,black,car,2007,false
+VEH-00000007,CIT-00000033,KA 01 M 8765,Maruti Suzuki,Model X,white,car,2021,false
+VEH-00000008,CIT-00000035,KA 42 N 6000,Honda,Model X,white,motorcycle,2012,false
+VEH-00000009,CIT-00000038,KA 39 N 5535,Hyundai,Model X,black,car,2017,false
+VEH-00000010,CIT-00000040,KA 39 C 3305,Hero,Model X,black,motorcycle,2016,false
+VEH-00000011,CIT-00000041,KA 27 B 7376,Bajaj,Model X,black,motorcycle,2020,false
+VEH-00000012,CIT-00000042,KA 34 C 5519,Honda,Model X,black,car,2015,false
+VEH-00000013,CIT-00000043,KA 27 N 9646,Bajaj,Model X,blue,scooter,2011,false
+VEH-00000014,CIT-00000044,KA 40 P 9700,Honda,Model X,red,scooter,2018,false
+VEH-00000015,CIT-00000049,KA 39 N 1362,Bajaj,Model X,silver,motorcycle,2012,false
+VEH-00000016,CIT-00000054,KA 03 P 6607,Royal Enfield,Model X,white,scooter,2008,false
+VEH-00000017,CIT-00000055,KA 34 B 8673,Honda,Model X,red,motorcycle,2018,false
+VEH-00000018,CIT-00000057,KA 43 P 9670,Maruti Suzuki,Model X,red,car,2007,false
+VEH-00000019,CIT-00000058,KA 06 N 9453,Hero,Model X,red,scooter,2010,false
+VEH-00000020,CIT-00000078,KA 04 A 9367,Honda,Model X,grey,scooter,2021,false
+VEH-00000021,CIT-00000084,KA 23 B 6951,Royal Enfield,Model X,blue,scooter,2006,false
+VEH-00000022,CIT-00000092,KA 13 N 7297,Honda,Model X,red,car,2017,false
+VEH-00000023,CIT-00000093,KA 43 P 5537,Honda,Model X,red,car,2020,false
+VEH-00000024,CIT-00000094,KA 26 P 9514,Honda,Model X,red,scooter,2017,false
+VEH-00000025,CIT-00000095,KA 29 A 4389,Toyota,Model X,blue,car,2020,false
+VEH-00000026,CIT-00000098,KA 32 M 2150,Honda,Model X,silver,scooter,2021,false
+VEH-00000027,CIT-00000100,KA 18 N 4668,Bajaj,Model X,silver,motorcycle,2013,false
+VEH-00000028,CIT-00000104,KA 06 B 8338,Royal Enfield,Model X,silver,scooter,2017,false
+VEH-00000029,CIT-00000105,KA 13 N 4699,TVS,Model X,red,scooter,2021,false
+VEH-00000030,CIT-00000110,KA 20 A 8854,Royal Enfield,Model X,grey,motorcycle,2006,false
+VEH-00000031,CIT-00000112,KA 32 C 1599,Bajaj,Model X,red,motorcycle,2020,false
+VEH-00000032,CIT-00000115,KA 07 N 6786,Royal Enfield,Model X,red,motorcycle,2011,false
+VEH-00000033,CIT-00000117,KA 11 C 2218,Honda,Model X,red,motorcycle,2017,false
+VEH-00000034,CIT-00000120,KA 10 B 8360,Hyundai,Model X,grey,car,2009,false
+VEH-00000035,CIT-00000121,KA 22 C 9241,Hero,Model X,blue,motorcycle,2007,false
+VEH-00000036,CIT-00000122,KA 46 M 1453,Maruti Suzuki,Model X,grey,car,2014,false
+VEH-00000037,CIT-00000124,KA 04 B 5194,Royal Enfield,Model X,red,motorcycle,2011,false
+VEH-00000038,CIT-00000127,KA 20 P 8572,Hyundai,Model X,red,car,2015,false
+VEH-00000039,CIT-00000128,KA 12 B 9901,Honda,Model X,black,car,2021,false
+VEH-00000040,CIT-00000138,KA 17 C 6699,Honda,Model X,grey,motorcycle,2007,false
+VEH-00000041,CIT-00000139,KA 39 M 9622,Hero,Model X,red,motorcycle,2015,false
+VEH-00000042,CIT-00000146,KA 02 M 3179,Maruti Suzuki,Model X,black,car,2021,false
+VEH-00000043,CIT-00000147,KA 41 C 5468,Hero,Model X,grey,motorcycle,2006,false
+VEH-00000044,CIT-00000151,KA 05 A 5788,Mahindra,Model X,silver,car,2009,false
+VEH-00000045,CIT-00000154,KA 40 P 6628,Bajaj,Model X,white,scooter,2018,false
+VEH-00000046,CIT-00000155,KA 42 A 2792,Honda,Model X,white,motorcycle,2009,false
+VEH-00000047,CIT-00000158,KA 13 P 4091,Honda,Model X,red,motorcycle,2020,false
+VEH-00000048,CIT-00000159,KA 48 C 3667,Hyundai,Model X,grey,car,2010,false
+VEH-00000049,CIT-00000161,KA 31 A 7213,Royal Enfield,Model X,white,scooter,2011,false
+VEH-00000050,CIT-00000164,KA 36 P 6129,Honda,Model X,red,motorcycle,2013,false
+VEH-00000051,CIT-00000165,KA 09 N 5708,Tata,Model X,silver,car,2020,false
+VEH-00000052,CIT-00000170,KA 10 C 3178,Honda,Model X,blue,scooter,2020,false
+VEH-00000053,CIT-00000173,KA 12 B 2915,TVS,Model X,silver,motorcycle,2019,false
+VEH-00000054,CIT-00000174,KA 23 A 5564,Tata,Model X,white,car,2014,false
+VEH-00000055,CIT-00000179,KA 25 M 6199,Honda,Model X,black,car,2008,false
+VEH-00000056,CIT-00000182,KA 42 N 8403,Bajaj,Model X,grey,motorcycle,2006,false
+VEH-00000057,CIT-00000183,KA 41 A 4332,Bajaj,Model X,red,motorcycle,2012,false
+VEH-00000058,CIT-00000185,KA 07 C 8402,Bajaj,Model X,blue,motorcycle,2009,false
+VEH-00000059,CIT-00000186,KA 09 M 6990,Hero,Model X,red,scooter,2006,false
+VEH-00000060,CIT-00000192,KA 39 N 9018,Hyundai,Model X,silver,car,2007,false
+VEH-00000061,CIT-00000195,KA 35 M 2256,Tata,Model X,white,car,2015,false
+VEH-00000062,CIT-00000196,KA 20 P 9470,Honda,Model X,white,scooter,2009,false
+VEH-00000063,CIT-00000198,KA 41 A 6826,Bajaj,Model X,silver,motorcycle,2017,false
+VEH-00000064,CIT-00000200,KA 23 M 2689,Hyundai,Model X,black,car,2017,false
+VEH-00000065,CIT-00000201,KA 36 N 6335,Mahindra,Model X,blue,car,2007,false
+VEH-00000066,CIT-00000204,KA 13 M 2796,Honda,Model X,red,motorcycle,2017,false
+VEH-00000067,CIT-00000206,KA 34 B 5800,Honda,Model X,blue,scooter,2009,false
+VEH-00000068,CIT-00000208,KA 15 A 2619,TVS,Model X,white,scooter,2015,false
+VEH-00000069,CIT-00000209,KA 29 M 9236,TVS,Model X,blue,scooter,2010,false
+VEH-00000070,CIT-00000213,KA 41 A 7468,Honda,Model X,white,motorcycle,2006,false
+VEH-00000071,CIT-00000216,KA 26 C 9109,Honda,Model X,red,scooter,2007,false
+VEH-00000072,CIT-00000220,KA 06 C 4053,Toyota,Model X,white,car,2019,false
+VEH-00000073,CIT-00000221,KA 30 M 9538,Royal Enfield,Model X,red,motorcycle,2019,false
+VEH-00000074,CIT-00000225,KA 10 M 7086,Royal Enfield,Model X,blue,motorcycle,2021,false
+VEH-00000075,CIT-00000226,KA 48 M 6923,Royal Enfield,Model X,blue,scooter,2009,false
+VEH-00000076,CIT-00000229,KA 09 B 5415,Honda,Model X,white,motorcycle,2006,false
+VEH-00000077,CIT-00000231,KA 43 A 5552,Bajaj,Model X,blue,motorcycle,2014,false
+VEH-00000078,CIT-00000240,KA 35 A 3851,Tata,Model X,blue,car,2014,false
+VEH-00000079,CIT-00000242,KA 12 P 4183,Tata,Model X,grey,car,2007,false
+VEH-00000080,CIT-00000245,KA 13 C 3660,Royal Enfield,Model X,black,motorcycle,2008,false
+VEH-00000081,CIT-00000247,KA 30 B 6881,Hero,Model X,black,motorcycle,2012,false
+VEH-00000082,CIT-00000248,KA 06 A 5839,Bajaj,Model X,red,motorcycle,2015,false
+VEH-00000083,CIT-00000250,KA 02 N 9438,Mahindra,Model X,red,car,2011,false
+VEH-00000084,CIT-00000258,KA 08 P 2429,Hero,Model X,red,scooter,2008,false
+VEH-00000085,CIT-00000260,KA 41 P 9687,Honda,Model X,black,car,2016,false
+VEH-00000086,CIT-00000263,KA 23 M 4883,Maruti Suzuki,Model X,grey,car,2015,false
+VEH-00000087,CIT-00000264,KA 45 M 4788,Honda,Model X,black,scooter,2012,false
+VEH-00000088,CIT-00000272,KA 22 C 3462,Toyota,Model X,blue,car,2006,false
+VEH-00000089,CIT-00000275,KA 11 M 8900,Honda,Model X,black,motorcycle,2013,false
+VEH-00000090,CIT-00000277,KA 03 N 5535,Hero,Model X,blue,motorcycle,2009,false
+VEH-00000091,CIT-00000279,KA 37 M 1866,TVS,Model X,grey,motorcycle,2016,false
+VEH-00000092,CIT-00000283,KA 01 B 7102,Hero,Model X,silver,scooter,2011,false
+VEH-00000093,CIT-00000287,KA 40 B 9744,Mahindra,Model X,white,car,2010,false
+VEH-00000094,CIT-00000288,KA 13 C 8201,TVS,Model X,blue,motorcycle,2008,false
+VEH-00000095,CIT-00000289,KA 10 C 1829,Honda,Model X,black,motorcycle,2007,false
+VEH-00000096,CIT-00000296,KA 18 A 8042,Mahindra,Model X,grey,car,2015,false
+VEH-00000097,CIT-00000300,KA 46 B 3307,Tata,Model X,silver,car,2014,false
+VEH-00000098,CIT-00000306,KA 22 N 9780,Mahindra,Model X,blue,car,2008,false
+VEH-00000099,CIT-00000307,KA 31 N 8109,Mahindra,Model X,blue,car,2013,false
+VEH-00000100,CIT-00000311,KA 32 N 8148,Tata,Model X,white,car,2021,false
+VEH-00000101,CIT-00000313,KA 16 B 1171,Tata,Model X,red,car,2019,false
+VEH-00000102,CIT-00000321,KA 36 C 6841,Toyota,Model X,black,car,2016,false
+VEH-00000103,CIT-00000322,KA 09 C 8369,Maruti Suzuki,Model X,silver,car,2020,false
+VEH-00000104,CIT-00000326,KA 23 N 8567,Royal Enfield,Model X,white,scooter,2021,false
+VEH-00000105,CIT-00000328,KA 48 B 1094,Royal Enfield,Model X,white,scooter,2020,false
+VEH-00000106,CIT-00000330,KA 21 C 2227,TVS,Model X,white,scooter,2014,false
+VEH-00000107,CIT-00000331,KA 14 B 6289,Honda,Model X,silver,car,2011,false
+VEH-00000108,CIT-00000332,KA 09 P 5523,Honda,Model X,silver,scooter,2006,false
+VEH-00000109,CIT-00000333,KA 19 N 4752,Royal Enfield,Model X,black,motorcycle,2014,false
+VEH-00000110,CIT-00000336,KA 48 P 1515,Honda,Model X,red,car,2006,false
+VEH-00000111,CIT-00000337,KA 49 C 7970,Royal Enfield,Model X,silver,motorcycle,2018,false
+VEH-00000112,CIT-00000339,KA 09 N 7750,Hyundai,Model X,white,car,2021,false
+VEH-00000113,CIT-00000343,KA 06 A 2286,Hero,Model X,silver,motorcycle,2009,false
+VEH-00000114,CIT-00000344,KA 08 B 5901,Honda,Model X,black,car,2016,false
+VEH-00000115,CIT-00000345,KA 24 N 2951,TVS,Model X,white,scooter,2017,false
+VEH-00000116,CIT-00000350,KA 21 M 9915,Honda,Model X,grey,car,2010,false
+VEH-00000117,CIT-00000352,KA 41 M 1454,Honda,Model X,blue,motorcycle,2008,false
+VEH-00000118,CIT-00000361,KA 08 B 8554,Honda,Model X,red,car,2006,false
+VEH-00000119,CIT-00000363,KA 15 A 3697,Royal Enfield,Model X,blue,scooter,2021,false
+VEH-00000120,CIT-00000364,KA 03 A 8592,TVS,Model X,blue,motorcycle,2013,false
+VEH-00000121,CIT-00000366,KA 14 C 9704,Bajaj,Model X,white,motorcycle,2021,false
+VEH-00000122,CIT-00000370,KA 45 A 8878,Bajaj,Model X,silver,motorcycle,2020,false
+VEH-00000123,CIT-00000371,KA 06 P 7674,Tata,Model X,grey,car,2011,false
+VEH-00000124,CIT-00000373,KA 29 P 1700,Hero,Model X,silver,motorcycle,2011,false
+VEH-00000125,CIT-00000374,KA 49 B 1497,Toyota,Model X,black,car,2016,false
+VEH-00000126,CIT-00000375,KA 36 M 2932,Honda,Model X,white,car,2012,false
+VEH-00000127,CIT-00000376,KA 50 P 6190,Bajaj,Model X,black,motorcycle,2011,false
+VEH-00000128,CIT-00000378,KA 07 M 2526,Tata,Model X,grey,car,2009,false
+VEH-00000129,CIT-00000386,KA 08 A 9920,Hero,Model X,silver,motorcycle,2014,false
+VEH-00000130,CIT-00000387,KA 32 N 4347,Tata,Model X,black,car,2017,false
+VEH-00000131,CIT-00000388,KA 36 B 9696,Hero,Model X,blue,motorcycle,2017,false
+VEH-00000132,CIT-00000393,KA 21 A 5785,Royal Enfield,Model X,silver,scooter,2008,false
+VEH-00000133,CIT-00000399,KA 32 C 4845,Royal Enfield,Model X,silver,scooter,2015,false
+VEH-00000134,CIT-00000400,KA 49 P 2063,TVS,Model X,blue,scooter,2008,false
+VEH-00000135,CIT-00000402,KA 01 A 7482,TVS,Model X,black,scooter,2009,false
+VEH-00000136,CIT-00000403,KA 12 C 6076,Hero,Model X,red,motorcycle,2021,false
+VEH-00000137,CIT-00000405,KA 16 M 9482,Hero,Model X,grey,motorcycle,2019,false
+VEH-00000138,CIT-00000408,KA 22 P 6578,Hero,Model X,blue,scooter,2018,false
+VEH-00000139,CIT-00000410,KA 22 A 5778,TVS,Model X,black,scooter,2007,false
+VEH-00000140,CIT-00000411,KA 33 B 4132,TVS,Model X,grey,motorcycle,2021,false
+VEH-00000141,CIT-00000423,KA 04 M 1186,Hyundai,Model X,blue,car,2006,false
+VEH-00000142,CIT-00000425,KA 50 N 9132,Bajaj,Model X,black,motorcycle,2013,false
+VEH-00000143,CIT-00000429,KA 28 B 8144,Maruti Suzuki,Model X,grey,car,2006,false
+VEH-00000144,CIT-00000434,KA 37 P 7361,TVS,Model X,red,motorcycle,2019,false
+VEH-00000145,CIT-00000435,KA 39 M 9297,TVS,Model X,blue,motorcycle,2011,false
+VEH-00000146,CIT-00000437,KA 16 M 5788,Hero,Model X,grey,motorcycle,2020,false
+VEH-00000147,CIT-00000442,KA 22 P 7413,Honda,Model X,blue,motorcycle,2019,false
+VEH-00000148,CIT-00000443,KA 43 C 7783,Honda,Model X,black,scooter,2011,false
+VEH-00000149,CIT-00000444,KA 31 P 5629,Maruti Suzuki,Model X,black,car,2018,false
+VEH-00000150,CIT-00000448,KA 18 P 3179,Mahindra,Model X,black,car,2011,false
+VEH-00000151,CIT-00000451,KA 12 M 8818,Hero,Model X,grey,motorcycle,2019,false
+VEH-00000152,CIT-00000456,KA 32 A 7720,Tata,Model X,silver,car,2019,false
+VEH-00000153,CIT-00000458,KA 17 C 6077,Honda,Model X,blue,motorcycle,2013,false
+VEH-00000154,CIT-00000459,KA 38 B 6971,Maruti Suzuki,Model X,black,car,2009,false
+VEH-00000155,CIT-00000464,KA 12 N 7476,Mahindra,Model X,red,car,2009,false
+VEH-00000156,CIT-00000465,KA 37 N 5413,Royal Enfield,Model X,red,motorcycle,2006,false
+VEH-00000157,CIT-00000469,KA 38 M 4180,Hero,Model X,black,motorcycle,2016,false
+VEH-00000158,CIT-00000470,KA 28 B 3123,Maruti Suzuki,Model X,silver,car,2007,false
+VEH-00000159,CIT-00000473,KA 24 N 5237,Honda,Model X,red,motorcycle,2008,false
+VEH-00000160,CIT-00000475,KA 35 C 9192,Bajaj,Model X,silver,motorcycle,2008,false
+VEH-00000161,CIT-00000476,KA 36 P 5634,Toyota,Model X,blue,car,2009,false
+VEH-00000162,CIT-00000477,KA 10 N 9491,Hyundai,Model X,white,car,2007,false
+VEH-00000163,CIT-00000479,KA 37 A 7600,Bajaj,Model X,white,scooter,2011,false
+VEH-00000164,CIT-00000485,KA 18 B 6709,Bajaj,Model X,silver,motorcycle,2016,false
+VEH-00000165,CIT-00000486,KA 35 A 4780,Hero,Model X,blue,motorcycle,2012,false
+VEH-00000166,CIT-00000491,KA 16 C 1520,Mahindra,Model X,black,car,2007,false
+VEH-00000167,CIT-00000495,KA 01 M 9259,Honda,Model X,silver,car,2008,false
+VEH-00000168,CIT-00000496,KA 46 P 8487,Hyundai,Model X,blue,car,2016,false
+VEH-00000169,CIT-00000497,KA 42 N 2318,Hyundai,Model X,grey,car,2016,false
+VEH-00000170,CIT-00000503,KA 11 M 3580,Royal Enfield,Model X,blue,motorcycle,2010,false
+VEH-00000171,CIT-00000505,KA 30 A 3898,Honda,Model X,grey,motorcycle,2013,false
+VEH-00000172,CIT-00000512,KA 35 N 9088,TVS,Model X,grey,motorcycle,2018,false
+VEH-00000173,CIT-00000516,KA 21 P 5166,Honda,Model X,silver,scooter,2010,false
+VEH-00000174,CIT-00000517,KA 34 C 6056,Toyota,Model X,grey,car,2012,false
+VEH-00000175,CIT-00000519,KA 11 B 5467,Bajaj,Model X,silver,motorcycle,2014,false
+VEH-00000176,CIT-00000523,KA 02 C 6774,Hyundai,Model X,white,car,2012,false
+VEH-00000177,CIT-00000526,KA 04 C 5429,Honda,Model X,blue,motorcycle,2008,false
+VEH-00000178,CIT-00000527,KA 46 N 5093,Maruti Suzuki,Model X,silver,car,2007,false
+VEH-00000179,CIT-00000528,KA 35 N 3384,Royal Enfield,Model X,silver,scooter,2020,false
+VEH-00000180,CIT-00000529,KA 24 N 7144,Honda,Model X,grey,car,2010,false
+VEH-00000181,CIT-00000533,KA 06 C 1116,Tata,Model X,black,car,2020,false
+VEH-00000182,CIT-00000534,KA 42 P 3015,Honda,Model X,white,car,2019,false
+VEH-00000183,CIT-00000541,KA 47 A 4283,Royal Enfield,Model X,black,motorcycle,2012,false
+VEH-00000184,CIT-00000546,KA 02 P 6816,Hero,Model X,blue,scooter,2009,false
+VEH-00000185,CIT-00000547,KA 03 A 7715,Royal Enfield,Model X,grey,scooter,2012,false
+VEH-00000186,CIT-00000551,KA 29 B 9519,Tata,Model X,black,car,2008,false
+VEH-00000187,CIT-00000554,KA 13 A 2012,Toyota,Model X,white,car,2013,false
+VEH-00000188,CIT-00000557,KA 34 N 8298,Maruti Suzuki,Model X,black,car,2018,false
+VEH-00000189,CIT-00000559,KA 27 P 7410,Maruti Suzuki,Model X,blue,car,2009,false
+VEH-00000190,CIT-00000561,KA 12 P 9215,Hyundai,Model X,red,car,2006,false
+VEH-00000191,CIT-00000564,KA 46 B 2612,Hyundai,Model X,silver,car,2007,false
+VEH-00000192,CIT-00000570,KA 02 P 9023,TVS,Model X,blue,motorcycle,2019,false
+VEH-00000193,CIT-00000576,KA 21 B 2740,Hyundai,Model X,white,car,2009,false
+VEH-00000194,CIT-00000582,KA 25 B 3778,Mahindra,Model X,red,car,2013,false
+VEH-00000195,CIT-00000584,KA 35 C 2272,TVS,Model X,blue,motorcycle,2020,false
+VEH-00000196,CIT-00000586,KA 23 P 9430,Royal Enfield,Model X,grey,motorcycle,2010,false
+VEH-00000197,CIT-00000590,KA 03 M 9644,Honda,Model X,silver,car,2019,false
+VEH-00000198,CIT-00000594,KA 28 M 4031,Bajaj,Model X,white,scooter,2009,false
+VEH-00000199,CIT-00000603,KA 26 B 9205,Hyundai,Model X,white,car,2007,false
+VEH-00000200,CIT-00000605,KA 15 M 7678,Bajaj,Model X,white,scooter,2018,false
+VEH-00000201,CIT-00000608,KA 25 B 6643,Honda,Model X,black,car,2006,false
+VEH-00000202,CIT-00000610,KA 40 B 3691,Maruti Suzuki,Model X,blue,car,2018,false
+VEH-00000203,CIT-00000611,KA 38 P 8059,Hero,Model X,grey,motorcycle,2014,false
+VEH-00000204,CIT-00000613,KA 44 A 3512,Hero,Model X,silver,scooter,2014,false
+VEH-00000205,CIT-00000619,KA 33 P 6228,Bajaj,Model X,white,scooter,2010,false
+VEH-00000206,CIT-00000626,KA 33 N 9024,Hyundai,Model X,red,car,2014,false
+VEH-00000207,CIT-00000628,KA 30 A 8236,Hyundai,Model X,black,car,2021,false
+VEH-00000208,CIT-00000629,KA 18 N 4037,Royal Enfield,Model X,grey,motorcycle,2012,false
+VEH-00000209,CIT-00000630,KA 38 B 5292,Tata,Model X,silver,car,2018,false
+VEH-00000210,CIT-00000631,KA 42 A 7096,Toyota,Model X,grey,car,2009,false
+VEH-00000211,CIT-00000635,KA 48 P 9660,Honda,Model X,red,motorcycle,2009,false
+VEH-00000212,CIT-00000640,KA 28 B 7510,Maruti Suzuki,Model X,black,car,2016,false
+VEH-00000213,CIT-00000644,KA 39 P 5305,Hero,Model X,black,motorcycle,2013,false
+VEH-00000214,CIT-00000645,KA 15 C 7211,Honda,Model X,grey,scooter,2019,false
+VEH-00000215,CIT-00000647,KA 06 N 3301,Bajaj,Model X,silver,motorcycle,2006,false
+VEH-00000216,CIT-00000649,KA 49 P 9202,TVS,Model X,blue,scooter,2014,false
+VEH-00000217,CIT-00000653,KA 43 N 8163,Bajaj,Model X,blue,motorcycle,2014,false
+VEH-00000218,CIT-00000658,KA 30 M 2083,TVS,Model X,white,motorcycle,2006,false
+VEH-00000219,CIT-00000663,KA 09 B 2639,Hero,Model X,white,scooter,2009,false
+VEH-00000220,CIT-00000666,KA 41 C 8865,Mahindra,Model X,silver,car,2020,false
+VEH-00000221,CIT-00000673,KA 18 A 5975,Bajaj,Model X,grey,scooter,2020,false
+VEH-00000222,CIT-00000677,KA 47 M 2674,Hero,Model X,blue,scooter,2015,false
+VEH-00000223,CIT-00000683,KA 44 M 2510,Honda,Model X,black,car,2009,false
+VEH-00000224,CIT-00000692,KA 21 B 7267,Mahindra,Model X,blue,car,2019,false
+VEH-00000225,CIT-00000693,KA 47 C 3405,Royal Enfield,Model X,blue,scooter,2015,false
+VEH-00000226,CIT-00000700,KA 36 N 8509,Bajaj,Model X,black,scooter,2020,false
+VEH-00000227,CIT-00000703,KA 18 A 2191,Hyundai,Model X,grey,car,2011,false
+VEH-00000228,CIT-00000709,KA 37 C 7576,Royal Enfield,Model X,grey,motorcycle,2021,false
+VEH-00000229,CIT-00000710,KA 48 M 2452,Maruti Suzuki,Model X,blue,car,2019,false
+VEH-00000230,CIT-00000713,KA 50 P 9804,Honda,Model X,grey,motorcycle,2012,false
+VEH-00000231,CIT-00000717,KA 36 C 1805,Tata,Model X,silver,car,2015,false
+VEH-00000232,CIT-00000719,KA 50 P 7572,Bajaj,Model X,silver,scooter,2013,false
+VEH-00000233,CIT-00000721,KA 07 N 7926,Maruti Suzuki,Model X,black,car,2021,false
+VEH-00000234,CIT-00000725,KA 37 A 2283,Toyota,Model X,black,car,2006,false
+VEH-00000235,CIT-00000726,KA 38 N 3625,Hero,Model X,grey,motorcycle,2018,false
+VEH-00000236,CIT-00000727,KA 19 A 2154,Hero,Model X,grey,scooter,2014,false
+VEH-00000237,CIT-00000728,KA 43 P 8960,Royal Enfield,Model X,silver,motorcycle,2011,false
+VEH-00000238,CIT-00000729,KA 22 C 1018,Hero,Model X,red,motorcycle,2008,false
+VEH-00000239,CIT-00000730,KA 45 B 8696,Toyota,Model X,white,car,2017,false
+VEH-00000240,CIT-00000731,KA 02 A 4305,Tata,Model X,grey,car,2016,false
+VEH-00000241,CIT-00000733,KA 42 N 1072,Maruti Suzuki,Model X,grey,car,2008,false
+VEH-00000242,CIT-00000738,KA 41 N 7278,Bajaj,Model X,silver,scooter,2013,false
+VEH-00000243,CIT-00000739,KA 10 C 5178,Bajaj,Model X,grey,motorcycle,2015,false
+VEH-00000244,CIT-00000745,KA 13 B 5987,Honda,Model X,grey,motorcycle,2019,false
+VEH-00000245,CIT-00000746,KA 04 P 4402,Honda,Model X,red,motorcycle,2021,false
+VEH-00000246,CIT-00000752,KA 09 A 1677,TVS,Model X,silver,motorcycle,2009,false
+VEH-00000247,CIT-00000753,KA 22 N 8869,Honda,Model X,white,scooter,2014,false
+VEH-00000248,CIT-00000754,KA 35 M 8929,Toyota,Model X,grey,car,2012,false
+VEH-00000249,CIT-00000757,KA 13 N 9731,Royal Enfield,Model X,blue,motorcycle,2016,false
+VEH-00000250,CIT-00000763,KA 03 B 7766,TVS,Model X,silver,motorcycle,2015,false
+VEH-00000251,CIT-00000770,KA 46 P 2705,Royal Enfield,Model X,black,scooter,2015,false
+VEH-00000252,CIT-00000771,KA 32 M 8378,Royal Enfield,Model X,grey,scooter,2018,false
+VEH-00000253,CIT-00000782,KA 46 N 5382,Honda,Model X,blue,motorcycle,2016,false
+VEH-00000254,CIT-00000785,KA 22 C 7641,TVS,Model X,black,scooter,2011,false
+VEH-00000255,CIT-00000800,KA 07 M 5463,Bajaj,Model X,blue,motorcycle,2018,false
+VEH-00000256,CIT-00000807,KA 01 C 4480,Honda,Model X,grey,motorcycle,2020,false
+VEH-00000257,CIT-00000814,KA 43 P 7952,Maruti Suzuki,Model X,grey,car,2016,false
+VEH-00000258,CIT-00000819,KA 41 P 4597,TVS,Model X,red,scooter,2017,false
+VEH-00000259,CIT-00000824,KA 07 N 4326,Hero,Model X,blue,motorcycle,2008,false
+VEH-00000260,CIT-00000827,KA 03 M 4367,Tata,Model X,black,car,2015,false
+VEH-00000261,CIT-00000831,KA 18 A 7727,TVS,Model X,grey,scooter,2014,false
+VEH-00000262,CIT-00000832,KA 28 A 6524,Bajaj,Model X,blue,scooter,2009,false
+VEH-00000263,CIT-00000833,KA 46 P 4722,Toyota,Model X,blue,car,2013,false
+VEH-00000264,CIT-00000835,KA 49 A 6984,TVS,Model X,black,motorcycle,2007,false
+VEH-00000265,CIT-00000846,KA 31 B 4682,Honda,Model X,black,car,2018,false
+VEH-00000266,CIT-00000848,KA 11 B 5242,Toyota,Model X,grey,car,2011,false
+VEH-00000267,CIT-00000849,KA 44 C 2518,Hyundai,Model X,white,car,2008,false
+VEH-00000268,CIT-00000853,KA 38 M 3687,Honda,Model X,grey,motorcycle,2010,false
+VEH-00000269,CIT-00000854,KA 20 N 6098,Honda,Model X,black,motorcycle,2013,false
+VEH-00000270,CIT-00000857,KA 24 C 5203,Toyota,Model X,black,car,2011,false
+VEH-00000271,CIT-00000859,KA 42 M 9871,TVS,Model X,red,motorcycle,2018,false
+VEH-00000272,CIT-00000861,KA 22 B 3085,Bajaj,Model X,grey,scooter,2019,false
+VEH-00000273,CIT-00000865,KA 27 P 5834,Honda,Model X,black,motorcycle,2017,false
+VEH-00000274,CIT-00000867,KA 25 N 8525,Tata,Model X,red,car,2007,false
+VEH-00000275,CIT-00000868,KA 03 M 6738,Maruti Suzuki,Model X,black,car,2007,false
+VEH-00000276,CIT-00000872,KA 07 B 8365,Hyundai,Model X,grey,car,2018,false
+VEH-00000277,CIT-00000874,KA 11 A 4689,Toyota,Model X,black,car,2014,false
+VEH-00000278,CIT-00000878,KA 06 B 7869,Royal Enfield,Model X,red,motorcycle,2021,false
+VEH-00000279,CIT-00000881,KA 36 B 9323,Honda,Model X,white,motorcycle,2016,false
+VEH-00000280,CIT-00000882,KA 17 C 8099,Hyundai,Model X,black,car,2018,false
+VEH-00000281,CIT-00000883,KA 22 C 2536,Bajaj,Model X,blue,motorcycle,2015,false
+VEH-00000282,CIT-00000892,KA 46 M 9951,Mahindra,Model X,white,car,2018,false
+VEH-00000283,CIT-00000895,KA 04 P 1236,Honda,Model X,white,car,2018,false
+VEH-00000284,CIT-00000897,KA 06 B 9757,Hero,Model X,white,scooter,2013,false
+VEH-00000285,CIT-00000901,KA 39 M 2105,Hyundai,Model X,black,car,2007,false
+VEH-00000286,CIT-00000902,KA 24 B 2600,Hyundai,Model X,black,car,2011,false
+VEH-00000287,CIT-00000908,KA 17 C 9901,Hero,Model X,silver,motorcycle,2013,false
+VEH-00000288,CIT-00000911,KA 33 C 2807,Bajaj,Model X,grey,motorcycle,2020,false
+VEH-00000289,CIT-00000913,KA 37 B 4107,Toyota,Model X,white,car,2018,false
+VEH-00000290,CIT-00000914,KA 16 C 2510,Hero,Model X,silver,scooter,2018,false
+VEH-00000291,CIT-00000915,KA 04 A 4223,Bajaj,Model X,white,scooter,2013,false
+VEH-00000292,CIT-00000919,KA 29 N 8085,Hero,Model X,silver,motorcycle,2020,false
+VEH-00000293,CIT-00000920,KA 17 N 4242,Royal Enfield,Model X,black,motorcycle,2017,false
+VEH-00000294,CIT-00000924,KA 43 M 8256,TVS,Model X,red,motorcycle,2014,false
+VEH-00000295,CIT-00000932,KA 48 B 9446,Royal Enfield,Model X,white,motorcycle,2009,false
+VEH-00000296,CIT-00000933,KA 03 P 7539,Honda,Model X,grey,scooter,2015,false
+VEH-00000297,CIT-00000935,KA 07 A 3838,Honda,Model X,grey,motorcycle,2008,false
+VEH-00000298,CIT-00000936,KA 46 P 7214,Honda,Model X,white,scooter,2019,false
+VEH-00000299,CIT-00000937,KA 01 A 1009,Hero,Model X,blue,scooter,2021,false
+VEH-00000300,CIT-00000938,KA 36 B 7918,Royal Enfield,Model X,black,scooter,2017,false
+VEH-00000301,CIT-00000939,KA 04 A 4235,Hero,Model X,white,motorcycle,2016,false
+VEH-00000302,CIT-00000941,KA 34 C 2374,TVS,Model X,blue,scooter,2013,false
+VEH-00000303,CIT-00000946,KA 20 P 3778,Royal Enfield,Model X,red,scooter,2009,false
+VEH-00000304,CIT-00000950,KA 42 N 1920,Royal Enfield,Model X,silver,motorcycle,2006,false
+VEH-00000305,CIT-00000952,KA 31 A 6776,Bajaj,Model X,blue,motorcycle,2020,false
+VEH-00000306,CIT-00000955,KA 45 A 7135,Royal Enfield,Model X,grey,scooter,2007,false
+VEH-00000307,CIT-00000963,KA 47 B 1811,Toyota,Model X,white,car,2020,false
+VEH-00000308,CIT-00000979,KA 26 A 7179,Tata,Model X,white,car,2011,false
+VEH-00000309,CIT-00000980,KA 26 C 1902,Honda,Model X,red,scooter,2013,false
+VEH-00000310,CIT-00000981,KA 02 P 2900,Hero,Model X,grey,motorcycle,2015,false
+VEH-00000311,CIT-00000982,KA 15 A 7870,Mahindra,Model X,grey,car,2019,false
+VEH-00000312,CIT-00000989,KA 08 M 4141,Honda,Model X,silver,scooter,2013,false
+VEH-00000313,CIT-00000993,KA 20 B 1344,Toyota,Model X,silver,car,2014,false
+VEH-00000314,CIT-00000994,KA 36 C 6009,Bajaj,Model X,silver,motorcycle,2016,false
+VEH-00000315,CIT-00000995,KA 46 C 2882,Toyota,Model X,white,car,2008,false
+VEH-00000316,CIT-00000997,KA 45 B 1276,Maruti Suzuki,Model X,white,car,2016,false
+VEH-00000317,CIT-00001000,KA 42 N 4777,Tata,Model X,silver,car,2020,false
+VEH-00000318,CIT-00001007,KA 08 M 6712,Honda,Model X,red,scooter,2011,false
+VEH-00000319,CIT-00001016,KA 22 C 8814,Royal Enfield,Model X,blue,scooter,2018,false
+VEH-00000320,CIT-00001018,KA 49 P 6416,Honda,Model X,grey,car,2017,false
+VEH-00000321,CIT-00001019,KA 15 C 2114,Maruti Suzuki,Model X,blue,car,2015,false
+VEH-00000322,CIT-00001021,KA 47 B 6546,Mahindra,Model X,white,car,2013,false
+VEH-00000323,CIT-00001022,KA 27 C 2973,Bajaj,Model X,red,motorcycle,2020,false
+VEH-00000324,CIT-00001023,KA 06 B 9716,Bajaj,Model X,grey,motorcycle,2015,false
+VEH-00000325,CIT-00001028,KA 03 C 9668,Tata,Model X,blue,car,2008,false
+VEH-00000326,CIT-00001031,KA 20 C 5059,Hero,Model X,black,scooter,2007,false
+VEH-00000327,CIT-00001033,KA 20 B 9728,Maruti Suzuki,Model X,white,car,2019,false
+VEH-00000328,CIT-00001037,KA 43 C 3683,TVS,Model X,black,motorcycle,2016,false
+VEH-00000329,CIT-00001038,KA 45 P 4447,Honda,Model X,white,car,2015,false
+VEH-00000330,CIT-00001039,KA 31 C 9682,Maruti Suzuki,Model X,white,car,2018,false
+VEH-00000331,CIT-00001043,KA 20 C 6061,Bajaj,Model X,black,motorcycle,2016,false
+VEH-00000332,CIT-00001047,KA 44 C 5212,TVS,Model X,black,scooter,2020,false
+VEH-00000333,CIT-00001060,KA 14 B 7396,Hyundai,Model X,blue,car,2011,false
+VEH-00000334,CIT-00001061,KA 23 N 6443,Royal Enfield,Model X,blue,motorcycle,2019,false
+VEH-00000335,CIT-00001065,KA 25 B 1788,Tata,Model X,red,car,2013,false
+VEH-00000336,CIT-00001067,KA 28 M 7957,Honda,Model X,grey,car,2018,false
+VEH-00000337,CIT-00001068,KA 17 P 6364,Hero,Model X,silver,motorcycle,2008,false
+VEH-00000338,CIT-00001072,KA 48 P 7021,Hyundai,Model X,white,car,2008,false
+VEH-00000339,CIT-00001076,KA 19 M 7488,Royal Enfield,Model X,silver,scooter,2018,false
+VEH-00000340,CIT-00001082,KA 41 N 5108,Hero,Model X,grey,motorcycle,2013,false
+VEH-00000341,CIT-00001086,KA 50 B 1261,Bajaj,Model X,silver,scooter,2009,false
+VEH-00000342,CIT-00001089,KA 07 A 5560,Honda,Model X,silver,motorcycle,2014,false
+VEH-00000343,CIT-00001092,KA 26 C 3948,Maruti Suzuki,Model X,white,car,2012,false
+VEH-00000344,CIT-00001093,KA 14 N 3061,Toyota,Model X,white,car,2015,false
+VEH-00000345,CIT-00001105,KA 02 P 6544,Mahindra,Model X,black,car,2019,false
+VEH-00000346,CIT-00001106,KA 23 N 4782,TVS,Model X,blue,motorcycle,2006,false
+VEH-00000347,CIT-00001107,KA 22 P 8137,Honda,Model X,blue,car,2015,false
+VEH-00000348,CIT-00001120,KA 17 P 6274,Bajaj,Model X,red,motorcycle,2018,false
+VEH-00000349,CIT-00001128,KA 19 N 5607,Maruti Suzuki,Model X,blue,car,2016,false
+VEH-00000350,CIT-00001131,KA 18 P 9727,Mahindra,Model X,red,car,2018,false
+VEH-00000351,CIT-00001133,KA 22 P 9518,Toyota,Model X,blue,car,2009,false
+VEH-00000352,CIT-00001136,KA 39 P 3582,Hero,Model X,red,motorcycle,2020,false
+VEH-00000353,CIT-00001137,KA 46 P 5732,Hero,Model X,blue,motorcycle,2013,false
+VEH-00000354,CIT-00001138,KA 23 B 9763,TVS,Model X,black,scooter,2013,false
+VEH-00000355,CIT-00001139,KA 13 A 8418,Honda,Model X,red,motorcycle,2019,false
+VEH-00000356,CIT-00001141,KA 14 N 4920,Hyundai,Model X,grey,car,2020,false
+VEH-00000357,CIT-00001144,KA 15 B 7215,Bajaj,Model X,red,scooter,2013,false
+VEH-00000358,CIT-00001146,KA 04 B 6730,Bajaj,Model X,silver,scooter,2020,false
+VEH-00000359,CIT-00001147,KA 20 P 2570,TVS,Model X,silver,scooter,2011,false
+VEH-00000360,CIT-00001149,KA 43 B 8355,Honda,Model X,white,car,2012,false
+VEH-00000361,CIT-00001150,KA 16 B 1791,Honda,Model X,black,car,2013,false
+VEH-00000362,CIT-00001152,KA 43 A 6728,TVS,Model X,grey,scooter,2016,false
+VEH-00000363,CIT-00001153,KA 03 C 7326,TVS,Model X,red,motorcycle,2006,false
+VEH-00000364,CIT-00001154,KA 03 C 6291,Honda,Model X,silver,car,2008,false
+VEH-00000365,CIT-00001156,KA 34 C 7844,Hero,Model X,grey,motorcycle,2020,false
+VEH-00000366,CIT-00001158,KA 49 B 9167,Tata,Model X,grey,car,2012,false
+VEH-00000367,CIT-00001159,KA 48 P 3372,Hero,Model X,blue,scooter,2013,false
+VEH-00000368,CIT-00001165,KA 44 B 7117,TVS,Model X,blue,scooter,2011,false
+VEH-00000369,CIT-00001166,KA 12 M 5748,Royal Enfield,Model X,black,motorcycle,2016,false
+VEH-00000370,CIT-00001169,KA 04 P 3272,Toyota,Model X,blue,car,2021,false
+VEH-00000371,CIT-00001171,KA 31 N 7243,Tata,Model X,blue,car,2009,false
+VEH-00000372,CIT-00001173,KA 40 B 3580,Royal Enfield,Model X,grey,scooter,2009,false
+VEH-00000373,CIT-00001174,KA 12 A 8865,Honda,Model X,grey,motorcycle,2015,false
+VEH-00000374,CIT-00001175,KA 04 B 8920,Tata,Model X,black,car,2012,false
+VEH-00000375,CIT-00001186,KA 24 M 4527,Maruti Suzuki,Model X,white,car,2014,false
+VEH-00000376,CIT-00001187,KA 02 C 5630,Honda,Model X,blue,motorcycle,2017,false
+VEH-00000377,CIT-00001189,KA 09 P 6060,Honda,Model X,grey,car,2019,false
+VEH-00000378,CIT-00001192,KA 23 A 2705,Maruti Suzuki,Model X,red,car,2020,false
+VEH-00000379,CIT-00001194,KA 48 C 1556,Mahindra,Model X,white,car,2017,false
+VEH-00000380,CIT-00001195,KA 37 C 8388,Bajaj,Model X,black,motorcycle,2017,false
+VEH-00000381,CIT-00001199,KA 45 M 8666,Mahindra,Model X,black,car,2008,false
+VEH-00000382,CIT-00001203,KA 09 C 6681,Honda,Model X,silver,motorcycle,2016,false
+VEH-00000383,CIT-00001206,KA 29 C 1542,Bajaj,Model X,silver,motorcycle,2012,false
+VEH-00000384,CIT-00001208,KA 15 B 6352,Hero,Model X,red,motorcycle,2007,false
+VEH-00000385,CIT-00001209,KA 25 M 2016,Maruti Suzuki,Model X,black,car,2008,false
+VEH-00000386,CIT-00001212,KA 20 P 8858,Mahindra,Model X,black,car,2021,false
+VEH-00000387,CIT-00001216,KA 08 B 1342,Honda,Model X,red,motorcycle,2015,false
+VEH-00000388,CIT-00001217,KA 47 B 4418,Mahindra,Model X,black,car,2014,false
+VEH-00000389,CIT-00001218,KA 36 C 6285,Honda,Model X,silver,motorcycle,2006,false
+VEH-00000390,CIT-00001220,KA 24 A 9461,Hero,Model X,red,motorcycle,2019,false
+VEH-00000391,CIT-00001226,KA 05 M 3999,Hero,Model X,black,motorcycle,2015,false
+VEH-00000392,CIT-00001230,KA 08 C 5903,Tata,Model X,white,car,2019,false
+VEH-00000393,CIT-00001233,KA 26 M 3831,Tata,Model X,silver,car,2021,false
+VEH-00000394,CIT-00001235,KA 33 P 3262,Honda,Model X,grey,motorcycle,2009,false
+VEH-00000395,CIT-00001238,KA 13 P 8514,Royal Enfield,Model X,grey,motorcycle,2009,false
+VEH-00000396,CIT-00001241,KA 17 C 8771,Bajaj,Model X,grey,scooter,2019,false
+VEH-00000397,CIT-00001244,KA 39 P 9562,Royal Enfield,Model X,black,motorcycle,2021,false
+VEH-00000398,CIT-00001249,KA 35 P 6058,Honda,Model X,silver,car,2014,false
+VEH-00000399,CIT-00001250,KA 12 C 5273,Bajaj,Model X,white,motorcycle,2014,false
+VEH-00000400,CIT-00001252,KA 33 N 3030,Hero,Model X,grey,motorcycle,2017,false
+VEH-00000401,CIT-00001255,KA 06 N 5026,Hero,Model X,white,motorcycle,2017,false
+VEH-00000402,CIT-00001262,KA 50 A 1507,Bajaj,Model X,grey,motorcycle,2015,false
+VEH-00000403,CIT-00001265,KA 26 N 3226,Hero,Model X,grey,motorcycle,2021,false
+VEH-00000404,CIT-00001266,KA 10 A 2185,Toyota,Model X,red,car,2021,false
+VEH-00000405,CIT-00001267,KA 06 B 8394,Bajaj,Model X,grey,scooter,2006,false
+VEH-00000406,CIT-00001268,KA 31 A 6506,Toyota,Model X,black,car,2007,false
+VEH-00000407,CIT-00001270,KA 32 B 7683,Hyundai,Model X,red,car,2020,false
+VEH-00000408,CIT-00001273,KA 02 P 7927,Hyundai,Model X,white,car,2018,false
+VEH-00000409,CIT-00001276,KA 17 A 7581,Hero,Model X,black,motorcycle,2010,false
+VEH-00000410,CIT-00001277,KA 17 A 7927,Maruti Suzuki,Model X,silver,car,2009,false
+VEH-00000411,CIT-00001290,KA 28 C 8553,Tata,Model X,red,car,2010,false
+VEH-00000412,CIT-00001292,KA 18 C 7085,Toyota,Model X,red,car,2011,false
+VEH-00000413,CIT-00001294,KA 18 M 1111,Royal Enfield,Model X,red,scooter,2019,false
+VEH-00000414,CIT-00001296,KA 37 M 7457,Royal Enfield,Model X,black,motorcycle,2010,false
+VEH-00000415,CIT-00001299,KA 29 P 5094,Hero,Model X,red,motorcycle,2006,false
+VEH-00000416,CIT-00001300,KA 15 B 1258,Tata,Model X,red,car,2008,false
+VEH-00000417,CIT-00001302,KA 13 C 5890,Hyundai,Model X,blue,car,2006,false
+VEH-00000418,CIT-00001303,KA 47 A 1287,Hyundai,Model X,grey,car,2015,false
+VEH-00000419,CIT-00001304,KA 29 N 2473,Bajaj,Model X,silver,motorcycle,2009,false
+VEH-00000420,CIT-00001307,KA 21 P 8191,Hyundai,Model X,blue,car,2007,false
+VEH-00000421,CIT-00001310,KA 13 N 3616,Bajaj,Model X,black,motorcycle,2012,false
+VEH-00000422,CIT-00001311,KA 19 M 9025,Bajaj,Model X,red,motorcycle,2020,false
+VEH-00000423,CIT-00001313,KA 14 N 4446,Mahindra,Model X,blue,car,2009,false
+VEH-00000424,CIT-00001315,KA 33 N 4164,Hero,Model X,white,motorcycle,2019,false
+VEH-00000425,CIT-00001327,KA 22 P 5483,Hero,Model X,blue,motorcycle,2007,false
+VEH-00000426,CIT-00001339,KA 39 M 1537,TVS,Model X,black,scooter,2019,false
+VEH-00000427,CIT-00001348,KA 12 B 3546,Maruti Suzuki,Model X,black,car,2017,false
+VEH-00000428,CIT-00001355,KA 25 A 3676,Hyundai,Model X,black,car,2013,false
+VEH-00000429,CIT-00001357,KA 26 N 8519,Hyundai,Model X,blue,car,2021,false
+VEH-00000430,CIT-00001358,KA 01 B 4052,Honda,Model X,grey,motorcycle,2017,false
+VEH-00000431,CIT-00001359,KA 20 N 6994,Bajaj,Model X,black,scooter,2019,false
+VEH-00000432,CIT-00001366,KA 20 N 7078,Bajaj,Model X,black,motorcycle,2007,false
+VEH-00000433,CIT-00001372,KA 40 M 3561,TVS,Model X,silver,motorcycle,2015,false
+VEH-00000434,CIT-00001374,KA 46 B 1043,Honda,Model X,grey,scooter,2021,false
+VEH-00000435,CIT-00001375,KA 48 B 1792,Hero,Model X,silver,scooter,2013,false
+VEH-00000436,CIT-00001376,KA 32 N 6683,TVS,Model X,silver,motorcycle,2020,false
+VEH-00000437,CIT-00001378,KA 33 A 2479,Hyundai,Model X,grey,car,2009,false
+VEH-00000438,CIT-00001380,KA 08 B 1104,Royal Enfield,Model X,black,motorcycle,2017,false
+VEH-00000439,CIT-00001381,KA 44 N 8440,Hero,Model X,black,motorcycle,2016,false
+VEH-00000440,CIT-00001383,KA 09 B 6739,Honda,Model X,blue,scooter,2010,false
+VEH-00000441,CIT-00001388,KA 08 A 5346,Hero,Model X,white,motorcycle,2016,false
+VEH-00000442,CIT-00001392,KA 44 B 9115,Mahindra,Model X,silver,car,2008,false
+VEH-00000443,CIT-00001395,KA 16 M 7925,Mahindra,Model X,black,car,2007,false
+VEH-00000444,CIT-00001398,KA 43 P 3995,Hero,Model X,black,motorcycle,2010,false
+VEH-00000445,CIT-00001401,KA 35 C 1944,Mahindra,Model X,silver,car,2016,false
+VEH-00000446,CIT-00001402,KA 01 C 3358,Maruti Suzuki,Model X,red,car,2011,false
+VEH-00000447,CIT-00001411,KA 24 B 3372,Maruti Suzuki,Model X,blue,car,2011,false
+VEH-00000448,CIT-00001414,KA 30 P 8747,Hero,Model X,white,motorcycle,2010,false
+VEH-00000449,CIT-00001415,KA 08 C 7693,Bajaj,Model X,grey,motorcycle,2016,false
+VEH-00000450,CIT-00001420,KA 18 M 7687,Hero,Model X,grey,scooter,2016,false
+VEH-00000451,CIT-00001422,KA 17 C 9054,Hyundai,Model X,black,car,2006,false
+VEH-00000452,CIT-00001424,KA 42 N 9280,Honda,Model X,red,scooter,2021,false
+VEH-00000453,CIT-00001431,KA 09 N 9942,Bajaj,Model X,blue,scooter,2011,false
+VEH-00000454,CIT-00001433,KA 03 N 8070,Bajaj,Model X,grey,motorcycle,2006,false
+VEH-00000455,CIT-00001437,KA 15 C 5326,Hyundai,Model X,white,car,2014,false
+VEH-00000456,CIT-00001441,KA 34 A 3051,Hyundai,Model X,silver,car,2020,false
+VEH-00000457,CIT-00001447,KA 06 M 5911,Hero,Model X,silver,motorcycle,2009,false
+VEH-00000458,CIT-00001449,KA 38 N 9102,Honda,Model X,red,motorcycle,2018,false
+VEH-00000459,CIT-00001454,KA 08 P 6445,TVS,Model X,black,motorcycle,2014,false
+VEH-00000460,CIT-00001463,KA 38 N 6618,Mahindra,Model X,black,car,2017,false
+VEH-00000461,CIT-00001470,KA 35 C 3330,Tata,Model X,red,car,2007,false
+VEH-00000462,CIT-00001472,KA 09 C 6499,Mahindra,Model X,blue,car,2017,false
+VEH-00000463,CIT-00001475,KA 25 M 2266,Bajaj,Model X,blue,motorcycle,2017,false
+VEH-00000464,CIT-00001476,KA 42 A 8319,Maruti Suzuki,Model X,blue,car,2007,false
+VEH-00000465,CIT-00001478,KA 48 P 9830,Honda,Model X,white,motorcycle,2012,false
+VEH-00000466,CIT-00001479,KA 24 B 4110,Tata,Model X,white,car,2015,false
+VEH-00000467,CIT-00001484,KA 19 C 4870,Hero,Model X,grey,scooter,2009,false
+VEH-00000468,CIT-00001485,KA 42 C 3495,Tata,Model X,black,car,2013,false
+VEH-00000469,CIT-00001486,KA 04 M 5450,Honda,Model X,black,motorcycle,2020,false
+VEH-00000470,CIT-00001488,KA 13 P 8636,Maruti Suzuki,Model X,red,car,2021,false
+VEH-00000471,CIT-00001493,KA 16 P 7044,Royal Enfield,Model X,black,motorcycle,2015,false
+VEH-00000472,CIT-00001494,KA 40 B 3417,TVS,Model X,red,motorcycle,2016,false
+VEH-00000473,CIT-00001497,KA 02 A 9704,Maruti Suzuki,Model X,silver,car,2012,false
+VEH-00000474,CIT-00001500,KA 22 M 9470,Bajaj,Model X,silver,scooter,2007,false
+VEH-00000475,CIT-00001502,KA 10 B 9029,Tata,Model X,blue,car,2019,false
+VEH-00000476,CIT-00001505,KA 44 M 5324,TVS,Model X,red,motorcycle,2018,false
+VEH-00000477,CIT-00001506,KA 21 C 5724,Hero,Model X,silver,motorcycle,2009,false
+VEH-00000478,CIT-00001507,KA 11 A 5994,Royal Enfield,Model X,blue,motorcycle,2007,false
+VEH-00000479,CIT-00001512,KA 05 M 7755,Honda,Model X,grey,motorcycle,2018,false
+VEH-00000480,CIT-00001515,KA 41 M 4443,TVS,Model X,blue,motorcycle,2016,false
+VEH-00000481,CIT-00001517,KA 26 M 6154,TVS,Model X,grey,motorcycle,2017,false
+VEH-00000482,CIT-00001518,KA 22 N 6962,Hero,Model X,grey,motorcycle,2011,false
+VEH-00000483,CIT-00001522,KA 48 N 8300,Bajaj,Model X,grey,scooter,2007,false
+VEH-00000484,CIT-00001528,KA 40 B 7002,Royal Enfield,Model X,red,scooter,2018,false
+VEH-00000485,CIT-00001531,KA 10 B 4931,TVS,Model X,red,motorcycle,2018,false
+VEH-00000486,CIT-00001532,KA 28 A 4985,Bajaj,Model X,black,motorcycle,2019,false
+VEH-00000487,CIT-00001535,KA 18 A 3508,Royal Enfield,Model X,red,scooter,2016,false
+VEH-00000488,CIT-00001536,KA 41 N 9302,Hyundai,Model X,white,car,2017,false
+VEH-00000489,CIT-00001537,KA 42 P 6309,Maruti Suzuki,Model X,black,car,2014,false
+VEH-00000490,CIT-00001540,KA 22 C 8789,Honda,Model X,grey,car,2007,false
+VEH-00000491,CIT-00001541,KA 34 C 4351,Honda,Model X,white,car,2020,false
+VEH-00000492,CIT-00001545,KA 08 B 4127,Honda,Model X,black,car,2008,false
+VEH-00000493,CIT-00001551,KA 05 P 8390,Hyundai,Model X,blue,car,2009,false
+VEH-00000494,CIT-00001554,KA 40 C 6525,Toyota,Model X,red,car,2019,false
+VEH-00000495,CIT-00001562,KA 19 A 8544,Hero,Model X,white,motorcycle,2009,false
+VEH-00000496,CIT-00001565,KA 02 P 6492,Maruti Suzuki,Model X,black,car,2011,false
+VEH-00000497,CIT-00001569,KA 14 B 1999,Bajaj,Model X,silver,motorcycle,2021,false
+VEH-00000498,CIT-00001571,KA 22 M 2960,Hyundai,Model X,black,car,2018,false
+VEH-00000499,CIT-00001572,KA 12 A 5367,TVS,Model X,blue,motorcycle,2009,false
+VEH-00000500,CIT-00001575,KA 50 M 1393,Bajaj,Model X,white,motorcycle,2014,false
+VEH-00000501,CIT-00001579,KA 03 N 6808,Royal Enfield,Model X,red,scooter,2010,false
+VEH-00000502,CIT-00001581,KA 12 A 2841,Bajaj,Model X,grey,motorcycle,2012,false
+VEH-00000503,CIT-00001585,KA 06 N 5927,Royal Enfield,Model X,silver,motorcycle,2015,false
+VEH-00000504,CIT-00001587,KA 46 M 2673,Royal Enfield,Model X,grey,motorcycle,2013,false
+VEH-00000505,CIT-00001589,KA 02 B 9972,Honda,Model X,silver,car,2014,false
+VEH-00000506,CIT-00001590,KA 34 N 6461,Bajaj,Model X,white,motorcycle,2013,false
+VEH-00000507,CIT-00001609,KA 05 M 7969,Honda,Model X,grey,motorcycle,2015,false
+VEH-00000508,CIT-00001613,KA 23 B 5139,Honda,Model X,white,motorcycle,2018,false
+VEH-00000509,CIT-00001614,KA 15 P 2206,Honda,Model X,grey,motorcycle,2015,false
+VEH-00000510,CIT-00001619,KA 15 C 2754,Hyundai,Model X,grey,car,2016,false
+VEH-00000511,CIT-00001623,KA 33 B 6725,Bajaj,Model X,black,scooter,2019,false
+VEH-00000512,CIT-00001626,KA 24 M 9238,TVS,Model X,grey,motorcycle,2016,false
+VEH-00000513,CIT-00001628,KA 40 N 8126,Maruti Suzuki,Model X,black,car,2014,false
+VEH-00000514,CIT-00001629,KA 35 C 6870,Tata,Model X,red,car,2006,false
+VEH-00000515,CIT-00001630,KA 37 N 6892,Honda,Model X,grey,car,2021,false
+VEH-00000516,CIT-00001632,KA 05 B 3550,Toyota,Model X,blue,car,2020,false
+VEH-00000517,CIT-00001634,KA 34 P 5192,Hero,Model X,white,scooter,2011,false
+VEH-00000518,CIT-00001635,KA 44 C 9449,Hero,Model X,red,motorcycle,2017,false
+VEH-00000519,CIT-00001637,KA 20 P 1022,Hero,Model X,grey,scooter,2010,false
+VEH-00000520,CIT-00001638,KA 16 C 2870,Hero,Model X,black,motorcycle,2014,false
+VEH-00000521,CIT-00001641,KA 17 C 2353,Mahindra,Model X,blue,car,2008,false
+VEH-00000522,CIT-00001643,KA 33 P 6732,TVS,Model X,black,motorcycle,2017,false
+VEH-00000523,CIT-00001659,KA 17 A 2899,Hero,Model X,white,scooter,2013,false
+VEH-00000524,CIT-00001661,KA 31 B 5434,TVS,Model X,white,motorcycle,2012,false
+VEH-00000525,CIT-00001663,KA 38 P 1001,Mahindra,Model X,black,car,2017,false
+VEH-00000526,CIT-00001666,KA 12 B 1460,Honda,Model X,blue,scooter,2006,false
+VEH-00000527,CIT-00001667,KA 39 A 4690,Hero,Model X,blue,scooter,2020,false
+VEH-00000528,CIT-00001669,KA 38 M 3951,Hero,Model X,silver,motorcycle,2018,false
+VEH-00000529,CIT-00001671,KA 47 M 9056,Bajaj,Model X,grey,motorcycle,2014,false
+VEH-00000530,CIT-00001672,KA 25 A 6410,Hero,Model X,silver,motorcycle,2016,false
+VEH-00000531,CIT-00001675,KA 34 C 5545,TVS,Model X,grey,scooter,2010,false
+VEH-00000532,CIT-00001677,KA 40 A 7451,Maruti Suzuki,Model X,blue,car,2018,false
+VEH-00000533,CIT-00001678,KA 42 B 7995,Hero,Model X,silver,motorcycle,2017,false
+VEH-00000534,CIT-00001681,KA 46 N 8749,Royal Enfield,Model X,silver,motorcycle,2020,false
+VEH-00000535,CIT-00001688,KA 37 B 3548,Mahindra,Model X,silver,car,2015,false
+VEH-00000536,CIT-00001690,KA 27 M 2139,Maruti Suzuki,Model X,red,car,2006,false
+VEH-00000537,CIT-00001694,KA 32 P 9412,Tata,Model X,white,car,2009,false
+VEH-00000538,CIT-00001695,KA 06 C 4866,Maruti Suzuki,Model X,grey,car,2007,false
+VEH-00000539,CIT-00001703,KA 48 A 8502,Tata,Model X,grey,car,2017,false
+VEH-00000540,CIT-00001714,KA 40 N 1379,Hero,Model X,grey,motorcycle,2017,false
+VEH-00000541,CIT-00001715,KA 45 P 1721,Hyundai,Model X,silver,car,2011,false
+VEH-00000542,CIT-00001719,KA 45 C 1431,Hero,Model X,red,scooter,2020,false
+VEH-00000543,CIT-00001728,KA 48 A 6740,Hero,Model X,black,scooter,2006,false
+VEH-00000544,CIT-00001729,KA 11 N 6112,Royal Enfield,Model X,blue,motorcycle,2010,false
+VEH-00000545,CIT-00001733,KA 48 B 7150,TVS,Model X,white,motorcycle,2017,false
+VEH-00000546,CIT-00001737,KA 20 A 7322,Maruti Suzuki,Model X,blue,car,2015,false
+VEH-00000547,CIT-00001743,KA 46 P 6565,Hyundai,Model X,silver,car,2021,false
+VEH-00000548,CIT-00001746,KA 27 B 1440,Honda,Model X,silver,scooter,2009,false
+VEH-00000549,CIT-00001748,KA 40 P 9124,Toyota,Model X,silver,car,2020,false
+VEH-00000550,CIT-00001749,KA 27 N 7021,Bajaj,Model X,grey,motorcycle,2018,false
+VEH-00000551,CIT-00001755,KA 30 P 4959,TVS,Model X,white,scooter,2012,false
+VEH-00000552,CIT-00001757,KA 34 M 2219,Hyundai,Model X,black,car,2014,false
+VEH-00000553,CIT-00001759,KA 32 M 4571,Mahindra,Model X,white,car,2006,false
+VEH-00000554,CIT-00001762,KA 46 P 2913,Mahindra,Model X,white,car,2021,false
+VEH-00000555,CIT-00001763,KA 22 M 7709,Mahindra,Model X,blue,car,2016,false
+VEH-00000556,CIT-00001764,KA 21 B 1763,Royal Enfield,Model X,black,motorcycle,2011,false
+VEH-00000557,CIT-00001766,KA 03 P 2452,Maruti Suzuki,Model X,silver,car,2021,false
+VEH-00000558,CIT-00001771,KA 40 B 3869,Maruti Suzuki,Model X,red,car,2008,false
+VEH-00000559,CIT-00001772,KA 15 B 5212,Honda,Model X,blue,motorcycle,2006,false
+VEH-00000560,CIT-00001774,KA 21 B 3209,Royal Enfield,Model X,red,motorcycle,2016,false
+VEH-00000561,CIT-00001776,KA 13 P 1349,Honda,Model X,red,motorcycle,2014,false
+VEH-00000562,CIT-00001777,KA 17 P 8992,Bajaj,Model X,red,motorcycle,2017,false
+VEH-00000563,CIT-00001782,KA 37 B 2596,Hero,Model X,white,motorcycle,2018,false
+VEH-00000564,CIT-00001787,KA 35 N 6388,Hero,Model X,white,motorcycle,2012,false
+VEH-00000565,CIT-00001795,KA 39 P 6478,Honda,Model X,grey,car,2020,false
+VEH-00000566,CIT-00001797,KA 37 B 4211,Maruti Suzuki,Model X,blue,car,2012,false
+VEH-00000567,CIT-00001810,KA 27 A 7278,Tata,Model X,grey,car,2020,false
+VEH-00000568,CIT-00001812,KA 27 P 2294,Hyundai,Model X,black,car,2006,false
+VEH-00000569,CIT-00001817,KA 33 B 6357,Mahindra,Model X,silver,car,2016,false
+VEH-00000570,CIT-00001826,KA 46 B 7733,Honda,Model X,red,scooter,2013,false
+VEH-00000571,CIT-00001828,KA 01 B 3846,Tata,Model X,red,car,2010,false
+VEH-00000572,CIT-00001829,KA 15 C 8460,Honda,Model X,red,motorcycle,2017,false
+VEH-00000573,CIT-00001831,KA 49 P 1050,Honda,Model X,black,scooter,2009,false
+VEH-00000574,CIT-00001832,KA 11 P 1597,Bajaj,Model X,blue,scooter,2020,false
+VEH-00000575,CIT-00001833,KA 27 N 6729,Hero,Model X,grey,motorcycle,2018,false
+VEH-00000576,CIT-00001834,KA 38 P 2233,Honda,Model X,white,motorcycle,2019,false
+VEH-00000577,CIT-00001838,KA 43 B 2074,Hero,Model X,black,motorcycle,2014,false
+VEH-00000578,CIT-00001841,KA 31 A 3732,Hero,Model X,red,motorcycle,2009,false
+VEH-00000579,CIT-00001843,KA 05 P 2320,TVS,Model X,grey,motorcycle,2018,false
+VEH-00000580,CIT-00001845,KA 34 C 4526,Maruti Suzuki,Model X,red,car,2021,false
+VEH-00000581,CIT-00001851,KA 05 C 8939,Bajaj,Model X,silver,scooter,2011,false
+VEH-00000582,CIT-00001853,KA 20 N 8163,Tata,Model X,blue,car,2011,false
+VEH-00000583,CIT-00001854,KA 48 P 3732,Royal Enfield,Model X,white,motorcycle,2009,false
+VEH-00000584,CIT-00001856,KA 04 M 1557,Toyota,Model X,grey,car,2013,false
+VEH-00000585,CIT-00001859,KA 19 A 5616,Hero,Model X,black,motorcycle,2016,false
+VEH-00000586,CIT-00001868,KA 42 A 1289,Mahindra,Model X,silver,car,2017,false
+VEH-00000587,CIT-00001882,KA 23 B 4127,Hero,Model X,blue,motorcycle,2019,false
+VEH-00000588,CIT-00001884,KA 44 M 6760,Royal Enfield,Model X,white,motorcycle,2018,false
+VEH-00000589,CIT-00001885,KA 49 A 9691,Tata,Model X,white,car,2015,false
+VEH-00000590,CIT-00001887,KA 04 M 6524,TVS,Model X,black,motorcycle,2012,false
+VEH-00000591,CIT-00001894,KA 19 P 6946,Maruti Suzuki,Model X,white,car,2015,false
+VEH-00000592,CIT-00001895,KA 43 N 7518,TVS,Model X,black,motorcycle,2012,false
+VEH-00000593,CIT-00001901,KA 41 N 8299,Maruti Suzuki,Model X,silver,car,2006,false
+VEH-00000594,CIT-00001902,KA 04 N 1465,Mahindra,Model X,black,car,2014,false
+VEH-00000595,CIT-00001904,KA 28 N 9596,Maruti Suzuki,Model X,white,car,2015,false
+VEH-00000596,CIT-00001910,KA 49 N 3492,Hyundai,Model X,blue,car,2012,false
+VEH-00000597,CIT-00001911,KA 16 A 9984,TVS,Model X,grey,motorcycle,2006,false
+VEH-00000598,CIT-00001912,KA 42 A 2058,Bajaj,Model X,grey,motorcycle,2018,false
+VEH-00000599,CIT-00001915,KA 03 C 9697,Hero,Model X,grey,motorcycle,2007,false
+VEH-00000600,CIT-00001919,KA 09 B 1102,Mahindra,Model X,grey,car,2021,false
+VEH-00000601,CIT-00001920,KA 32 P 9992,Hero,Model X,grey,scooter,2021,false
+VEH-00000602,CIT-00001921,KA 44 N 2713,Mahindra,Model X,red,car,2019,false
+VEH-00000603,CIT-00001924,KA 11 B 7623,Hero,Model X,red,motorcycle,2012,false
+VEH-00000604,CIT-00001930,KA 36 P 8046,Hyundai,Model X,blue,car,2011,false
+VEH-00000605,CIT-00001938,KA 39 B 8585,TVS,Model X,grey,motorcycle,2011,false
+VEH-00000606,CIT-00001939,KA 36 B 7101,TVS,Model X,grey,motorcycle,2012,false
+VEH-00000607,CIT-00001942,KA 15 P 6057,TVS,Model X,grey,motorcycle,2007,false
+VEH-00000608,CIT-00001943,KA 10 N 6324,Bajaj,Model X,black,scooter,2018,false
+VEH-00000609,CIT-00001945,KA 08 P 5850,TVS,Model X,black,scooter,2014,false
+VEH-00000610,CIT-00001948,KA 12 P 4490,Royal Enfield,Model X,grey,scooter,2006,false
+VEH-00000611,CIT-00001956,KA 13 C 5288,Royal Enfield,Model X,blue,scooter,2014,false
+VEH-00000612,CIT-00001960,KA 38 N 4211,Maruti Suzuki,Model X,grey,car,2021,false
+VEH-00000613,CIT-00001961,KA 12 M 1015,Hero,Model X,red,motorcycle,2016,false
+VEH-00000614,CIT-00001965,KA 26 M 6928,Honda,Model X,silver,car,2009,false
+VEH-00000615,CIT-00001967,KA 26 C 2909,Tata,Model X,red,car,2013,false
+VEH-00000616,CIT-00001971,KA 46 P 4743,Mahindra,Model X,white,car,2012,false
+VEH-00000617,CIT-00001973,KA 10 N 2670,Bajaj,Model X,blue,scooter,2010,false
+VEH-00000618,CIT-00001974,KA 28 A 1000,Maruti Suzuki,Model X,red,car,2009,false
+VEH-00000619,CIT-00001980,KA 21 N 5133,Hero,Model X,grey,scooter,2019,false
+VEH-00000620,CIT-00001982,KA 34 C 6609,Bajaj,Model X,silver,motorcycle,2016,false
+VEH-00000621,CIT-00001985,KA 17 B 7892,TVS,Model X,black,motorcycle,2013,false
+VEH-00000622,CIT-00001988,KA 41 B 6150,Honda,Model X,grey,motorcycle,2021,false
+VEH-00000623,CIT-00001989,KA 30 P 2647,TVS,Model X,white,motorcycle,2007,false
+VEH-00000624,CIT-00001990,KA 31 A 2056,TVS,Model X,black,scooter,2016,false
+VEH-00000625,CIT-00002000,KA 14 P 9930,Hyundai,Model X,white,car,2013,false
+VEH-00000626,CIT-00002004,KA 43 C 3082,Bajaj,Model X,white,motorcycle,2012,false
+VEH-00000627,CIT-00002005,KA 38 B 7195,Royal Enfield,Model X,silver,motorcycle,2008,false
+VEH-00000628,CIT-00002015,KA 13 P 4336,Hero,Model X,red,scooter,2014,false
+VEH-00000629,CIT-00002016,KA 06 N 1214,Hyundai,Model X,blue,car,2008,false
+VEH-00000630,CIT-00002021,KA 12 N 3644,Toyota,Model X,grey,car,2011,false
+VEH-00000631,CIT-00002022,KA 35 B 4057,Bajaj,Model X,white,scooter,2016,false
+VEH-00000632,CIT-00002024,KA 20 C 7903,Honda,Model X,black,car,2009,false
+VEH-00000633,CIT-00002025,KA 47 A 9184,Hyundai,Model X,black,car,2015,false
+VEH-00000634,CIT-00002027,KA 41 M 4515,Toyota,Model X,red,car,2020,false
+VEH-00000635,CIT-00002029,KA 22 M 5782,Royal Enfield,Model X,black,scooter,2020,false
+VEH-00000636,CIT-00002031,KA 50 B 7516,Maruti Suzuki,Model X,grey,car,2015,false
+VEH-00000637,CIT-00002033,KA 41 N 6707,Mahindra,Model X,red,car,2011,false
+VEH-00000638,CIT-00002037,KA 20 A 3717,TVS,Model X,red,scooter,2009,false
+VEH-00000639,CIT-00002038,KA 12 B 4784,Mahindra,Model X,white,car,2008,false
+VEH-00000640,CIT-00002043,KA 02 N 3163,Bajaj,Model X,silver,scooter,2016,false
+VEH-00000641,CIT-00002045,KA 19 C 5049,Maruti Suzuki,Model X,blue,car,2019,false
+VEH-00000642,CIT-00002046,KA 33 P 5212,Hero,Model X,silver,scooter,2019,false
+VEH-00000643,CIT-00002047,KA 14 A 8395,Maruti Suzuki,Model X,red,car,2013,false
+VEH-00000644,CIT-00002050,KA 22 A 6205,Tata,Model X,grey,car,2012,false
+VEH-00000645,CIT-00002054,KA 13 B 7435,Bajaj,Model X,black,scooter,2018,false
+VEH-00000646,CIT-00002056,KA 05 A 5797,Tata,Model X,black,car,2011,false
+VEH-00000647,CIT-00002057,KA 40 N 3493,Mahindra,Model X,grey,car,2019,false
+VEH-00000648,CIT-00002058,KA 44 A 8781,Toyota,Model X,grey,car,2012,false
+VEH-00000649,CIT-00002059,KA 43 M 3747,Honda,Model X,silver,car,2018,false
+VEH-00000650,CIT-00002060,KA 33 A 5917,Hero,Model X,white,motorcycle,2013,false
+VEH-00000651,CIT-00002061,KA 46 P 6428,Royal Enfield,Model X,black,scooter,2012,false
+VEH-00000652,CIT-00002067,KA 37 A 7005,Royal Enfield,Model X,white,scooter,2011,false
+VEH-00000653,CIT-00002073,KA 25 N 1888,Bajaj,Model X,black,scooter,2016,false
+VEH-00000654,CIT-00002074,KA 08 M 4879,Royal Enfield,Model X,white,motorcycle,2010,false
+VEH-00000655,CIT-00002075,KA 31 C 6304,Honda,Model X,grey,car,2017,false
+VEH-00000656,CIT-00002077,KA 47 C 4009,Honda,Model X,black,motorcycle,2009,false
+VEH-00000657,CIT-00002078,KA 26 N 5541,Toyota,Model X,white,car,2017,false
+VEH-00000658,CIT-00002079,KA 30 A 3050,TVS,Model X,blue,motorcycle,2014,false
+VEH-00000659,CIT-00002083,KA 47 B 6947,Hero,Model X,white,scooter,2021,false
+VEH-00000660,CIT-00002087,KA 38 M 7020,Honda,Model X,red,car,2017,false
+VEH-00000661,CIT-00002090,KA 24 C 7850,Maruti Suzuki,Model X,grey,car,2021,false
+VEH-00000662,CIT-00002092,KA 15 A 7843,Bajaj,Model X,silver,motorcycle,2016,false
+VEH-00000663,CIT-00002094,KA 20 M 4900,Mahindra,Model X,grey,car,2019,false
+VEH-00000664,CIT-00002095,KA 29 A 6535,Hero,Model X,black,motorcycle,2020,false
+VEH-00000665,CIT-00002097,KA 21 P 1407,Bajaj,Model X,red,scooter,2014,false
+VEH-00000666,CIT-00002100,KA 09 A 5531,Honda,Model X,black,car,2016,false
+VEH-00000667,CIT-00002101,KA 11 P 9469,Hero,Model X,white,motorcycle,2020,false
+VEH-00000668,CIT-00002106,KA 35 C 9872,Honda,Model X,grey,car,2017,false
+VEH-00000669,CIT-00002108,KA 03 B 1169,Hero,Model X,red,motorcycle,2009,false
+VEH-00000670,CIT-00002112,KA 10 A 1833,Hero,Model X,black,motorcycle,2019,false
+VEH-00000671,CIT-00002118,KA 28 A 6203,Mahindra,Model X,white,car,2016,false
+VEH-00000672,CIT-00002119,KA 07 B 8738,Honda,Model X,silver,motorcycle,2017,false
+VEH-00000673,CIT-00002123,KA 18 A 7659,Royal Enfield,Model X,silver,motorcycle,2016,false
+VEH-00000674,CIT-00002124,KA 35 C 8409,TVS,Model X,blue,motorcycle,2009,false
+VEH-00000675,CIT-00002129,KA 08 A 7298,Mahindra,Model X,red,car,2011,false
+VEH-00000676,CIT-00002130,KA 13 C 2707,Tata,Model X,white,car,2007,false
+VEH-00000677,CIT-00002132,KA 12 P 8026,Bajaj,Model X,silver,scooter,2006,false
+VEH-00000678,CIT-00002133,KA 05 P 5178,Honda,Model X,white,motorcycle,2020,false
+VEH-00000679,CIT-00002137,KA 26 M 6600,Mahindra,Model X,black,car,2010,false
+VEH-00000680,CIT-00002139,KA 33 N 4590,Toyota,Model X,black,car,2007,false
+VEH-00000681,CIT-00002141,KA 45 A 4427,Honda,Model X,red,motorcycle,2016,false
+VEH-00000682,CIT-00002145,KA 46 N 2434,TVS,Model X,white,motorcycle,2010,false
+VEH-00000683,CIT-00002146,KA 45 C 7576,Royal Enfield,Model X,white,scooter,2016,false
+VEH-00000684,CIT-00002149,KA 03 N 1774,Bajaj,Model X,blue,motorcycle,2015,false
+VEH-00000685,CIT-00002152,KA 23 A 3523,Honda,Model X,blue,motorcycle,2021,false
+VEH-00000686,CIT-00002156,KA 47 P 6961,TVS,Model X,silver,motorcycle,2011,false
+VEH-00000687,CIT-00002158,KA 34 P 8508,TVS,Model X,white,motorcycle,2006,false
+VEH-00000688,CIT-00002160,KA 45 B 2366,TVS,Model X,silver,scooter,2016,false
+VEH-00000689,CIT-00002167,KA 47 C 3439,Mahindra,Model X,silver,car,2016,false
+VEH-00000690,CIT-00002170,KA 47 B 9724,Mahindra,Model X,grey,car,2018,false
+VEH-00000691,CIT-00002172,KA 12 N 4021,Hyundai,Model X,blue,car,2009,false
+VEH-00000692,CIT-00002173,KA 34 N 5166,Bajaj,Model X,silver,motorcycle,2012,false
+VEH-00000693,CIT-00002174,KA 21 N 9673,Hero,Model X,white,scooter,2009,false
+VEH-00000694,CIT-00002178,KA 41 C 6996,Toyota,Model X,blue,car,2006,false
+VEH-00000695,CIT-00002187,KA 15 P 2349,Hero,Model X,white,motorcycle,2012,false
+VEH-00000696,CIT-00002191,KA 43 P 4727,Bajaj,Model X,white,motorcycle,2021,false
+VEH-00000697,CIT-00002193,KA 05 C 2502,Hero,Model X,white,motorcycle,2021,false
+VEH-00000698,CIT-00002194,KA 31 A 9394,Bajaj,Model X,red,motorcycle,2014,false
+VEH-00000699,CIT-00002199,KA 38 C 7836,Honda,Model X,silver,scooter,2016,false
+VEH-00000700,CIT-00002215,KA 33 B 1471,Tata,Model X,black,car,2007,false
+VEH-00000701,CIT-00002223,KA 21 B 3705,Hero,Model X,white,motorcycle,2018,false
+VEH-00000702,CIT-00002226,KA 25 C 4947,Honda,Model X,blue,motorcycle,2007,false
+VEH-00000703,CIT-00002227,KA 11 A 1387,Hyundai,Model X,white,car,2009,false
+VEH-00000704,CIT-00002228,KA 37 P 7965,Bajaj,Model X,blue,motorcycle,2018,false
+VEH-00000705,CIT-00002230,KA 43 A 8127,Honda,Model X,red,motorcycle,2021,false
+VEH-00000706,CIT-00002232,KA 41 N 9054,Tata,Model X,blue,car,2021,false
+VEH-00000707,CIT-00002233,KA 11 N 4477,Honda,Model X,white,motorcycle,2010,false
+VEH-00000708,CIT-00002235,KA 44 P 4841,Maruti Suzuki,Model X,red,car,2017,false
+VEH-00000709,CIT-00002237,KA 29 P 8534,Maruti Suzuki,Model X,silver,car,2016,false
+VEH-00000710,CIT-00002239,KA 30 C 8800,Bajaj,Model X,red,motorcycle,2018,false
+VEH-00000711,CIT-00002243,KA 19 C 6461,TVS,Model X,black,motorcycle,2021,false
+VEH-00000712,CIT-00002244,KA 33 N 7097,Honda,Model X,blue,car,2019,false
+VEH-00000713,CIT-00002247,KA 30 C 3946,Mahindra,Model X,black,car,2010,false
+VEH-00000714,CIT-00002251,KA 42 N 9321,Bajaj,Model X,red,scooter,2009,false
+VEH-00000715,CIT-00002252,KA 11 A 8558,Maruti Suzuki,Model X,red,car,2009,false
+VEH-00000716,CIT-00002254,KA 07 A 8181,Honda,Model X,black,motorcycle,2016,false
+VEH-00000717,CIT-00002264,KA 28 A 3472,Bajaj,Model X,white,scooter,2006,false
+VEH-00000718,CIT-00002265,KA 02 B 1955,Tata,Model X,grey,car,2010,false
+VEH-00000719,CIT-00002267,KA 15 A 4627,Honda,Model X,red,scooter,2012,false
+VEH-00000720,CIT-00002271,KA 31 N 8999,Bajaj,Model X,grey,motorcycle,2013,false
+VEH-00000721,CIT-00002272,KA 47 A 1490,Honda,Model X,black,motorcycle,2014,false
+VEH-00000722,CIT-00002273,KA 41 C 7393,Bajaj,Model X,blue,motorcycle,2007,false
+VEH-00000723,CIT-00002276,KA 21 A 3214,Hyundai,Model X,black,car,2021,false
+VEH-00000724,CIT-00002278,KA 20 A 6398,Tata,Model X,white,car,2016,false
+VEH-00000725,CIT-00002281,KA 06 M 2028,Honda,Model X,silver,scooter,2012,false
+VEH-00000726,CIT-00002286,KA 34 N 5766,TVS,Model X,red,motorcycle,2011,false
+VEH-00000727,CIT-00002288,KA 16 M 4386,Hero,Model X,silver,motorcycle,2007,false
+VEH-00000728,CIT-00002289,KA 08 C 5367,Hyundai,Model X,black,car,2012,false
+VEH-00000729,CIT-00002292,KA 22 N 8457,Mahindra,Model X,red,car,2018,false
+VEH-00000730,CIT-00002294,KA 38 A 9934,Royal Enfield,Model X,white,scooter,2008,false
+VEH-00000731,CIT-00002298,KA 17 A 2071,Tata,Model X,red,car,2021,false
+VEH-00000732,CIT-00002299,KA 40 P 9589,Honda,Model X,black,scooter,2013,false
+VEH-00000733,CIT-00002302,KA 31 A 6168,Mahindra,Model X,red,car,2009,false
+VEH-00000734,CIT-00002303,KA 44 B 8900,Royal Enfield,Model X,black,scooter,2011,false
+VEH-00000735,CIT-00002305,KA 13 A 1270,Honda,Model X,black,scooter,2007,false
+VEH-00000736,CIT-00002309,KA 36 N 5727,Mahindra,Model X,red,car,2012,false
+VEH-00000737,CIT-00002313,KA 21 P 3356,Honda,Model X,black,car,2006,false
+VEH-00000738,CIT-00002315,KA 46 C 8177,Toyota,Model X,silver,car,2013,false
+VEH-00000739,CIT-00002318,KA 14 M 8214,TVS,Model X,blue,motorcycle,2007,false
+VEH-00000740,CIT-00002323,KA 38 M 9582,Bajaj,Model X,blue,motorcycle,2011,false
+VEH-00000741,CIT-00002326,KA 48 M 7445,Honda,Model X,red,motorcycle,2009,false
+VEH-00000742,CIT-00002327,KA 48 A 5529,TVS,Model X,silver,motorcycle,2014,false
+VEH-00000743,CIT-00002328,KA 11 P 3681,Honda,Model X,silver,motorcycle,2009,false
+VEH-00000744,CIT-00002332,KA 43 B 5124,TVS,Model X,blue,motorcycle,2014,false
+VEH-00000745,CIT-00002334,KA 39 P 6189,TVS,Model X,red,motorcycle,2018,false
+VEH-00000746,CIT-00002335,KA 30 B 3750,Bajaj,Model X,blue,motorcycle,2020,false
+VEH-00000747,CIT-00002336,KA 07 C 9795,Maruti Suzuki,Model X,blue,car,2008,false
+VEH-00000748,CIT-00002351,KA 30 B 2917,Tata,Model X,black,car,2014,false
+VEH-00000749,CIT-00002352,KA 29 N 9029,Tata,Model X,black,car,2009,false
+VEH-00000750,CIT-00002360,KA 37 M 3392,Tata,Model X,silver,car,2021,false
+VEH-00000751,CIT-00002364,KA 17 C 7796,Honda,Model X,red,motorcycle,2018,false
+VEH-00000752,CIT-00002365,KA 39 B 2192,Royal Enfield,Model X,blue,motorcycle,2015,false
+VEH-00000753,CIT-00002372,KA 35 M 2870,Toyota,Model X,silver,car,2021,false
+VEH-00000754,CIT-00002374,KA 10 N 7404,Mahindra,Model X,silver,car,2010,false
+VEH-00000755,CIT-00002376,KA 41 M 8289,Royal Enfield,Model X,silver,motorcycle,2019,false
+VEH-00000756,CIT-00002385,KA 33 P 2703,Honda,Model X,black,scooter,2019,false
+VEH-00000757,CIT-00002390,KA 03 P 6395,Honda,Model X,black,scooter,2013,false
+VEH-00000758,CIT-00002392,KA 01 P 7428,Maruti Suzuki,Model X,white,car,2020,false
+VEH-00000759,CIT-00002394,KA 50 C 1387,TVS,Model X,white,motorcycle,2010,false
+VEH-00000760,CIT-00002397,KA 36 C 2077,Hero,Model X,blue,scooter,2015,false
+VEH-00000761,CIT-00002404,KA 02 C 1980,Mahindra,Model X,black,car,2020,false
+VEH-00000762,CIT-00002412,KA 03 N 1966,Maruti Suzuki,Model X,red,car,2015,false
+VEH-00000763,CIT-00002415,KA 41 B 3178,TVS,Model X,grey,scooter,2008,false
+VEH-00000764,CIT-00002421,KA 24 C 1096,Honda,Model X,white,motorcycle,2020,false
+VEH-00000765,CIT-00002427,KA 19 B 9456,Tata,Model X,blue,car,2010,false
+VEH-00000766,CIT-00002429,KA 17 P 6616,Royal Enfield,Model X,silver,motorcycle,2009,false
+VEH-00000767,CIT-00002433,KA 21 B 7788,TVS,Model X,blue,scooter,2006,false
+VEH-00000768,CIT-00002437,KA 18 C 8903,Honda,Model X,blue,car,2016,false
+VEH-00000769,CIT-00002439,KA 20 M 1322,Honda,Model X,grey,motorcycle,2018,false
+VEH-00000770,CIT-00002441,KA 30 M 5498,Honda,Model X,white,scooter,2017,false
+VEH-00000771,CIT-00002447,KA 12 B 6064,Hero,Model X,white,motorcycle,2010,false
+VEH-00000772,CIT-00002451,KA 14 C 2239,Mahindra,Model X,grey,car,2012,false
+VEH-00000773,CIT-00002458,KA 06 A 4379,Toyota,Model X,grey,car,2015,false
+VEH-00000774,CIT-00002460,KA 18 A 9518,Mahindra,Model X,red,car,2011,false
+VEH-00000775,CIT-00002463,KA 09 M 5285,Royal Enfield,Model X,black,motorcycle,2010,false
+VEH-00000776,CIT-00002465,KA 23 B 3190,Hyundai,Model X,blue,car,2016,false
+VEH-00000777,CIT-00002470,KA 33 M 6470,Honda,Model X,silver,scooter,2011,false
+VEH-00000778,CIT-00002471,KA 22 A 7542,Hyundai,Model X,blue,car,2008,false
+VEH-00000779,CIT-00002475,KA 27 A 1526,Hero,Model X,grey,motorcycle,2007,false
+VEH-00000780,CIT-00002481,KA 41 B 8251,Bajaj,Model X,grey,scooter,2012,false
+VEH-00000781,CIT-00002482,KA 13 B 5809,Maruti Suzuki,Model X,black,car,2011,false
+VEH-00000782,CIT-00002485,KA 13 C 9177,Honda,Model X,black,car,2020,false
+VEH-00000783,CIT-00002486,KA 19 A 9703,Bajaj,Model X,blue,motorcycle,2011,false
+VEH-00000784,CIT-00002487,KA 35 N 5640,Toyota,Model X,black,car,2011,false
+VEH-00000785,CIT-00002489,KA 42 A 1202,Maruti Suzuki,Model X,white,car,2015,false
+VEH-00000786,CIT-00002496,KA 13 C 9415,Maruti Suzuki,Model X,blue,car,2008,false
+VEH-00000787,CIT-00002497,KA 23 A 1738,TVS,Model X,black,scooter,2015,false
+VEH-00000788,CIT-00002498,KA 48 C 6038,Bajaj,Model X,black,motorcycle,2017,false
+VEH-00000789,CIT-00002503,KA 24 M 7125,Honda,Model X,silver,scooter,2012,false
+VEH-00000790,CIT-00002504,KA 13 N 2212,Bajaj,Model X,grey,scooter,2006,false
+VEH-00000791,CIT-00002507,KA 10 A 4766,Hyundai,Model X,black,car,2015,false
+VEH-00000792,CIT-00002508,KA 08 P 1252,Hyundai,Model X,grey,car,2011,false
+VEH-00000793,CIT-00002509,KA 44 B 5928,Bajaj,Model X,black,scooter,2021,false
+VEH-00000794,CIT-00002515,KA 30 C 6160,Bajaj,Model X,red,motorcycle,2021,false
+VEH-00000795,CIT-00002516,KA 29 M 5414,Maruti Suzuki,Model X,white,car,2010,false
+VEH-00000796,CIT-00002519,KA 17 N 5131,Maruti Suzuki,Model X,blue,car,2017,false
+VEH-00000797,CIT-00002520,KA 19 M 8610,Hero,Model X,black,scooter,2016,false
+VEH-00000798,CIT-00002521,KA 36 B 7964,Bajaj,Model X,white,motorcycle,2014,false
+VEH-00000799,CIT-00002525,KA 02 N 4722,Tata,Model X,black,car,2015,false
+VEH-00000800,CIT-00002533,KA 45 P 7131,Maruti Suzuki,Model X,grey,car,2019,false
+VEH-00000801,CIT-00002535,KA 27 M 6164,Royal Enfield,Model X,blue,motorcycle,2006,false
+VEH-00000802,CIT-00002539,KA 20 B 4890,Honda,Model X,black,motorcycle,2021,false
+VEH-00000803,CIT-00002542,KA 22 B 6963,TVS,Model X,blue,motorcycle,2009,false
+VEH-00000804,CIT-00002544,KA 34 C 3656,Hero,Model X,silver,motorcycle,2014,false
+VEH-00000805,CIT-00002548,KA 48 P 3857,Maruti Suzuki,Model X,black,car,2013,false
+VEH-00000806,CIT-00002557,KA 10 A 8620,Bajaj,Model X,blue,motorcycle,2016,false
+VEH-00000807,CIT-00002566,KA 16 B 1088,Honda,Model X,blue,car,2008,false
+VEH-00000808,CIT-00002568,KA 16 N 3152,TVS,Model X,black,motorcycle,2015,false
+VEH-00000809,CIT-00002571,KA 11 N 2659,Honda,Model X,white,motorcycle,2008,false
+VEH-00000810,CIT-00002577,KA 06 C 4022,Royal Enfield,Model X,blue,motorcycle,2018,false
+VEH-00000811,CIT-00002580,KA 25 M 5426,Honda,Model X,red,scooter,2009,false
+VEH-00000812,CIT-00002588,KA 24 M 1144,TVS,Model X,grey,scooter,2012,false
+VEH-00000813,CIT-00002589,KA 32 N 6185,Mahindra,Model X,white,car,2012,false
+VEH-00000814,CIT-00002590,KA 43 N 7245,Hero,Model X,blue,scooter,2015,false
+VEH-00000815,CIT-00002592,KA 17 M 8784,Hyundai,Model X,black,car,2010,false
+VEH-00000816,CIT-00002597,KA 37 C 6646,Honda,Model X,silver,motorcycle,2014,false
+VEH-00000817,CIT-00002598,KA 10 A 9762,Honda,Model X,silver,scooter,2012,false
+VEH-00000818,CIT-00002600,KA 34 A 9221,Hyundai,Model X,red,car,2007,false
+VEH-00000819,CIT-00002608,KA 20 N 8834,Honda,Model X,white,scooter,2020,false
+VEH-00000820,CIT-00002610,KA 05 M 7740,TVS,Model X,silver,scooter,2019,false
+VEH-00000821,CIT-00002612,KA 08 A 8715,Mahindra,Model X,blue,car,2015,false
+VEH-00000822,CIT-00002622,KA 26 C 9405,TVS,Model X,silver,motorcycle,2011,false
+VEH-00000823,CIT-00002623,KA 22 P 5634,Hyundai,Model X,silver,car,2014,false
+VEH-00000824,CIT-00002625,KA 13 N 8655,Honda,Model X,silver,car,2021,false
+VEH-00000825,CIT-00002628,KA 10 C 8466,Honda,Model X,grey,motorcycle,2009,false
+VEH-00000826,CIT-00002631,KA 25 A 3533,Honda,Model X,silver,motorcycle,2008,false
+VEH-00000827,CIT-00002633,KA 06 B 4309,Mahindra,Model X,red,car,2015,false
+VEH-00000828,CIT-00002643,KA 50 P 6278,Hero,Model X,black,motorcycle,2018,false
+VEH-00000829,CIT-00002647,KA 37 B 9875,TVS,Model X,red,scooter,2019,false
+VEH-00000830,CIT-00002649,KA 28 C 5005,Honda,Model X,silver,motorcycle,2015,false
+VEH-00000831,CIT-00002655,KA 32 M 3318,Royal Enfield,Model X,red,motorcycle,2007,false
+VEH-00000832,CIT-00002656,KA 12 P 7609,Bajaj,Model X,grey,motorcycle,2013,false
+VEH-00000833,CIT-00002657,KA 27 M 3224,Royal Enfield,Model X,black,motorcycle,2007,false
+VEH-00000834,CIT-00002659,KA 43 B 8751,Bajaj,Model X,black,motorcycle,2020,false
+VEH-00000835,CIT-00002664,KA 25 C 7637,Toyota,Model X,blue,car,2010,false
+VEH-00000836,CIT-00002666,KA 23 A 1775,TVS,Model X,black,motorcycle,2010,false
+VEH-00000837,CIT-00002670,KA 07 A 6980,Honda,Model X,black,scooter,2008,false
+VEH-00000838,CIT-00002674,KA 09 N 6139,Hero,Model X,white,motorcycle,2016,false
+VEH-00000839,CIT-00002676,KA 13 A 7886,Toyota,Model X,white,car,2018,false
+VEH-00000840,CIT-00002678,KA 40 A 5933,TVS,Model X,black,motorcycle,2010,false
+VEH-00000841,CIT-00002682,KA 20 M 2597,Bajaj,Model X,black,motorcycle,2006,false
+VEH-00000842,CIT-00002687,KA 34 A 5692,Honda,Model X,silver,scooter,2016,false
+VEH-00000843,CIT-00002691,KA 17 N 2377,Honda,Model X,blue,scooter,2019,false
+VEH-00000844,CIT-00002692,KA 16 C 5328,Tata,Model X,silver,car,2010,false
+VEH-00000845,CIT-00002693,KA 46 C 6899,Honda,Model X,grey,motorcycle,2015,false
+VEH-00000846,CIT-00002694,KA 35 C 8676,Royal Enfield,Model X,black,scooter,2019,false
+VEH-00000847,CIT-00002697,KA 01 A 7658,Hero,Model X,black,motorcycle,2009,false
+VEH-00000848,CIT-00002698,KA 14 M 2734,Royal Enfield,Model X,red,scooter,2014,false
+VEH-00000849,CIT-00002700,KA 18 B 2959,Toyota,Model X,grey,car,2011,false
+VEH-00000850,CIT-00002702,KA 02 M 8868,Honda,Model X,silver,car,2019,false
+VEH-00000851,CIT-00002705,KA 39 A 3466,Maruti Suzuki,Model X,grey,car,2012,false
+VEH-00000852,CIT-00002707,KA 22 P 4446,Tata,Model X,grey,car,2011,false
+VEH-00000853,CIT-00002716,KA 15 P 4161,Tata,Model X,red,car,2019,false
+VEH-00000854,CIT-00002722,KA 45 A 8484,Hyundai,Model X,white,car,2008,false
+VEH-00000855,CIT-00002726,KA 16 N 5358,Royal Enfield,Model X,red,motorcycle,2016,false
+VEH-00000856,CIT-00002729,KA 27 P 2544,Hero,Model X,red,motorcycle,2014,false
+VEH-00000857,CIT-00002732,KA 31 P 6847,Honda,Model X,red,car,2018,false
+VEH-00000858,CIT-00002741,KA 38 P 8975,Bajaj,Model X,silver,motorcycle,2013,false
+VEH-00000859,CIT-00002743,KA 18 M 5777,Mahindra,Model X,silver,car,2010,false
+VEH-00000860,CIT-00002753,KA 29 C 7317,Royal Enfield,Model X,white,motorcycle,2007,false
+VEH-00000861,CIT-00002754,KA 41 N 8288,Bajaj,Model X,grey,motorcycle,2012,false
+VEH-00000862,CIT-00002758,KA 45 P 2186,Hero,Model X,grey,motorcycle,2016,false
+VEH-00000863,CIT-00002759,KA 32 A 9838,Hero,Model X,white,scooter,2006,false
+VEH-00000864,CIT-00002761,KA 36 M 5971,Hyundai,Model X,red,car,2010,false
+VEH-00000865,CIT-00002764,KA 05 A 5407,Royal Enfield,Model X,white,motorcycle,2018,false
+VEH-00000866,CIT-00002765,KA 45 P 6904,Toyota,Model X,blue,car,2020,false
+VEH-00000867,CIT-00002770,KA 20 P 7726,Toyota,Model X,grey,car,2011,false
+VEH-00000868,CIT-00002772,KA 24 N 1616,Maruti Suzuki,Model X,white,car,2009,false
+VEH-00000869,CIT-00002774,KA 36 A 9586,Honda,Model X,silver,car,2021,false
+VEH-00000870,CIT-00002776,KA 30 N 8727,Honda,Model X,black,car,2007,false
+VEH-00000871,CIT-00002777,KA 32 C 6162,Honda,Model X,red,motorcycle,2008,false
+VEH-00000872,CIT-00002778,KA 30 C 3600,Maruti Suzuki,Model X,grey,car,2006,false
+VEH-00000873,CIT-00002780,KA 50 B 9275,Maruti Suzuki,Model X,silver,car,2010,false
+VEH-00000874,CIT-00002781,KA 10 A 4555,Hyundai,Model X,black,car,2012,false
+VEH-00000875,CIT-00002783,KA 36 M 6590,Honda,Model X,black,scooter,2006,false
+VEH-00000876,CIT-00002784,KA 29 N 4116,TVS,Model X,white,scooter,2017,false
+VEH-00000877,CIT-00002789,KA 24 C 8944,Toyota,Model X,black,car,2008,false
+VEH-00000878,CIT-00002791,KA 32 N 6633,Tata,Model X,silver,car,2011,false
+VEH-00000879,CIT-00002793,KA 20 C 4429,Hero,Model X,grey,scooter,2020,false
+VEH-00000880,CIT-00002794,KA 21 A 1243,Maruti Suzuki,Model X,blue,car,2018,false
+VEH-00000881,CIT-00002798,KA 50 N 9773,Honda,Model X,black,motorcycle,2019,false
+VEH-00000882,CIT-00002802,KA 38 P 5309,TVS,Model X,silver,motorcycle,2015,false
+VEH-00000883,CIT-00002806,KA 14 N 4046,Bajaj,Model X,silver,motorcycle,2017,false
+VEH-00000884,CIT-00002809,KA 24 C 7033,Bajaj,Model X,blue,motorcycle,2018,false
+VEH-00000885,CIT-00002810,KA 10 N 5379,Royal Enfield,Model X,silver,scooter,2009,false
+VEH-00000886,CIT-00002821,KA 29 A 7760,TVS,Model X,red,motorcycle,2011,false
+VEH-00000887,CIT-00002828,KA 41 M 9018,Hero,Model X,grey,motorcycle,2013,false
+VEH-00000888,CIT-00002832,KA 19 B 5655,Honda,Model X,white,car,2012,false
+VEH-00000889,CIT-00002836,KA 30 A 9834,Hyundai,Model X,black,car,2016,false
+VEH-00000890,CIT-00002838,KA 09 B 5988,TVS,Model X,silver,motorcycle,2008,false
+VEH-00000891,CIT-00002842,KA 33 N 8190,Maruti Suzuki,Model X,red,car,2020,false
+VEH-00000892,CIT-00002843,KA 05 M 5067,Maruti Suzuki,Model X,silver,car,2018,false
+VEH-00000893,CIT-00002844,KA 12 C 7236,Tata,Model X,silver,car,2019,false
+VEH-00000894,CIT-00002847,KA 06 C 3295,Bajaj,Model X,black,motorcycle,2017,false
+VEH-00000895,CIT-00002850,KA 33 M 7746,Tata,Model X,grey,car,2010,false
+VEH-00000896,CIT-00002852,KA 34 C 9889,Mahindra,Model X,red,car,2021,false
+VEH-00000897,CIT-00002854,KA 20 C 3695,Hyundai,Model X,grey,car,2020,false
+VEH-00000898,CIT-00002855,KA 20 M 5588,TVS,Model X,black,motorcycle,2021,false
+VEH-00000899,CIT-00002867,KA 41 P 5729,Honda,Model X,red,car,2009,false
+VEH-00000900,CIT-00002873,KA 23 A 7078,Hero,Model X,grey,motorcycle,2018,false
+VEH-00000901,CIT-00002875,KA 42 P 7526,Honda,Model X,silver,car,2007,false
+VEH-00000902,CIT-00002879,KA 50 C 6636,Honda,Model X,black,scooter,2012,false
+VEH-00000903,CIT-00002880,KA 17 B 7707,Honda,Model X,white,motorcycle,2016,false
+VEH-00000904,CIT-00002886,KA 42 C 1362,Honda,Model X,blue,scooter,2018,false
+VEH-00000905,CIT-00002887,KA 23 N 2612,Honda,Model X,red,car,2017,false
+VEH-00000906,CIT-00002888,KA 50 M 6085,TVS,Model X,white,motorcycle,2018,false
+VEH-00000907,CIT-00002890,KA 32 N 4039,Hyundai,Model X,silver,car,2016,false
+VEH-00000908,CIT-00002891,KA 45 B 6649,Hero,Model X,blue,motorcycle,2009,false
+VEH-00000909,CIT-00002894,KA 43 A 6897,Royal Enfield,Model X,silver,motorcycle,2010,false
+VEH-00000910,CIT-00002899,KA 36 M 6651,Mahindra,Model X,grey,car,2009,false
+VEH-00000911,CIT-00002903,KA 15 B 2654,Toyota,Model X,grey,car,2017,false
+VEH-00000912,CIT-00002908,KA 15 M 2167,Toyota,Model X,red,car,2007,false
+VEH-00000913,CIT-00002909,KA 41 P 8745,Toyota,Model X,red,car,2015,false
+VEH-00000914,CIT-00002911,KA 29 B 1701,Honda,Model X,blue,car,2013,false
+VEH-00000915,CIT-00002912,KA 09 M 7407,Royal Enfield,Model X,silver,motorcycle,2019,false
+VEH-00000916,CIT-00002914,KA 18 A 5975,Toyota,Model X,grey,car,2018,false
+VEH-00000917,CIT-00002917,KA 41 C 1072,Mahindra,Model X,grey,car,2009,false
+VEH-00000918,CIT-00002918,KA 37 P 4620,Royal Enfield,Model X,blue,scooter,2006,false
+VEH-00000919,CIT-00002919,KA 22 B 7668,Royal Enfield,Model X,blue,scooter,2017,false
+VEH-00000920,CIT-00002924,KA 30 M 2787,Honda,Model X,blue,motorcycle,2006,false
+VEH-00000921,CIT-00002926,KA 27 A 6712,Tata,Model X,blue,car,2020,false
+VEH-00000922,CIT-00002935,KA 50 P 8032,Tata,Model X,white,car,2008,false
+VEH-00000923,CIT-00002936,KA 42 C 9617,Maruti Suzuki,Model X,red,car,2014,false
+VEH-00000924,CIT-00002937,KA 16 P 9049,TVS,Model X,black,motorcycle,2015,false
+VEH-00000925,CIT-00002940,KA 32 M 9197,Maruti Suzuki,Model X,grey,car,2007,false
+VEH-00000926,CIT-00002943,KA 25 P 8044,Mahindra,Model X,blue,car,2019,false
+VEH-00000927,CIT-00002946,KA 18 C 3860,Honda,Model X,silver,motorcycle,2015,false
+VEH-00000928,CIT-00002947,KA 35 M 1892,Toyota,Model X,black,car,2017,false
+VEH-00000929,CIT-00002948,KA 14 A 8377,Tata,Model X,black,car,2016,false
+VEH-00000930,CIT-00002950,KA 09 N 8424,TVS,Model X,silver,motorcycle,2007,false
+VEH-00000931,CIT-00002951,KA 46 P 7147,Honda,Model X,grey,motorcycle,2015,false
+VEH-00000932,CIT-00002952,KA 04 A 3443,Hyundai,Model X,white,car,2019,false
+VEH-00000933,CIT-00002953,KA 09 A 6193,Royal Enfield,Model X,red,motorcycle,2018,false
+VEH-00000934,CIT-00002955,KA 08 P 7883,Toyota,Model X,black,car,2006,false
+VEH-00000935,CIT-00002959,KA 16 M 2614,Honda,Model X,blue,car,2014,false
+VEH-00000936,CIT-00002960,KA 34 M 6852,Tata,Model X,white,car,2016,false
+VEH-00000937,CIT-00002961,KA 32 C 2334,Honda,Model X,silver,scooter,2013,false
+VEH-00000938,CIT-00002964,KA 24 B 4782,Maruti Suzuki,Model X,grey,car,2013,false
+VEH-00000939,CIT-00002965,KA 50 B 5417,TVS,Model X,grey,motorcycle,2021,false
+VEH-00000940,CIT-00002973,KA 10 A 4941,Hyundai,Model X,red,car,2021,false
+VEH-00000941,CIT-00002974,KA 29 N 4016,TVS,Model X,red,scooter,2012,false
+VEH-00000942,CIT-00002976,KA 06 M 7951,Hyundai,Model X,black,car,2013,false
+VEH-00000943,CIT-00002978,KA 17 C 2708,Hyundai,Model X,grey,car,2009,false
+VEH-00000944,CIT-00002983,KA 14 A 9641,Honda,Model X,white,scooter,2014,false
+VEH-00000945,CIT-00002985,KA 15 M 6248,Honda,Model X,white,motorcycle,2014,false
+VEH-00000946,CIT-00002988,KA 36 B 7846,Royal Enfield,Model X,grey,motorcycle,2010,false
+VEH-00000947,CIT-00002989,KA 13 C 4232,Honda,Model X,white,motorcycle,2019,false
+VEH-00000948,CIT-00002992,KA 23 A 6482,Hyundai,Model X,red,car,2009,false
+VEH-00000949,CIT-00002995,KA 46 M 7496,Hero,Model X,blue,scooter,2020,false
+VEH-00000950,CIT-00002997,KA 27 A 1543,Royal Enfield,Model X,blue,scooter,2009,false
+VEH-00000951,CIT-00003000,KA 08 N 7499,Maruti Suzuki,Model X,silver,car,2018,false
+VEH-00000952,CIT-00003006,KA 04 C 7606,Royal Enfield,Model X,black,scooter,2012,false
+VEH-00000953,CIT-00003008,KA 16 N 3902,Honda,Model X,blue,motorcycle,2014,false
+VEH-00000954,CIT-00003009,KA 25 A 6928,Honda,Model X,white,car,2009,false
+VEH-00000955,CIT-00003011,KA 48 P 3398,Honda,Model X,red,motorcycle,2009,false
+VEH-00000956,CIT-00003013,KA 26 M 5566,Maruti Suzuki,Model X,blue,car,2021,false
+VEH-00000957,CIT-00003017,KA 27 M 7354,Hero,Model X,silver,motorcycle,2007,false
+VEH-00000958,CIT-00003020,KA 22 P 6128,Honda,Model X,red,motorcycle,2009,false
+VEH-00000959,CIT-00003021,KA 33 B 9263,Hero,Model X,blue,motorcycle,2014,false
+VEH-00000960,CIT-00003022,KA 09 B 4558,Tata,Model X,red,car,2021,false
+VEH-00000961,CIT-00003027,KA 25 P 4098,Honda,Model X,red,car,2021,false
+VEH-00000962,CIT-00003028,KA 17 N 2920,TVS,Model X,silver,motorcycle,2012,false
+VEH-00000963,CIT-00003031,KA 46 B 1584,TVS,Model X,grey,motorcycle,2020,false
+VEH-00000964,CIT-00003032,KA 15 P 1102,Tata,Model X,grey,car,2019,false
+VEH-00000965,CIT-00003033,KA 23 B 1470,Toyota,Model X,blue,car,2011,false
+VEH-00000966,CIT-00003034,KA 48 N 8508,Hyundai,Model X,blue,car,2018,false
+VEH-00000967,CIT-00003035,KA 07 A 4033,Hyundai,Model X,grey,car,2019,false
+VEH-00000968,CIT-00003036,KA 29 M 2044,TVS,Model X,red,motorcycle,2011,false
+VEH-00000969,CIT-00003038,KA 28 N 8213,Royal Enfield,Model X,blue,scooter,2010,false
+VEH-00000970,CIT-00003039,KA 01 C 3053,Hyundai,Model X,blue,car,2020,false
+VEH-00000971,CIT-00003041,KA 34 P 3756,TVS,Model X,grey,motorcycle,2008,false
+VEH-00000972,CIT-00003049,KA 18 M 2827,Toyota,Model X,silver,car,2017,false
+VEH-00000973,CIT-00003054,KA 11 N 6222,Toyota,Model X,red,car,2018,false
+VEH-00000974,CIT-00003061,KA 30 A 8095,Maruti Suzuki,Model X,red,car,2011,false
+VEH-00000975,CIT-00003062,KA 34 B 1795,Tata,Model X,red,car,2009,false
+VEH-00000976,CIT-00003064,KA 47 M 5940,Mahindra,Model X,blue,car,2009,false
+VEH-00000977,CIT-00003067,KA 30 N 1272,Maruti Suzuki,Model X,white,car,2019,false
+VEH-00000978,CIT-00003068,KA 27 P 6248,Royal Enfield,Model X,silver,motorcycle,2009,false
+VEH-00000979,CIT-00003069,KA 43 C 4702,Hero,Model X,white,motorcycle,2020,false
+VEH-00000980,CIT-00003077,KA 44 C 3974,Honda,Model X,white,car,2012,false
+VEH-00000981,CIT-00003078,KA 45 N 9925,Tata,Model X,white,car,2011,false
+VEH-00000982,CIT-00003080,KA 05 C 8889,Honda,Model X,silver,car,2020,false
+VEH-00000983,CIT-00003083,KA 45 C 1731,Bajaj,Model X,grey,motorcycle,2020,false
+VEH-00000984,CIT-00003093,KA 35 M 5386,Bajaj,Model X,red,motorcycle,2010,false
+VEH-00000985,CIT-00003095,KA 03 P 8875,Honda,Model X,red,motorcycle,2017,false
+VEH-00000986,CIT-00003098,KA 23 N 3039,Honda,Model X,silver,car,2009,false
+VEH-00000987,CIT-00003101,KA 34 M 8095,Bajaj,Model X,blue,motorcycle,2011,false
+VEH-00000988,CIT-00003106,KA 01 B 7509,Tata,Model X,silver,car,2019,false
+VEH-00000989,CIT-00003108,KA 18 C 4044,Tata,Model X,white,car,2010,false
+VEH-00000990,CIT-00003110,KA 49 B 6711,TVS,Model X,grey,motorcycle,2011,false
+VEH-00000991,CIT-00003114,KA 27 P 4114,Honda,Model X,blue,scooter,2015,false
+VEH-00000992,CIT-00003120,KA 20 N 4342,TVS,Model X,grey,motorcycle,2007,false
+VEH-00000993,CIT-00003122,KA 31 M 1750,Honda,Model X,red,car,2014,false
+VEH-00000994,CIT-00003123,KA 03 P 6558,Maruti Suzuki,Model X,grey,car,2009,false
+VEH-00000995,CIT-00003126,KA 17 P 6207,Hero,Model X,red,scooter,2014,false
+VEH-00000996,CIT-00003128,KA 30 P 4191,TVS,Model X,blue,scooter,2007,false
+VEH-00000997,CIT-00003131,KA 28 B 9413,Royal Enfield,Model X,red,motorcycle,2021,false
+VEH-00000998,CIT-00003132,KA 32 N 9260,Honda,Model X,white,car,2017,false
+VEH-00000999,CIT-00003134,KA 08 N 1139,TVS,Model X,silver,motorcycle,2008,false
+VEH-00001000,CIT-00003135,KA 25 P 4022,Bajaj,Model X,silver,motorcycle,2015,false
+VEH-00001001,CIT-00003138,KA 38 B 8441,Mahindra,Model X,white,car,2015,false
+VEH-00001002,CIT-00003141,KA 22 B 8734,Tata,Model X,silver,car,2016,false
+VEH-00001003,CIT-00003142,KA 43 N 9996,Honda,Model X,blue,motorcycle,2006,false
+VEH-00001004,CIT-00003143,KA 11 P 3968,Honda,Model X,black,motorcycle,2006,false
+VEH-00001005,CIT-00003146,KA 25 P 9851,Hero,Model X,blue,scooter,2016,false
+VEH-00001006,CIT-00003151,KA 30 B 7879,Mahindra,Model X,silver,car,2020,false
+VEH-00001007,CIT-00003156,KA 20 A 5980,Hero,Model X,blue,motorcycle,2013,false
+VEH-00001008,CIT-00003157,KA 35 B 5911,Hyundai,Model X,red,car,2021,false
+VEH-00001009,CIT-00003160,KA 14 B 7566,Toyota,Model X,black,car,2014,false
+VEH-00001010,CIT-00003161,KA 41 P 6771,Hyundai,Model X,blue,car,2013,false
+VEH-00001011,CIT-00003164,KA 10 A 1200,Royal Enfield,Model X,black,motorcycle,2019,false
+VEH-00001012,CIT-00003167,KA 38 P 5629,Maruti Suzuki,Model X,silver,car,2008,false
+VEH-00001013,CIT-00003168,KA 12 N 9372,Royal Enfield,Model X,white,scooter,2013,false
+VEH-00001014,CIT-00003170,KA 03 M 1967,Bajaj,Model X,blue,motorcycle,2017,false
+VEH-00001015,CIT-00003171,KA 01 P 3354,Mahindra,Model X,red,car,2006,false
+VEH-00001016,CIT-00003173,KA 12 N 1804,Honda,Model X,grey,car,2014,false
+VEH-00001017,CIT-00003175,KA 03 N 4611,Honda,Model X,white,motorcycle,2008,false
+VEH-00001018,CIT-00003176,KA 49 M 6613,Bajaj,Model X,white,scooter,2021,false
+VEH-00001019,CIT-00003177,KA 12 B 2994,Honda,Model X,silver,scooter,2014,false
+VEH-00001020,CIT-00003178,KA 45 A 6176,Honda,Model X,blue,car,2008,false
+VEH-00001021,CIT-00003183,KA 28 M 7872,Hero,Model X,blue,motorcycle,2007,false
+VEH-00001022,CIT-00003186,KA 46 C 2991,Toyota,Model X,silver,car,2017,false
+VEH-00001023,CIT-00003187,KA 08 B 9476,Hero,Model X,grey,motorcycle,2008,false
+VEH-00001024,CIT-00003189,KA 47 N 9220,Mahindra,Model X,black,car,2014,false
+VEH-00001025,CIT-00003193,KA 42 C 3365,TVS,Model X,grey,scooter,2015,false
+VEH-00001026,CIT-00003195,KA 21 A 9898,Honda,Model X,grey,car,2021,false
+VEH-00001027,CIT-00003199,KA 39 B 1883,Maruti Suzuki,Model X,red,car,2021,false
+VEH-00001028,CIT-00003203,KA 26 N 5356,Honda,Model X,black,car,2012,false
+VEH-00001029,CIT-00003208,KA 38 A 1119,Royal Enfield,Model X,black,motorcycle,2020,false
+VEH-00001030,CIT-00003210,KA 31 A 1362,Hero,Model X,silver,scooter,2010,false
+VEH-00001031,CIT-00003212,KA 05 M 3610,Tata,Model X,blue,car,2016,false
+VEH-00001032,CIT-00003214,KA 37 P 4733,Bajaj,Model X,red,scooter,2017,false
+VEH-00001033,CIT-00003217,KA 50 N 8187,Honda,Model X,blue,scooter,2007,false
+VEH-00001034,CIT-00003218,KA 38 M 1041,Hero,Model X,black,motorcycle,2015,false
+VEH-00001035,CIT-00003219,KA 14 C 9709,Tata,Model X,black,car,2010,false
+VEH-00001036,CIT-00003221,KA 37 M 2838,Mahindra,Model X,black,car,2008,false
+VEH-00001037,CIT-00003231,KA 28 P 4849,Bajaj,Model X,blue,scooter,2015,false
+VEH-00001038,CIT-00003236,KA 40 B 9631,Bajaj,Model X,white,scooter,2020,false
+VEH-00001039,CIT-00003238,KA 33 M 1900,Honda,Model X,silver,car,2012,false
+VEH-00001040,CIT-00003239,KA 17 B 8820,Bajaj,Model X,black,scooter,2006,false
+VEH-00001041,CIT-00003242,KA 06 P 7931,Hero,Model X,red,motorcycle,2018,false
+VEH-00001042,CIT-00003243,KA 25 N 2078,Royal Enfield,Model X,blue,motorcycle,2018,false
+VEH-00001043,CIT-00003252,KA 43 M 4941,Mahindra,Model X,white,car,2012,false
+VEH-00001044,CIT-00003254,KA 23 A 2530,Honda,Model X,grey,car,2012,false
+VEH-00001045,CIT-00003258,KA 22 P 2337,TVS,Model X,grey,scooter,2016,false
+VEH-00001046,CIT-00003260,KA 39 M 5234,Toyota,Model X,white,car,2020,false
+VEH-00001047,CIT-00003261,KA 48 M 2783,Mahindra,Model X,red,car,2011,false
+VEH-00001048,CIT-00003265,KA 44 C 3234,Bajaj,Model X,black,scooter,2012,false
+VEH-00001049,CIT-00003269,KA 17 C 8705,Hyundai,Model X,grey,car,2016,false
+VEH-00001050,CIT-00003270,KA 04 B 8773,Toyota,Model X,silver,car,2019,false
+VEH-00001051,CIT-00003272,KA 05 P 7828,Hero,Model X,red,motorcycle,2007,false
+VEH-00001052,CIT-00003273,KA 48 N 4588,Bajaj,Model X,black,motorcycle,2008,false
+VEH-00001053,CIT-00003276,KA 48 C 2179,Royal Enfield,Model X,blue,motorcycle,2021,false
+VEH-00001054,CIT-00003278,KA 36 A 9868,Hyundai,Model X,red,car,2011,false
+VEH-00001055,CIT-00003283,KA 15 N 2778,Honda,Model X,red,motorcycle,2013,false
+VEH-00001056,CIT-00003286,KA 20 B 6070,Mahindra,Model X,black,car,2016,false
+VEH-00001057,CIT-00003288,KA 22 M 6791,Hero,Model X,silver,scooter,2017,false
+VEH-00001058,CIT-00003289,KA 41 N 6776,Honda,Model X,silver,car,2006,false
+VEH-00001059,CIT-00003294,KA 09 A 3022,TVS,Model X,grey,motorcycle,2018,false
+VEH-00001060,CIT-00003298,KA 38 P 3923,Royal Enfield,Model X,grey,motorcycle,2009,false
+VEH-00001061,CIT-00003304,KA 14 M 3777,TVS,Model X,black,motorcycle,2011,false
+VEH-00001062,CIT-00003320,KA 20 P 4832,Bajaj,Model X,black,motorcycle,2006,false
+VEH-00001063,CIT-00003325,KA 10 P 8581,Hero,Model X,grey,motorcycle,2013,false
+VEH-00001064,CIT-00003326,KA 13 B 8935,Hero,Model X,silver,scooter,2011,false
+VEH-00001065,CIT-00003329,KA 03 N 4902,Maruti Suzuki,Model X,red,car,2012,false
+VEH-00001066,CIT-00003333,KA 44 C 5756,Honda,Model X,red,scooter,2016,false
+VEH-00001067,CIT-00003337,KA 22 N 2850,Maruti Suzuki,Model X,red,car,2020,false
+VEH-00001068,CIT-00003341,KA 41 A 5037,Bajaj,Model X,black,motorcycle,2011,false
+VEH-00001069,CIT-00003343,KA 13 M 8538,Bajaj,Model X,grey,scooter,2018,false
+VEH-00001070,CIT-00003346,KA 25 N 8822,Hyundai,Model X,red,car,2014,false
+VEH-00001071,CIT-00003352,KA 41 C 9984,Mahindra,Model X,white,car,2018,false
+VEH-00001072,CIT-00003354,KA 37 A 6457,TVS,Model X,white,motorcycle,2006,false
+VEH-00001073,CIT-00003355,KA 50 P 3077,Hero,Model X,grey,motorcycle,2012,false
+VEH-00001074,CIT-00003359,KA 25 N 2540,Royal Enfield,Model X,grey,scooter,2016,false
+VEH-00001075,CIT-00003365,KA 15 A 3315,Tata,Model X,blue,car,2009,false
+VEH-00001076,CIT-00003367,KA 24 N 2539,Royal Enfield,Model X,blue,scooter,2020,false
+VEH-00001077,CIT-00003368,KA 45 P 1672,TVS,Model X,blue,motorcycle,2014,false
+VEH-00001078,CIT-00003371,KA 44 B 4047,Royal Enfield,Model X,red,motorcycle,2018,false
+VEH-00001079,CIT-00003373,KA 14 B 7963,Bajaj,Model X,white,scooter,2011,false
+VEH-00001080,CIT-00003374,KA 13 A 6327,Hyundai,Model X,white,car,2013,false
+VEH-00001081,CIT-00003375,KA 17 A 8744,Hero,Model X,black,scooter,2007,false
+VEH-00001082,CIT-00003376,KA 20 M 7209,Royal Enfield,Model X,white,motorcycle,2020,false
+VEH-00001083,CIT-00003377,KA 18 P 3589,TVS,Model X,black,scooter,2007,false
+VEH-00001084,CIT-00003378,KA 33 N 3775,Hyundai,Model X,black,car,2020,false
+VEH-00001085,CIT-00003386,KA 36 N 9990,Tata,Model X,grey,car,2010,false
+VEH-00001086,CIT-00003391,KA 12 B 1195,Honda,Model X,white,motorcycle,2010,false
+VEH-00001087,CIT-00003404,KA 29 M 5820,Honda,Model X,blue,car,2018,false
+VEH-00001088,CIT-00003406,KA 40 N 7195,Royal Enfield,Model X,grey,scooter,2020,false
+VEH-00001089,CIT-00003410,KA 49 N 7845,Bajaj,Model X,grey,motorcycle,2008,false
+VEH-00001090,CIT-00003411,KA 24 C 5036,Royal Enfield,Model X,white,motorcycle,2008,false
+VEH-00001091,CIT-00003416,KA 32 C 2310,Toyota,Model X,blue,car,2021,false
+VEH-00001092,CIT-00003424,KA 07 B 2991,Tata,Model X,white,car,2016,false
+VEH-00001093,CIT-00003429,KA 25 B 4191,Hero,Model X,silver,scooter,2019,false
+VEH-00001094,CIT-00003432,KA 30 A 6451,Tata,Model X,silver,car,2017,false
+VEH-00001095,CIT-00003436,KA 25 A 3555,Tata,Model X,silver,car,2011,false
+VEH-00001096,CIT-00003438,KA 02 B 4594,Hyundai,Model X,silver,car,2015,false
+VEH-00001097,CIT-00003439,KA 44 A 6518,Toyota,Model X,white,car,2012,false
+VEH-00001098,CIT-00003441,KA 44 N 9843,Mahindra,Model X,white,car,2016,false
+VEH-00001099,CIT-00003443,KA 45 B 6017,Mahindra,Model X,grey,car,2007,false
+VEH-00001100,CIT-00003446,KA 07 B 7278,TVS,Model X,white,scooter,2021,false
+VEH-00001101,CIT-00003447,KA 44 N 4136,TVS,Model X,silver,motorcycle,2014,false
+VEH-00001102,CIT-00003453,KA 45 N 1820,Royal Enfield,Model X,blue,motorcycle,2013,false
+VEH-00001103,CIT-00003456,KA 02 B 7215,Honda,Model X,white,car,2007,false
+VEH-00001104,CIT-00003459,KA 21 N 4665,Toyota,Model X,grey,car,2010,false
+VEH-00001105,CIT-00003462,KA 16 M 8189,Bajaj,Model X,grey,scooter,2021,false
+VEH-00001106,CIT-00003463,KA 47 C 3998,Royal Enfield,Model X,red,motorcycle,2015,false
+VEH-00001107,CIT-00003464,KA 23 C 2383,Bajaj,Model X,red,motorcycle,2016,false
+VEH-00001108,CIT-00003465,KA 20 N 8095,TVS,Model X,red,motorcycle,2016,false
+VEH-00001109,CIT-00003469,KA 02 B 2758,Tata,Model X,grey,car,2006,false
+VEH-00001110,CIT-00003471,KA 14 N 9045,Mahindra,Model X,red,car,2018,false
+VEH-00001111,CIT-00003473,KA 41 N 5588,Hero,Model X,black,motorcycle,2014,false
+VEH-00001112,CIT-00003475,KA 23 M 6032,Hero,Model X,white,motorcycle,2009,false
+VEH-00001113,CIT-00003477,KA 20 P 6327,Bajaj,Model X,silver,scooter,2008,false
+VEH-00001114,CIT-00003481,KA 18 C 9480,Bajaj,Model X,silver,scooter,2010,false
+VEH-00001115,CIT-00003482,KA 22 P 7450,Hero,Model X,black,motorcycle,2020,false
+VEH-00001116,CIT-00003489,KA 21 B 4895,Royal Enfield,Model X,white,scooter,2017,false
+VEH-00001117,CIT-00003490,KA 35 N 3252,Maruti Suzuki,Model X,black,car,2012,false
+VEH-00001118,CIT-00003493,KA 45 B 2085,Hero,Model X,white,motorcycle,2016,false
+VEH-00001119,CIT-00003494,KA 21 A 7179,Mahindra,Model X,white,car,2012,false
+VEH-00001120,CIT-00003495,KA 15 N 9623,Honda,Model X,grey,car,2019,false
+VEH-00001121,CIT-00003506,KA 46 M 4026,Mahindra,Model X,silver,car,2021,false
+VEH-00001122,CIT-00003509,KA 27 B 2611,Royal Enfield,Model X,silver,scooter,2007,false
+VEH-00001123,CIT-00003512,KA 19 A 1183,Tata,Model X,grey,car,2016,false
+VEH-00001124,CIT-00003514,KA 03 C 6119,Tata,Model X,white,car,2011,false
+VEH-00001125,CIT-00003515,KA 15 M 4000,Honda,Model X,silver,car,2007,false
+VEH-00001126,CIT-00003523,KA 28 M 3948,Toyota,Model X,white,car,2020,false
+VEH-00001127,CIT-00003524,KA 50 M 8214,Mahindra,Model X,white,car,2017,false
+VEH-00001128,CIT-00003530,KA 25 N 2457,TVS,Model X,red,scooter,2011,false
+VEH-00001129,CIT-00003531,KA 09 A 2959,Hero,Model X,silver,scooter,2008,false
+VEH-00001130,CIT-00003532,KA 24 M 5659,Honda,Model X,white,car,2020,false
+VEH-00001131,CIT-00003535,KA 17 C 6722,Tata,Model X,blue,car,2014,false
+VEH-00001132,CIT-00003536,KA 45 B 7403,Hero,Model X,silver,motorcycle,2007,false
+VEH-00001133,CIT-00003538,KA 09 A 1588,Royal Enfield,Model X,blue,motorcycle,2006,false
+VEH-00001134,CIT-00003539,KA 41 P 6441,Tata,Model X,blue,car,2016,false
+VEH-00001135,CIT-00003540,KA 04 P 9302,Toyota,Model X,grey,car,2014,false
+VEH-00001136,CIT-00003542,KA 05 A 1616,Honda,Model X,grey,motorcycle,2012,false
+VEH-00001137,CIT-00003543,KA 25 M 5931,TVS,Model X,silver,motorcycle,2007,false
+VEH-00001138,CIT-00003545,KA 40 C 7718,Royal Enfield,Model X,white,scooter,2013,false
+VEH-00001139,CIT-00003546,KA 01 N 1278,Mahindra,Model X,silver,car,2010,false
+VEH-00001140,CIT-00003547,KA 49 M 9030,Honda,Model X,silver,motorcycle,2012,false
+VEH-00001141,CIT-00003548,KA 07 N 4439,Hero,Model X,grey,motorcycle,2018,false
+VEH-00001142,CIT-00003549,KA 27 P 7995,Bajaj,Model X,silver,scooter,2006,false
+VEH-00001143,CIT-00003551,KA 07 M 5156,Honda,Model X,red,car,2017,false
+VEH-00001144,CIT-00003557,KA 43 C 5726,Honda,Model X,red,motorcycle,2010,false
+VEH-00001145,CIT-00003562,KA 04 M 9593,Maruti Suzuki,Model X,black,car,2010,false
+VEH-00001146,CIT-00003564,KA 33 B 6117,Royal Enfield,Model X,black,scooter,2016,false
+VEH-00001147,CIT-00003567,KA 44 B 9898,Honda,Model X,silver,motorcycle,2007,false
+VEH-00001148,CIT-00003570,KA 16 B 9719,Royal Enfield,Model X,grey,scooter,2021,false
+VEH-00001149,CIT-00003571,KA 08 P 7669,Royal Enfield,Model X,white,motorcycle,2019,false
+VEH-00001150,CIT-00003575,KA 26 C 8659,Maruti Suzuki,Model X,grey,car,2020,false
+VEH-00001151,CIT-00003580,KA 01 N 7692,Honda,Model X,white,motorcycle,2013,false
+VEH-00001152,CIT-00003582,KA 24 M 8184,Hyundai,Model X,silver,car,2013,false
+VEH-00001153,CIT-00003590,KA 07 M 3506,TVS,Model X,red,motorcycle,2013,false
+VEH-00001154,CIT-00003594,KA 44 A 9392,Hyundai,Model X,silver,car,2017,false
+VEH-00001155,CIT-00003596,KA 33 C 6643,TVS,Model X,silver,motorcycle,2012,false
+VEH-00001156,CIT-00003597,KA 26 M 3455,Honda,Model X,grey,car,2021,false
+VEH-00001157,CIT-00003598,KA 35 M 3278,Royal Enfield,Model X,silver,motorcycle,2017,false
+VEH-00001158,CIT-00003599,KA 42 C 6063,Toyota,Model X,grey,car,2014,false
+VEH-00001159,CIT-00003605,KA 14 N 5359,Mahindra,Model X,silver,car,2012,false
+VEH-00001160,CIT-00003609,KA 26 B 5109,Honda,Model X,blue,scooter,2010,false
+VEH-00001161,CIT-00003611,KA 40 A 7787,Maruti Suzuki,Model X,white,car,2021,false
+VEH-00001162,CIT-00003612,KA 37 B 6051,Maruti Suzuki,Model X,red,car,2011,false
+VEH-00001163,CIT-00003614,KA 02 B 3740,Tata,Model X,white,car,2006,false
+VEH-00001164,CIT-00003622,KA 38 N 1094,Hero,Model X,grey,motorcycle,2012,false
+VEH-00001165,CIT-00003624,KA 11 N 5414,Honda,Model X,white,motorcycle,2021,false
+VEH-00001166,CIT-00003625,KA 29 B 3257,TVS,Model X,grey,scooter,2012,false
+VEH-00001167,CIT-00003633,KA 43 C 7871,Bajaj,Model X,red,motorcycle,2021,false
+VEH-00001168,CIT-00003637,KA 29 N 5278,Bajaj,Model X,red,scooter,2021,false
+VEH-00001169,CIT-00003640,KA 34 A 7506,Mahindra,Model X,white,car,2016,false
+VEH-00001170,CIT-00003647,KA 15 C 3219,Hero,Model X,black,motorcycle,2010,false
+VEH-00001171,CIT-00003650,KA 32 M 1448,Bajaj,Model X,white,motorcycle,2011,false
+VEH-00001172,CIT-00003653,KA 30 N 5967,Honda,Model X,silver,motorcycle,2020,false
+VEH-00001173,CIT-00003654,KA 32 A 1199,Hero,Model X,blue,scooter,2019,false
+VEH-00001174,CIT-00003665,KA 10 N 3431,Royal Enfield,Model X,silver,motorcycle,2006,false
+VEH-00001175,CIT-00003671,KA 41 A 1733,TVS,Model X,grey,motorcycle,2020,false
+VEH-00001176,CIT-00003672,KA 28 M 5674,Hero,Model X,black,motorcycle,2019,false
+VEH-00001177,CIT-00003674,KA 04 N 4583,Hero,Model X,blue,motorcycle,2009,false
+VEH-00001178,CIT-00003677,KA 31 C 6688,Tata,Model X,black,car,2006,false
+VEH-00001179,CIT-00003678,KA 50 N 5453,Maruti Suzuki,Model X,grey,car,2018,false
+VEH-00001180,CIT-00003685,KA 16 B 7268,TVS,Model X,silver,scooter,2007,false
+VEH-00001181,CIT-00003687,KA 35 C 2823,Hyundai,Model X,white,car,2007,false
+VEH-00001182,CIT-00003688,KA 16 P 1627,Maruti Suzuki,Model X,red,car,2015,false
+VEH-00001183,CIT-00003690,KA 38 C 3650,Royal Enfield,Model X,grey,scooter,2012,false
+VEH-00001184,CIT-00003702,KA 35 N 5411,Maruti Suzuki,Model X,blue,car,2008,false
+VEH-00001185,CIT-00003704,KA 47 M 1989,Hero,Model X,blue,motorcycle,2018,false
+VEH-00001186,CIT-00003705,KA 36 B 7200,Tata,Model X,grey,car,2020,false
+VEH-00001187,CIT-00003706,KA 02 N 5513,Royal Enfield,Model X,red,motorcycle,2018,false
+VEH-00001188,CIT-00003710,KA 21 B 9920,Toyota,Model X,red,car,2015,false
+VEH-00001189,CIT-00003712,KA 05 C 8087,Maruti Suzuki,Model X,white,car,2021,false
+VEH-00001190,CIT-00003715,KA 02 M 3558,Royal Enfield,Model X,red,motorcycle,2017,false
+VEH-00001191,CIT-00003718,KA 23 B 8809,Mahindra,Model X,white,car,2009,false
+VEH-00001192,CIT-00003721,KA 36 N 8130,Honda,Model X,red,motorcycle,2020,false
+VEH-00001193,CIT-00003722,KA 17 P 8898,Hero,Model X,silver,scooter,2016,false
+VEH-00001194,CIT-00003727,KA 30 C 9439,Honda,Model X,white,motorcycle,2012,false
+VEH-00001195,CIT-00003731,KA 24 B 7079,Hero,Model X,silver,motorcycle,2012,false
+VEH-00001196,CIT-00003733,KA 19 C 6413,Toyota,Model X,blue,car,2006,false
+VEH-00001197,CIT-00003737,KA 08 M 4960,Honda,Model X,silver,scooter,2018,false
+VEH-00001198,CIT-00003743,KA 20 A 3975,Bajaj,Model X,red,motorcycle,2018,false
+VEH-00001199,CIT-00003746,KA 31 N 5535,Hero,Model X,white,scooter,2010,false
+VEH-00001200,CIT-00003747,KA 24 A 1972,Honda,Model X,white,motorcycle,2014,false
+VEH-00001201,CIT-00003750,KA 12 N 4341,Bajaj,Model X,silver,scooter,2012,false
+VEH-00001202,CIT-00003753,KA 46 B 8568,Maruti Suzuki,Model X,white,car,2018,false
+VEH-00001203,CIT-00003755,KA 13 P 8660,Mahindra,Model X,grey,car,2016,false
+VEH-00001204,CIT-00003757,KA 05 C 8239,TVS,Model X,grey,motorcycle,2012,false
+VEH-00001205,CIT-00003758,KA 26 P 6446,Tata,Model X,black,car,2012,false
+VEH-00001206,CIT-00003760,KA 09 M 4617,TVS,Model X,black,motorcycle,2007,false
+VEH-00001207,CIT-00003761,KA 34 C 2374,Hero,Model X,black,scooter,2018,false
+VEH-00001208,CIT-00003770,KA 34 M 8720,Hero,Model X,white,motorcycle,2008,false
+VEH-00001209,CIT-00003773,KA 35 A 4353,Toyota,Model X,grey,car,2009,false
+VEH-00001210,CIT-00003776,KA 23 P 9847,Bajaj,Model X,grey,motorcycle,2019,false
+VEH-00001211,CIT-00003778,KA 15 A 1713,Hero,Model X,red,scooter,2013,false
+VEH-00001212,CIT-00003779,KA 49 P 5061,Hero,Model X,red,motorcycle,2016,false
+VEH-00001213,CIT-00003794,KA 38 A 8527,Hero,Model X,blue,motorcycle,2017,false
+VEH-00001214,CIT-00003795,KA 36 M 8053,Maruti Suzuki,Model X,white,car,2006,false
+VEH-00001215,CIT-00003800,KA 09 N 3108,TVS,Model X,blue,motorcycle,2014,false
+VEH-00001216,CIT-00003802,KA 16 P 5633,Bajaj,Model X,white,motorcycle,2007,false
+VEH-00001217,CIT-00003811,KA 45 N 7179,Toyota,Model X,white,car,2006,false
+VEH-00001218,CIT-00003814,KA 08 B 3748,Royal Enfield,Model X,silver,motorcycle,2013,false
+VEH-00001219,CIT-00003818,KA 31 M 3002,Hero,Model X,silver,scooter,2008,false
+VEH-00001220,CIT-00003820,KA 15 A 7608,Toyota,Model X,black,car,2007,false
+VEH-00001221,CIT-00003821,KA 28 C 2946,Toyota,Model X,white,car,2019,false
+VEH-00001222,CIT-00003825,KA 05 M 7875,Bajaj,Model X,blue,motorcycle,2014,false
+VEH-00001223,CIT-00003830,KA 31 B 4699,Toyota,Model X,black,car,2021,false
+VEH-00001224,CIT-00003832,KA 10 B 7956,Royal Enfield,Model X,grey,scooter,2020,false
+VEH-00001225,CIT-00003838,KA 34 M 9969,TVS,Model X,grey,motorcycle,2010,false
+VEH-00001226,CIT-00003841,KA 26 A 3635,Bajaj,Model X,grey,motorcycle,2016,false
+VEH-00001227,CIT-00003842,KA 38 A 5960,Hero,Model X,silver,motorcycle,2013,false
+VEH-00001228,CIT-00003843,KA 36 N 3697,Mahindra,Model X,silver,car,2018,false
+VEH-00001229,CIT-00003846,KA 16 P 2179,Hero,Model X,silver,scooter,2010,false
+VEH-00001230,CIT-00003847,KA 33 M 2085,Bajaj,Model X,red,motorcycle,2009,false
+VEH-00001231,CIT-00003850,KA 01 N 5062,Royal Enfield,Model X,red,scooter,2020,false
+VEH-00001232,CIT-00003856,KA 03 C 1000,Mahindra,Model X,blue,car,2014,false
+VEH-00001233,CIT-00003866,KA 29 M 7738,Tata,Model X,silver,car,2012,false
+VEH-00001234,CIT-00003869,KA 35 C 7224,Honda,Model X,white,car,2014,false
+VEH-00001235,CIT-00003871,KA 43 B 3339,Honda,Model X,black,scooter,2019,false
+VEH-00001236,CIT-00003872,KA 32 M 9133,Maruti Suzuki,Model X,red,car,2017,false
+VEH-00001237,CIT-00003873,KA 01 C 2776,Bajaj,Model X,red,motorcycle,2009,false
+VEH-00001238,CIT-00003875,KA 35 B 1898,Maruti Suzuki,Model X,silver,car,2006,false
+VEH-00001239,CIT-00003880,KA 23 M 4133,TVS,Model X,grey,motorcycle,2007,false
+VEH-00001240,CIT-00003881,KA 38 A 6754,TVS,Model X,white,scooter,2020,false
+VEH-00001241,CIT-00003882,KA 13 C 2700,Tata,Model X,red,car,2011,false
+VEH-00001242,CIT-00003889,KA 40 B 4138,TVS,Model X,silver,motorcycle,2009,false
+VEH-00001243,CIT-00003890,KA 30 B 6964,Bajaj,Model X,blue,motorcycle,2006,false
+VEH-00001244,CIT-00003895,KA 35 M 1743,Hyundai,Model X,white,car,2016,false
+VEH-00001245,CIT-00003902,KA 43 N 1569,Honda,Model X,black,motorcycle,2015,false
+VEH-00001246,CIT-00003904,KA 11 M 2188,Bajaj,Model X,blue,motorcycle,2015,false
+VEH-00001247,CIT-00003906,KA 10 P 4408,Honda,Model X,blue,motorcycle,2014,false
+VEH-00001248,CIT-00003914,KA 49 N 2068,TVS,Model X,black,scooter,2014,false
+VEH-00001249,CIT-00003916,KA 04 P 7034,Hero,Model X,white,motorcycle,2019,false
+VEH-00001250,CIT-00003918,KA 20 P 3986,TVS,Model X,black,motorcycle,2010,false
+VEH-00001251,CIT-00003919,KA 14 A 9865,Bajaj,Model X,silver,motorcycle,2007,false
+VEH-00001252,CIT-00003924,KA 48 A 9879,Hero,Model X,black,motorcycle,2018,false
+VEH-00001253,CIT-00003926,KA 50 N 6829,Toyota,Model X,blue,car,2021,false
+VEH-00001254,CIT-00003933,KA 17 N 1384,Hyundai,Model X,red,car,2012,false
+VEH-00001255,CIT-00003934,KA 23 M 3980,Royal Enfield,Model X,grey,motorcycle,2016,false
+VEH-00001256,CIT-00003937,KA 48 C 6838,TVS,Model X,red,motorcycle,2009,false
+VEH-00001257,CIT-00003938,KA 28 N 6674,Royal Enfield,Model X,grey,scooter,2008,false
+VEH-00001258,CIT-00003942,KA 31 P 1201,Honda,Model X,blue,scooter,2021,false
+VEH-00001259,CIT-00003943,KA 20 N 7380,Honda,Model X,black,car,2009,false
+VEH-00001260,CIT-00003944,KA 17 B 6102,Toyota,Model X,white,car,2015,false
+VEH-00001261,CIT-00003945,KA 44 N 6910,Maruti Suzuki,Model X,blue,car,2018,false
+VEH-00001262,CIT-00003946,KA 22 P 5787,Honda,Model X,white,motorcycle,2007,false
+VEH-00001263,CIT-00003957,KA 33 A 4571,Honda,Model X,white,motorcycle,2018,false
+VEH-00001264,CIT-00003960,KA 16 A 3254,Tata,Model X,black,car,2006,false
+VEH-00001265,CIT-00003962,KA 11 N 6397,Honda,Model X,red,car,2018,false
+VEH-00001266,CIT-00003964,KA 24 B 5036,Royal Enfield,Model X,silver,scooter,2007,false
+VEH-00001267,CIT-00003966,KA 29 P 7631,Bajaj,Model X,white,motorcycle,2008,false
+VEH-00001268,CIT-00003970,KA 40 N 3228,TVS,Model X,blue,motorcycle,2014,false
+VEH-00001269,CIT-00003971,KA 33 C 8035,Bajaj,Model X,silver,motorcycle,2008,false
+VEH-00001270,CIT-00003972,KA 16 M 7730,Hyundai,Model X,white,car,2008,false
+VEH-00001271,CIT-00003977,KA 40 N 4907,Maruti Suzuki,Model X,silver,car,2011,false
+VEH-00001272,CIT-00003978,KA 17 N 9455,Hyundai,Model X,blue,car,2014,false
+VEH-00001273,CIT-00003985,KA 10 A 7556,Toyota,Model X,blue,car,2021,false
+VEH-00001274,CIT-00003986,KA 21 B 1169,Royal Enfield,Model X,blue,motorcycle,2018,false
+VEH-00001275,CIT-00003996,KA 48 N 6237,TVS,Model X,blue,scooter,2009,false
+VEH-00001276,CIT-00003998,KA 18 N 9654,Bajaj,Model X,black,scooter,2017,false
+VEH-00001277,CIT-00003999,KA 18 M 9499,Mahindra,Model X,blue,car,2020,false
+VEH-00001278,CIT-00004000,KA 15 A 7338,Bajaj,Model X,blue,scooter,2014,false
+VEH-00001279,CIT-00004004,KA 06 C 3595,TVS,Model X,blue,motorcycle,2009,false
+VEH-00001280,CIT-00004010,KA 23 C 2624,Royal Enfield,Model X,black,scooter,2007,false
+VEH-00001281,CIT-00004011,KA 05 A 7777,Royal Enfield,Model X,blue,motorcycle,2021,false
+VEH-00001282,CIT-00004022,KA 21 N 3793,Bajaj,Model X,black,motorcycle,2010,false
+VEH-00001283,CIT-00004024,KA 27 P 3570,Honda,Model X,red,motorcycle,2020,false
+VEH-00001284,CIT-00004025,KA 48 C 7515,Royal Enfield,Model X,silver,scooter,2015,false
+VEH-00001285,CIT-00004037,KA 47 C 2996,Hyundai,Model X,red,car,2017,false
+VEH-00001286,CIT-00004043,KA 01 N 9731,Bajaj,Model X,blue,motorcycle,2021,false
+VEH-00001287,CIT-00004045,KA 30 A 3087,TVS,Model X,black,motorcycle,2020,false
+VEH-00001288,CIT-00004047,KA 01 B 7336,Hyundai,Model X,black,car,2008,false
+VEH-00001289,CIT-00004049,KA 49 N 2648,Royal Enfield,Model X,red,scooter,2017,false
+VEH-00001290,CIT-00004056,KA 10 N 3934,Tata,Model X,grey,car,2017,false
+VEH-00001291,CIT-00004060,KA 25 M 3268,Royal Enfield,Model X,silver,motorcycle,2012,false
+VEH-00001292,CIT-00004069,KA 17 B 6611,TVS,Model X,black,scooter,2017,false
+VEH-00001293,CIT-00004070,KA 03 P 7661,Royal Enfield,Model X,blue,motorcycle,2018,false
+VEH-00001294,CIT-00004073,KA 20 N 1879,Hyundai,Model X,black,car,2020,false
+VEH-00001295,CIT-00004077,KA 12 A 6953,Tata,Model X,blue,car,2012,false
+VEH-00001296,CIT-00004083,KA 05 P 9950,Tata,Model X,white,car,2016,false
+VEH-00001297,CIT-00004091,KA 32 M 2799,Bajaj,Model X,red,motorcycle,2006,false
+VEH-00001298,CIT-00004092,KA 48 A 8461,TVS,Model X,black,scooter,2007,false
+VEH-00001299,CIT-00004093,KA 18 A 5077,Hyundai,Model X,blue,car,2013,false
+VEH-00001300,CIT-00004098,KA 22 B 8059,Honda,Model X,silver,car,2009,false
+VEH-00001301,CIT-00004103,KA 44 A 3457,Mahindra,Model X,white,car,2008,false
+VEH-00001302,CIT-00004109,KA 44 B 7241,TVS,Model X,grey,motorcycle,2021,false
+VEH-00001303,CIT-00004111,KA 26 C 5412,Hero,Model X,red,motorcycle,2006,false
+VEH-00001304,CIT-00004113,KA 29 C 5746,Bajaj,Model X,black,motorcycle,2009,false
+VEH-00001305,CIT-00004115,KA 04 N 9715,Bajaj,Model X,silver,motorcycle,2015,false
+VEH-00001306,CIT-00004118,KA 05 P 6700,Mahindra,Model X,grey,car,2007,false
+VEH-00001307,CIT-00004119,KA 49 A 8020,Mahindra,Model X,grey,car,2014,false
+VEH-00001308,CIT-00004121,KA 40 C 5748,TVS,Model X,red,scooter,2012,false
+VEH-00001309,CIT-00004123,KA 43 B 2278,Bajaj,Model X,grey,scooter,2016,false
+VEH-00001310,CIT-00004126,KA 49 N 6893,TVS,Model X,white,motorcycle,2010,false
+VEH-00001311,CIT-00004127,KA 32 C 9461,TVS,Model X,grey,motorcycle,2020,false
+VEH-00001312,CIT-00004129,KA 05 B 6877,Toyota,Model X,red,car,2007,false
+VEH-00001313,CIT-00004130,KA 11 N 5362,Maruti Suzuki,Model X,silver,car,2014,false
+VEH-00001314,CIT-00004133,KA 23 M 9997,Honda,Model X,white,motorcycle,2013,false
+VEH-00001315,CIT-00004135,KA 42 N 7156,Honda,Model X,red,car,2013,false
+VEH-00001316,CIT-00004141,KA 33 A 9977,Tata,Model X,white,car,2012,false
+VEH-00001317,CIT-00004144,KA 49 N 7819,Bajaj,Model X,white,motorcycle,2019,false
+VEH-00001318,CIT-00004146,KA 50 M 7673,TVS,Model X,red,motorcycle,2013,false
+VEH-00001319,CIT-00004150,KA 08 M 8692,Tata,Model X,red,car,2007,false
+VEH-00001320,CIT-00004152,KA 21 B 8200,Honda,Model X,grey,motorcycle,2006,false
+VEH-00001321,CIT-00004154,KA 44 N 6132,Maruti Suzuki,Model X,white,car,2007,false
+VEH-00001322,CIT-00004162,KA 47 B 4125,Toyota,Model X,grey,car,2007,false
+VEH-00001323,CIT-00004171,KA 42 A 7354,Bajaj,Model X,grey,motorcycle,2018,false
+VEH-00001324,CIT-00004172,KA 12 A 5811,Honda,Model X,white,car,2007,false
+VEH-00001325,CIT-00004174,KA 40 A 6581,Hyundai,Model X,blue,car,2021,false
+VEH-00001326,CIT-00004178,KA 37 N 7536,Honda,Model X,red,scooter,2006,false
+VEH-00001327,CIT-00004182,KA 21 B 9373,TVS,Model X,silver,motorcycle,2013,false
+VEH-00001328,CIT-00004183,KA 17 N 4975,Honda,Model X,blue,scooter,2012,false
+VEH-00001329,CIT-00004185,KA 05 B 4956,Mahindra,Model X,white,car,2021,false
+VEH-00001330,CIT-00004188,KA 15 B 5199,Toyota,Model X,white,car,2018,false
+VEH-00001331,CIT-00004191,KA 07 C 9673,Hero,Model X,grey,motorcycle,2011,false
+VEH-00001332,CIT-00004192,KA 30 N 9325,Maruti Suzuki,Model X,black,car,2011,false
+VEH-00001333,CIT-00004193,KA 16 M 4272,Bajaj,Model X,blue,motorcycle,2014,false
+VEH-00001334,CIT-00004196,KA 44 M 1448,Tata,Model X,white,car,2019,false
+VEH-00001335,CIT-00004197,KA 37 C 8608,Hero,Model X,black,motorcycle,2020,false
+VEH-00001336,CIT-00004199,KA 47 P 5204,TVS,Model X,blue,scooter,2011,false
+VEH-00001337,CIT-00004201,KA 01 N 9483,TVS,Model X,grey,motorcycle,2009,false
+VEH-00001338,CIT-00004203,KA 07 A 2601,Hyundai,Model X,blue,car,2006,false
+VEH-00001339,CIT-00004204,KA 12 B 7618,Bajaj,Model X,white,motorcycle,2013,false
+VEH-00001340,CIT-00004205,KA 10 M 5151,Royal Enfield,Model X,white,scooter,2009,false
+VEH-00001341,CIT-00004207,KA 07 B 8503,Mahindra,Model X,white,car,2019,false
+VEH-00001342,CIT-00004217,KA 38 B 4307,Maruti Suzuki,Model X,blue,car,2019,false
+VEH-00001343,CIT-00004223,KA 38 C 7781,Honda,Model X,blue,motorcycle,2016,false
+VEH-00001344,CIT-00004238,KA 09 N 1183,TVS,Model X,red,motorcycle,2017,false
+VEH-00001345,CIT-00004240,KA 44 N 8460,Bajaj,Model X,blue,motorcycle,2015,false
+VEH-00001346,CIT-00004241,KA 13 N 1661,Maruti Suzuki,Model X,red,car,2017,false
+VEH-00001347,CIT-00004246,KA 13 N 4314,Hyundai,Model X,blue,car,2016,false
+VEH-00001348,CIT-00004247,KA 44 C 9845,Honda,Model X,white,motorcycle,2010,false
+VEH-00001349,CIT-00004249,KA 45 B 5277,Bajaj,Model X,silver,scooter,2007,false
+VEH-00001350,CIT-00004251,KA 35 N 6935,Honda,Model X,silver,motorcycle,2013,false
+VEH-00001351,CIT-00004252,KA 30 A 1523,Bajaj,Model X,white,scooter,2021,false
+VEH-00001352,CIT-00004256,KA 14 A 4195,Bajaj,Model X,grey,scooter,2011,false
+VEH-00001353,CIT-00004258,KA 11 M 7653,Tata,Model X,black,car,2012,false
+VEH-00001354,CIT-00004259,KA 12 B 1973,Hero,Model X,white,scooter,2012,false
+VEH-00001355,CIT-00004267,KA 46 N 1412,Hero,Model X,grey,scooter,2006,false
+VEH-00001356,CIT-00004268,KA 09 P 9682,Honda,Model X,black,motorcycle,2016,false
+VEH-00001357,CIT-00004272,KA 13 B 2575,Honda,Model X,black,car,2014,false
+VEH-00001358,CIT-00004273,KA 29 A 5476,Maruti Suzuki,Model X,grey,car,2020,false
+VEH-00001359,CIT-00004275,KA 34 A 2235,Hyundai,Model X,silver,car,2012,false
+VEH-00001360,CIT-00004277,KA 38 N 2943,Hero,Model X,black,motorcycle,2013,false
+VEH-00001361,CIT-00004279,KA 06 M 4797,Honda,Model X,white,scooter,2011,false
+VEH-00001362,CIT-00004286,KA 05 M 6632,TVS,Model X,red,scooter,2012,false
+VEH-00001363,CIT-00004287,KA 40 M 8194,Mahindra,Model X,grey,car,2006,false
+VEH-00001364,CIT-00004290,KA 14 B 5287,Tata,Model X,red,car,2006,false
+VEH-00001365,CIT-00004292,KA 48 A 6626,Bajaj,Model X,red,motorcycle,2012,false
+VEH-00001366,CIT-00004293,KA 37 M 2001,Royal Enfield,Model X,white,scooter,2017,false
+VEH-00001367,CIT-00004301,KA 11 M 4363,Bajaj,Model X,black,motorcycle,2010,false
+VEH-00001368,CIT-00004303,KA 09 A 5572,Honda,Model X,silver,motorcycle,2017,false
+VEH-00001369,CIT-00004306,KA 48 B 2868,Honda,Model X,blue,car,2013,false
+VEH-00001370,CIT-00004313,KA 19 N 1879,Honda,Model X,white,scooter,2018,false
+VEH-00001371,CIT-00004317,KA 17 N 4385,Hyundai,Model X,silver,car,2006,false
+VEH-00001372,CIT-00004318,KA 13 B 6812,TVS,Model X,grey,motorcycle,2020,false
+VEH-00001373,CIT-00004320,KA 18 B 8457,Bajaj,Model X,blue,motorcycle,2008,false
+VEH-00001374,CIT-00004321,KA 47 P 7108,Tata,Model X,silver,car,2019,false
+VEH-00001375,CIT-00004322,KA 35 P 4715,Maruti Suzuki,Model X,silver,car,2016,false
+VEH-00001376,CIT-00004323,KA 18 A 6426,Honda,Model X,grey,motorcycle,2014,false
+VEH-00001377,CIT-00004324,KA 03 C 9324,Bajaj,Model X,red,scooter,2020,false
+VEH-00001378,CIT-00004325,KA 09 C 6308,Bajaj,Model X,black,motorcycle,2018,false
+VEH-00001379,CIT-00004326,KA 34 C 9044,Royal Enfield,Model X,white,motorcycle,2009,false
+VEH-00001380,CIT-00004328,KA 26 P 8709,Toyota,Model X,red,car,2009,false
+VEH-00001381,CIT-00004331,KA 35 A 4881,Honda,Model X,silver,motorcycle,2013,false
+VEH-00001382,CIT-00004332,KA 30 M 4527,Bajaj,Model X,silver,motorcycle,2014,false
+VEH-00001383,CIT-00004335,KA 24 C 4196,Honda,Model X,black,motorcycle,2012,false
+VEH-00001384,CIT-00004336,KA 04 P 8679,TVS,Model X,black,motorcycle,2016,false
+VEH-00001385,CIT-00004337,KA 17 B 7145,Hero,Model X,black,motorcycle,2012,false
+VEH-00001386,CIT-00004344,KA 21 C 6440,Mahindra,Model X,silver,car,2006,false
+VEH-00001387,CIT-00004345,KA 35 N 5363,Honda,Model X,red,car,2018,false
+VEH-00001388,CIT-00004346,KA 47 C 8180,Honda,Model X,silver,car,2019,false
+VEH-00001389,CIT-00004349,KA 27 B 7089,Maruti Suzuki,Model X,white,car,2019,false
+VEH-00001390,CIT-00004351,KA 17 B 6266,Bajaj,Model X,grey,scooter,2009,false
+VEH-00001391,CIT-00004352,KA 45 C 5309,Hero,Model X,red,scooter,2011,false
+VEH-00001392,CIT-00004357,KA 44 A 2320,Honda,Model X,grey,motorcycle,2011,false
+VEH-00001393,CIT-00004363,KA 23 A 2493,Hyundai,Model X,silver,car,2019,false
+VEH-00001394,CIT-00004369,KA 03 N 4514,Hyundai,Model X,silver,car,2016,false
+VEH-00001395,CIT-00004371,KA 15 N 1780,Honda,Model X,blue,motorcycle,2009,false
+VEH-00001396,CIT-00004381,KA 41 M 9783,Hyundai,Model X,silver,car,2006,false
+VEH-00001397,CIT-00004383,KA 38 B 2887,Bajaj,Model X,blue,scooter,2021,false
+VEH-00001398,CIT-00004387,KA 26 A 9093,Royal Enfield,Model X,red,motorcycle,2016,false
+VEH-00001399,CIT-00004391,KA 33 N 4360,Hyundai,Model X,black,car,2021,false
+VEH-00001400,CIT-00004393,KA 36 P 3304,Honda,Model X,red,scooter,2017,false
+VEH-00001401,CIT-00004394,KA 16 A 8671,Hero,Model X,blue,motorcycle,2020,false
+VEH-00001402,CIT-00004397,KA 19 M 6357,TVS,Model X,silver,scooter,2017,false
+VEH-00001403,CIT-00004401,KA 25 N 2515,Honda,Model X,grey,car,2018,false
+VEH-00001404,CIT-00004402,KA 49 N 8837,Bajaj,Model X,white,motorcycle,2009,false
+VEH-00001405,CIT-00004408,KA 03 B 9404,TVS,Model X,blue,scooter,2021,false
+VEH-00001406,CIT-00004413,KA 01 N 4326,TVS,Model X,red,scooter,2016,false
+VEH-00001407,CIT-00004414,KA 42 A 4415,Mahindra,Model X,grey,car,2013,false
+VEH-00001408,CIT-00004418,KA 22 P 8041,Toyota,Model X,grey,car,2009,false
+VEH-00001409,CIT-00004419,KA 41 B 5841,Hero,Model X,red,motorcycle,2006,false
+VEH-00001410,CIT-00004424,KA 02 C 8277,TVS,Model X,blue,motorcycle,2021,false
+VEH-00001411,CIT-00004431,KA 41 P 7782,Mahindra,Model X,blue,car,2008,false
+VEH-00001412,CIT-00004432,KA 29 M 7778,Honda,Model X,grey,motorcycle,2009,false
+VEH-00001413,CIT-00004436,KA 41 A 1305,TVS,Model X,grey,scooter,2009,false
+VEH-00001414,CIT-00004437,KA 46 N 4285,Mahindra,Model X,grey,car,2018,false
+VEH-00001415,CIT-00004443,KA 25 A 6559,Toyota,Model X,red,car,2012,false
+VEH-00001416,CIT-00004444,KA 30 P 3552,Toyota,Model X,grey,car,2019,false
+VEH-00001417,CIT-00004445,KA 18 A 1298,Honda,Model X,black,car,2014,false
+VEH-00001418,CIT-00004452,KA 18 A 2586,Honda,Model X,silver,motorcycle,2017,false
+VEH-00001419,CIT-00004453,KA 11 B 8546,Mahindra,Model X,black,car,2017,false
+VEH-00001420,CIT-00004456,KA 14 B 8439,Hyundai,Model X,blue,car,2019,false
+VEH-00001421,CIT-00004461,KA 34 P 2853,Maruti Suzuki,Model X,grey,car,2019,false
+VEH-00001422,CIT-00004467,KA 50 A 1443,TVS,Model X,grey,motorcycle,2007,false
+VEH-00001423,CIT-00004468,KA 36 C 5037,TVS,Model X,grey,motorcycle,2012,false
+VEH-00001424,CIT-00004469,KA 07 P 2338,Hero,Model X,black,motorcycle,2006,false
+VEH-00001425,CIT-00004470,KA 46 A 7518,Hero,Model X,silver,motorcycle,2006,false
+VEH-00001426,CIT-00004471,KA 40 P 3023,TVS,Model X,white,scooter,2012,false
+VEH-00001427,CIT-00004474,KA 50 C 2622,Bajaj,Model X,silver,motorcycle,2015,false
+VEH-00001428,CIT-00004475,KA 37 P 9540,Honda,Model X,blue,motorcycle,2019,false
+VEH-00001429,CIT-00004477,KA 10 P 7429,Royal Enfield,Model X,black,scooter,2009,false
+VEH-00001430,CIT-00004480,KA 38 M 3087,Bajaj,Model X,red,scooter,2009,false
+VEH-00001431,CIT-00004481,KA 01 M 7990,TVS,Model X,white,motorcycle,2012,false
+VEH-00001432,CIT-00004490,KA 35 P 3146,Toyota,Model X,red,car,2009,false
+VEH-00001433,CIT-00004492,KA 18 B 2298,Toyota,Model X,silver,car,2016,false
+VEH-00001434,CIT-00004496,KA 44 N 9110,Tata,Model X,white,car,2020,false
+VEH-00001435,CIT-00004498,KA 03 C 6582,TVS,Model X,black,motorcycle,2008,false
+VEH-00001436,CIT-00004499,KA 04 M 1439,Tata,Model X,white,car,2014,false
+VEH-00001437,CIT-00004506,KA 27 B 9108,Bajaj,Model X,white,motorcycle,2007,false
+VEH-00001438,CIT-00004508,KA 11 M 6469,Honda,Model X,white,motorcycle,2015,false
+VEH-00001439,CIT-00004512,KA 28 A 9006,Honda,Model X,silver,car,2009,false
+VEH-00001440,CIT-00004514,KA 11 B 6850,Royal Enfield,Model X,white,motorcycle,2021,false
+VEH-00001441,CIT-00004516,KA 15 M 6493,Royal Enfield,Model X,blue,scooter,2011,false
+VEH-00001442,CIT-00004523,KA 30 P 8746,Hyundai,Model X,white,car,2020,false
+VEH-00001443,CIT-00004524,KA 02 B 2360,Tata,Model X,black,car,2019,false
+VEH-00001444,CIT-00004528,KA 31 A 8648,Bajaj,Model X,white,motorcycle,2018,false
+VEH-00001445,CIT-00004529,KA 09 P 7847,TVS,Model X,white,motorcycle,2010,false
+VEH-00001446,CIT-00004533,KA 08 M 6596,Hero,Model X,white,motorcycle,2014,false
+VEH-00001447,CIT-00004534,KA 49 A 2614,Honda,Model X,silver,motorcycle,2018,false
+VEH-00001448,CIT-00004535,KA 45 P 2117,Honda,Model X,white,car,2009,false
+VEH-00001449,CIT-00004536,KA 41 N 3687,Honda,Model X,blue,motorcycle,2017,false
+VEH-00001450,CIT-00004537,KA 34 N 8413,Honda,Model X,grey,scooter,2015,false
+VEH-00001451,CIT-00004538,KA 10 B 2521,Honda,Model X,grey,motorcycle,2018,false
+VEH-00001452,CIT-00004539,KA 32 P 3788,Honda,Model X,red,car,2019,false
+VEH-00001453,CIT-00004542,KA 05 A 5123,Hero,Model X,white,motorcycle,2013,false
+VEH-00001454,CIT-00004543,KA 25 P 4937,Hero,Model X,blue,scooter,2017,false
+VEH-00001455,CIT-00004548,KA 33 M 9141,Toyota,Model X,silver,car,2015,false
+VEH-00001456,CIT-00004552,KA 01 A 7310,Honda,Model X,black,scooter,2006,false
+VEH-00001457,CIT-00004556,KA 47 M 7193,TVS,Model X,black,scooter,2020,false
+VEH-00001458,CIT-00004557,KA 01 A 8142,Honda,Model X,grey,car,2017,false
+VEH-00001459,CIT-00004562,KA 39 M 4108,Royal Enfield,Model X,grey,motorcycle,2008,false
+VEH-00001460,CIT-00004571,KA 40 N 2708,Honda,Model X,black,motorcycle,2010,false
+VEH-00001461,CIT-00004576,KA 26 P 6890,Mahindra,Model X,white,car,2008,false
+VEH-00001462,CIT-00004577,KA 50 C 9763,TVS,Model X,silver,motorcycle,2013,false
+VEH-00001463,CIT-00004579,KA 18 A 2556,Bajaj,Model X,grey,motorcycle,2014,false
+VEH-00001464,CIT-00004581,KA 14 A 4043,Royal Enfield,Model X,blue,motorcycle,2009,false
+VEH-00001465,CIT-00004582,KA 24 A 7354,Royal Enfield,Model X,grey,motorcycle,2020,false
+VEH-00001466,CIT-00004583,KA 25 N 9247,Honda,Model X,grey,car,2016,false
+VEH-00001467,CIT-00004584,KA 20 A 1218,Mahindra,Model X,blue,car,2021,false
+VEH-00001468,CIT-00004587,KA 04 B 8853,Mahindra,Model X,blue,car,2020,false
+VEH-00001469,CIT-00004588,KA 27 A 7821,Hero,Model X,black,scooter,2018,false
+VEH-00001470,CIT-00004589,KA 18 P 7082,TVS,Model X,black,motorcycle,2012,false
+VEH-00001471,CIT-00004590,KA 27 C 9917,Honda,Model X,black,motorcycle,2006,false
+VEH-00001472,CIT-00004593,KA 11 M 6934,Tata,Model X,white,car,2009,false
+VEH-00001473,CIT-00004594,KA 09 P 3091,Bajaj,Model X,silver,scooter,2013,false
+VEH-00001474,CIT-00004595,KA 43 B 7273,Mahindra,Model X,grey,car,2011,false
+VEH-00001475,CIT-00004597,KA 25 M 1580,Bajaj,Model X,red,scooter,2013,false
+VEH-00001476,CIT-00004598,KA 08 P 2866,Royal Enfield,Model X,grey,motorcycle,2013,false
+VEH-00001477,CIT-00004599,KA 27 P 9245,Toyota,Model X,black,car,2007,false
+VEH-00001478,CIT-00004603,KA 26 P 9429,Hero,Model X,black,motorcycle,2020,false
+VEH-00001479,CIT-00004609,KA 32 B 6313,Royal Enfield,Model X,black,scooter,2008,false
+VEH-00001480,CIT-00004616,KA 39 P 8279,Honda,Model X,white,motorcycle,2019,false
+VEH-00001481,CIT-00004617,KA 30 P 6077,Hero,Model X,silver,motorcycle,2011,false
+VEH-00001482,CIT-00004618,KA 06 C 7749,Mahindra,Model X,red,car,2016,false
+VEH-00001483,CIT-00004619,KA 37 C 7597,Royal Enfield,Model X,silver,scooter,2021,false
+VEH-00001484,CIT-00004625,KA 02 A 6078,Toyota,Model X,red,car,2020,false
+VEH-00001485,CIT-00004626,KA 18 A 1011,Bajaj,Model X,white,motorcycle,2021,false
+VEH-00001486,CIT-00004627,KA 24 M 8229,Hero,Model X,red,motorcycle,2017,false
+VEH-00001487,CIT-00004628,KA 32 C 6629,Bajaj,Model X,black,scooter,2019,false
+VEH-00001488,CIT-00004629,KA 17 M 1195,Honda,Model X,blue,motorcycle,2020,false
+VEH-00001489,CIT-00004633,KA 05 P 5188,Mahindra,Model X,white,car,2007,false
+VEH-00001490,CIT-00004635,KA 02 B 2981,Mahindra,Model X,white,car,2018,false
+VEH-00001491,CIT-00004636,KA 41 B 4376,Royal Enfield,Model X,black,motorcycle,2006,false
+VEH-00001492,CIT-00004637,KA 14 P 6346,Mahindra,Model X,black,car,2015,false
+VEH-00001493,CIT-00004639,KA 03 B 5363,TVS,Model X,black,motorcycle,2015,false
+VEH-00001494,CIT-00004653,KA 24 C 7073,Toyota,Model X,grey,car,2010,false
+VEH-00001495,CIT-00004661,KA 25 M 4962,Maruti Suzuki,Model X,black,car,2010,false
+VEH-00001496,CIT-00004662,KA 16 P 7847,Tata,Model X,red,car,2006,false
+VEH-00001497,CIT-00004667,KA 40 M 8881,Royal Enfield,Model X,red,motorcycle,2008,false
+VEH-00001498,CIT-00004669,KA 46 B 9706,Hyundai,Model X,grey,car,2007,false
+VEH-00001499,CIT-00004671,KA 43 C 1407,Hero,Model X,white,motorcycle,2017,false
+VEH-00001500,CIT-00004678,KA 03 B 7373,Hero,Model X,black,scooter,2014,false
+VEH-00001501,CIT-00004681,KA 08 P 4971,Hyundai,Model X,red,car,2017,false
+VEH-00001502,CIT-00004687,KA 17 C 4115,Tata,Model X,white,car,2016,false
+VEH-00001503,CIT-00004691,KA 40 A 5491,Maruti Suzuki,Model X,grey,car,2013,false
+VEH-00001504,CIT-00004693,KA 03 N 4230,Tata,Model X,grey,car,2006,false
+VEH-00001505,CIT-00004700,KA 12 M 3629,Toyota,Model X,silver,car,2021,false
+VEH-00001506,CIT-00004705,KA 28 C 9433,Maruti Suzuki,Model X,white,car,2006,false
+VEH-00001507,CIT-00004707,KA 40 M 7797,Honda,Model X,red,scooter,2016,false
+VEH-00001508,CIT-00004715,KA 19 P 2623,Bajaj,Model X,grey,motorcycle,2014,false
+VEH-00001509,CIT-00004720,KA 13 A 6846,Royal Enfield,Model X,grey,scooter,2018,false
+VEH-00001510,CIT-00004722,KA 32 N 9002,Royal Enfield,Model X,red,motorcycle,2007,false
+VEH-00001511,CIT-00004723,KA 15 N 9321,Bajaj,Model X,white,motorcycle,2014,false
+VEH-00001512,CIT-00004727,KA 02 C 1602,Bajaj,Model X,grey,scooter,2009,false
+VEH-00001513,CIT-00004728,KA 41 A 7595,Tata,Model X,black,car,2014,false
+VEH-00001514,CIT-00004729,KA 45 B 3921,Hyundai,Model X,grey,car,2006,false
+VEH-00001515,CIT-00004730,KA 05 M 6799,TVS,Model X,black,motorcycle,2019,false
+VEH-00001516,CIT-00004731,KA 34 C 2166,Mahindra,Model X,black,car,2013,false
+VEH-00001517,CIT-00004735,KA 40 M 8424,TVS,Model X,red,motorcycle,2018,false
+VEH-00001518,CIT-00004737,KA 44 P 2567,Royal Enfield,Model X,blue,motorcycle,2016,false
+VEH-00001519,CIT-00004739,KA 10 C 7113,Honda,Model X,black,motorcycle,2006,false
+VEH-00001520,CIT-00004747,KA 29 A 2180,Maruti Suzuki,Model X,grey,car,2007,false
+VEH-00001521,CIT-00004748,KA 26 B 9452,TVS,Model X,white,motorcycle,2016,false
+VEH-00001522,CIT-00004749,KA 19 N 3744,Honda,Model X,blue,car,2013,false
+VEH-00001523,CIT-00004753,KA 25 A 6860,Honda,Model X,white,car,2008,false
+VEH-00001524,CIT-00004754,KA 35 B 6043,Hero,Model X,black,motorcycle,2008,false
+VEH-00001525,CIT-00004760,KA 20 M 7010,Honda,Model X,blue,motorcycle,2007,false
+VEH-00001526,CIT-00004767,KA 45 A 7582,Hero,Model X,black,motorcycle,2021,false
+VEH-00001527,CIT-00004769,KA 21 N 9651,Bajaj,Model X,black,scooter,2019,false
+VEH-00001528,CIT-00004771,KA 01 A 7269,Tata,Model X,black,car,2011,false
+VEH-00001529,CIT-00004774,KA 24 C 2535,Maruti Suzuki,Model X,silver,car,2010,false
+VEH-00001530,CIT-00004778,KA 46 M 8686,Honda,Model X,black,motorcycle,2015,false
+VEH-00001531,CIT-00004779,KA 17 N 1545,Honda,Model X,black,car,2014,false
+VEH-00001532,CIT-00004783,KA 40 C 2561,Toyota,Model X,grey,car,2016,false
+VEH-00001533,CIT-00004784,KA 37 A 3764,Toyota,Model X,blue,car,2006,false
+VEH-00001534,CIT-00004786,KA 41 A 6355,Hyundai,Model X,white,car,2019,false
+VEH-00001535,CIT-00004788,KA 25 N 2810,Hyundai,Model X,black,car,2017,false
+VEH-00001536,CIT-00004789,KA 03 M 8920,Royal Enfield,Model X,red,motorcycle,2015,false
+VEH-00001537,CIT-00004791,KA 40 C 5241,Maruti Suzuki,Model X,silver,car,2012,false
+VEH-00001538,CIT-00004793,KA 44 A 4575,Honda,Model X,black,scooter,2011,false
+VEH-00001539,CIT-00004795,KA 41 N 4110,Bajaj,Model X,red,motorcycle,2017,false
+VEH-00001540,CIT-00004797,KA 09 N 9578,TVS,Model X,black,motorcycle,2014,false
+VEH-00001541,CIT-00004801,KA 33 M 3751,TVS,Model X,grey,motorcycle,2020,false
+VEH-00001542,CIT-00004804,KA 22 A 9793,Hero,Model X,silver,motorcycle,2011,false
+VEH-00001543,CIT-00004805,KA 29 C 3043,Royal Enfield,Model X,blue,scooter,2008,false
+VEH-00001544,CIT-00004809,KA 13 A 3856,Royal Enfield,Model X,red,motorcycle,2018,false
+VEH-00001545,CIT-00004819,KA 42 A 9501,Hyundai,Model X,blue,car,2008,false
+VEH-00001546,CIT-00004821,KA 35 B 1947,Royal Enfield,Model X,grey,motorcycle,2016,false
+VEH-00001547,CIT-00004822,KA 50 C 6554,Bajaj,Model X,black,motorcycle,2007,false
+VEH-00001548,CIT-00004824,KA 03 M 3028,Bajaj,Model X,grey,scooter,2018,false
+VEH-00001549,CIT-00004829,KA 30 B 9297,Hyundai,Model X,grey,car,2016,false
+VEH-00001550,CIT-00004830,KA 27 P 1846,Royal Enfield,Model X,white,motorcycle,2006,false
+VEH-00001551,CIT-00004833,KA 38 A 8720,Mahindra,Model X,silver,car,2007,false
+VEH-00001552,CIT-00004835,KA 47 A 1737,Toyota,Model X,white,car,2007,false
+VEH-00001553,CIT-00004838,KA 25 B 6681,Tata,Model X,black,car,2016,false
+VEH-00001554,CIT-00004843,KA 41 N 7533,Bajaj,Model X,black,motorcycle,2014,false
+VEH-00001555,CIT-00004844,KA 25 M 7079,Mahindra,Model X,black,car,2013,false
+VEH-00001556,CIT-00004846,KA 34 M 6270,TVS,Model X,grey,motorcycle,2014,false
+VEH-00001557,CIT-00004861,KA 08 A 8490,Bajaj,Model X,black,motorcycle,2017,false
+VEH-00001558,CIT-00004862,KA 10 P 7339,Bajaj,Model X,black,scooter,2021,false
+VEH-00001559,CIT-00004871,KA 47 N 8141,Honda,Model X,red,motorcycle,2009,false
+VEH-00001560,CIT-00004894,KA 08 C 9829,Honda,Model X,silver,car,2012,false
+VEH-00001561,CIT-00004898,KA 31 M 7508,Honda,Model X,white,car,2013,false
+VEH-00001562,CIT-00004906,KA 49 N 5761,Hyundai,Model X,grey,car,2013,false
+VEH-00001563,CIT-00004908,KA 30 P 9190,Hero,Model X,blue,motorcycle,2020,false
+VEH-00001564,CIT-00004909,KA 38 A 2223,Royal Enfield,Model X,red,scooter,2013,false
+VEH-00001565,CIT-00004910,KA 21 A 5341,Honda,Model X,white,scooter,2018,false
+VEH-00001566,CIT-00004911,KA 46 P 9583,Maruti Suzuki,Model X,grey,car,2011,false
+VEH-00001567,CIT-00004912,KA 37 A 9471,Hyundai,Model X,white,car,2018,false
+VEH-00001568,CIT-00004913,KA 32 P 2064,TVS,Model X,red,motorcycle,2016,false
+VEH-00001569,CIT-00004919,KA 12 M 6243,Royal Enfield,Model X,red,motorcycle,2014,false
+VEH-00001570,CIT-00004925,KA 09 C 5438,Bajaj,Model X,black,motorcycle,2014,false
+VEH-00001571,CIT-00004926,KA 47 N 1119,Royal Enfield,Model X,grey,scooter,2010,false
+VEH-00001572,CIT-00004927,KA 12 A 3336,Hyundai,Model X,silver,car,2021,false
+VEH-00001573,CIT-00004929,KA 46 P 6596,Tata,Model X,black,car,2019,false
+VEH-00001574,CIT-00004930,KA 28 C 8086,Maruti Suzuki,Model X,black,car,2021,false
+VEH-00001575,CIT-00004934,KA 03 N 7012,Royal Enfield,Model X,silver,scooter,2018,false
+VEH-00001576,CIT-00004937,KA 24 C 9488,TVS,Model X,blue,motorcycle,2019,false
+VEH-00001577,CIT-00004938,KA 09 P 3836,Royal Enfield,Model X,silver,scooter,2017,false
+VEH-00001578,CIT-00004939,KA 35 P 6771,Honda,Model X,blue,motorcycle,2020,false
+VEH-00001579,CIT-00004941,KA 03 C 7973,Honda,Model X,silver,motorcycle,2018,false
+VEH-00001580,CIT-00004944,KA 28 C 2936,Honda,Model X,red,scooter,2008,false
+VEH-00001581,CIT-00004945,KA 03 M 3627,TVS,Model X,black,scooter,2019,false
+VEH-00001582,CIT-00004948,KA 49 B 5649,Hero,Model X,white,scooter,2006,false
+VEH-00001583,CIT-00004949,KA 14 A 1447,Mahindra,Model X,silver,car,2015,false
+VEH-00001584,CIT-00004950,KA 45 M 3922,Royal Enfield,Model X,silver,motorcycle,2014,false
+VEH-00001585,CIT-00004951,KA 03 A 7844,Toyota,Model X,black,car,2008,false
+VEH-00001586,CIT-00004953,KA 04 C 2138,Toyota,Model X,blue,car,2012,false
+VEH-00001587,CIT-00004954,KA 34 B 1009,Tata,Model X,grey,car,2010,false
+VEH-00001588,CIT-00004960,KA 17 N 1714,Royal Enfield,Model X,grey,motorcycle,2020,false
+VEH-00001589,CIT-00004966,KA 14 P 2583,Royal Enfield,Model X,grey,motorcycle,2017,false
+VEH-00001590,CIT-00004970,KA 10 M 8040,TVS,Model X,blue,motorcycle,2019,false
+VEH-00001591,CIT-00004974,KA 29 B 1381,Bajaj,Model X,silver,motorcycle,2014,false
+VEH-00001592,CIT-00004975,KA 06 P 4773,Bajaj,Model X,red,motorcycle,2006,false
+VEH-00001593,CIT-00004979,KA 24 A 6420,Tata,Model X,red,car,2019,false
+VEH-00001594,CIT-00004981,KA 18 P 6157,Honda,Model X,blue,scooter,2014,false
+VEH-00001595,CIT-00004982,KA 23 P 2701,Tata,Model X,silver,car,2010,false
+VEH-00001596,CIT-00004983,KA 40 M 6851,Royal Enfield,Model X,black,motorcycle,2007,false
+VEH-00001597,CIT-00004990,KA 09 N 1950,TVS,Model X,black,motorcycle,2013,false
+VEH-00001598,CIT-00004995,KA 43 N 8856,Hero,Model X,red,motorcycle,2019,false

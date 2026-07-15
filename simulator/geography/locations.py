@@ -4,12 +4,15 @@ Populates each station jurisdiction with typed POIs:
 banks, ATMs, markets, temples, schools, hospitals, bus stands, residential clusters.
 """
 from __future__ import annotations
-import random
+import numpy as np
 import uuid
 from dataclasses import dataclass
 from typing import List
 
 from simulator.geography.karnataka import Station
+from simulator.schemas.geography import Location
+from simulator.schemas.geography import Location
+from simulator.schemas.geography import Location
 
 
 LOCATION_TYPES = [
@@ -60,24 +63,11 @@ LOCATION_NAME_PREFIXES: dict = {
 }
 
 
-@dataclass
-class Location:
-    location_id: str
-    name: str
-    location_type: str
-    station_id: str
-    district_id: str
-    district_name: str
-    taluk: str
-    latitude: float
-    longitude: float
-    address: str
-    is_high_risk: bool          # ATMs, banks, jewellery shops = True
 
 
 def generate_locations(
     stations: List[Station],
-    rng: random.Random,
+    rng: np.random.Generator,
     max_locations_per_station: int = 30,
 ) -> List[Location]:
     """

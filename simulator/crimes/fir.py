@@ -10,7 +10,7 @@ Converts raw CrimeEvents into full FIR records with:
   - Victim/accused lists
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass, field
 from datetime import date, timedelta
 from typing import List, Optional, Dict
@@ -25,6 +25,7 @@ from simulator.criminals.profiles import CriminalProfile
 from simulator.population.citizens import Citizen
 from simulator.population.officers import Officer
 from simulator.population.identifiers import IdentifierFactory
+from simulator.schemas.crimes import Victim, Accused, FIR
 
 
 FIR_STATUS_WEIGHTS = {
@@ -37,81 +38,17 @@ FIR_STATUS_WEIGHTS = {
 }
 
 
-@dataclass
-class Victim:
-    victim_id: str
-    fir_id: str
-    name_en: str
-    gender: str
-    age: int
-    phone: str
-    address: str
-    injury_type: str        # "none" | "minor" | "grievous" | "fatal"
-    property_lost: str
-    loss_amount_inr: float
-    citizen_id: Optional[str]
 
 
-@dataclass
-class Accused:
-    accused_id: str
-    fir_id: str
-    criminal_id: Optional[str]
-    name_en: str
-    name_kn: str
-    age: Optional[int]
-    gender: Optional[str]
-    address: Optional[str]
-    is_known: bool          # Known to police or named in FIR
-    is_arrested: bool
-    role: str               # "principal" | "accomplice" | "abettor"
 
 
-@dataclass
-class FIR:
-    fir_id: str
-    fir_number: str             # KA/DIST/YEAR/NNNNN
-    station_id: str
-    district_id: str
-    district_name: str
-    occurred_date: date
-    reported_date: date         # May be 1-3 days after occurrence
-    crime_type: str
-    crime_category: str
-    ipc_sections: List[str]
-    severity: int
-    status: str
-    description_en: str
-    description_kn: str
-    latitude: float
-    longitude: float
-    investigating_officer_id: Optional[str]
-    sho_officer_id: Optional[str]
-    complainant_name: str
-    complainant_phone: str
-    complainant_address: str
-    estimated_loss_inr: float
-    num_accused: int
-    num_victims: int
-    num_witnesses: int
-    gang_id: Optional[str]
-    is_gang_crime: bool
-    festival_context: Optional[str]
-    season: str
-    primary_criminal_id: Optional[str]
-    accomplice_criminal_ids: List[str]
-    vehicle_ids: List[str]
-    phone_ids: List[str]
-    event_id: str               # Link back to CrimeEvent
-    victims: List[Victim] = field(default_factory=list)
-    accused_list: List[Accused] = field(default_factory=list)
 
 
 def _build_description(
     crime_type: str,
     mo,
     loss: float,
-    rng: random.Random,
+    rng: np.random.Generator,
     use_kannada: bool = False,
 ) -> str:
     """Build a narrative FIR description from template."""
@@ -128,17 +65,17 @@ def _build_description(
         "{amount}": f"{int(loss):,}",
         "{location}": rng.choice(["the complainant's house", "market area", "street", "shop", "bus stand"]),
         "{date}": "the above date",
-        "{time}": f"{rng.randint(19, 23):02d}:00 hours",
-        "{time1}": f"{rng.randint(8, 12):02d}:00 hrs",
-        "{time2}": f"{rng.randint(13, 18):02d}:00 hrs",
+        "{time}": f"{int(rng.integers(19, 23 + 1)):02d}:00 hours",
+        "{time1}": f"{int(rng.integers(8, 12 + 1)):02d}:00 hrs",
+        "{time2}": f"{int(rng.integers(13, 18 + 1)):02d}:00 hrs",
         "{entry_method}": (mo.entry_method.replace("_", " ") if mo else "unknown means"),
         "{ipc}": "457",
         "{num}": str(mo.num_offenders if mo else 2),
         "{weapon}": (mo.weapon.replace("_", " ") if mo else "unknown weapon"),
         "{vehicle}": (mo.escape_vehicle.replace("_", " ") if mo else "motorcycle"),
         "{vehicle_type}": rng.choice(["motorcycle", "car", "auto rickshaw"]),
-        "{vehicle_reg}": f"KA {rng.randint(1,50):02d} {rng.choice(['AA','AB','BB','CC'])} {rng.randint(1000,9999)}",
-        "{weight}": str(rng.randint(5, 30)),
+        "{vehicle_reg}": f"KA {int(rng.integers(1, 50 + 1)):02d} {rng.choice(['AA','AB','BB','CC'])} {int(rng.integers(1000, 9999 + 1))}",
+        "{weight}": str(int(rng.integers(5, 30 + 1))),
         "{drug_type}": rng.choice(["ganja", "heroin", "brown sugar"]),
         "{pretext}": rng.choice(["investment scheme", "job offer", "government scheme", "lottery"]),
         "{reason}": rng.choice(["old enmity", "property dispute", "road rage"]),
@@ -152,20 +89,21 @@ def _build_description(
     return desc
 
 
-def _pick_fir_status(rng: random.Random, reported_date: date) -> str:
+def _pick_fir_status(rng: np.random.Generator, reported_date: date) -> str:
     """Older FIRs are more likely to be resolved."""
     days_old = (date.today() - reported_date).days
     if days_old < 30:
         return "Under Investigation"
     statuses = list(FIR_STATUS_WEIGHTS.keys())
     weights = list(FIR_STATUS_WEIGHTS.values())
-    return rng.choices(statuses, weights=weights, k=1)[0]
+    weights_array = np.array(weights) / sum(weights)
+    return rng.choice(statuses, p=weights_array)
 
 
 def _make_victim(
     fir_id: str,
     idx: int,
-    rng: random.Random,
+    rng: np.random.Generator,
     id_factory: IdentifierFactory,
     loss: float,
     crime_type: str,
@@ -183,9 +121,9 @@ def _make_victim(
         fir_id=fir_id,
         name_en=f"{first} {last}",
         gender=gender,
-        age=rng.randint(18, 75),
+        age=int(rng.integers(18, 75 + 1)),
         phone=id_factory.phone(),
-        address=f"No. {rng.randint(1,200)}, {rng.choice(['Main Road','Cross','Layout'])}, Karnataka",
+        address=f"No. {int(rng.integers(1, 200 + 1))}, {rng.choice(['Main Road','Cross','Layout'])}, Karnataka",
         injury_type=injury,
         property_lost=rng.choice(["gold_jewellery", "cash", "mobile", "vehicle", "none"]),
         loss_amount_inr=loss / max(1, idx),
@@ -198,7 +136,7 @@ def _make_accused(
     idx: int,
     criminal: Optional[CriminalProfile],
     is_principal: bool,
-    rng: random.Random,
+    rng: np.random.Generator,
 ) -> Accused:
     if criminal:
         return Accused(
@@ -237,7 +175,7 @@ def assemble_firs(
     criminals_map: Dict[str, CriminalProfile],
     officers_by_station: Dict[str, List[Officer]],
     id_factory: IdentifierFactory,
-    rng: random.Random,
+    rng: np.random.Generator,
     enable_kannada: bool = True,
 ) -> tuple[List[FIR], List[Victim], List[Accused]]:
     """
@@ -262,8 +200,8 @@ def assemble_firs(
         fir_number = id_factory.case_number(dist_code, year, seq)
 
         # Delay in reporting (0–5 days)
-        delay_days = rng.choices([0, 1, 2, 3, 5], weights=[50, 25, 12, 8, 5], k=1)[0]
-        reported_date = event.occurred_date + timedelta(days=delay_days)
+        delay_days = rng.choice([0, 1, 2, 3, 5], p=[0.50, 0.25, 0.12, 0.08, 0.05])
+        reported_date = event.occurred_date + timedelta(days=int(delay_days))
 
         # Investigating officer
         io: Optional[Officer] = None
@@ -329,6 +267,7 @@ def assemble_firs(
             station_id=event.station_id,
             district_id=event.district_id,
             district_name=event.district_name,
+            nearest_poi_id=event.nearest_poi_id,
             occurred_date=event.occurred_date,
             reported_date=reported_date,
             crime_type=event.crime_type,
@@ -344,7 +283,7 @@ def assemble_firs(
             sho_officer_id=sho.officer_id if sho else None,
             complainant_name=complainant_name,
             complainant_phone=complainant_phone,
-            complainant_address=f"Karnataka - {rng.randint(560000, 597000)}",
+            complainant_address=f"Karnataka - {int(rng.integers(560000, 597000 + 1))}",
             estimated_loss_inr=event.estimated_loss_inr,
             num_accused=len(accused_list),
             num_victims=len(victims),

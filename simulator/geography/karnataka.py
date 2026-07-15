@@ -5,12 +5,15 @@ Each station gets a jurisdiction polygon approximation, population density class
 officer quota, and resource profile.
 """
 from __future__ import annotations
-import random
+import numpy as np
 import uuid
 from dataclasses import dataclass, field
 from typing import List, Dict, Optional
 
 from simulator.config.constants import KARNATAKA_DISTRICTS, POLICE_RANKS
+from simulator.schemas.geography import Station, District
+from simulator.schemas.geography import Station, District
+from simulator.schemas.geography import Station, District
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -67,40 +70,12 @@ DISTRICT_TALUKS: Dict[str, List[str]] = {
 }
 
 
-@dataclass
-class Station:
-    station_id: str
-    name: str
-    district_id: str
-    district_name: str
-    taluk: str
-    station_type: str           # "city" | "town" | "rural"
-    jurisdiction_area_km2: float
-    population_served: int
-    officer_quota: int
-    latitude: float
-    longitude: float
-    established_year: int
-    is_cyber_cell: bool
-    is_traffic_cell: bool
-    phone: str
-    address: str
 
 
-@dataclass
-class District:
-    district_id: str
-    name: str
-    headquarters: str
-    district_type: str
-    population_density: str
-    num_stations: int
-    stations: List[Station] = field(default_factory=list)
-    taluks: List[str] = field(default_factory=list)
 
 
 def _make_station(
-    rng: random.Random,
+    rng: np.random.Generator,
     station_idx: int,
     district: Dict,
     taluk: str,
@@ -118,8 +93,8 @@ def _make_station(
     stype = rng.choice(station_type_weights.get(dist_type, ["town"]))
 
     area_km2_map = {"city": rng.uniform(5, 30), "town": rng.uniform(30, 150), "rural": rng.uniform(150, 500)}
-    pop_map      = {"city": rng.randint(50_000, 500_000), "town": rng.randint(10_000, 80_000), "rural": rng.randint(3_000, 20_000)}
-    off_map      = {"city": rng.randint(30, 60), "town": rng.randint(10, 30), "rural": rng.randint(4, 12)}
+    pop_map      = {"city": int(rng.integers(50_000, 500_000 + 1)), "town": int(rng.integers(10_000, 80_000 + 1)), "rural": int(rng.integers(3_000, 20_000 + 1))}
+    off_map      = {"city": int(rng.integers(30, 60 + 1)), "town": int(rng.integers(10, 30 + 1)), "rural": int(rng.integers(4, 12 + 1))}
 
     lat = rng.uniform(coord_bounds["lat_min"], coord_bounds["lat_max"])
     lng = rng.uniform(coord_bounds["lng_min"], coord_bounds["lng_max"])
@@ -142,10 +117,10 @@ def _make_station(
         officer_quota=off_map[stype],
         latitude=round(lat, 6),
         longitude=round(lng, 6),
-        established_year=rng.randint(1950, 2015),
+        established_year=int(rng.integers(1950, 2015 + 1)),
         is_cyber_cell=rng.random() < 0.2,
         is_traffic_cell=rng.random() < 0.3,
-        phone=f"080-{rng.randint(20000000, 29999999)}",
+        phone=f"080-{int(rng.integers(20000000, 29999999 + 1))}",
         address=f"Near {rng.choice(['Main Road', 'Bus Stand', 'Taluk Office', 'Court Complex'])}, {taluk}, {district['name']}",
     )
 
@@ -186,7 +161,7 @@ DISTRICT_BOUNDS: Dict[str, Dict] = {
 }
 
 
-def build_geography(rng: random.Random) -> tuple[List[District], List[Station]]:
+def build_geography(rng: np.random.Generator) -> tuple[List[District], List[Station]]:
     """
     Build the complete Karnataka district → station hierarchy.
     Returns (districts_list, stations_list).

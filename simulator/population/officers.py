@@ -7,13 +7,14 @@ Creates officers with:
   - Specialization
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass
 from datetime import date, timedelta
 from typing import List, Optional
 
 from simulator.config.constants import POLICE_RANKS, EN_MALE_FIRST_NAMES, EN_FEMALE_FIRST_NAMES, EN_SURNAMES
 from simulator.geography.karnataka import Station
+from simulator.schemas.population import Officer
 
 
 SHIFT_PATTERNS = ["morning_0600_1400", "afternoon_1400_2200", "night_2200_0600", "general_0900_1800"]
@@ -24,28 +25,9 @@ OFFICER_SPECIALIZATIONS = [
 ]
 
 
-@dataclass
-class Officer:
-    officer_id: str
-    badge_number: str
-    name_en: str
-    gender: str
-    rank: str
-    rank_level: int
-    rank_abbr: str
-    station_id: str
-    district_id: str
-    district_name: str
-    phone: str
-    doj: date                       # Date of joining
-    tenure_years: int
-    shift: str
-    specialization: str
-    is_investigating_officer: bool  # IO — handles FIR investigations
-    is_station_house_officer: bool  # SHO — station head
 
 
-def _badge(rng: random.Random, district_id: str, seq: int) -> str:
+def _badge(rng: np.random.Generator, district_id: str, seq: int) -> str:
     code = district_id.replace("KA-", "").replace("-", "")
     return f"KSP/{code}/{seq:06d}"
 
@@ -53,7 +35,7 @@ def _badge(rng: random.Random, district_id: str, seq: int) -> str:
 def generate_officers(
     stations: List[Station],
     id_factory,
-    rng: random.Random,
+    rng: np.random.Generator,
     officer_multiplier: float = 0.3,
 ) -> List[Officer]:
     """
@@ -87,11 +69,11 @@ def generate_officers(
             name = f"{first} {last}"
 
             # Assign rank
-            rank_name = rng.choices(
+            p_vals = np.array(list(rank_weights.values())) / sum(rank_weights.values())
+            rank_name = rng.choice(
                 list(rank_weights.keys()),
-                weights=list(rank_weights.values()),
-                k=1,
-            )[0]
+                p=p_vals
+            )
             rmeta = rank_meta[rank_name]
 
             # SHO is typically an Inspector or SI
@@ -101,7 +83,7 @@ def generate_officers(
 
             is_io = rank_name in {"Inspector", "Sub-Inspector", "ASI"}
 
-            doj = date.today() - timedelta(days=rng.randint(365, 365 * 30))
+            doj = date.today() - timedelta(days=int(rng.integers(365, 365 * 30 + 1)))
             tenure = (date.today() - doj).days // 365
 
             officers.append(Officer(

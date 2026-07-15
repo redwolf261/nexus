@@ -7,7 +7,7 @@ Generates daily patrol logs for each station:
   - Checkpost data
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass
 from datetime import date, time
 from typing import List, Optional, Dict
@@ -15,30 +15,9 @@ from typing import List, Optional, Dict
 from simulator.config.constants import PATROL_VEHICLE_TYPES
 from simulator.geography.karnataka import Station
 from simulator.population.officers import Officer
+from simulator.schemas.investigations import PatrolLog
 
 
-@dataclass
-class PatrolLog:
-    log_id: str
-    patrol_date: date
-    station_id: str
-    district_id: str
-    district_name: str
-    officer_id: str
-    officer_rank: str
-    vehicle_type: str
-    vehicle_reg: str
-    shift: str
-    start_time: time
-    end_time: time
-    area_covered_km: float
-    beat_area: str
-    checkpost_count: int
-    vehicles_checked: int
-    persons_checked: int
-    incidents_observed: int
-    incident_notes: str
-    patrol_type: str        # "routine" | "nakabandi" | "flag_march" | "area_domination"
 
 
 PATROL_AREAS = [
@@ -70,7 +49,7 @@ def generate_patrol_logs(
     officers: List[Officer],
     sim_dates: List[date],
     id_factory,
-    rng: random.Random,
+    rng: np.random.Generator,
     logs_per_station_per_day: int = 2,
 ) -> List[PatrolLog]:
     """
@@ -106,7 +85,7 @@ def generate_patrol_logs(
                 else:
                     start_h, end_h = 9, 18
 
-                incidents = rng.randint(0, 4)
+                incidents = int(rng.integers(0, 4 + 1))
                 notes = rng.choice(INCIDENT_NOTES_POOL) if incidents > 0 else "No significant incidents"
 
                 vehicle_reg = id_factory.vehicle_registration()
@@ -122,20 +101,19 @@ def generate_patrol_logs(
                     vehicle_type=rng.choice(PATROL_VEHICLE_TYPES),
                     vehicle_reg=vehicle_reg,
                     shift=shift,
-                    start_time=time(start_h % 24, rng.randint(0, 30)),
-                    end_time=time(end_h % 24, rng.randint(0, 30)),
+                    start_time=time(start_h % 24, int(rng.integers(0, 30 + 1))),
+                    end_time=time(end_h % 24, int(rng.integers(0, 30 + 1))),
                     area_covered_km=round(rng.uniform(20, 150), 1),
                     beat_area=rng.choice(PATROL_AREAS),
-                    checkpost_count=rng.randint(0, 5),
-                    vehicles_checked=rng.randint(0, 80),
-                    persons_checked=rng.randint(0, 50),
+                    checkpost_count=int(rng.integers(0, 5 + 1)),
+                    vehicles_checked=int(rng.integers(0, 80 + 1)),
+                    persons_checked=int(rng.integers(0, 50 + 1)),
                     incidents_observed=incidents,
                     incident_notes=notes,
-                    patrol_type=rng.choices(
-                        PATROL_TYPES,
-                        weights=[50, 20, 5, 15, 10],
-                        k=1,
-                    )[0],
+                    patrol_type=rng.choice(
+                        ["vehicle", "foot", "highway_intercept", "coastal"],
+                        p=[0.5, 0.2, 0.25, 0.05]
+                    ),
                 ))
                 log_counter += 1
 

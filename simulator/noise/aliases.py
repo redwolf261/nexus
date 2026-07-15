@@ -8,7 +8,7 @@ Creates realistic alias variants for person names including:
   - Regional name variations
 """
 from __future__ import annotations
-import random
+import numpy as np
 from typing import List, Optional
 
 
@@ -59,7 +59,7 @@ TRANSLITERATION_VARIANTS = {
 class AliasGenerator:
     """Generates realistic name aliases for entity resolution ground truth."""
 
-    def __init__(self, rng: random.Random) -> None:
+    def __init__(self, rng: np.random.Generator) -> None:
         self.rng = rng
 
     def generate_aliases(

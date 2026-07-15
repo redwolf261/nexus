@@ -10,7 +10,7 @@ Creates N citizens with:
   - Linked station (nearest station to home)
 """
 from __future__ import annotations
-import random
+import numpy as np
 import uuid
 from dataclasses import dataclass, field
 from datetime import date, timedelta
@@ -22,6 +22,9 @@ from simulator.config.constants import (
 )
 from simulator.geography.karnataka import Station
 from simulator.population.identifiers import IdentifierFactory
+from simulator.schemas.population import Citizen
+from simulator.schemas.population import Citizen
+from simulator.schemas.population import Citizen
 
 
 OCCUPATIONS = [
@@ -47,48 +50,11 @@ EDUCATION_LEVELS = [
 ]
 
 
-@dataclass
-class Citizen:
-    citizen_id: str
-    name_en: str
-    name_kn: str
-    first_name_en: str
-    last_name_en: str
-    gender: str                    # "M" | "F" | "O"
-    dob: date
-    age: int
-    aadhaar: str
-    dl_number: Optional[str]
-    phone_primary: str
-    phone_secondary: Optional[str]
-    occupation: str
-    socioeconomic_class: str
-    religion: str
-    caste: str
-    education: str
-    district_id: str
-    district_name: str
-    taluk: str
-    station_id: str                # nearest station
-    home_lat: float
-    home_lng: float
-    home_address: str
-    bank_account: Optional[str]
-    upi_id: Optional[str]
-    is_migrant: bool               # from another district/state
-
-    @property
-    def is_adult(self) -> bool:
-        return self.age >= 18
-
-    @property
-    def has_vehicle_license(self) -> bool:
-        return self.dl_number is not None
 
 
-def _random_dob(rng: random.Random, min_age: int = 16, max_age: int = 75) -> date:
+def _random_dob(rng: np.random.Generator, min_age: int = 16, max_age: int = 75) -> date:
     today = date.today()
-    age_days = rng.randint(min_age * 365, max_age * 365)
+    age_days = int(rng.integers(min_age * 365, max_age * 365 + 1))
     return today - timedelta(days=age_days)
 
 
@@ -96,7 +62,7 @@ def generate_citizens(
     n: int,
     stations: List[Station],
     id_factory: IdentifierFactory,
-    rng: random.Random,
+    rng: np.random.Generator,
 ) -> List[Citizen]:
     """Generate N citizens distributed across stations proportional to population."""
     citizens: List[Citizen] = []
@@ -147,9 +113,9 @@ def generate_citizens(
         home_lat = round(station.latitude  + rng.uniform(-0.04, 0.04), 6)
         home_lng = round(station.longitude + rng.uniform(-0.04, 0.04), 6)
         home_address = (
-            f"No. {rng.randint(1, 500)}, "
+            f"No. {int(rng.integers(1, 500 + 1))}, "
             f"{rng.choice(['Main Road', 'Cross Street', '1st Stage', 'Layout', 'Colony', 'Nagar'])}, "
-            f"{station.taluk}, {station.district_name} - {rng.randint(560000, 597000)}"
+            f"{station.taluk}, {station.district_name} - {int(rng.integers(560000, 597000 + 1))}"
         )
 
         is_migrant = rng.random() < 0.08

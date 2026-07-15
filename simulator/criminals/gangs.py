@@ -9,7 +9,7 @@ Creates organized crime groups with:
 Gangs evolve over time — members can be arrested, new members recruited.
 """
 from __future__ import annotations
-import random
+import numpy as np
 from dataclasses import dataclass, field
 from typing import List, Optional, Dict
 
@@ -18,6 +18,8 @@ from simulator.config.constants import (
     MO_ESCAPE_VEHICLES, MO_TIME_SLOTS,
 )
 from simulator.criminals.profiles import CriminalProfile
+from simulator.schemas.criminals import Gang
+from simulator.schemas.criminals import Gang
 
 
 COMMUNICATION_METHODS = [
@@ -35,32 +37,12 @@ GANG_NAMES_SUFFIX = [
 ]
 
 
-@dataclass
-class Gang:
-    gang_id: str
-    name: str                       # Internal code name used in investigation files
-    specialization: str             # Primary crime type specialization
-    leader_criminal_id: str
-    member_criminal_ids: List[str]
-    territory_district_ids: List[str]
-    territory_district_names: List[str]
-    preferred_time_slot: str
-    escape_vehicle_type: str
-    communication_method: str
-    num_members: int
-    threat_level: str               # "low" | "medium" | "high" | "critical"
-    financial_links: List[str]      # hawala, real_estate, transport, etc.
-    is_interstate: bool             # Operates across state borders
-    total_crimes_attributed: int
-    is_active: bool
-    formation_year: int
-    shared_vehicle_ids: List[str] = field(default_factory=list)
 
 
 def generate_gangs(
     criminals: List[CriminalProfile],
     num_gangs: int,
-    rng: random.Random,
+    rng: np.random.Generator,
     sim_start_year: int = 2021,
 ) -> List[Gang]:
     """
@@ -94,7 +76,7 @@ def generate_gangs(
             break
 
         # Gang size: 3–15 members
-        target_size = rng.randint(3, 15)
+        target_size = int(rng.integers(3, 15 + 1))
 
         # Prefer criminals near the leader's district
         nearby = [
@@ -135,8 +117,8 @@ def generate_gangs(
 
         # Territory: home district + 1-3 adjacent districts
         territory_ids = [leader.district_id]
-        additional = rng.sample([d for d in district_ids if d != leader.district_id],
-                                 min(rng.randint(1, 3), len(district_ids) - 1))
+        num_districts = min(int(rng.integers(1, 4)), len(district_ids) - 1)
+        additional = list(rng.choice([d for d in district_ids if d != leader.district_id], size=num_districts, replace=False))
         territory_ids.extend(additional)
         territory_names = [district_meta.get(d, d) for d in territory_ids]
 
@@ -154,10 +136,11 @@ def generate_gangs(
         else:
             threat_level = "low"
 
-        financial_links = rng.sample(
+        num_links = int(rng.integers(1, 4))
+        financial_links = list(rng.choice(
             ["hawala", "real_estate", "transport_business", "agriculture", "liquor", "sand_mining"],
-            rng.randint(1, 3),
-        )
+            size=num_links, replace=False
+        ))
 
         gangs.append(Gang(
             gang_id=f"GANG-{gang_idx:04d}",
@@ -174,9 +157,9 @@ def generate_gangs(
             threat_level=threat_level,
             financial_links=financial_links,
             is_interstate=rng.random() < 0.15,
-            total_crimes_attributed=rng.randint(5, 50),
+            total_crimes_attributed=int(rng.integers(5, 50 + 1)),
             is_active=rng.random() < 0.75,
-            formation_year=rng.randint(sim_start_year - 5, sim_start_year + 1),
+            formation_year=int(rng.integers(sim_start_year - 5, sim_start_year + 1 + 1)),
         ))
 
     return gangs

@@ -1,0 +1,6 @@
+﻿mastermind_id,citizen_id,name_en,alias,wealth_level,controlled_gang_ids,front_business
+MM-000,CIT-00003255,Vinay Gowda,Saheb,upper_middle,GANG-0001|GANG-0004|GANG-0000,Political Leader
+MM-001,CIT-00003754,Ramesh Krishnamurthy,Chairman,upper_middle,GANG-0003|GANG-0002,Jewellery Chain Owner
+MM-002,CIT-00002164,Anil Desai,The Boss,upper,,Political Leader
+MM-003,CIT-00004104,Shantha Singh,The Doctor,upper,,Transport Company
+MM-004,CIT-00000265,Pooja Verma,The Doctor,upper,,Nightclub Owner

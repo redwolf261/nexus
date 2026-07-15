@@ -4,12 +4,15 @@ Provides spatially-biased coordinate sampling within Karnataka.
 Crime locations cluster around populated areas rather than being uniform random.
 """
 from __future__ import annotations
-import random
+import numpy as np
 import math
 from dataclasses import dataclass
 from typing import List, Tuple, Optional
 
 from simulator.geography.karnataka import DISTRICT_BOUNDS, Station
+from simulator.schemas.geography import Coordinate
+from simulator.schemas.geography import Coordinate
+from simulator.schemas.geography import Coordinate
 
 
 KARNATAKA_BBOX = {
@@ -20,23 +23,6 @@ KARNATAKA_BBOX = {
 }
 
 
-@dataclass
-class Coordinate:
-    latitude: float
-    longitude: float
-    accuracy_meters: float = 10.0   # GPS accuracy simulation
-    district_id: Optional[str] = None
-
-    def to_wkt(self) -> str:
-        return f"POINT({self.longitude} {self.latitude})"
-
-    def to_dict(self) -> dict:
-        return {
-            "latitude": self.latitude,
-            "longitude": self.longitude,
-            "accuracy_meters": self.accuracy_meters,
-            "wkt": self.to_wkt(),
-        }
 
 
 def _haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -58,7 +44,7 @@ class CoordinateSampler:
       - Coordinate within operating radius of a criminal's home station
     """
 
-    def __init__(self, stations: List[Station], rng: random.Random) -> None:
+    def __init__(self, stations: List[Station], rng: np.random.Generator) -> None:
         self.stations = stations
         self.rng = rng
         # Build a weighted list of stations based on population served
@@ -76,7 +62,7 @@ class CoordinateSampler:
         Uses polar Gaussian to maintain spatial realism.
         """
         # Gaussian distance within radius
-        distance = abs(self.rng.gauss(0, radius_km / 3))
+        distance = abs(self.rng.normal(0, radius_km / 3))
         distance = min(distance, radius_km)
         angle = self.rng.uniform(0, 2 * math.pi)
 
