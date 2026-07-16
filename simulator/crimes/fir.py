@@ -51,20 +51,20 @@ def _build_description(
     rng: np.random.Generator,
     use_kannada: bool = False,
 ) -> str:
-    """Build a narrative FIR description from template."""
+    """Build a narrative FIR description with extreme diversity (styles, OCR noise, Kanglish)."""
     templates = FIR_DESC_TEMPLATES_KN if use_kannada else FIR_DESC_TEMPLATES_EN
 
-    # Fallback to English keys for Kannada if not found
+    # 1. Base template selection
     ct = crime_type if crime_type in templates else "THEFT"
     pool = templates.get(ct, ["{crime_type} incident reported at {location}."])
     template = rng.choice(pool)
 
-    # Fill template placeholders
+    # 2. Variable substitutions
     substitutions = {
-        "{item}": rng.choice(["gold jewellery", "cash", "mobile phone", "laptop", "two-wheeler"]),
+        "{item}": rng.choice(["gold jewellery", "cash", "mobile phone", "laptop", "two-wheeler", "duddu", "bangaara"]),
         "{amount}": f"{int(loss):,}",
-        "{location}": rng.choice(["the complainant's house", "market area", "street", "shop", "bus stand"]),
-        "{date}": "the above date",
+        "{location}": rng.choice(["complainant house", "market area", "street", "shop", "bus stand", "near railway gate", "mane hatra"]),
+        "{date}": rng.choice(["the above date", "yesterday", "on the date of incident", "said date"]),
         "{time}": f"{int(rng.integers(19, 23 + 1)):02d}:00 hours",
         "{time1}": f"{int(rng.integers(8, 12 + 1)):02d}:00 hrs",
         "{time2}": f"{int(rng.integers(13, 18 + 1)):02d}:00 hrs",
@@ -73,18 +73,51 @@ def _build_description(
         "{num}": str(mo.num_offenders if mo else 2),
         "{weapon}": (mo.weapon.replace("_", " ") if mo else "unknown weapon"),
         "{vehicle}": (mo.escape_vehicle.replace("_", " ") if mo else "motorcycle"),
-        "{vehicle_type}": rng.choice(["motorcycle", "car", "auto rickshaw"]),
+        "{vehicle_type}": rng.choice(["motorcycle", "car", "auto rickshaw", "gadi", "bike"]),
         "{vehicle_reg}": f"KA {int(rng.integers(1, 50 + 1)):02d} {rng.choice(['AA','AB','BB','CC'])} {int(rng.integers(1000, 9999 + 1))}",
         "{weight}": str(int(rng.integers(5, 30 + 1))),
-        "{drug_type}": rng.choice(["ganja", "heroin", "brown sugar"]),
+        "{drug_type}": rng.choice(["ganja", "heroin", "brown sugar", "drugs"]),
         "{pretext}": rng.choice(["investment scheme", "job offer", "government scheme", "lottery"]),
-        "{reason}": rng.choice(["old enmity", "property dispute", "road rage"]),
-        "{relation}": rng.choice(["neighbour", "relative", "acquaintance"]),
+        "{reason}": rng.choice(["old enmity", "property dispute", "road rage", "galati"]),
+        "{relation}": rng.choice(["neighbour", "relative", "acquaintance", "friend"]),
     }
 
     desc = template
     for k, v in substitutions.items():
         desc = desc.replace(k, str(v))
+
+    # 3. Style variations (Formal, Colloquial, Abbreviated)
+    if not use_kannada:
+        style_roll = rng.random()
+        if style_roll < 0.3:
+            # Formal police style
+            prefixes = ["It is submitted that ", "The complainant has approached the PS stating that ", "As per the written complaint received, "]
+            desc = rng.choice(prefixes) + desc + rng.choice([" Requesting further investigation.", " FIR registered.", " Forwarded for necessary action."])
+        elif style_roll < 0.6:
+            # Abbreviated/Sloppy style
+            desc = desc.replace("complainant", "complnt").replace("accused", "accsd").replace("house", "hs")
+            desc = desc.replace("motorcycle", "MC").replace("vehicle", "veh")
+            desc = desc.replace("investigation", "invst").replace("station", "PS")
+            desc = "Info rcvd: " + desc
+        
+        # Kanglish/Hinglish mixing
+        if rng.random() < 0.4:
+            kanglish_map = {
+                "stole": "kaddidare", "stolen": "kaddidare", "money": "duddu",
+                "house": "mane", "vehicle": "gadi", "friend": "dost",
+                "beat": "hoddedu", "threatened": "bedarike haakidare",
+                "night": "ratri", "morning": "belagge"
+            }
+            for eng, kan in kanglish_map.items():
+                if rng.random() < 0.3:
+                    desc = desc.replace(eng, kan)
+
+        # Spelling/OCR noise (simulating bad data entry)
+        if rng.random() < 0.5:
+            mistakes = {"the ": "teh ", "and ": "adn ", "from ": "form ", "reported": "reportd", "unknown": "unkown"}
+            for correct, wrong in mistakes.items():
+                if rng.random() < 0.3:
+                    desc = desc.replace(correct, wrong)
 
     return desc
 
@@ -289,6 +322,7 @@ def assemble_firs(
             num_victims=len(victims),
             num_witnesses=len(event.witness_citizen_ids),
             gang_id=event.gang_id,
+            campaign_id=event.campaign_id,
             is_gang_crime=event.is_gang_crime,
             festival_context=event.festival_context,
             season=event.day_context,

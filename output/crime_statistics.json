@@ -42,11 +42,11 @@
   "total_loss_inr": 2721461154.35,
   "gang_crimes_fraction": 0.5808383233532934,
   "status_distribution": {
-    "Under Investigation": 388,
-    "Closed (Undetected)": 114,
-    "Final Report": 171,
-    "Charge Sheet Filed": 254,
-    "Withdrawn": 26,
-    "Transferred": 49
+    "Charge Sheet Filed": 257,
+    "Withdrawn": 22,
+    "Under Investigation": 390,
+    "Closed (Undetected)": 128,
+    "Final Report": 161,
+    "Transferred": 44
   }
 }

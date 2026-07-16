@@ -203,7 +203,7 @@ def run_simulation(
         cctv_events = generate_cctv_events(firs, stations, id_factory, rng)
         
     from simulator.investigations.telecom import generate_telecom_data
-    cdrs = generate_telecom_data(crime_events, criminals, rng)
+    cdrs = generate_telecom_data(crime_events, criminals, citizens, rng)
     
     from simulator.investigations.sensors import generate_sensor_traces
     cell_pings, vehicle_gps, cctv_logs, anpr_logs = generate_sensor_traces(
@@ -336,6 +336,7 @@ def run_simulation(
         "vehicle_gps":      vehicle_gps,
         "cctv_logs":        cctv_logs,
         "anpr_logs":        anpr_logs,
+        "daily_context":    engine.simulation_days,
     }
 
     if settings.export_csv:

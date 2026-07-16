@@ -9,11 +9,11 @@
     "total_firs": 1002,
     "total_victims": 2227,
     "total_accused": 1090,
-    "total_evidence": 2337,
-    "total_arrests": 309,
-    "total_chargesheets": 167,
+    "total_evidence": 2343,
+    "total_arrests": 280,
+    "total_chargesheets": 141,
     "total_patrol_logs": 156736,
-    "total_cctv_events": 727,
-    "entity_resolution_records": 615
+    "total_cctv_events": 709,
+    "entity_resolution_records": 0
   }
 }

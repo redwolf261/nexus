@@ -102,6 +102,7 @@ def export_all_csv(sim_data: dict, output_dir: Path) -> Dict[str, int]:
         "vehicles":         "vehicles.csv",
         "phones":           "phones.csv",
         "cdrs":             "cdrs.csv",
+        "daily_context":    "daily_context.csv",
         "campaigns":        "ground_truth_campaigns.csv",
         "investigation_logs": "investigation_logs.csv",
         "financial_transactions": "financial_transactions.csv",
