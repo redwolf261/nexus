@@ -15,7 +15,9 @@ class CrossJurisdictionResponse(BaseModel):
 
 class CampaignResponse(BaseModel):
     mastermind: str
+    mastermind_name: Optional[str] = None
     gang: str
+    gang_name: Optional[str] = None
     campaign_count: int
 
 class HotspotResponse(BaseModel):

@@ -8,9 +8,18 @@ class Neo4jRepository:
         return self.client.query(query, parameters)
 
     def get_campaigns(self):
+        # A "campaign" = a gang led by a mastermind (Person)-[:LEADS]->(Gang),
+        # scored by the total FIRs committed by the leader plus all gang members.
         query = """
-        MATCH (m:Person)-[:CONTROLS]->(g:Gang)-[:COMMITS]->(c:Campaign)
-        RETURN m.id AS mastermind, g.id AS gang, count(c) AS campaign_count
+        MATCH (m:Person)-[:LEADS]->(g:Gang)
+        OPTIONAL MATCH (member:Person)-[:MEMBER_OF]->(g)
+        WITH m, g, collect(DISTINCT member) + m AS crew
+        UNWIND crew AS c
+        OPTIONAL MATCH (c)-[:COMMITTED]->(f:FIR)
+        RETURN m.id AS mastermind, m.name AS mastermind_name,
+               g.id AS gang, g.name AS gang_name,
+               count(DISTINCT f) AS campaign_count
+        ORDER BY campaign_count DESC
         """
         return self.client.query(query)
 
