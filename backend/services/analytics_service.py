@@ -6,15 +6,19 @@ from backend.analytics.hotspots import extract_hotspots
 
 neo4j_repo = Neo4jRepository()
 
-# Use TTL caching (60 seconds) for dynamic endpoints instead of lru_cache
-cache = TTLCache(maxsize=100, ttl=60)
+# Use TTL caching (60 seconds) for dynamic endpoints instead of lru_cache.
+# NOTE: each cached function needs its OWN cache. A single shared cache keys
+# zero-arg functions all to () (and same-arg functions collide), so they
+# return each other's results and fail response-model validation.
+def _new_cache():
+    return TTLCache(maxsize=100, ttl=60)
 
-@cached(cache)
+@cached(_new_cache())
 def get_campaigns_service():
     raw_data = neo4j_repo.get_campaigns()
     return identify_masterminds(raw_data)
 
-@cached(cache)
+@cached(_new_cache())
 def get_cross_jurisdiction_service(fir_id: str):
     raw_links = neo4j_repo.get_cross_jurisdiction_links(fir_id)
     links = [{"linked_fir": r["linked_fir"], "shared_type": r["shared_type"], "entity_id": r["entity_id"]} for r in raw_links]
@@ -32,7 +36,7 @@ def get_cross_jurisdiction_service(fir_id: str):
         "linked_crimes": links
     }
 
-@cached(cache)
+@cached(_new_cache())
 def get_person_graph_service(person_id: str):
     raw_graph = neo4j_repo.get_person_subgraph(person_id)
     neighbors = [{"node_id": r["node_id"], "labels": r["labels"], "relationship": r["relationship"]} for r in raw_graph]
@@ -57,17 +61,17 @@ def get_person_graph_service(person_id: str):
         "neighbors": neighbors
     }
 
-@cached(cache)
+@cached(_new_cache())
 def get_campaign_timeline_service(campaign_id: str):
     raw_events = neo4j_repo.get_campaign_timeline(campaign_id)
     events = format_timeline_events(raw_events)
     return {"campaign_id": campaign_id, "events": events}
 
-@cached(cache)
+@cached(_new_cache())
 def get_hotspots_service():
     return extract_hotspots()
 
-@cached(cache)
+@cached(_new_cache())
 def get_executive_dashboard_service():
     # Mock aggregation for demo
     return {
@@ -79,7 +83,7 @@ def get_executive_dashboard_service():
         "new_intelligence_alerts": 7
     }
 
-@cached(cache)
+@cached(_new_cache())
 def get_district_dashboard_service(district_id: str):
     return {
         "district_id": district_id,
@@ -90,7 +94,7 @@ def get_district_dashboard_service(district_id: str):
         "crime_trend": "Spike in vehicle thefts detected."
     }
 
-@cached(cache)
+@cached(_new_cache())
 def get_campaign_summary_service(campaign_id: str):
     return {
         "campaign_id": campaign_id,
