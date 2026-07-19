@@ -6,5 +6,9 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# IMPORTANT: Update this to your ACTUAL Render URL after the backend deploys.
+# Render only gives you the clean "nexus-api.onrender.com" if that name is
+# globally unique; otherwise it appends a suffix (e.g. nexus-api-x7k2.onrender.com).
+# Must end with /api to match the FastAPI router prefix.
 [build.environment]
   NEXT_PUBLIC_API_URL = "https://nexus-api.onrender.com/api"

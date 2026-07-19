@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Node / Next.js
+node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large generated dataset (regenerate via simulator; loaded into cloud DBs directly)
+# NOTE: output/ is intentionally NOT ignored if you rely on it for cloud loading.
+# Uncomment the next line only if you move the dataset out of git.
+# output/
