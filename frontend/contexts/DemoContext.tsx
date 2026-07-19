@@ -35,6 +35,11 @@ export function DemoProvider({ children }: { children: ReactNode }) {
   const isDemoActive = stage !== "IDLE" && stage !== "END";
 
   useEffect(() => {
+    if (stage === "END") {
+      setStage("IDLE");
+      clearIncident();
+      return;
+    }
     if (!isDemoActive) return;
 
     let timeout: NodeJS.Timeout;
@@ -48,7 +53,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
         // BootScreen handles its own timing, but we'll forcefully advance after 6s max
         advance("DASHBOARD", 6000);
         break;
-      
+
       case "DASHBOARD":
         if (pathname !== "/") router.push("/");
         advance("MAP_ZOOM", 5000); // 5s on dashboard
@@ -61,7 +66,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
 
       case "REPLAY":
         // Wait for replay to finish a few frames
-        advance("STORY_CARD", 8000); 
+        advance("STORY_CARD", 8000);
         break;
 
       case "STORY_CARD":
@@ -86,11 +91,6 @@ export function DemoProvider({ children }: { children: ReactNode }) {
       case "THREAT_UPDATE":
         if (pathname !== "/") router.push("/");
         advance("END", 5000);
-        break;
-
-      case "END":
-        setStage("IDLE");
-        clearIncident();
         break;
     }
 
