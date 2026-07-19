@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: nexus-api
+    env: python
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "uvicorn backend.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: POSTGRES_SERVER
+        fromDatabase:
+          name: nexus-db
+          property: host
+      - key: POSTGRES_PORT
+        fromDatabase:
+          name: nexus-db
+          property: port
+      - key: POSTGRES_USER
+        fromDatabase:
+          name: nexus-db
+          property: user
+      - key: POSTGRES_PASSWORD
+        fromDatabase:
+          name: nexus-db
+          property: password
+      - key: POSTGRES_DB
+        fromDatabase:
+          name: nexus-db
+          property: database
+      - key: NEO4J_URI
+        value: "neo4j+s://<YOUR_AURADB_ID>.databases.neo4j.io" # UPDATE THIS IN RENDER DASHBOARD
+      - key: NEO4J_USER
+        value: "neo4j"
+      - key: NEO4J_PASSWORD
+        value: "<YOUR_AURADB_PASSWORD>" # UPDATE THIS IN RENDER DASHBOARD
+
+databases:
+  - name: nexus-db
+    databaseName: nexus
+    user: nexus

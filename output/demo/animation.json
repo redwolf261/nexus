@@ -1,0 +1,50 @@
+{
+  "campaign_id": "CAMP-0002",
+  "frames": [
+    {
+      "frame_idx": 0,
+      "focus_latitude": 15.295336485720174,
+      "focus_longitude": 75.32893815473693,
+      "zoom": 14,
+      "highlight_node_id": "FIR-RBG-2021-00003",
+      "icon": "crime_marker",
+      "description": "Incident 1: TRESPASS at Dharwad"
+    },
+    {
+      "frame_idx": 1,
+      "focus_latitude": 15.288891,
+      "focus_longitude": 74.917411,
+      "zoom": 14,
+      "highlight_node_id": "FIR-RBG-2021-00004",
+      "icon": "crime_marker",
+      "description": "Incident 2: TRESPASS at Dharwad"
+    },
+    {
+      "frame_idx": 2,
+      "focus_latitude": 15.565629,
+      "focus_longitude": 75.02465,
+      "zoom": 14,
+      "highlight_node_id": "FIR-RBG-2021-00005",
+      "icon": "crime_marker",
+      "description": "Incident 3: TRESPASS at Dharwad"
+    },
+    {
+      "frame_idx": 3,
+      "focus_latitude": 15.213800444080698,
+      "focus_longitude": 75.05598024330857,
+      "zoom": 14,
+      "highlight_node_id": "FIR-RBG-2021-00006",
+      "icon": "crime_marker",
+      "description": "Incident 4: TRESPASS at Dharwad"
+    },
+    {
+      "frame_idx": 4,
+      "focus_latitude": 15.328539,
+      "focus_longitude": 75.31923,
+      "zoom": 14,
+      "highlight_node_id": "FIR-RBG-2021-00007",
+      "icon": "crime_marker",
+      "description": "Incident 5: TRESPASS at Dharwad"
+    }
+  ]
+}

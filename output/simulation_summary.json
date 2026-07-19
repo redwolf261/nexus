@@ -6,14 +6,14 @@
     "total_citizens": 5000,
     "total_criminals": 245,
     "total_gangs": 5,
-    "total_firs": 1002,
-    "total_victims": 2227,
-    "total_accused": 1090,
-    "total_evidence": 2343,
-    "total_arrests": 280,
-    "total_chargesheets": 141,
-    "total_patrol_logs": 156736,
-    "total_cctv_events": 709,
-    "entity_resolution_records": 0
+    "total_firs": 1000,
+    "total_victims": 2289,
+    "total_accused": 1081,
+    "total_evidence": 2318,
+    "total_arrests": 302,
+    "total_chargesheets": 152,
+    "total_patrol_logs": 154208,
+    "total_cctv_events": 718,
+    "entity_resolution_records": 603
   }
 }

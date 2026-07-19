@@ -102,8 +102,16 @@ class NoiseInjector:
             elif noise_type == "inconsistent_address":
                 addr = fir.complainant_address
                 addr = addr.replace("Road", "Rd").replace("Street", "St").replace("Cross", "Crs")
+                
+                # Missing pincode
                 if self.rng.random() < 0.5:
-                    addr = addr[:-7] # Drop pincode e.g. " - 560001"
+                    addr = addr[:-9] # Drop pincode e.g. " - 560001"
+                    
+                # Mismatched landmark
+                if self.rng.random() < 0.3:
+                    wrong_landmarks = ["Near Temple", "Opposite Hospital", "Behind School", "Near Bus Stand"]
+                    addr = f"{addr}, {self.rng.choice(wrong_landmarks)}"
+                    
                 noisy_fir.complainant_address = addr
 
             noisy_firs.append(noisy_fir)

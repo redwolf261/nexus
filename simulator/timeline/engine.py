@@ -152,8 +152,26 @@ class SimulationEngine:
                     self.active_surges[d] -= 1
                     if self.active_surges[d] <= 0:
                         del self.active_surges[d]
-                        # Reset history so we don't immediately trigger again
                         self.district_crime_history[d] = [0]*7
+
+            # 3. Generate District Daily Summary
+            if not hasattr(self, "district_daily_summaries"):
+                self.district_daily_summaries = []
+            
+            for d in self.district_crime_history.keys():
+                self.district_daily_summaries.append({
+                    "date": current_date.isoformat(),
+                    "district": d,
+                    "crime_count": today_tally[d],
+                    "campaigns": len(executing_campaigns),
+                    "repeat_offenders": int(today_tally[d] * 0.2), # approximation
+                    "risk_score": round(day_ctx.overall_risk * (1.2 if d in self.active_surges else 1.0), 2),
+                    "patrol_strength": 10 + self.active_surges.get(d, 0) * 5,
+                    "officer_load": round(today_tally[d] * 0.5, 2),
+                    "weather": day_ctx.weather,
+                    "festival": day_ctx.festival or "None",
+                    "prediction_score": round(min(1.0, today_tally[d] / 10.0 + 0.1), 2)
+                })
 
             if day_count % 30 == 0:
                 logger.info(

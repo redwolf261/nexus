@@ -1,6 +1,6 @@
 ﻿:ID,:LABEL,is_active,name,num_members,specialization,threat_level
-GANG-0000,Gang,True,Deccan Gang 1,13,CYBER,critical
-GANG-0001,Gang,True,Deccan Faction 2,3,CHAIN,high
-GANG-0002,Gang,True,Metro Cartel 3,10,THEFT,high
-GANG-0003,Gang,True,Mysuru Faction 4,15,POSSESS,critical
-GANG-0004,Gang,False,City Faction 5,12,THEFT,high
+GANG-0000,Gang,True,Highway Squad 1,5,CHAIN,medium
+GANG-0001,Gang,True,District Cell 2,3,ROBBERY,high
+GANG-0002,Gang,True,District Crew 3,13,ARSON,critical
+GANG-0003,Gang,True,Mysuru Cell 4,12,TRESPASS,high
+GANG-0004,Gang,True,Coastal Group 5,13,ARSON,critical

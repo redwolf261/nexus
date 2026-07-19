@@ -121,6 +121,21 @@ def export_geojson(sim_data: dict, output_dir: Path) -> None:
         _write_geojson(hotspot_features, output_dir / "hotspots.geojson")
         logger.info(f"  Built {len(hotspot_features)} hotspot grid cells")
 
+    # Boundaries
+    from simulator.gis.boundaries import generate_district_boundaries
+    boundaries_fc = generate_district_boundaries()
+    with open(output_dir / "boundaries.geojson", "w", encoding="utf-8") as f:
+        json.dump(boundaries_fc, f, ensure_ascii=False, separators=(",", ":"))
+    logger.info(f"  Wrote district boundaries -> boundaries.geojson")
+
+    # Roads
+    road_manager = sim_data.get("road_manager")
+    if road_manager:
+        roads_fc = road_manager.export_geojson()
+        with open(output_dir / "roads.geojson", "w", encoding="utf-8") as f:
+            json.dump(roads_fc, f, ensure_ascii=False, separators=(",", ":"))
+        logger.info(f"  Wrote road network -> roads.geojson")
+
 
 def _write_geojson(features: list, path: Path) -> None:
     fc = {"type": "FeatureCollection", "features": features}

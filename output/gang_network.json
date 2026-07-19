@@ -1,132 +1,130 @@
 [
   {
     "gang_id": "GANG-0000",
-    "name": "Deccan Gang 1",
-    "specialization": "CYBER",
-    "threat_level": "critical",
-    "num_members": 13,
-    "leader": "CRM-0000074",
+    "name": "Highway Squad 1",
+    "specialization": "CHAIN",
+    "threat_level": "medium",
+    "num_members": 5,
+    "leader": "CRM-0000118",
     "members": [
-      "CRM-0000074",
-      "CRM-0000127",
-      "CRM-0000234",
       "CRM-0000118",
-      "CRM-0000141",
-      "CRM-0000055",
-      "CRM-0000199",
-      "CRM-0000241",
-      "CRM-0000101",
-      "CRM-0000243",
-      "CRM-0000228",
-      "CRM-0000133",
-      "CRM-0000167"
+      "CRM-0000169",
+      "CRM-0000155",
+      "CRM-0000073",
+      "CRM-0000055"
     ],
     "territories": [
-      "Udupi",
-      "Mandya"
+      "Dharwad",
+      "Kodagu",
+      "Belagavi",
+      "Kolar"
     ],
     "is_active": true
   },
   {
     "gang_id": "GANG-0001",
-    "name": "Deccan Faction 2",
-    "specialization": "CHAIN",
+    "name": "District Cell 2",
+    "specialization": "ROBBERY",
     "threat_level": "high",
     "num_members": 3,
-    "leader": "CRM-0000235",
+    "leader": "CRM-0000064",
     "members": [
-      "CRM-0000235",
-      "CRM-0000073",
-      "CRM-0000011"
+      "CRM-0000064",
+      "CRM-0000099",
+      "CRM-0000154"
     ],
     "territories": [
-      "Kalaburagi",
-      "Tumakuru"
+      "Vijayanagara",
+      "Bengaluru Urban"
     ],
     "is_active": true
   },
   {
     "gang_id": "GANG-0002",
-    "name": "Metro Cartel 3",
-    "specialization": "THEFT",
-    "threat_level": "high",
-    "num_members": 10,
-    "leader": "CRM-0000180",
+    "name": "District Crew 3",
+    "specialization": "ARSON",
+    "threat_level": "critical",
+    "num_members": 13,
+    "leader": "CRM-0000141",
     "members": [
-      "CRM-0000180",
-      "CRM-0000144",
-      "CRM-0000092",
+      "CRM-0000141",
+      "CRM-0000148",
+      "CRM-0000050",
       "CRM-0000081",
-      "CRM-0000023",
-      "CRM-0000154",
-      "CRM-0000205",
-      "CRM-0000188",
-      "CRM-0000046",
-      "CRM-0000111"
+      "CRM-0000030",
+      "CRM-0000108",
+      "CRM-0000161",
+      "CRM-0000045",
+      "CRM-0000025",
+      "CRM-0000187",
+      "CRM-0000065",
+      "CRM-0000038",
+      "CRM-0000039"
     ],
     "territories": [
-      "Hubballi-Dharwad",
+      "Bengaluru Urban",
       "Hassan",
-      "Bidar",
-      "Mandya"
+      "Davanagere",
+      "Yadgir"
     ],
     "is_active": true
   },
   {
     "gang_id": "GANG-0003",
-    "name": "Mysuru Faction 4",
-    "specialization": "POSSESS",
-    "threat_level": "critical",
-    "num_members": 15,
-    "leader": "CRM-0000006",
+    "name": "Mysuru Cell 4",
+    "specialization": "TRESPASS",
+    "threat_level": "high",
+    "num_members": 12,
+    "leader": "CRM-0000033",
     "members": [
-      "CRM-0000006",
-      "CRM-0000014",
-      "CRM-0000065",
-      "CRM-0000158",
-      "CRM-0000143",
-      "CRM-0000191",
-      "CRM-0000071",
-      "CRM-0000052",
-      "CRM-0000233",
-      "CRM-0000218",
-      "CRM-0000210",
-      "CRM-0000021",
-      "CRM-0000004",
-      "CRM-0000035",
-      "CRM-0000102"
+      "CRM-0000033",
+      "CRM-0000012",
+      "CRM-0000243",
+      "CRM-0000234",
+      "CRM-0000217",
+      "CRM-0000058",
+      "CRM-0000105",
+      "CRM-0000020",
+      "CRM-0000196",
+      "CRM-0000130",
+      "CRM-0000194",
+      "CRM-0000074"
     ],
     "territories": [
-      "Belagavi",
-      "Kodagu"
+      "Udupi",
+      "Dakshina Kannada",
+      "Kodagu",
+      "Bengaluru Rural"
     ],
     "is_active": true
   },
   {
     "gang_id": "GANG-0004",
-    "name": "City Faction 5",
-    "specialization": "THEFT",
-    "threat_level": "high",
-    "num_members": 12,
-    "leader": "CRM-0000213",
+    "name": "Coastal Group 5",
+    "specialization": "ARSON",
+    "threat_level": "critical",
+    "num_members": 13,
+    "leader": "CRM-0000206",
     "members": [
-      "CRM-0000213",
-      "CRM-0000093",
-      "CRM-0000079",
-      "CRM-0000022",
-      "CRM-0000202",
-      "CRM-0000059",
+      "CRM-0000206",
+      "CRM-0000205",
+      "CRM-0000101",
+      "CRM-0000015",
+      "CRM-0000235",
+      "CRM-0000228",
+      "CRM-0000005",
       "CRM-0000013",
-      "CRM-0000145",
-      "CRM-0000016",
-      "CRM-0000103",
-      "CRM-0000082",
-      "CRM-0000100"
+      "CRM-0000000",
+      "CRM-0000198",
+      "CRM-0000133",
+      "CRM-0000066",
+      "CRM-0000080"
     ],
     "territories": [
-      "Ballari",
+      "Mysuru",
+      "Davanagere",
       "Gadag"
     ],
-    "is_active": false
+    "is_active": true
   }
 ]

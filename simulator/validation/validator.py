@@ -174,6 +174,20 @@ class SimulationValidator:
                 errors += 1
         return errors
 
+    def check_road_connectivity(self, road_manager) -> int:
+        """All district road networks must be fully connected."""
+        import networkx as nx
+        errors = 0
+        if not road_manager:
+            return 0
+            
+        for dist_id, G in road_manager.networks.items():
+            if not nx.is_connected(G):
+                self._issue("ERROR", "road_connectivity", f"ROAD-{dist_id}",
+                            f"Road network for {dist_id} is disconnected.")
+                errors += 1
+        return errors
+
     # ──────────────────────────────────────────────────────────────────────
     # Master validation runner
     # ──────────────────────────────────────────────────────────────────────
@@ -187,6 +201,7 @@ class SimulationValidator:
         arrests: list,
         evidence: list,
         graph=None,
+        road_manager=None,
     ) -> dict:
         """Run all validation checks and return summary."""
         logger.info("Running simulation validation...")
@@ -210,6 +225,8 @@ class SimulationValidator:
         results["station_coord_errors"]= self.check_station_coordinates(stations)
         if graph:
             results["orphan_nodes"] = self.check_graph_connectivity(graph)
+        if road_manager:
+            results["road_connectivity_errors"] = self.check_road_connectivity(road_manager)
 
         total_errors = sum(
             v for k, v in results.items() if "error" in k.lower()

@@ -83,6 +83,16 @@ def run_simulation(
     locations = generate_locations(stations, rng, max_locations_per_station=20)
     pois = generate_pois(stations, rng)
     
+    logger.info("  >> Initializing GIS Engine (Roads & Spatial Index)...")
+    from simulator.gis.roads import RoadNetworkManager
+    from simulator.gis.spatial_index import GISPrecomputation
+    
+    district_ids = [d.district_id for d in districts]
+    road_manager = RoadNetworkManager(district_ids, rng)
+    gis_index = GISPrecomputation()
+    gis_index.load_stations(stations)
+    gis_index.load_pois(pois)
+    
     from simulator.investigations.sensors import build_sensor_networks
     towers, cctv_cams, anpr_cams = build_sensor_networks(stations, rng)
     
@@ -290,6 +300,7 @@ def run_simulation(
             arrests=arrests,
             evidence=evidence,
             graph=graph,
+            road_manager=road_manager,
         )
         status = "[PASSED]" if val_result["passed"] else "[ISSUES FOUND]"
         logger.info(f"  Validation {status} | Errors: {val_result['total_errors']} | Warnings: {val_result['total_warnings']}")
@@ -337,6 +348,8 @@ def run_simulation(
         "cctv_logs":        cctv_logs,
         "anpr_logs":        anpr_logs,
         "daily_context":    engine.simulation_days,
+        "district_daily_summaries": getattr(engine, "district_daily_summaries", []),
+        "road_manager":     road_manager,
     }
 
     if settings.export_csv:
@@ -357,6 +370,10 @@ def run_simulation(
     if settings.export_parquet:
         from simulator.export.parquet_exporter import export_parquet
         export_parquet(sim_data, settings.output_dir / "parquet")
+
+    # ── Final Demo Outputs ────────────────────────────────────────────────
+    from simulator.export.demo_packager import export_demo_pack
+    export_demo_pack(sim_data, settings.output_dir)
 
     logger.info(f"[DONE] NEXUS simulation complete. Output: {settings.output_dir.resolve()}")
     return sim_data

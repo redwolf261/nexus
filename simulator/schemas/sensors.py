@@ -10,6 +10,10 @@ class CellTower:
     district_id: str
     station_id: str
     provider: str
+    radius: float = 5000.0
+    operator: str = "Airtel"
+    sector_count: int = 3
+    coverage_polygon: str = ""
 
 @dataclass
 class CCTVCamera:
@@ -20,6 +24,12 @@ class CCTVCamera:
     station_id: str
     camera_type: str # PUBLIC, PRIVATE, TRAFFIC
     resolution: str # 720p, 1080p, 4K
+    coverage_radius: float = 50.0
+    orientation: float = 0.0
+    field_of_view: float = 90.0
+    installation_height: float = 5.0
+    day_night: bool = True
+    operational_status: str = "ACTIVE"
 
 @dataclass
 class ANPRCamera:
@@ -28,6 +38,10 @@ class ANPRCamera:
     longitude: float
     district_id: str
     station_id: str
+    direction: str = "NORTH"
+    lanes: int = 2
+    capture_probability: float = 0.95
+    ocr_accuracy: float = 0.9
 
 @dataclass
 class CellTowerPing:
