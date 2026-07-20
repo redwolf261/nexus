@@ -26,6 +26,7 @@ const crimeIcon = new L.Icon({
 import { CampaignReplay } from "./CampaignReplay";
 import { useLiveIncident } from "@/hooks/useLiveIncident";
 import { useInvestigationDrawer } from "@/components/investigation/InvestigationDrawer";
+import { useFIRs } from "@/hooks/useApi";
 import { Shield } from "lucide-react";
 
 // Create a custom SVG icon for Patrols
@@ -100,13 +101,7 @@ export default function IntelligenceMap() {
     }
   });
 
-  const { data: crimes } = useQuery({
-    queryKey: ["crimes"],
-    queryFn: async () => {
-      const res = await fetch("/geojson/crimes.geojson");
-      return res.json();
-    }
-  });
+  const { data: firs } = useFIRs({ limit: 500 });
 
   // If a live incident occurs, fly to it
   useEffect(() => {
@@ -157,24 +152,25 @@ export default function IntelligenceMap() {
           />
         )}
 
-        {layers.firs && crimes?.features?.slice(0, 500).map((feature: any) => {
-          const isHighlighted = mapState.highlightNodeId === feature.properties.fir_id;
+        {layers.firs && firs?.map((fir) => {
+          const isHighlighted = mapState.highlightNodeId === fir.fir_id;
+          if (!fir.latitude || !fir.longitude) return null;
           return (
             <Marker 
-              key={feature.properties.fir_id}
-              position={[feature.geometry.coordinates[1], feature.geometry.coordinates[0]]}
+              key={fir.fir_id}
+              position={[fir.latitude, fir.longitude]}
               icon={crimeIcon}
               opacity={mapState.highlightNodeId && !isHighlighted ? 0.2 : 1}
               eventHandlers={{
-                click: () => openDrawer(feature.properties.fir_id, "FIR"),
+                click: () => openDrawer(fir.fir_id, "FIR"),
               }}
             >
               <Popup className="tactical-popup">
                 <div className="font-mono text-sm bg-card text-card-foreground p-2 rounded-sm border border-border">
-                  <div className="text-primary font-bold mb-1">{feature.properties.fir_number}</div>
-                  <div>TYPE: {feature.properties.crime_type}</div>
-                  <div>STATUS: {feature.properties.status}</div>
-                  <div>DIST: {feature.properties.district}</div>
+                  <div className="text-primary font-bold mb-1">{fir.fir_number || fir.fir_id}</div>
+                  <div>TYPE: {fir.crime_type}</div>
+                  <div>STATUS: {fir.status}</div>
+                  <div>DIST: {fir.district_name || fir.district_id}</div>
                 </div>
               </Popup>
             </Marker>

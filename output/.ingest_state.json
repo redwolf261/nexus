@@ -1,0 +1,221 @@
+{
+  "postgres": {
+    "districts": {
+      "done": true,
+      "rows": 31
+    },
+    "stations": {
+      "done": true,
+      "rows": 632
+    },
+    "officers": {
+      "done": true,
+      "rows": 3801
+    },
+    "pois": {
+      "done": true,
+      "rows": 3882
+    },
+    "cctv_cameras": {
+      "done": true,
+      "rows": 12336
+    },
+    "anpr_cameras": {
+      "done": true,
+      "rows": 1250
+    },
+    "cell_towers": {
+      "done": true,
+      "rows": 3133
+    },
+    "persons": {
+      "done": true,
+      "rows": 5000
+    },
+    "vehicles": {
+      "done": true,
+      "rows": 1606
+    },
+    "phones": {
+      "done": true,
+      "rows": 4168
+    },
+    "criminals": {
+      "done": true,
+      "rows": 245
+    },
+    "gangs": {
+      "done": true,
+      "rows": 5
+    },
+    "campaigns": {
+      "done": true,
+      "rows": 37
+    },
+    "masterminds": {
+      "done": true,
+      "rows": 5
+    },
+    "firs": {
+      "done": true,
+      "rows": 1000
+    },
+    "victims": {
+      "done": true,
+      "rows": 2289
+    },
+    "accused": {
+      "done": true,
+      "rows": 1081
+    },
+    "evidence": {
+      "done": true,
+      "rows": 1779
+    },
+    "investigation_logs": {
+      "done": true,
+      "rows": 5074
+    },
+    "modus_operandi": {
+      "done": true,
+      "rows": 1000
+    },
+    "chargesheets": {
+      "done": true,
+      "rows": 152
+    },
+    "arrests": {
+      "done": true,
+      "rows": 302
+    },
+    "court_cases": {
+      "done": true,
+      "rows": 152
+    },
+    "cctv_logs": {
+      "done": true,
+      "rows": 7100
+    },
+    "cctv_events": {
+      "done": true,
+      "rows": 718
+    },
+    "anpr_logs": {
+      "done": true,
+      "rows": 813
+    },
+    "cdrs": {
+      "done": true,
+      "rows": 14336
+    },
+    "cell_tower_pings": {
+      "done": true,
+      "rows": 7200
+    },
+    "vehicle_gps": {
+      "done": true,
+      "rows": 10225
+    },
+    "patrol_logs": {
+      "done": true,
+      "rows": 154208
+    },
+    "financial_transactions": {
+      "done": true,
+      "rows": 14
+    },
+    "intelligence_tips": {
+      "done": true,
+      "rows": 12
+    },
+    "informants": {
+      "done": true,
+      "rows": 100
+    },
+    "social_network": {
+      "done": true,
+      "rows": 983
+    },
+    "entity_resolution": {
+      "done": true,
+      "rows": 603
+    },
+    "junction:gang_members": {
+      "done": true,
+      "rows": 46
+    },
+    "junction:criminal_associates": {
+      "done": true,
+      "rows": 370
+    },
+    "junction:fir_accomplices": {
+      "done": true,
+      "rows": 81
+    },
+    "junction:fir_vehicles": {
+      "done": true,
+      "rows": 409
+    },
+    "junction:fir_phones": {
+      "done": true,
+      "rows": 800
+    },
+    "backfill:criminal_gang": {
+      "done": true,
+      "rows": 0
+    }
+  },
+  "neo4j": {
+    "nodes:nodes_district.csv": {
+      "done": true,
+      "rows": 14
+    },
+    "nodes:nodes_evidence.csv": {
+      "done": true,
+      "rows": 1779
+    },
+    "nodes:nodes_fir.csv": {
+      "done": true,
+      "rows": 1000
+    },
+    "nodes:nodes_gang.csv": {
+      "done": true,
+      "rows": 5
+    },
+    "nodes:nodes_officer.csv": {
+      "done": true,
+      "rows": 3801
+    },
+    "nodes:nodes_person.csv": {
+      "done": true,
+      "rows": 2534
+    },
+    "nodes:nodes_phone.csv": {
+      "done": true,
+      "rows": 194
+    },
+    "nodes:nodes_station.csv": {
+      "done": true,
+      "rows": 632
+    },
+    "nodes:nodes_vehicle.csv": {
+      "done": true,
+      "rows": 61
+    },
+    "relationships.csv": {
+      "done": true,
+      "rows": 9327
+    },
+    "synth:INVOLVES": {
+      "done": true,
+      "rows": 1209
+    },
+    "synth:Campaign": {
+      "done": true,
+      "rows": 37
+    },
+    "synth:fir_date_alias": {
+      "done": true
+    }
+  }
+}

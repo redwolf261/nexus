@@ -2,18 +2,30 @@
 
 import { useState, useEffect } from "react";
 import { Play, Pause, SkipForward, SkipBack } from "lucide-react";
-import { useQuery } from "@tanstack/react-query";
+import { useCampaignTimeline } from "@/hooks/useApi";
 import { useDemo } from "@/contexts/DemoContext";
+
+// Simple pseudo-random function to generate consistent coordinates based on string ID
+const generateCoords = (id: string) => {
+  let hash = 0;
+  for (let i = 0; i < id.length; i++) {
+    hash = id.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const latOffset = (hash % 100) / 200; // between -0.5 and +0.5
+  const lngOffset = ((hash >> 3) % 100) / 200;
+  
+  return {
+    lat: 15.3173 + latOffset,
+    lng: 75.7139 + lngOffset
+  };
+};
 
 export function CampaignReplay({ onFrameChange }: { onFrameChange: (frame: any) => void }) {
   const { stage } = useDemo();
-  const { data: animation } = useQuery({
-    queryKey: ["animation"],
-    queryFn: async () => {
-      const res = await fetch("/demo/animation.json");
-      return res.json();
-    }
-  });
+  
+  // We use CAMP-0002 for the demo replay (or we could make it dynamic later)
+  const campaignId = "CAMP-0002";
+  const { data: timelineData } = useCampaignTimeline(campaignId);
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentFrame, setCurrentFrame] = useState(0);
@@ -24,12 +36,14 @@ export function CampaignReplay({ onFrameChange }: { onFrameChange: (frame: any) 
     }
   }, [stage]);
 
+  const frames = timelineData?.events || [];
+
   useEffect(() => {
-    if (!isPlaying || !animation) return;
+    if (!isPlaying || frames.length === 0) return;
 
     const interval = setInterval(() => {
       setCurrentFrame((prev) => {
-        if (prev >= animation.frames.length - 1) {
+        if (prev >= frames.length - 1) {
           setIsPlaying(false);
           return prev;
         }
@@ -38,32 +52,41 @@ export function CampaignReplay({ onFrameChange }: { onFrameChange: (frame: any) 
     }, 2000);
 
     return () => clearInterval(interval);
-  }, [isPlaying, animation]);
+  }, [isPlaying, frames]);
 
   useEffect(() => {
-    if (animation?.frames[currentFrame]) {
-      onFrameChange(animation.frames[currentFrame]);
+    if (frames[currentFrame]) {
+      const evt = frames[currentFrame];
+      const coords = generateCoords(evt.entity_id);
+      
+      onFrameChange({
+        description: `Day ${evt.day}: ${evt.event_type} - ${evt.description}`,
+        focus_latitude: coords.lat,
+        focus_longitude: coords.lng,
+        zoom: 12,
+        highlight_node_id: evt.entity_id
+      });
     }
-  }, [currentFrame, animation, onFrameChange]);
+  }, [currentFrame, frames, onFrameChange]);
 
-  if (!animation) return null;
+  if (!timelineData || frames.length === 0) return null;
 
-  const frameData = animation.frames[currentFrame];
+  const currentEvent = frames[currentFrame];
 
   return (
     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[1000] bg-card/90 backdrop-blur-md border border-border rounded-lg p-4 w-[500px] shadow-xl">
       <div className="flex flex-col gap-3">
         <div className="flex items-center justify-between">
           <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
-            CAMPAIGN REPLAY: {animation.campaign_id}
+            CAMPAIGN REPLAY: {timelineData.campaign_id}
           </div>
           <div className="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">
-            FRAME {currentFrame + 1} / {animation.frames.length}
+            FRAME {currentFrame + 1} / {frames.length}
           </div>
         </div>
 
         <div className="text-sm font-mono leading-relaxed h-10 flex items-center">
-          &gt; {frameData?.description}
+          &gt; Day {currentEvent?.day}: {currentEvent?.event_type} - {currentEvent?.description}
         </div>
 
         <div className="flex items-center gap-4 pt-2 border-t border-border/50">
@@ -86,7 +109,7 @@ export function CampaignReplay({ onFrameChange }: { onFrameChange: (frame: any) 
           </button>
           
           <button 
-            onClick={() => setCurrentFrame(Math.min(animation.frames.length - 1, currentFrame + 1))}
+            onClick={() => setCurrentFrame(Math.min(frames.length - 1, currentFrame + 1))}
             className="p-2 hover:bg-muted rounded transition-colors"
           >
             <SkipForward className="w-4 h-4 text-foreground" />
@@ -95,7 +118,7 @@ export function CampaignReplay({ onFrameChange }: { onFrameChange: (frame: any) 
           <div className="flex-1 ml-4 h-1 bg-muted rounded-full overflow-hidden">
             <div 
               className="h-full bg-primary transition-all duration-300"
-              style={{ width: `${((currentFrame + 1) / animation.frames.length) * 100}%` }}
+              style={{ width: `${((currentFrame + 1) / frames.length) * 100}%` }}
             />
           </div>
         </div>

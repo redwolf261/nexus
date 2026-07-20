@@ -3,9 +3,20 @@
 import { useLiveIncident } from "@/hooks/useLiveIncident";
 import { useDemo } from "@/contexts/DemoContext";
 import { useInvestigationDrawer } from "@/components/investigation/InvestigationDrawer";
-import { Search, Zap, PlayCircle, Fingerprint, Car, Hash } from "lucide-react";
+import { Search, Zap, PlayCircle, Fingerprint, Car, Hash, ShieldAlert } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearch } from "@/hooks/useApi";
+
+const getIconForType = (type: string) => {
+  switch (type.toUpperCase()) {
+    case "FIR": return Hash;
+    case "PERSON": return Fingerprint;
+    case "VEHICLE": return Car;
+    case "CRIMINAL": return ShieldAlert;
+    default: return Search;
+  }
+};
 
 export function TopBar() {
   const { triggerIncident } = useLiveIncident();
@@ -14,22 +25,26 @@ export function TopBar() {
   const router = useRouter();
 
   const [search, setSearch] = useState("");
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [showSearch, setShowSearch] = useState(false);
 
-  const searchResults = [
-    { id: "FIR-RBG-2021-00003", type: "FIR", icon: Hash, desc: "Armed Robbery" },
-    { id: "Citizen-101", type: "PERSON", icon: Fingerprint, desc: "Suspect Profile" },
-    { id: "KA-01-HC-9021", type: "VEHICLE", icon: Car, desc: "Black SUV" },
-  ].filter(r => r.id.toLowerCase().includes(search.toLowerCase()) || r.desc.toLowerCase().includes(search.toLowerCase()));
+  // Debounce the input before calling the hook
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedSearch(search), 300);
+    return () => clearTimeout(timer);
+  }, [search]);
+
+  const { data: searchData, isLoading: isSearchLoading } = useSearch(debouncedSearch);
+  const searchResults = searchData?.results || [];
 
   const handleDemoMode = () => {
     startDemo();
   };
 
-  const selectResult = (id: string, type: any) => {
+  const selectResult = (id: string, type: string) => {
     setSearch("");
     setShowSearch(false);
-    openDrawer(id, type);
+    openDrawer(id, type as any);
   };
 
   return (
@@ -45,7 +60,7 @@ export function TopBar() {
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
         <input 
           type="text" 
-          placeholder="Global Search (FIR, Person, Vehicle...)" 
+          placeholder="Global Search (FIR, Person, Vehicle, Criminal...)" 
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           onFocus={() => setShowSearch(true)}
@@ -53,29 +68,34 @@ export function TopBar() {
           className="w-full bg-input border border-border rounded-md py-2 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 focus:ring-primary transition-all font-mono shadow-inner"
         />
         
-        {showSearch && search.length > 0 && (
-          <div className="absolute top-full left-0 right-0 mt-2 bg-card border border-border rounded-md shadow-2xl overflow-hidden">
-            <div className="p-2 text-xs font-bold text-muted-foreground uppercase tracking-widest bg-muted/50 border-b border-border">
-              Database Matches
+        {showSearch && search.length >= 2 && (
+          <div className="absolute top-full left-0 right-0 mt-2 bg-card border border-border rounded-md shadow-2xl overflow-hidden max-h-96 overflow-y-auto">
+            <div className="p-2 text-xs font-bold text-muted-foreground uppercase tracking-widest bg-muted/50 border-b border-border flex justify-between">
+              <span>Database Matches</span>
+              {isSearchLoading && <span className="animate-pulse">Searching...</span>}
             </div>
-            {searchResults.length === 0 ? (
+            
+            {!isSearchLoading && searchResults.length === 0 ? (
               <div className="p-4 text-sm text-muted-foreground font-mono">No matches found in operational database.</div>
             ) : (
-              searchResults.map(result => (
-                <div 
-                  key={result.id}
-                  onClick={() => selectResult(result.id, result.type)}
-                  className="p-3 hover:bg-muted border-b border-border last:border-0 cursor-pointer flex items-center gap-3 transition-colors"
-                >
-                  <div className="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                    <result.icon className="w-4 h-4" />
+              searchResults.map(result => {
+                const Icon = getIconForType(result.type);
+                return (
+                  <div 
+                    key={`${result.type}-${result.id}`}
+                    onClick={() => selectResult(result.id, result.type)}
+                    className="p-3 hover:bg-muted border-b border-border last:border-0 cursor-pointer flex items-center gap-3 transition-colors"
+                  >
+                    <div className="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold font-mono text-primary">{result.id} {result.name ? `- ${result.name}` : ''}</div>
+                      <div className="text-xs text-muted-foreground uppercase">{result.type} • {result.snippet}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-sm font-bold font-mono text-primary">{result.id}</div>
-                    <div className="text-xs text-muted-foreground uppercase">{result.type} • {result.desc}</div>
-                  </div>
-                </div>
-              ))
+                );
+              })
             )}
           </div>
         )}

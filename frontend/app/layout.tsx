@@ -26,6 +26,7 @@ import { IncidentProvider } from "@/hooks/useLiveIncident";
 import { DemoProvider } from "@/contexts/DemoContext";
 import { DrawerProvider } from "@/components/investigation/InvestigationDrawer";
 import { GlobalDemoOverlay } from "@/components/demo/GlobalDemoOverlay";
+import { ErrorBoundary } from "@/components/layout/ErrorBoundary";
 
 export default function RootLayout({
   children,
@@ -46,7 +47,9 @@ export default function RootLayout({
                 <div className="flex-1 flex flex-col h-full overflow-hidden relative">
                   <TopBar />
                   <main className="flex-1 overflow-auto bg-background/50 relative">
-                    {children}
+                    <ErrorBoundary fallbackMessage="The main application module failed to load.">
+                      {children}
+                    </ErrorBoundary>
                   </main>
                   <AlertFeed />
                 </div>

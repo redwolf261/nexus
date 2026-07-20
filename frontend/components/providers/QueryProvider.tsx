@@ -8,7 +8,10 @@ export function QueryProvider({ children }: { children: React.ReactNode }) {
     defaultOptions: {
       queries: {
         staleTime: 60 * 1000, // 1 minute
-        retry: 1,
+        gcTime: 5 * 60 * 1000, // 5 minutes garbage collection
+        retry: 2,
+        retryDelay: attemptIndex => Math.min(1000 * 2 ** attemptIndex, 10000), // Exponential backoff
+        refetchOnWindowFocus: false, // Prevents redundant calls on tab switch
       },
     },
   }));

@@ -64,6 +64,7 @@ class ExecutiveDashboardResponse(BaseModel):
     average_investigation_time: float
     crime_trend: str
     new_intelligence_alerts: int
+    total_firs: Optional[int] = None
 
 class DistrictDashboardResponse(BaseModel):
     district_id: str
@@ -72,6 +73,8 @@ class DistrictDashboardResponse(BaseModel):
     risk_score: int
     patrol_coverage: str
     crime_trend: str
+    total_firs: Optional[int] = None
+    active_gang_count: Optional[int] = None
 
 class CampaignSummaryResponse(BaseModel):
     campaign_id: str
@@ -81,6 +84,12 @@ class CampaignSummaryResponse(BaseModel):
     phones: List[str]
     timeline_events: int
     status: str
+    gang_id: Optional[str] = None
+    crime_category: Optional[str] = None
+    start_date: Optional[str] = None
+    end_date: Optional[str] = None
+    num_crimes_planned: Optional[int] = None
+    num_crimes_committed: Optional[int] = None
 
 class SearchResult(BaseModel):
     type: str

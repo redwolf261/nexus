@@ -3,29 +3,65 @@
 import { AlertTriangle, Info, ShieldAlert } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useLiveIncident } from "@/hooks/useLiveIncident";
+import { useExecutiveDashboard, useFIRs } from "@/hooks/useApi";
+
+type AlertType = { id: string | number; type: "critical" | "warning" | "info"; msg: string; time: string };
 
 export function AlertFeed() {
   const { activeIncident } = useLiveIncident();
+  const { data: dashData } = useExecutiveDashboard();
+  const { data: gangFirs } = useFIRs({ is_gang_crime: true, limit: 1 });
   
-  const [alerts, setAlerts] = useState([
-    { id: 1, type: "critical", msg: "New hotspot predicted in Central District", time: "Just now" },
-    { id: 2, type: "warning", msg: "Officer overload detected in Zone 4", time: "2m ago" },
-    { id: 3, type: "info", msg: "Campaign C-14 mastermind identified", time: "15m ago" },
-  ]);
+  const [alerts, setAlerts] = useState<AlertType[]>([]);
 
   useEffect(() => {
+    let initialAlerts: AlertType[] = [];
+    
+    if (dashData?.new_intelligence_alerts) {
+      initialAlerts.push({
+        id: "intel",
+        type: "info",
+        msg: `${dashData.new_intelligence_alerts} new intelligence alerts pending review`,
+        time: "Just now"
+      });
+    }
+    if (dashData?.predicted_hotspots) {
+      initialAlerts.push({
+        id: "hotspots",
+        type: "warning",
+        msg: `${dashData.predicted_hotspots} new hotspots predicted statewide`,
+        time: "2m ago"
+      });
+    }
+    if (gangFirs && gangFirs.length > 0) {
+      initialAlerts.push({
+        id: "gang",
+        type: "critical",
+        msg: `Recent gang activity: ${gangFirs[0].crime_type} in ${gangFirs[0].district_name || gangFirs[0].district_id}`,
+        time: "15m ago"
+      });
+    }
+
+    if (initialAlerts.length === 0) {
+       initialAlerts = [
+         { id: "fallback", type: "info", msg: "System nominal. All patrols operating normally.", time: "System" }
+       ];
+    }
+    
     if (activeIncident) {
-      setAlerts(prev => [
+      initialAlerts = [
         { 
           id: Date.now(), 
           type: "critical", 
           msg: `LIVE INCIDENT: ${activeIncident.type} reported in ${activeIncident.district} (${activeIncident.id})`, 
           time: "LIVE" 
         },
-        ...prev
-      ].slice(0, 5));
+        ...initialAlerts
+      ].slice(0, 5);
     }
-  }, [activeIncident]);
+    
+    setAlerts(initialAlerts);
+  }, [activeIncident, dashData, gangFirs]);
 
   return (
     <div className="h-12 bg-sidebar border-t border-border flex items-center px-4 overflow-hidden shrink-0">

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(DATABASE_URL=\"postgresql://nexus:Q2JascbmjrCaILlQkEl4Zy9Xteav7qNX@dpg-d9ecm2laeets73atq4m0-a.oregon-postgres.render.com/nexus_db_1avy?sslmode=require\" python -m backend.ingestion.load_postgres)",
+      "Bash(python -)",
+      "Bash(NEO4J_URI=neo4j+ssc://cd5efd2d.databases.neo4j.io NEO4J_USER=cd5efd2d NEO4J_PASSWORD=463fDfqcG5rxjHdWfR8ZINo134SnFIwLMNNgfErf1Qk python -c ' *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(docker --version)",
+      "Bash(python -m backend.ingestion.run_ingest pg)",
+      "Bash(docker stop *)",
+      "Bash(docker run *)",
+      "Bash(docker start *)",
+      "Bash(python -m backend.ingestion.run_ingest validate)"
+    ]
+  }
+}
