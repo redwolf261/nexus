@@ -188,7 +188,120 @@ class PostgresRepository:
     # ── Search ────────────────────────────────────────────────────────────────
 
     def search(self, query: str, limit: int = 20) -> List[Dict[str, Any]]:
-        """ILIKE search across FIRs, persons, vehicles, criminals."""
+        """Omni search across FIRs, persons, vehicles, criminals using pg_trgm and tsvector."""
+        results: List[Dict[str, Any]] = []
+        
+        sql = """
+        WITH 
+        fir_matches AS (
+            SELECT 'FIR' as type, fir_id as id, COALESCE(fir_number, fir_id) as name,
+            crime_type || ' · ' || COALESCE(district_name, '') || ' · ' || status as snippet,
+            GREATEST(
+                similarity(fir_number, :q),
+                similarity(crime_type, :q),
+                similarity(complainant_name, :q)
+            ) as trgm_score,
+            ts_rank(search_vector, plainto_tsquery('english', :q)) as ts_score
+            FROM firs
+            WHERE fir_number ILIKE :q_like 
+               OR fir_number % :q 
+               OR crime_type % :q 
+               OR complainant_name % :q 
+               OR search_vector @@ plainto_tsquery('english', :q)
+            ORDER BY trgm_score + ts_score DESC
+            LIMIT :limit
+        ),
+        person_matches AS (
+            SELECT 'Person' as type, citizen_id as id, COALESCE(name_en, citizen_id) as name,
+            COALESCE(occupation, 'Unknown') || ' · ' || COALESCE(district_name, '') as snippet,
+            GREATEST(
+                similarity(name_en, :q),
+                similarity(first_name_en, :q),
+                similarity(phone_primary, :q)
+            ) as trgm_score,
+            0.0 as ts_score
+            FROM persons
+            WHERE citizen_id ILIKE :q_like
+               OR name_en % :q 
+               OR first_name_en % :q 
+               OR phone_primary % :q
+            ORDER BY trgm_score DESC
+            LIMIT :limit
+        ),
+        vehicle_matches AS (
+            SELECT 'Vehicle' as type, vehicle_id as id, COALESCE(license_plate, vehicle_id) as name,
+            COALESCE(color, '') || ' ' || COALESCE(make, '') || ' ' || COALESCE(model, '') || CASE WHEN is_stolen THEN ' · STOLEN' ELSE '' END as snippet,
+            GREATEST(
+                similarity(license_plate, :q),
+                similarity(make, :q),
+                similarity(model, :q)
+            ) as trgm_score,
+            0.0 as ts_score
+            FROM vehicles
+            WHERE vehicle_id ILIKE :q_like
+               OR license_plate % :q 
+               OR make % :q 
+               OR model % :q
+            ORDER BY trgm_score DESC
+            LIMIT :limit
+        ),
+        criminal_matches AS (
+            SELECT 'Criminal' as type, criminal_id as id, COALESCE(name_en, criminal_id) as name,
+            risk_level || ' risk · ' || COALESCE(district_name, '') as snippet,
+            GREATEST(
+                similarity(name_en, :q),
+                similarity(alias_names, :q),
+                similarity(expertise, :q)
+            ) as trgm_score,
+            0.0 as ts_score
+            FROM criminals
+            WHERE criminal_id ILIKE :q_like
+               OR name_en % :q 
+               OR alias_names % :q 
+               OR expertise % :q
+            ORDER BY trgm_score DESC
+            LIMIT :limit
+        )
+        SELECT * FROM (
+            SELECT *, trgm_score + ts_score as total_score FROM fir_matches
+            UNION ALL
+            SELECT *, trgm_score + ts_score as total_score FROM person_matches
+            UNION ALL
+            SELECT *, trgm_score + ts_score as total_score FROM vehicle_matches
+            UNION ALL
+            SELECT *, trgm_score + ts_score as total_score FROM criminal_matches
+        ) combined
+        ORDER BY total_score DESC
+        LIMIT :limit
+        """
+        
+        try:
+            raw_results = self.db.execute(text(sql), {
+                'q': query,
+                'q_like': f'%{query}%',
+                'limit': limit
+            }).fetchall()
+            
+            for r in raw_results:
+                score = float(r.total_score) if r.total_score else 0.0
+                reason = "Exact or high similarity match" if score > 0.5 else "Text relevance"
+                results.append({
+                    "type": r.type,
+                    "id": r.id,
+                    "name": r.name,
+                    "snippet": r.snippet,
+                    "match_score": score,
+                    "match_reason": reason
+                })
+        except Exception as e:
+            import logging
+            logging.error(f"Search failed: {e}")
+            return self._fallback_search(query, limit)
+            
+        return results
+
+    def _fallback_search(self, query: str, limit: int = 20) -> List[Dict[str, Any]]:
+        """Basic fallback search for tests/sqlite."""
         results: List[Dict[str, Any]] = []
         like = f"%{query}%"
 
@@ -209,6 +322,8 @@ class PostgresRepository:
                 "id": f.fir_id,
                 "name": f.fir_number or f.fir_id,
                 "snippet": f"{f.crime_type} · {f.district_name} · {f.status}",
+                "match_score": 0.5,
+                "match_reason": "Fallback ILIKE match"
             })
 
         persons = (
@@ -227,6 +342,8 @@ class PostgresRepository:
                 "id": p.citizen_id,
                 "name": p.name_en or p.citizen_id,
                 "snippet": f"{p.occupation} · {p.district_name}",
+                "match_score": 0.5,
+                "match_reason": "Fallback ILIKE match"
             })
 
         vehicles = (
@@ -246,6 +363,8 @@ class PostgresRepository:
                 "name": v.license_plate or v.vehicle_id,
                 "snippet": f"{v.color} {v.make} {v.model}"
                 + (" · STOLEN" if v.is_stolen else ""),
+                "match_score": 0.5,
+                "match_reason": "Fallback ILIKE match"
             })
 
         criminals = (
@@ -264,6 +383,8 @@ class PostgresRepository:
                 "id": c.criminal_id,
                 "name": c.name_en or c.criminal_id,
                 "snippet": f"{c.risk_level} risk · {c.district_name}",
+                "match_score": 0.5,
+                "match_reason": "Fallback ILIKE match"
             })
 
         return results[:limit]

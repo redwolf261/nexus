@@ -15,14 +15,8 @@ def get_officer_dashboard_service(officer_id: str, db: Session):
     repo = PostgresRepository(db)
     stats = repo.get_officer_stats(officer_id)
     if not stats:
-        return {
-            "officer_id": officer_id,
-            "cases_open": 0,
-            "cases_closed": 0,
-            "average_delay_days": 0.0,
-            "workload": "Unknown",
-            "patrol_area": "Unknown",
-        }
+        from fastapi import HTTPException
+        raise HTTPException(status_code=404, detail="Officer not found")
     return stats
 
 

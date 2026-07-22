@@ -44,3 +44,46 @@ Time-series traversal of a crime campaign execution.
 
 ### `GET /api/search`
 Unified elastic-style search over FIRs, Persons, and Vehicles.
+
+
+## Investigations Endpoints
+### GET /api/investigations
+Returns a list of all investigation cases.
+
+### POST /api/investigations
+Creates a new investigation case.
+
+### GET /api/investigations/{inv_id}/workspace
+Returns the complete, unified case workspace (metadata, entities, timeline, notes).
+
+### POST /api/investigations/{inv_id}/entities
+Attaches an entity (FIR, Person, Vehicle) to a case.
+
+### DELETE /api/investigations/{inv_id}/entities/{entity_id}
+Removes an entity from a case.
+
+### POST /api/investigations/{inv_id}/notes
+Adds a markdown note to the case.
+
+### PATCH /api/investigations/notes/{note_id}
+Updates a markdown note.
+
+
+## Intelligence Endpoints
+### GET /api/intelligence/entity/{entity_id}
+Returns the threat score, gang influence, and network centrality of a specific entity.
+
+### GET /api/intelligence/recommendations/{case_id}
+Generates contextual recommendations (CCTV footage, interviews) based on case evidence.
+
+### GET /api/intelligence/links/{entity_id}
+Discovers hidden links via entity resolution (e.g. same Aadhaar, identical phone).
+
+### GET /api/intelligence/risk/{case_id}
+Computes aggregated risk metrics (Threat, Network Complexity, Evidence Completeness) for a case.
+
+### GET /api/intelligence/expand/{entity_id}?depth=2
+Performs variable-depth Neo4j graph traversal originating from the entity.
+
+### GET /api/intelligence/overlaps/{case_id}
+Discovers other active cases that share entities with the target case.

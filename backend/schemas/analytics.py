@@ -96,6 +96,8 @@ class SearchResult(BaseModel):
     id: str
     name: str
     snippet: str
+    match_score: Optional[float] = None
+    match_reason: Optional[str] = None
 
 class OmniSearchResponse(BaseModel):
     query: str

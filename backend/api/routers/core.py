@@ -28,8 +28,12 @@ from backend.services.analytics_service import get_person_graph_service
 router = APIRouter(prefix="/api", tags=["Core"])
 
 
+from fastapi import APIRouter, Depends, HTTPException, Request
+from backend.core.limiter import limiter
+
 @router.get("/search", response_model=OmniSearchResponse)
-def search_omni(q: str, db: Session = Depends(get_db)):
+@limiter.limit("30/minute")
+def search_omni(request: Request, q: str, db: Session = Depends(get_db)):
     """Global search across FIRs, Persons, Vehicles, Criminals."""
     return get_omni_search_service(q, db)
 
@@ -48,6 +52,7 @@ def get_firs(
     db: Session = Depends(get_db),
 ):
     """Retrieve filtered FIRs from PostgreSQL."""
+    limit = min(limit, 100)
     return get_firs_service(
         db,
         limit=limit,

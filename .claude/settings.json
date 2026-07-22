@@ -13,7 +13,9 @@
       "Bash(docker stop *)",
       "Bash(docker run *)",
       "Bash(docker start *)",
-      "Bash(python -m backend.ingestion.run_ingest validate)"
+      "Bash(python -m backend.ingestion.run_ingest validate)",
+      "Bash(python -m pytest backend/tests/test_task_engine.py::TestProgressTracking::test_progress_calculation -v)",
+      "Bash(python -m pytest backend/tests/test_task_engine.py -q --tb=no)"
     ]
   }
 }

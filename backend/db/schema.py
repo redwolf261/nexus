@@ -22,11 +22,49 @@ Design notes:
 from __future__ import annotations
 
 from sqlalchemy import (
-    Column, String, Integer, Float, Boolean, Date, Text, Numeric,
-    ForeignKey, CheckConstraint, Index,
+    Column, String, Integer, Float, Boolean, Date, Time, Text, Numeric,
+    ForeignKey, CheckConstraint, Index, DateTime, Enum
 )
 
 from backend.database import Base
+
+import enum
+from sqlalchemy.sql import func
+
+class CrimeType(str, enum.Enum):
+    THEFT = "Theft"
+    ASSAULT = "Assault"
+    FRAUD = "Fraud"
+    MURDER = "Murder"
+    NARCOTICS = "Narcotics"
+    CYBER = "Cyber"
+    TRAFFIC = "Traffic"
+    OTHER = "Other"
+
+class Role(str, enum.Enum):
+    Admin = "Admin"
+    Analyst = "Analyst"
+    Supervisor = "Supervisor"
+    ReadOnly = "ReadOnly"
+
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(String, primary_key=True)
+    username = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    role = Column(Enum(Role), default=Role.ReadOnly)
+    created_at = Column(DateTime, default=func.now())
+
+class AuditLog(Base):
+    __tablename__ = 'audit_logs'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    timestamp = Column(DateTime, default=func.now())
+    user_id = Column(String, ForeignKey('users.id'), index=True)
+    action = Column(String)
+    target_id = Column(String)
+    request_id = Column(String)
+    ip_address = Column(String)
+    status = Column(String)
 
 
 def _latlng_checks(prefix_lat: str = "latitude", prefix_lng: str = "longitude"):
@@ -90,6 +128,27 @@ class Officer(Base):
     specialization = Column(String, index=True)
     is_investigating_officer = Column(Boolean)
     is_station_house_officer = Column(Boolean)
+
+    # ── Phase 8.2: Capability & Workload Model ──────────────────────────────
+    # All columns are nullable / defaulted so the dataset CSV loader (which
+    # inserts only the original columns) remains backward-compatible.
+    subdivision = Column(String, nullable=True, index=True)
+    years_experience = Column(Integer, nullable=True)  # Distinct from tenure_years (may be seeded from it)
+    maximum_capacity = Column(Integer, nullable=True, default=10)  # Max concurrent open cases
+    availability_status = Column(
+        Enum("ON_DUTY", "OFF_DUTY", "BREAK", "FIELD", "LEAVE", "TRAINING", "SUSPENDED",
+             name="availabilitystatus"),
+        nullable=True, default="ON_DUTY", index=True,
+    )
+    # Denormalized workload counters — cached for speed, DB is source of truth.
+    # Reconciliation (ReconciliationService) keeps these correct; the assignment
+    # engine must never depend on these being perfectly accurate.
+    current_case_count = Column(Integer, nullable=True, default=0)
+    current_task_count = Column(Integer, nullable=True, default=0)
+    # Scheduled return-from-leave date (nullable); auto_expire_leave() uses this.
+    leave_ends_on = Column(Date, nullable=True)
+    capability_version = Column(Integer, nullable=True, default=1)  # Optimistic lock for capability edits
+
 
 
 class POI(Base):
@@ -213,6 +272,7 @@ class Phone(Base):
     provider = Column(String)
     type = Column(String)
     is_burner = Column(Boolean)
+    activation_date = Column(Date)  # Phone number activation/issuance date
 
 
 # ── Criminal network (circular FK resolved via use_alter) ───────────────────
@@ -313,6 +373,8 @@ class FIR(Base):
     station_id = Column(String, ForeignKey("stations.station_id"), index=True)
     district_name = Column(String)
     occurred_date = Column(Date, index=True)
+    occurred_time = Column(Time)  # Hour:minute:second precision (default 12:00:00 if unknown)
+    occurred_datetime = Column(DateTime, index=True)  # Combined for chronological ordering
     crime_type = Column(String, index=True)
     crime_category = Column(String, index=True)
     status = Column(String, index=True)
@@ -346,6 +408,7 @@ class FIR(Base):
     __table_args__ = (
         *_latlng_checks(),
         Index("ix_firs_filter_sort", "crime_category", "status", "occurred_date"),
+        Index("ix_firs_occurred_date_district", "occurred_date", "district_id"),
     )
 
 
@@ -674,3 +737,461 @@ class FIRPhone(Base):
     __tablename__ = "fir_phones"
     fir_id = Column(String, ForeignKey("firs.fir_id"), primary_key=True)
     phone_id = Column(String, primary_key=True, index=True)
+
+
+# ── Investigations ────────────────────────────────────────────────────────────
+class Investigation(Base):
+    __tablename__ = 'investigations'
+    id = Column(String, primary_key=True)
+    title = Column(String)
+    description = Column(Text)
+    status = Column(String)
+    priority = Column(String)
+    created_by = Column(String)
+    assigned_officer = Column(String)
+    owner_id = Column(String, ForeignKey('users.id'))
+    assigned_team = Column(String)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    version = Column(Integer, default=1, nullable=False)
+    last_sequence = Column(Integer, default=0, nullable=False)
+
+class InvestigationEntity(Base):
+    __tablename__ = 'investigation_entities'
+    investigation_id = Column(String, ForeignKey('investigations.id'), primary_key=True)
+    entity_type = Column(String, primary_key=True)
+    entity_id = Column(String, primary_key=True)
+    added_at = Column(DateTime, default=func.now())
+
+class InvestigationNote(Base):
+    __tablename__ = 'investigation_notes'
+    id = Column(String, primary_key=True)
+    investigation_id = Column(String, ForeignKey('investigations.id'))
+    author = Column(String)
+    markdown = Column(Text)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    version = Column(Integer, default=1, nullable=False)
+
+class InvestigationActivity(Base):
+    __tablename__ = 'investigation_activities'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    investigation_id = Column(String, ForeignKey('investigations.id'))
+    action = Column(String)
+    details = Column(Text)
+    created_at = Column(DateTime, default=func.now())
+
+from sqlalchemy import JSON
+class EventRecord(Base):
+    __tablename__ = 'events'
+    event_id = Column(String, primary_key=True)
+    event_type = Column(String, index=True)
+    payload = Column(JSON)
+    timestamp = Column(DateTime, default=func.now(), index=True)
+    processed = Column(Boolean, default=False)
+    case_id = Column(String, index=True, nullable=True)
+    user_id = Column(String, nullable=True)
+    sequence = Column(Integer, index=True, nullable=True)
+
+class InvestigationCollaborator(Base):
+    __tablename__ = 'investigation_collaborators'
+    investigation_id = Column(String, ForeignKey('investigations.id'), primary_key=True)
+    user_id = Column(String, ForeignKey('users.id'), primary_key=True)
+    added_at = Column(DateTime, default=func.now())
+
+class BackgroundJob(Base):
+    __tablename__ = 'background_jobs'
+    id = Column(String, primary_key=True)
+    task_name = Column(String, index=True)
+    payload = Column(JSON)
+    state = Column(String, default="QUEUED", index=True)
+    attempts = Column(Integer, default=0)
+    error_msg = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+
+# ── Phase 7: Analytical Intelligence ─────────────────────────────────────────
+class GraphMetric(Base):
+    """Stores pre-computed graph analytics scores per entity."""
+    __tablename__ = 'graph_metrics'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    entity_id = Column(String, index=True)
+    entity_type = Column(String, index=True)
+    metric_name = Column(String, index=True)   # pagerank, betweenness, community_id, etc.
+    score = Column(Float, nullable=True)
+    community_id = Column(String, nullable=True, index=True)
+    algorithm = Column(String)
+    computed_at = Column(DateTime, default=func.now(), index=True)
+    __table_args__ = (
+        Index("ix_graph_metrics_entity_metric", "entity_id", "metric_name"),
+    )
+
+class IntelligenceEventLog(Base):
+    """Audit trail of all intelligence shown to analysts."""
+    __tablename__ = 'intelligence_event_logs'
+
+    event_id = Column(String, primary_key=True, index=True)
+    workspace_id = Column(String, index=True)  # Soft ref to investigations.id
+    event_type = Column(String, index=True)  # SERIES_DETECTED, LINK_FOUND, ANOMALY, etc.
+    entity_id = Column(String, index=True)
+    confidence_score = Column(Float)
+    explanation_json = Column(JSON)  # Full IntelligenceExplanation
+    shown_at = Column(DateTime, default=func.now(), index=True)
+    analyst_id = Column(String, nullable=True)
+
+
+# ── Phase 8.1: Operational Task Engine ───────────────────────────────────────
+import enum as py_enum
+
+class TaskStatus(str, py_enum.Enum):
+    CREATED = "CREATED"
+    ASSIGNED = "ASSIGNED"
+    ACTIVE = "ACTIVE"
+    BLOCKED = "BLOCKED"
+    COMPLETED = "COMPLETED"
+    CANCELLED = "CANCELLED"
+    SKIPPED = "SKIPPED"
+
+
+class TaskCategory(str, py_enum.Enum):
+    EVIDENCE_COLLECTION = "EVIDENCE_COLLECTION"
+    INTERVIEW = "INTERVIEW"
+    WARRANT = "WARRANT"
+    EXTERNAL_COORDINATION = "EXTERNAL_COORDINATION"
+    ANALYSIS = "ANALYSIS"
+    FIELD_OPERATION = "FIELD_OPERATION"
+    ADMINISTRATIVE = "ADMINISTRATIVE"
+
+
+class TaskPriority(str, py_enum.Enum):
+    CRITICAL = "CRITICAL"
+    HIGH = "HIGH"
+    MEDIUM = "MEDIUM"
+    LOW = "LOW"
+
+
+class SLAState(str, py_enum.Enum):
+    NORMAL = "NORMAL"
+    WARNING = "WARNING"
+    BREACHED = "BREACHED"
+
+
+class DependencyType(str, py_enum.Enum):
+    FINISH_TO_START = "FINISH_TO_START"  # Task B cannot start until Task A completes
+    START_TO_START = "START_TO_START"    # Task B cannot start until Task A starts
+
+
+class TaskTemplate(Base):
+    """Template defining the task workflow for a case type."""
+    __tablename__ = 'task_templates'
+
+    id = Column(String, primary_key=True)
+    name = Column(String, index=True)  # e.g., "Murder Investigation"
+    case_type = Column(String, index=True)  # e.g., MURDER, ROBBERY, MISSING_PERSON
+    description = Column(Text)
+    active = Column(Boolean, default=True, index=True)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    version = Column(Integer, default=1)
+
+
+class TemplateTask(Base):
+    """Defines a single task within a template."""
+    __tablename__ = 'template_tasks'
+
+    id = Column(String, primary_key=True)
+    template_id = Column(String, ForeignKey('task_templates.id'), index=True)
+    order = Column(Integer)  # Execution order within template
+    title = Column(String)
+    description = Column(Text)
+    category = Column(Enum(TaskCategory))
+    priority = Column(Enum(TaskPriority))
+    sla_hours = Column(Integer, nullable=True)  # Expected duration in hours
+    is_recurring = Column(Boolean, default=False)
+    recurrence_interval_hours = Column(Integer, nullable=True)  # Hours between recurrences
+    created_at = Column(DateTime, default=func.now())
+
+
+class TemplateTaskDependency(Base):
+    """Defines dependencies between tasks within a template."""
+    __tablename__ = 'template_task_dependencies'
+
+    id = Column(String, primary_key=True)
+    task_id = Column(String, ForeignKey('template_tasks.id'), index=True)
+    depends_on_task_id = Column(String, ForeignKey('template_tasks.id'), index=True)
+    dependency_type = Column(Enum(DependencyType), default=DependencyType.FINISH_TO_START)
+    created_at = Column(DateTime, default=func.now())
+
+
+class InvestigationTask(Base):
+    """Individual task instance within an investigation."""
+    __tablename__ = 'investigation_tasks'
+
+    id = Column(String, primary_key=True)
+    investigation_id = Column(String, ForeignKey('investigations.id', ondelete='CASCADE'), index=True)
+    template_task_id = Column(String, index=True, nullable=True)  # Soft ref to TemplateTask
+    parent_task_id = Column(String, ForeignKey('investigation_tasks.id', ondelete='CASCADE'), index=True, nullable=True)
+
+    title = Column(String)
+    description = Column(Text)
+    category = Column(Enum(TaskCategory))
+    priority = Column(Enum(TaskPriority))
+    status = Column(Enum(TaskStatus), default=TaskStatus.CREATED)
+
+    assigned_officer_id = Column(String, index=True, nullable=True)  # Soft ref to users.id
+
+    created_at = Column(DateTime, default=func.now(), index=True)
+    assigned_at = Column(DateTime, nullable=True)
+    started_at = Column(DateTime, nullable=True)
+    completed_at = Column(DateTime, nullable=True)
+    due_at = Column(DateTime, nullable=True, index=True)
+
+    # SLA Tracking with pause support (Finding 8 fix)
+    sla_hours = Column(Integer, nullable=True)
+    sla_state = Column(Enum(SLAState), default=SLAState.NORMAL)
+    sla_escalated = Column(Boolean, default=False)
+    blocked_at = Column(DateTime, nullable=True)  # When task entered BLOCKED state
+    total_blocked_seconds = Column(Integer, default=0)  # Accumulated block time
+
+    is_recurring = Column(Boolean, default=False)
+    recurrence_interval_hours = Column(Integer, nullable=True)
+    next_recurrence_at = Column(DateTime, nullable=True)
+
+    version = Column(Integer, default=1)
+
+    __table_args__ = (
+        Index("ix_investigation_tasks_status", "investigation_id", "status"),
+        Index("ix_investigation_tasks_officer", "assigned_officer_id", "status"),
+        Index("ix_investigation_tasks_due", "investigation_id", "due_at"),
+    )
+
+
+class TaskDependency(Base):
+    """Defines dependencies between actual task instances."""
+    __tablename__ = 'task_dependencies'
+
+    id = Column(String, primary_key=True)
+    task_id = Column(String, ForeignKey('investigation_tasks.id'), index=True)
+    depends_on_task_id = Column(String, ForeignKey('investigation_tasks.id'), index=True)
+    dependency_type = Column(Enum(DependencyType), default=DependencyType.FINISH_TO_START)
+    created_at = Column(DateTime, default=func.now())
+
+    __table_args__ = (
+        Index("ix_task_dependencies_task", "task_id", "depends_on_task_id"),
+    )
+    dismissed_at = Column(DateTime, nullable=True)
+
+class EntityMergeProposal(Base):
+    """Pending entity merge proposals awaiting investigator approval."""
+    __tablename__ = 'entity_merge_proposals'
+    proposal_id = Column(String, primary_key=True, index=True)
+    primary_entity_id = Column(String, index=True)
+    merge_entity_id = Column(String, index=True)
+    entity_type = Column(String)  # PERSON, VEHICLE, etc.
+    match_score = Column(Float)
+    confidence_overall = Column(Float)
+    explanation_json = Column(JSON)  # Full IntelligenceExplanation
+    status = Column(String, default="PENDING", index=True)  # PENDING, APPROVED, REJECTED
+    created_by = Column(String)
+    created_at = Column(DateTime, default=func.now(), index=True)
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    approved_by = Column(String, nullable=True)
+    approval_notes = Column(Text, nullable=True)
+
+class CrimeSeries(Base):
+    """Persisted crime series discovered by the CrimeSeriesEngine."""
+    __tablename__ = 'crime_series'
+    series_id = Column(String, primary_key=True)
+    fir_ids = Column(JSON)                     # List of FIR IDs in series
+    characteristics = Column(JSON)
+    emerging_trend_score = Column(Float)
+    confidence_overall = Column(Float)
+    created_at = Column(DateTime, default=func.now())
+    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+
+
+# ── Phase 8.2: Assignment & Workload Management ──────────────────────────────
+
+class AvailabilityStatus(str, py_enum.Enum):
+    """Officer duty availability. Governs whether new work may be assigned."""
+    ON_DUTY = "ON_DUTY"
+    OFF_DUTY = "OFF_DUTY"
+    BREAK = "BREAK"
+    FIELD = "FIELD"          # On field duty — critical assignments only (policy)
+    LEAVE = "LEAVE"
+    TRAINING = "TRAINING"    # No new assignments unless explicitly overridden
+    SUSPENDED = "SUSPENDED"  # Cannot self-transition; admin/supervisor only
+
+
+class OfficerRank(str, py_enum.Enum):
+    """Standardized rank ladder (subset; extend via migration as needed)."""
+    CONSTABLE = "CONSTABLE"
+    HEAD_CONSTABLE = "HEAD_CONSTABLE"
+    ASI = "ASI"                       # Assistant Sub-Inspector
+    SI = "SI"                         # Sub-Inspector
+    INSPECTOR = "INSPECTOR"
+    DSP = "DSP"                       # Deputy Superintendent
+    SP = "SP"                         # Superintendent
+    DIG = "DIG"
+    IG = "IG"
+
+
+class SkillCode(str, py_enum.Enum):
+    """Fixed, enumerated skill catalog. New skills added via migration only.
+
+    Rationale: standardized certification, deterministic scoring, consistent
+    analytics, no spelling variants, RBAC-compatible.
+    """
+    CYBER_FORENSICS = "CYBER_FORENSICS"
+    DIGITAL_EVIDENCE = "DIGITAL_EVIDENCE"
+    HOMICIDE = "HOMICIDE"
+    ROBBERY = "ROBBERY"
+    NARCOTICS = "NARCOTICS"
+    MISSING_PERSONS = "MISSING_PERSONS"
+    FINANCIAL_CRIME = "FINANCIAL_CRIME"
+    FRAUD = "FRAUD"
+    TRAFFICKING = "TRAFFICKING"
+    ORGANIZED_CRIME = "ORGANIZED_CRIME"
+    TERRORISM = "TERRORISM"
+    FORENSICS = "FORENSICS"
+    BALLISTICS = "BALLISTICS"
+    DNA = "DNA"
+    INTERVIEWING = "INTERVIEWING"
+    SURVEILLANCE = "SURVEILLANCE"
+    OSINT = "OSINT"
+    NEGOTIATION = "NEGOTIATION"
+    LANGUAGE_HINDI = "LANGUAGE_HINDI"
+    LANGUAGE_KANNADA = "LANGUAGE_KANNADA"
+    LANGUAGE_MARATHI = "LANGUAGE_MARATHI"
+
+
+class Specialization(str, py_enum.Enum):
+    """Investigator specialization categories (align with case categories)."""
+    CYBER_CRIME = "CYBER_CRIME"
+    FINANCIAL_CRIME = "FINANCIAL_CRIME"
+    NARCOTICS = "NARCOTICS"
+    ORGANIZED_CRIME = "ORGANIZED_CRIME"
+    MISSING_PERSONS = "MISSING_PERSONS"
+    WOMEN_AND_CHILD = "WOMEN_AND_CHILD"
+    HOMICIDE = "HOMICIDE"
+    FORENSICS = "FORENSICS"
+
+
+class CertificationStatus(str, py_enum.Enum):
+    ACTIVE = "ACTIVE"
+    EXPIRED = "EXPIRED"
+    REVOKED = "REVOKED"
+    SUSPENDED = "SUSPENDED"
+
+
+class BurnoutRisk(str, py_enum.Enum):
+    LOW = "LOW"
+    MEDIUM = "MEDIUM"
+    HIGH = "HIGH"
+    CRITICAL = "CRITICAL"
+
+
+class OfficerSkill(Base):
+    """Officer ↔ Skill assignment (from the fixed SkillCode catalog)."""
+    __tablename__ = "officer_skills"
+    officer_id = Column(String, ForeignKey("officers.officer_id", ondelete="CASCADE"),
+                        primary_key=True)
+    skill_code = Column(Enum(SkillCode), primary_key=True)
+    proficiency = Column(Integer, default=3)  # 1–5 scale
+    created_at = Column(DateTime, default=func.now())
+
+    __table_args__ = (
+        Index("ix_officer_skills_skill", "skill_code"),
+    )
+
+
+class OfficerSpecialization(Base):
+    """Officer ↔ Specialization assignment."""
+    __tablename__ = "officer_specializations"
+    officer_id = Column(String, ForeignKey("officers.officer_id", ondelete="CASCADE"),
+                        primary_key=True)
+    specialization = Column(Enum(Specialization), primary_key=True)
+    is_primary = Column(Boolean, default=False)  # An officer has one primary specialization
+    created_at = Column(DateTime, default=func.now())
+
+    __table_args__ = (
+        Index("ix_officer_specializations_spec", "specialization"),
+    )
+
+
+class OfficerCertification(Base):
+    """Officer certification with validity window and issuing authority.
+
+    Assignment rules (enforced in OfficerCapacityService / scoring engine):
+      - mandatory certification expired/revoked → reject assignment
+      - preferred certification expired → scoring penalty (not rejection)
+    """
+    __tablename__ = "officer_certifications"
+    id = Column(String, primary_key=True)
+    officer_id = Column(String, ForeignKey("officers.officer_id", ondelete="CASCADE"),
+                        index=True)
+    name = Column(String, index=True)             # e.g., "Certified Cyber Forensics Examiner"
+    skill_code = Column(Enum(SkillCode), nullable=True, index=True)  # Optional link to a skill
+    certificate_number = Column(String, nullable=True)
+    issuing_authority = Column(String, nullable=True)
+    issued_date = Column(Date, nullable=True)
+    expiry_date = Column(Date, nullable=True, index=True)
+    status = Column(Enum(CertificationStatus), default=CertificationStatus.ACTIVE, index=True)
+    created_at = Column(DateTime, default=func.now())
+
+    __table_args__ = (
+        Index("ix_officer_certifications_officer_status", "officer_id", "status"),
+    )
+
+
+class OfficerAvailabilityLog(Base):
+    """Audit trail of every availability_status transition."""
+    __tablename__ = "officer_availability_logs"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    officer_id = Column(String, ForeignKey("officers.officer_id", ondelete="CASCADE"),
+                        index=True)
+    from_status = Column(String, nullable=True)
+    to_status = Column(String)
+    reason = Column(Text, nullable=True)
+    actor_id = Column(String, nullable=True)  # User who performed the transition
+    created_at = Column(DateTime, default=func.now(), index=True)
+
+
+class OfficerWorkloadReconciliation(Base):
+    """Records mismatches between cached counters and DB-derived truth."""
+    __tablename__ = "officer_workload_reconciliation"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    officer_id = Column(String, ForeignKey("officers.officer_id", ondelete="CASCADE"),
+                        index=True)
+    field = Column(String)                 # 'current_case_count' | 'current_task_count'
+    cached_value = Column(Integer)
+    actual_value = Column(Integer)
+    correction_applied = Column(Boolean, default=True)
+    reconciled_at = Column(DateTime, default=func.now(), index=True)
+
+
+class AssignmentRecord(Base):
+    """Immutable record of a supervisor-approved (or overridden) assignment.
+
+    Persists the full AssignmentScore that justified the recommendation, plus
+    override metadata. This is the audit + explainability backbone consumed by
+    Phase 8.3 and future LLM explanations.
+    """
+    __tablename__ = "assignment_records"
+    id = Column(String, primary_key=True)
+    investigation_id = Column(String, index=True)
+    officer_id = Column(String, index=True)
+    recommended_officer_id = Column(String, nullable=True)  # What the engine suggested
+    was_override = Column(Boolean, default=False, index=True)  # True if supervisor chose different
+    overall_score = Column(Float, nullable=True)
+    component_scores = Column(JSON, nullable=True)  # Full breakdown
+    explanation = Column(JSON, nullable=True)       # List[str] human-readable reasons
+    override_reason = Column(Text, nullable=True)
+    supervisor_id = Column(String, nullable=True)
+    created_at = Column(DateTime, default=func.now(), index=True)
+
+    __table_args__ = (
+        Index("ix_assignment_records_officer_created", "officer_id", "created_at"),
+    )
+
+

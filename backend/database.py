@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-POSTGRES_USER = os.getenv("POSTGRES_USER", "nexus")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "nexus_app")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "nexus_password")
 POSTGRES_SERVER = os.getenv("POSTGRES_SERVER", "localhost")
 POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
@@ -19,7 +19,13 @@ SQLALCHEMY_DATABASE_URL = os.getenv(
 if "neon.tech" in SQLALCHEMY_DATABASE_URL and "?sslmode=require" not in SQLALCHEMY_DATABASE_URL:
     SQLALCHEMY_DATABASE_URL += "?sslmode=require"
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL)
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL,
+    pool_size=20,
+    max_overflow=10,
+    pool_pre_ping=True,
+    pool_recycle=1800,
+)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()

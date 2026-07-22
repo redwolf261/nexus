@@ -1,8 +1,9 @@
 "use client";
 
 import { createContext, useContext, useState, ReactNode, useCallback } from "react";
-import { X, Clock, Activity, FileText, Database, ShieldAlert, Car, Phone } from "lucide-react";
+import { X, Clock, Activity, FileText, Database, ShieldAlert, Car, Phone, Plus } from "lucide-react";
 import { useFIRDetail, usePersonDetail, useVehicleDetail, useCriminalDetail, useCampaignSummary, useCampaignTimeline } from "@/hooks/useApi";
+import { useAddToCase } from "@/components/investigation/AddToCaseProvider";
 import { ErrorBoundary } from "@/components/layout/ErrorBoundary";
 
 type DrawerType = "FIR" | "PERSON" | "VEHICLE" | "CAMPAIGN" | "PHONE" | "CRIMINAL" | "MASTERMIND" | null;
@@ -359,6 +360,8 @@ function GenericDrawerContent({ id, type }: { id: string, type: string }) {
 
 
 function InvestigationDrawer({ activeEntity, closeDrawer }: { activeEntity: { id: string, type: DrawerType } | null, closeDrawer: () => void }) {
+  const { openAddToCase } = useAddToCase();
+
   if (!activeEntity) return null;
 
   return (
@@ -368,9 +371,19 @@ function InvestigationDrawer({ activeEntity, closeDrawer }: { activeEntity: { id
           <div className="text-xs font-bold tracking-widest text-primary uppercase">{activeEntity.type} INTELLIGENCE</div>
           <div className="text-lg font-mono font-bold mt-1 break-all pr-4">{activeEntity.id}</div>
         </div>
-        <button onClick={closeDrawer} className="p-2 hover:bg-muted rounded-full transition-colors shrink-0">
-          <X className="w-5 h-5 text-muted-foreground" />
-        </button>
+        <div className="flex items-center gap-2">
+          <button 
+            onClick={() => openAddToCase(activeEntity.id, activeEntity.type as string)}
+            className="p-2 hover:bg-muted rounded transition-colors text-primary flex items-center gap-1 font-bold text-xs"
+            title="Add to Case"
+          >
+            <Plus className="w-5 h-5" />
+            <span className="sr-only">Add to Case</span>
+          </button>
+          <button onClick={closeDrawer} className="p-2 hover:bg-muted rounded transition-colors text-muted-foreground">
+            <X className="w-5 h-5" />
+          </button>
+        </div>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4">

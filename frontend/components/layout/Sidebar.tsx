@@ -4,10 +4,10 @@ import { LayoutDashboard, Network, Map, ListTree, Users, Bell } from "lucide-rea
 export function Sidebar() {
   const links = [
     { name: "Executive", href: "/", icon: LayoutDashboard },
+    { name: "Investigations", href: "/investigations", icon: Users },
     { name: "Silo Buster", href: "/silo-buster", icon: Network },
     { name: "Knowledge Graph", href: "/graph", icon: ListTree },
     { name: "Predictive", href: "/map", icon: Map },
-    { name: "Operations", href: "/operations", icon: Users },
   ];
 
   return (

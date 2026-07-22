@@ -25,6 +25,7 @@ export const metadata: Metadata = {
 import { IncidentProvider } from "@/hooks/useLiveIncident";
 import { DemoProvider } from "@/contexts/DemoContext";
 import { DrawerProvider } from "@/components/investigation/InvestigationDrawer";
+import { AddToCaseProvider } from "@/components/investigation/AddToCaseProvider";
 import { GlobalDemoOverlay } from "@/components/demo/GlobalDemoOverlay";
 import { ErrorBoundary } from "@/components/layout/ErrorBoundary";
 
@@ -42,7 +43,8 @@ export default function RootLayout({
         <QueryProvider>
           <IncidentProvider>
             <DemoProvider>
-              <DrawerProvider>
+              <AddToCaseProvider>
+                <DrawerProvider>
                 <Sidebar />
                 <div className="flex-1 flex flex-col h-full overflow-hidden relative">
                   <TopBar />
@@ -55,6 +57,7 @@ export default function RootLayout({
                 </div>
                 <GlobalDemoOverlay />
               </DrawerProvider>
+              </AddToCaseProvider>
             </DemoProvider>
           </IncidentProvider>
         </QueryProvider>

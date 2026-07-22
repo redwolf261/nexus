@@ -7,13 +7,18 @@ NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "nexus_password")
 
 class Neo4jClient:
     def __init__(self, uri, user, password):
-        self.driver = GraphDatabase.driver(uri, auth=(user, password))
+        self.driver = GraphDatabase.driver(
+            uri, 
+            auth=(user, password),
+            max_connection_pool_size=50,
+            connection_acquisition_timeout=60.0
+        )
 
     def close(self):
         self.driver.close()
 
     def query(self, query, parameters=None):
-        with self.driver.session() as session:
+        with self.driver.session(database="neo4j", default_access_mode="READ", transaction_timeout=5000) as session:
             result = session.run(query, parameters)
             return [record for record in result]
 

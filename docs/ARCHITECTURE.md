@@ -49,6 +49,10 @@ erDiagram
     GANG ||--o{ CRIMINAL : "members"
     GANG ||--o{ CAMPAIGN : "executes"
     CAMPAIGN ||--o{ FIR : "contains"
+    
+    INVESTIGATION ||--o{ INVESTIGATION_ENTITY : "tracks"
+    INVESTIGATION ||--o{ INVESTIGATION_NOTE : "has"
+    INVESTIGATION ||--o{ INVESTIGATION_ACTIVITY : "logs"
 ```
 
 ## Graph Schema (Neo4j)
