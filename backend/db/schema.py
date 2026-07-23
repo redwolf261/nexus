@@ -45,7 +45,10 @@ class Role(str, enum.Enum):
     Admin = "Admin"
     Analyst = "Analyst"
     Supervisor = "Supervisor"
+    ACP = "ACP"
+    DCP = "DCP"
     ReadOnly = "ReadOnly"
+
 
 class User(Base):
     __tablename__ = 'users'
@@ -1193,5 +1196,97 @@ class AssignmentRecord(Base):
     __table_args__ = (
         Index("ix_assignment_records_officer_created", "officer_id", "created_at"),
     )
+
+
+class AssignmentHistory(Base):
+    """Immutable append-only record of investigation assignments and reassignments (M4).
+
+    Every assignment or reassignment appends a row to this table.
+    History is never modified or deleted.
+    """
+    __tablename__ = "assignment_histories"
+
+    id = Column(String, primary_key=True)
+    assignment_id = Column(String, index=True)
+    investigation_id = Column(String, ForeignKey("investigations.id"), index=True)
+    officer_id = Column(String, ForeignKey("officers.officer_id"), index=True)
+    assigned_by = Column(String, ForeignKey("users.id"), index=True)
+    timestamp = Column(DateTime, default=func.now(), index=True)
+    reason = Column(Text, nullable=True)
+    recommendation_score = Column(Float, nullable=True)
+    policy_version = Column(String, nullable=True)
+    manual_override = Column(Boolean, default=False)
+    override_reason = Column(Text, nullable=True)
+    previous_officer = Column(String, nullable=True, index=True)
+
+    __table_args__ = (
+        Index("ix_assignment_histories_inv_time", "investigation_id", "timestamp"),
+        Index("ix_assignment_histories_officer_time", "officer_id", "timestamp"),
+    )
+
+
+# ── Phase 8.2 Milestone 5: Governance & Approval Schema ──────────────────────
+
+class AssignmentDecisionHistory(Base):
+    """Immutable append-only record of supervisor assignment decisions (M5).
+
+    Stores ACCEPT, OVERRIDE, REJECT, DEFER decisions along with full policy
+    violations, approval chain, justification, and policy snapshot.
+    """
+    __tablename__ = "assignment_decision_histories"
+
+    id = Column(String, primary_key=True)  # DEC-HIST-UUID
+    decision_id = Column(String, index=True)
+    investigation_id = Column(String, ForeignKey("investigations.id"), index=True)
+    recommendation_id = Column(String, index=True, nullable=True)
+    supervisor_id = Column(String, ForeignKey("users.id"), index=True)
+    decision = Column(String, index=True)  # ACCEPT / OVERRIDE / REJECT / DEFER
+    chosen_officer_id = Column(String, index=True, nullable=True)
+    justification = Column(Text, nullable=True)  # Min 50 chars for OVERRIDE
+    override_reason = Column(String, nullable=True, index=True)  # WORKLOAD_BALANCING, etc.
+    policy_violations = Column(JSON, nullable=True)  # List[str]
+    approval_chain = Column(JSON, nullable=True)     # List[Dict[str, Any]]
+    status = Column(String, default="COMPLETED", index=True)  # COMPLETED / PENDING_ACP / PENDING_DCP / REJECTED
+    policy_snapshot = Column(JSON, nullable=True)
+    policy_version = Column(String, nullable=True)
+    timestamp = Column(DateTime, default=func.now(), index=True)
+    version = Column(Integer, default=1)
+
+    __table_args__ = (
+        Index("ix_decision_histories_inv_time", "investigation_id", "timestamp"),
+        Index("ix_decision_histories_sup_time", "supervisor_id", "timestamp"),
+    )
+
+
+class RecommendationSnapshot(Base):
+    """Immutable snapshot of recommendation ranking state for audit reproducibility (M5)."""
+    __tablename__ = "recommendation_snapshots"
+
+    id = Column(String, primary_key=True)  # SNAP-UUID
+    investigation_id = Column(String, ForeignKey("investigations.id"), index=True)
+    policy_version = Column(String, nullable=True)
+    rankings_json = Column(JSON)  # Full scored candidates list
+    workload_snapshot_json = Column(JSON, nullable=True)
+    created_at = Column(DateTime, default=func.now(), index=True)
+
+
+class AssignmentEscalation(Base):
+    """Pending ACP / DCP escalation queue for supervisor overrides (M5)."""
+    __tablename__ = "assignment_escalations"
+
+    id = Column(String, primary_key=True)  # ESC-UUID
+    decision_id = Column(String, ForeignKey("assignment_decision_histories.id"), index=True)
+    investigation_id = Column(String, index=True)
+    required_role = Column(String, index=True)  # ACP / DCP
+    status = Column(String, default="PENDING", index=True)  # PENDING / APPROVED / REJECTED
+    approver_id = Column(String, ForeignKey("users.id"), nullable=True)
+    approved_at = Column(DateTime, nullable=True)
+    comments = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=func.now(), index=True)
+
+    __table_args__ = (
+        Index("ix_escalations_status_role", "status", "required_role"),
+    )
+
 
 

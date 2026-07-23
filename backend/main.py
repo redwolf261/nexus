@@ -65,7 +65,7 @@ async def security_and_logging_middleware(request: Request, call_next):
         )
         return JSONResponse(status_code=500, content={"detail": "Internal Server Error"})
 
-from backend.api.routers import core, analytics, investigations, intelligence, ws, events, system, tasks
+from backend.api.routers import core, analytics, investigations, intelligence, ws, events, system, tasks, assignment, governance, command_center, investigation_workspace, executive_dashboard
 from backend.api.routers import auth
 from fastapi import Depends
 from backend.auth.deps import get_current_user
@@ -82,6 +82,16 @@ app.include_router(intelligence.router, dependencies=[Depends(get_current_user)]
 app.include_router(events.router, dependencies=[Depends(get_current_user)])
 app.include_router(system.router, dependencies=[Depends(get_current_user)])
 app.include_router(tasks.router, dependencies=[Depends(get_current_user)])
+app.include_router(assignment.router, dependencies=[Depends(get_current_user)])
+app.include_router(governance.router, dependencies=[Depends(get_current_user)])
+app.include_router(command_center.router, dependencies=[Depends(get_current_user)])
+app.include_router(investigation_workspace.router, dependencies=[Depends(get_current_user)])
+app.include_router(executive_dashboard.router, dependencies=[Depends(get_current_user)])
+
+
+
+
+
 
 from backend.database import engine
 from sqlalchemy import text

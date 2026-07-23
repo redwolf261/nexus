@@ -1,18 +1,63 @@
 import asyncio
 import json
+from typing import Optional, Dict, Any, List
 from sqlalchemy.orm import Session
-from fastapi import BackgroundTasks
+
+
+try:
+    from fastapi import BackgroundTasks
+except ImportError:
+    BackgroundTasks = None
+
+try:
+    from backend.api.routers.ws import manager
+except ImportError:
+    manager = None
+
 from backend.events.event_models import BaseEvent
-from backend.api.routers.ws import manager
 from backend.db.schema import EventRecord
 from backend.core.logging import logger
+
 
 # Import worker tasks
 from backend.workers.intelligence_worker import process_intelligence_event
 
 class EventDispatcher:
     @staticmethod
+    def publish_sync(event: BaseEvent, db: Session) -> Optional[EventRecord]:
+        """Synchronous event publisher for DB persistence and audit stream."""
+        logger.info(f"Publishing sync event: {event.event_type} (Case: {event.case_id})")
+        try:
+            seq = None
+            if event.case_id:
+                from backend.db.schema import Investigation
+                inv = db.query(Investigation).filter_by(id=event.case_id).first()
+                if inv:
+                    inv.last_sequence = (inv.last_sequence or 0) + 1
+                    seq = inv.last_sequence
+                    event.sequence = seq
+
+            record = EventRecord(
+                event_id=event.event_id,
+                timestamp=event.timestamp,
+                event_type=event.event_type.value if hasattr(event.event_type, "value") else str(event.event_type),
+                payload=json.dumps(event.payload) if isinstance(event.payload, dict) else str(event.payload),
+                user_id=event.user_id,
+                case_id=event.case_id,
+                sequence=seq,
+            )
+
+            db.add(record)
+            db.flush()
+            return record
+        except Exception as e:
+            logger.error(f"Failed to persist sync event {event.event_id}: {str(e)}", exc_info=True)
+            return None
+
+
+    @staticmethod
     async def publish(event: BaseEvent, db: Session, background_tasks: BackgroundTasks = None):
+
         """
         Core pub/sub mechanism.
         1. Write to DB (Append-only log)

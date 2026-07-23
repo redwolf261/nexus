@@ -41,7 +41,8 @@ def get_current_user(request: Request, db: Session = Depends(get_db)) -> User:
 
 def require_role(min_role: Role) -> Callable:
     def role_checker(current_user: User = Depends(get_current_user)):
-        roles_hierarchy = [Role.ReadOnly, Role.Analyst, Role.Supervisor, Role.Admin]
+        roles_hierarchy = [Role.ReadOnly, Role.Analyst, Role.Supervisor, Role.ACP, Role.DCP, Role.Admin]
+
         try:
             user_level = roles_hierarchy.index(current_user.role)
             min_level = roles_hierarchy.index(min_role)
