@@ -65,7 +65,7 @@ async def security_and_logging_middleware(request: Request, call_next):
         )
         return JSONResponse(status_code=500, content={"detail": "Internal Server Error"})
 
-from backend.api.routers import core, analytics, investigations, intelligence, ws, events, system, tasks, assignment, governance, command_center, investigation_workspace, executive_dashboard
+from backend.api.routers import core, analytics, investigations, intelligence, ws, events, system, tasks, assignment, governance, command_center, investigation_workspace, executive_dashboard, approval, escalation, notification, notification_hub, audit, compliance
 from backend.api.routers import auth
 from fastapi import Depends
 from backend.auth.deps import get_current_user
@@ -87,6 +87,12 @@ app.include_router(governance.router, dependencies=[Depends(get_current_user)])
 app.include_router(command_center.router, dependencies=[Depends(get_current_user)])
 app.include_router(investigation_workspace.router, dependencies=[Depends(get_current_user)])
 app.include_router(executive_dashboard.router, dependencies=[Depends(get_current_user)])
+app.include_router(notification.router, dependencies=[Depends(get_current_user)])
+app.include_router(notification_hub.router, dependencies=[Depends(get_current_user)])
+app.include_router(escalation.router, dependencies=[Depends(get_current_user)])
+app.include_router(approval.router, dependencies=[Depends(get_current_user)])
+app.include_router(audit.router, dependencies=[Depends(get_current_user)])
+app.include_router(compliance.router, dependencies=[Depends(get_current_user)])
 
 
 
@@ -100,6 +106,15 @@ from backend.core.logging import logger
 @app.on_event("startup")
 def startup_event():
     logger.info("Initializing database extensions and indexes...")
+    try:
+        import backend.db.schema  # Ensure all ORM models are registered
+        from backend.audit.schema import AuditLedgerRecord, AuditAggregateRecord
+        from backend.compliance.schema import ComplianceRuleRecord, ComplianceViolationRecord
+        from backend.database import Base
+        Base.metadata.create_all(bind=engine)
+    except Exception as e:
+        logger.warning(f"Metadata creation note: {str(e)}")
+
     try:
         with engine.begin() as conn:
             conn.execute(text("CREATE EXTENSION IF NOT EXISTS pg_trgm;"))

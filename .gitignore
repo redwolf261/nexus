@@ -1,28 +1,65 @@
 # Python
 __pycache__/
 *.py[cod]
-*.egg-info/
-.pytest_cache/
+*$py.class
+*.pyc
+.Python
+*.pyo
+*.pyd
+*.so
 .venv/
 venv/
 env/
+ENV/
 
-# Environment / secrets
+# pytest
+.pytest_cache/
+*.db
+test_runner.db
+htmlcov/
+.coverage
+coverage.xml
+
+# FastAPI / Uvicorn
+*.log
+output/nexus_run.log
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.production
+
+# Environment
 .env
 .env.*
 !.env.example
 
-# Node / Next.js
-node_modules/
-frontend/.next/
-frontend/out/
-frontend/.turbo/
+# Docker
+.dockerignore
 
-# OS
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 .DS_Store
 Thumbs.db
 
-# Large generated dataset (regenerate via simulator; loaded into cloud DBs directly)
-# NOTE: output/ is intentionally NOT ignored if you rely on it for cloud loading.
-# Uncomment the next line only if you move the dataset out of git.
-# output/
+# Data & Outputs
+output/
+*.parquet
+*.csv.gz
+dataset_meta.json
+
+# Scratch scripts
+audit_deep.py
+audit_graph.py
+audit_output.py
+inject_admin_token.py
+patch_frontend.py
+update_schema.py
+
+# Keep docs but exclude dev working notes
+# docs/dev/ is preserved in the repo for reference

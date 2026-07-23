@@ -49,6 +49,21 @@ class EventDispatcher:
 
             db.add(record)
             db.flush()
+
+            # Automatic Immutable Audit Ledger Ingestion
+            try:
+                from backend.audit.event_subscriber import AuditEventSubscriber
+                AuditEventSubscriber.consume_event(event, db)
+            except Exception as audit_err:
+                logger.error(f"Audit ledger ingestion error: {str(audit_err)}")
+
+            # Real-time Compliance Evaluation
+            try:
+                from backend.compliance.event_listener import ComplianceEventListener
+                ComplianceEventListener.consume_event(event, db)
+            except Exception as comp_err:
+                logger.error(f"Compliance event listener error: {str(comp_err)}")
+
             return record
         except Exception as e:
             logger.error(f"Failed to persist sync event {event.event_id}: {str(e)}", exc_info=True)
@@ -89,6 +104,15 @@ class EventDispatcher:
             )
             db.add(record)
             db.commit()
+
+            # Automatic Immutable Audit Ledger Ingestion
+            try:
+                from backend.audit.event_subscriber import AuditEventSubscriber
+                AuditEventSubscriber.consume_event(event, db)
+                db.commit()
+            except Exception as audit_err:
+                logger.error(f"Audit ledger ingestion error in async publish: {str(audit_err)}")
+
         except Exception as e:
             logger.error(f"Failed to persist event {event.event_id}: {str(e)}")
             db.rollback()

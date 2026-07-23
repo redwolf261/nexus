@@ -8,6 +8,7 @@ from typing import Optional, Dict, Any
 from datetime import datetime
 from sqlalchemy.orm import Session
 from backend.db.schema import AuditLog
+from backend.audit.service import AuditService
 
 
 class AuditLogger:
@@ -33,18 +34,27 @@ class AuditLogger:
 
         Returns:
             Created AuditLog entry
-
-        Note:
-            The entry is added to the session and flushed but not committed.
-            Caller is responsible for commit (allows atomicity with state changes).
         """
         entry = AuditLog(
             timestamp=datetime.utcnow(),
             user_id=user_id,
             action=action,
             target_id=target_id,
-            status="SUCCESS"  # Default; caller can override if needed
+            status="SUCCESS"
         )
         self.session.add(entry)
-        self.session.flush()  # Make it visible but don't commit yet
+        self.session.flush()
+
+        # Mirror into Immutable SHA-256 Audit Ledger
+        try:
+            AuditService.log_event(
+                db=self.session,
+                event_type=action,
+                entity_id=target_id,
+                actor_id=user_id,
+                payload=details
+            )
+        except Exception:
+            pass  # Avoid breaking legacy flush if ledger record fails
+
         return entry
