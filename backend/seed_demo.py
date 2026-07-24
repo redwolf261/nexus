@@ -22,7 +22,7 @@ from backend.events.event_types import EventType
 
 
 def seed_database():
-    print("🌱 Initializing NEXUS Database Tables & Seeding Demo Dataset...")
+    print("[SEED] Initializing NEXUS Database Tables & Seeding Demo Dataset...")
     Base.metadata.create_all(bind=engine)
     Session = sessionmaker(bind=engine)
     db = Session()
@@ -31,10 +31,32 @@ def seed_database():
         # 1. Seed Compliance Rules
         RuleRepository.seed_default_rules(db)
 
-        # 2. Check if investigations already seeded
+        # 2. Seed Users if missing
+        import bcrypt
+        if db.query(db_schema.User).count() == 0:
+            demo_users = [
+                ("admin", "Admin"),
+                ("acp_blr", "ACP"),
+                ("dcp_ops", "DCP"),
+                ("supervisor_1", "Supervisor"),
+                ("officer_1", "Analyst"),
+            ]
+            hashed_bytes = bcrypt.hashpw(b"nexus2026", bcrypt.gensalt())
+            hashed_pwd = hashed_bytes.decode('utf-8')
+            for u_id, role in demo_users:
+                user = db_schema.User(
+                    id=u_id,
+                    username=u_id,
+                    role=role,
+                    hashed_password=hashed_pwd,
+                )
+                db.add(user)
+            db.commit()
+
+        # 3. Check if investigations already seeded
         inv_count = db.query(db_schema.Investigation).count()
         if inv_count > 0:
-            print("✅ Database already populated with demo dataset.")
+            print("[SUCCESS] Database already populated with demo dataset.")
             return
 
         # 3. Seed Investigations
@@ -78,14 +100,14 @@ def seed_database():
                 priority=priority,
                 sla_hours=sla_hours,
                 created_at=datetime.datetime.utcnow(),
-                due_date=datetime.datetime.utcnow() + datetime.timedelta(hours=sla_hours)
+                due_at=datetime.datetime.utcnow() + datetime.timedelta(hours=sla_hours)
             )
             db.add(task)
 
         db.commit()
 
         # 5. Seed Audit Ledger & Compliance Violations
-        print("🔐 Initializing SHA-256 Immutable Audit Ledger & Compliance Violations...")
+        print("[AUDIT] Initializing SHA-256 Immutable Audit Ledger & Compliance Violations...")
         for i in range(1, 15):
             AuditService.log_event(
                 db=db,
@@ -112,11 +134,11 @@ def seed_database():
         )
 
         db.commit()
-        print("✅ NEXUS Demo Dataset Seeded Successfully!")
+        print("[SUCCESS] NEXUS Demo Dataset Seeded Successfully!")
 
     except Exception as e:
         db.rollback()
-        print(f"❌ Error seeding database: {str(e)}")
+        print(f"[ERROR] Error seeding database: {str(e)}")
     finally:
         db.close()
 

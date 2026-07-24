@@ -3,7 +3,7 @@ import React from "react";
 export interface NotificationDigest {
   digest_id: string;
   priority: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW" | string;
-  collapsed_count: int;
+  collapsed_count: number;
   summary_message: string;
   target_ids: string[];
   timestamp: string;

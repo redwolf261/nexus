@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export interface TimelineEvent {
-  event_id: str;
+  event_id: string;
   timestamp: string;
   actor: string;
   event_type: string;

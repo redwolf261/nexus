@@ -22,8 +22,8 @@ export interface PolicyResult {
   is_allowed: boolean;
   violations: string[];
   warnings: string[];
-  requires_acp: bool;
-  requires_dcp: bool;
+  requires_acp: boolean;
+  requires_dcp: boolean;
   checked_rules: Record<string, boolean>;
 }
 

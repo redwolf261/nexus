@@ -6,8 +6,8 @@ export interface ApprovalHistoryDTO {
   action: string;
   previous_state: string;
   new_state: string;
-  actor_id: str;
-  actor_role: str;
+  actor_id: string;
+  actor_role: string;
   details?: Record<string, any>;
   timestamp: string;
 }

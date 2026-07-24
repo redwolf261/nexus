@@ -23,29 +23,31 @@ export default function WorkspacePage({ params }: { params: Promise<{ id: string
   const { data: timeline } = useWorkspaceTimeline(unwrappedParams.id);
   const { data: notes } = useWorkspaceNotes(unwrappedParams.id);
 
-  const { addNote, removeEntity } = useInvestigationMutations();
+  const { createNote, removeEntity } = useInvestigationMutations();
   const { openDrawer } = useInvestigationDrawer();
 
   const [noteText, setNoteText] = useState("");
   const [isSaving, setIsSaving] = useState(false);
 
+  const notesArr = Array.isArray(notes) ? (notes as any[]) : [];
+
   useEffect(() => {
-    if (notes && notes.length > 0 && !noteText) {
-      setNoteText(notes[0].markdown);
+    if (notesArr.length > 0 && !noteText) {
+      setNoteText(notesArr[0].markdown || "");
     }
   }, [notes]);
 
   // Auto-save debouncer
   useEffect(() => {
     const timer = setTimeout(async () => {
-      if (notes && noteText && (notes.length === 0 || notes[0].markdown !== noteText)) {
+      if (noteText && (notesArr.length === 0 || notesArr[0].markdown !== noteText)) {
         setIsSaving(true);
-        await addNote.mutateAsync({ invId: unwrappedParams.id, markdown: noteText });
+        await createNote.mutateAsync({ invId: unwrappedParams.id, markdown: noteText });
         setIsSaving(false);
       }
     }, 5000); // 5 sec auto-save
     return () => clearTimeout(timer);
-  }, [noteText, unwrappedParams.id, notes, addNote]);
+  }, [noteText, unwrappedParams.id, notes, createNote]);
 
   const [activeTab, setActiveTab] = useState("WORKSPACE");
 
@@ -98,11 +100,11 @@ export default function WorkspacePage({ params }: { params: Promise<{ id: string
                   <ShieldAlert className="w-4 h-4"/> Evidence Board
                 </h2>
                 
-                {(!entities || Object.keys(entities).length === 0) ? (
+                {(!entities || Object.keys(entities as object).length === 0) ? (
                   <div className="text-center text-sm font-mono text-muted-foreground mt-4 mb-4">NO EVIDENCE ATTACHED YET</div>
                 ) : (
                   <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    {Object.entries(entities).map(([type, entList]: [string, any]) => (
+                    {Object.entries(entities as Record<string, any[]>).map(([type, entList]) => (
                       entList.map((e: any) => {
                         const entId = e.fir_id || e.citizen_id || e.vehicle_id || e.phone_id || e.criminal_id || e.id;
                         return (
@@ -114,7 +116,7 @@ export default function WorkspacePage({ params }: { params: Promise<{ id: string
                               className="absolute top-2 right-2 p-1 text-muted-foreground hover:text-destructive opacity-0 group-hover:opacity-100 transition-opacity"
                               onClick={(evt) => {
                                 evt.stopPropagation();
-                                removeEntity.mutate({ invId: inv.id, type, id: entId });
+                                removeEntity.mutate({ invId: (inv as any).id, entityType: type, entityId: entId });
                               }}
                             >
                               <Trash2 className="w-4 h-4" />
@@ -265,7 +267,7 @@ function IntelligencePanel({ caseId, workspace, openDrawer }: { caseId: string, 
           <AlertTriangle className="w-4 h-4"/> Cross-Case Discoveries
         </h2>
         <div className="space-y-3">
-           {overlapsLoading ? <div className="animate-pulse font-mono text-muted-foreground">SCANNING NETWORK...</div> : overlaps?.length > 0 ? overlaps.map((o: any, i: number) => (
+           {overlapsLoading ? <div className="animate-pulse font-mono text-muted-foreground">SCANNING NETWORK...</div> : (overlaps as any)?.length > 0 ? (overlaps as any[]).map((o: any, i: number) => (
              <div key={i} className="bg-card border border-chart-2/30 p-4 rounded-lg flex items-center justify-between">
                 <div>
                    <div className="text-chart-2 font-bold font-mono text-sm mb-1">{o.reason}</div>

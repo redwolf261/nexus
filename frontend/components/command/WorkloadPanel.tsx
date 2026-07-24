@@ -4,7 +4,7 @@ export interface AnalystWorkload {
   officer_id: string;
   name: string;
   rank: string;
-  district_id?: str;
+  district_id?: string;
   availability_status: string;
   current_case_count: number;
   current_task_count: number;

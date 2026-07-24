@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export interface AuditEntry {
-  id: str;
+  id: string;
   sequence: number;
   prev_hash: string;
   hash: string;

@@ -1,5 +1,4 @@
-
-import { QueryClient } from ''@tanstack/react-query'';
+import { QueryClient } from '@tanstack/react-query';
 
 export const applyEventReducer = (qc: QueryClient, event: any) => {
   const { event_type, payload, case_id } = event;
@@ -16,64 +15,49 @@ export const applyEventReducer = (qc: QueryClient, event: any) => {
   };
 
   switch (event_type) {
-    case ''ENTITY_ATTACHED'': {
+    case 'ENTITY_ATTACHED': {
       qc.setQueryData(['workspace', 'entities', case_id], (old: any) => {
         if (!old) return old;
-        const newEntities = { ...old };
-        const typeKey = payload.entity_type;
-        if (!newEntities[typeKey]) newEntities[typeKey] = [];
-        
-        // Prevent duplicate entity rendering
-        const exists = newEntities[typeKey].find((e: any) => 
-            (e.id || e.fir_id || e.citizen_id || e.vehicle_id || e.phone_id || e.criminal_id) === payload.entity_id
-        );
-        
-        if (!exists) {
-            newEntities[typeKey] = [...newEntities[typeKey], { id: payload.entity_id }];
-        }
-        return newEntities;
+        const exists = old.some((e: any) => e.entity_id === payload.entity_id && e.entity_type === payload.entity_type);
+        if (exists) return old;
+        return [...old, { entity_type: payload.entity_type, entity_id: payload.entity_id, details: payload.details || {} }];
       });
-      addTimelineEvent(''Intelligence'', Entity  () attached., payload.entity_id);
+      addTimelineEvent('ENTITY_LINKED', `Linked ${payload.entity_type}: ${payload.entity_id}`, payload.entity_id);
       break;
     }
-    
-    case ''ENTITY_REMOVED'': {
+    case 'ENTITY_DETACHED': {
       qc.setQueryData(['workspace', 'entities', case_id], (old: any) => {
         if (!old) return old;
-        const newEntities = { ...old };
-        const typeKey = payload.entity_type;
-        if (newEntities[typeKey]) {
-            newEntities[typeKey] = newEntities[typeKey].filter((e: any) => 
-                (e.id || e.fir_id || e.citizen_id || e.vehicle_id || e.phone_id || e.criminal_id) !== payload.entity_id
-            );
-        }
-        return newEntities;
+        return old.filter((e: any) => !(e.entity_id === payload.entity_id && e.entity_type === payload.entity_type));
       });
-      addTimelineEvent(''Intelligence'', Entity  () removed.);
+      addTimelineEvent('ENTITY_UNLINKED', `Unlinked ${payload.entity_type}: ${payload.entity_id}`, payload.entity_id);
       break;
     }
-
-    case ''NOTE_ADDED'': {
+    case 'NOTE_ADDED': {
       qc.setQueryData(['workspace', 'notes', case_id], (old: any) => {
-        if (!old) return [{ markdown: payload.markdown, id: ''optimistic'', created_at: timestamp }];
-        // If note exists, update it, otherwise create new
-        if (old.length > 0) {
-            const updated = [...old];
-            updated[0] = { ...updated[0], markdown: payload.markdown };
-            return updated;
-        }
-        return [{ markdown: payload.markdown, id: ''optimistic'', created_at: timestamp }];
+        if (!old) return old;
+        return [payload.note, ...old];
       });
+      addTimelineEvent('NOTE_ADDED', `Note added by ${payload.note?.author || 'system'}`);
       break;
     }
-
-    case ''CASE_UPDATED'': {
+    case 'CASE_STATUS_CHANGED': {
       qc.setQueryData(['workspace', 'meta', case_id], (old: any) => {
         if (!old) return old;
-        return { ...old, ...payload };
+        return { ...old, status: payload.new_status };
       });
-      addTimelineEvent(''Investigation'', ''Case details updated.'');
+      addTimelineEvent('STATUS_CHANGED', `Status changed to ${payload.new_status}`);
       break;
     }
+    case 'CASE_PRIORITY_CHANGED': {
+      qc.setQueryData(['workspace', 'meta', case_id], (old: any) => {
+        if (!old) return old;
+        return { ...old, priority: payload.new_priority };
+      });
+      addTimelineEvent('PRIORITY_CHANGED', `Priority changed to ${payload.new_priority}`);
+      break;
+    }
+    default:
+      break;
   }
 };

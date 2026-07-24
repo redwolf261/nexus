@@ -6,13 +6,13 @@ export function useWebSocket(channel: string) {
   const ws = useRef<WebSocket | null>(null);
   const reconnectAttempts = useRef(0);
   const maxReconnectAttempts = 5;
+  const processedEvents = useRef<Set<string>>(new Set());
 
   const connect = useCallback(() => {
     if (ws.current?.readyState === WebSocket.OPEN) return;
 
-    const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-    const host = window.location.hostname;
-    // Assuming backend runs on 8000
+    const protocol = typeof window !== 'undefined' && window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    const host = typeof window !== 'undefined' ? window.location.hostname : 'localhost';
     const port = 8000;
     const wsUrl = `${protocol}//${host}:${port}/ws/${channel}`;
 
@@ -23,9 +23,6 @@ export function useWebSocket(channel: string) {
       setIsConnected(true);
       reconnectAttempts.current = 0;
     };
-
-    // Use a ref for processed events to avoid re-triggering connect
-    const processedEvents = useRef<Set<string>>(new Set());
 
     socket.onmessage = (event) => {
       try {
@@ -43,7 +40,9 @@ export function useWebSocket(channel: string) {
           if (processedEvents.current.size > 1000) {
             const iterator = processedEvents.current.values();
             const first = iterator.next().value;
-            processedEvents.current.delete(first);
+            if (first) {
+              processedEvents.current.delete(first);
+            }
           }
         }
         
@@ -83,5 +82,13 @@ export function useWebSocket(channel: string) {
     };
   }, [connect]);
 
-  return { lastMessage, isConnected };
+  return {
+    lastMessage,
+    isConnected,
+    sendMessage: (msg: any) => {
+      if (ws.current?.readyState === WebSocket.OPEN) {
+        ws.current.send(JSON.stringify(msg));
+      }
+    }
+  };
 }

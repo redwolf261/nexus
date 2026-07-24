@@ -3,7 +3,6 @@
  *
  * Displays:
  * - Task list with status, priority, due dates
- * - Dependency graph visualization
  * - Progress bar and completion metrics
  * - Action buttons (assign, start, complete, cancel, skip, block)
  *
@@ -11,43 +10,6 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import {
-  Box,
-  Card,
-  CardHeader,
-  CardContent,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemButton,
-  Button,
-  ButtonGroup,
-  Chip,
-  LinearProgress,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogActions,
-  TextField,
-  CircularProgress,
-  Alert,
-  Divider,
-  Typography,
-  Avatar,
-  AvatarGroup,
-} from '@mui/material';
-import {
-  Edit as EditIcon,
-  PlayArrow as PlayIcon,
-  Check as CompleteIcon,
-  Close as CancelIcon,
-  Block as BlockIcon,
-  Skip as SkipIcon,
-  PersonAdd as AssignIcon,
-  Refresh as RefreshIcon,
-} from '@mui/icons-material';
-import { styled } from '@mui/material/styles';
 
 interface TaskData {
   id: string;
@@ -78,48 +40,28 @@ interface TaskProgress {
   overdue_tasks: TaskData[];
 }
 
-const TaskChip = styled(Chip)(({ theme }) => ({
-  margin: theme.spacing(0.5),
-}));
-
-const PriorityChip: React.FC<{ priority: string }> = ({ priority }) => {
-  const colorMap: Record<string, 'error' | 'warning' | 'default' | 'info'> = {
-    CRITICAL: 'error',
-    HIGH: 'warning',
-    MEDIUM: 'default',
-    LOW: 'info',
-  };
-  return <TaskChip label={priority} size="small" color={colorMap[priority]} variant="outlined" />;
-};
-
-const StatusChip: React.FC<{ status: string; slaState?: string }> = ({ status, slaState }) => {
-  const colorMap: Record<string, 'default' | 'primary' | 'success' | 'error' | 'warning'> = {
-    CREATED: 'default',
-    ASSIGNED: 'primary',
-    ACTIVE: 'info',
-    BLOCKED: 'warning',
-    COMPLETED: 'success',
-    CANCELLED: 'error',
-    SKIPPED: 'default',
-  };
-
-  let label = status;
-  if (status === 'ACTIVE' && slaState === 'BREACHED') {
-    label = 'SLA BREACHED';
-    return <TaskChip label={label} size="small" color="error" variant="filled" />;
-  } else if (status === 'ACTIVE' && slaState === 'WARNING') {
-    label = 'WARNING';
-    return <TaskChip label={label} size="small" color="warning" variant="filled" />;
-  }
-
-  return <TaskChip label={status} size="small" color={colorMap[status]} />;
-};
-
 interface InvestigationTasksPanelProps {
   investigationId: string;
   caseType?: string;
   onTaskCreated?: () => void;
 }
+
+const PRIORITY_STYLES: Record<string, string> = {
+  CRITICAL: 'bg-rose-950 text-rose-300 border-rose-700',
+  HIGH: 'bg-amber-950 text-amber-300 border-amber-700',
+  MEDIUM: 'bg-cyan-950 text-cyan-300 border-cyan-700',
+  LOW: 'bg-slate-800 text-slate-400 border-slate-700',
+};
+
+const STATUS_STYLES: Record<string, string> = {
+  CREATED: 'bg-slate-800 text-slate-300 border-slate-600',
+  ASSIGNED: 'bg-indigo-950 text-indigo-300 border-indigo-700',
+  ACTIVE: 'bg-cyan-950 text-cyan-300 border-cyan-700',
+  BLOCKED: 'bg-amber-950 text-amber-300 border-amber-700',
+  COMPLETED: 'bg-emerald-950 text-emerald-300 border-emerald-700',
+  CANCELLED: 'bg-slate-900 text-slate-500 border-slate-700',
+  SKIPPED: 'bg-slate-900 text-slate-400 border-slate-700',
+};
 
 export const InvestigationTasksPanel: React.FC<InvestigationTasksPanelProps> = ({
   investigationId,
@@ -135,14 +77,9 @@ export const InvestigationTasksPanel: React.FC<InvestigationTasksPanelProps> = (
     open: boolean;
     action: string;
     task: TaskData | null;
-    reason?: string;
-  }>({
-    open: false,
-    action: '',
-    task: null,
-  });
+    reason: string;
+  }>({ open: false, action: '', task: null, reason: '' });
 
-  // Load tasks and progress
   const loadTasks = async () => {
     setLoading(true);
     try {
@@ -169,7 +106,6 @@ export const InvestigationTasksPanel: React.FC<InvestigationTasksPanelProps> = (
     loadTasks();
   }, [investigationId]);
 
-  // Initialize from template if case type provided
   const initializeTemplate = async () => {
     if (!caseType) return;
     setLoading(true);
@@ -188,7 +124,6 @@ export const InvestigationTasksPanel: React.FC<InvestigationTasksPanelProps> = (
     }
   };
 
-  // Execute task action
   const executeAction = async (action: string, task: TaskData, reason?: string) => {
     setLoading(true);
     try {
@@ -201,14 +136,12 @@ export const InvestigationTasksPanel: React.FC<InvestigationTasksPanelProps> = (
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-
       if (!res.ok) {
-        const errData = await res.json();
-        throw new Error(errData.detail || 'Action failed');
+        const err = await res.json();
+        throw new Error(err.detail || 'Action failed');
       }
-
+      setActionDialog({ open: false, action: '', task: null, reason: '' });
       await loadTasks();
-      setActionDialog({ open: false, action: '', task: null });
     } catch (err) {
       setError((err as Error).message);
     } finally {
@@ -216,281 +149,266 @@ export const InvestigationTasksPanel: React.FC<InvestigationTasksPanelProps> = (
     }
   };
 
-  const handleTaskAction = async (task: TaskData, action: string) => {
-    // Finding 9 fix: Actually check dependencies from API
-    if (action === 'start') {
-      try {
-        const depsRes = await fetch(`/api/tasks/${task.investigation_id}/dependencies`);
-        if (!depsRes.ok) {
-          setError('Failed to load dependencies');
-          return;
-        }
-        const depData = await depsRes.json();
-
-        // Find dependencies for this task
-        const taskDeps = depData.dependencies.filter((d: any) => d.from === task.id);
-        const unmetDeps = taskDeps.filter((d: any) => {
-          const depTask = depData.tasks.find((t: any) => t.id === d.to);
-          return depTask && depTask.status !== 'COMPLETED';
-        });
-
-        if (unmetDeps.length > 0) {
-          setError(`Cannot start: ${unmetDeps.length} dependency(ies) not yet complete`);
-          return;
-        }
-      } catch (err) {
-        setError(`Failed to check dependencies: ${(err as Error).message}`);
-        return;
-      }
-    }
+  const openActionDialog = (action: string, task: TaskData) => {
     setActionDialog({ open: true, action, task, reason: '' });
   };
 
-  // Get actionable tasks based on status
-  const getAvailableActions = (task: TaskData): string[] => {
-    switch (task.status) {
-      case 'CREATED':
-        return ['assign', 'cancel'];
-      case 'ASSIGNED':
-        return ['start', 'cancel', 'skip'];
-      case 'ACTIVE':
-        return ['complete', 'cancel', 'block', 'skip'];
-      case 'BLOCKED':
-        return ['unblock', 'cancel'];
-      default:
-        return [];
+  const closeActionDialog = () => {
+    setActionDialog({ open: false, action: '', task: null, reason: '' });
+  };
+
+  const confirmAction = () => {
+    if (actionDialog.task) {
+      executeAction(actionDialog.action, actionDialog.task, actionDialog.reason);
     }
   };
 
-  if (loading && !tasks.length) return <CircularProgress />;
+  const canStart = (task: TaskData) =>
+    task.status === 'ASSIGNED' && task.sla_state !== 'BREACHED';
+
+  const getActionButtons = (task: TaskData) => {
+    const buttons: { label: string; action: string; style: string }[] = [];
+    switch (task.status) {
+      case 'ASSIGNED':
+        buttons.push({ label: 'Start', action: 'start', style: 'bg-cyan-700 hover:bg-cyan-600 text-white' });
+        buttons.push({ label: 'Block', action: 'block', style: 'bg-amber-700 hover:bg-amber-600 text-white' });
+        buttons.push({ label: 'Cancel', action: 'cancel', style: 'bg-slate-700 hover:bg-slate-600 text-slate-200' });
+        break;
+      case 'ACTIVE':
+        buttons.push({ label: 'Complete', action: 'complete', style: 'bg-emerald-700 hover:bg-emerald-600 text-white' });
+        buttons.push({ label: 'Block', action: 'block', style: 'bg-amber-700 hover:bg-amber-600 text-white' });
+        buttons.push({ label: 'Skip', action: 'skip', style: 'bg-slate-700 hover:bg-slate-600 text-slate-200' });
+        break;
+      case 'BLOCKED':
+        buttons.push({ label: 'Unblock', action: 'unblock', style: 'bg-indigo-700 hover:bg-indigo-600 text-white' });
+        buttons.push({ label: 'Cancel', action: 'cancel', style: 'bg-slate-700 hover:bg-slate-600 text-slate-200' });
+        break;
+      case 'CREATED':
+        buttons.push({ label: 'Cancel', action: 'cancel', style: 'bg-slate-700 hover:bg-slate-600 text-slate-200' });
+        break;
+    }
+    return buttons;
+  };
+
+  const ACTIONS_NEEDING_REASON = ['block', 'cancel', 'complete', 'skip'];
+
+  const formatDate = (dateStr?: string) => {
+    if (!dateStr) return '—';
+    return new Date(dateStr).toLocaleDateString();
+  };
 
   return (
-    <Box sx={{ p: 2 }}>
-      {error && (
-        <Alert severity="error" onClose={() => setError(null)} sx={{ mb: 2 }}>
-          {error}
-        </Alert>
-      )}
+    <div className="bg-slate-950 border border-slate-800 rounded-xl font-mono text-xs shadow-xl">
+      {/* Header */}
+      <div className="p-4 border-b border-slate-800 flex justify-between items-center">
+        <div>
+          <h3 className="text-sm font-bold text-slate-100 flex items-center gap-2">
+            Investigation Tasks
+            <span className="px-2 py-0.5 rounded bg-cyan-950 text-cyan-300 border border-cyan-800 text-[10px]">
+              {tasks.length} tasks
+            </span>
+          </h3>
+          {progress && (
+            <p className="text-[11px] text-slate-400 mt-0.5">
+              {progress.completed}/{progress.total_tasks} completed &bull; {progress.percent_complete.toFixed(0)}%
+            </p>
+          )}
+        </div>
 
-      {/* Header with Initialize Button */}
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-        <Typography variant="h6">Investigation Tasks</Typography>
-        {!tasks.length && caseType && (
-          <Button
-            variant="contained"
-            startIcon={<RefreshIcon />}
-            onClick={initializeTemplate}
+        <div className="flex gap-2">
+          {caseType && tasks.length === 0 && (
+            <button
+              onClick={initializeTemplate}
+              disabled={loading}
+              className="px-3 py-1.5 bg-purple-700 hover:bg-purple-600 text-white rounded-lg text-xs font-semibold shadow"
+            >
+              Init from Template
+            </button>
+          )}
+          <button
+            onClick={loadTasks}
             disabled={loading}
+            className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg border border-slate-700 text-xs"
           >
-            Load Template
-          </Button>
-        )}
-      </Box>
+            {loading ? '...' : 'Refresh'}
+          </button>
+        </div>
+      </div>
 
       {/* Progress Bar */}
       {progress && (
-        <Card sx={{ mb: 2 }}>
-          <CardContent>
-            <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 1 }}>
-              <Typography variant="body2">
-                {progress.completed}/{progress.total_tasks} completed
-              </Typography>
-              <Typography variant="body2">{progress.percent_complete.toFixed(0)}%</Typography>
-            </Box>
-            <LinearProgress variant="determinate" value={progress.percent_complete} />
-
-            {/* Status breakdown */}
-            <Box sx={{ mt: 2, display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-              {Object.entries(progress.status_breakdown).map(([status, count]) => (
-                <Typography key={status} variant="caption">
+        <div className="px-4 pt-3 pb-1">
+          <div className="w-full bg-slate-800 rounded-full h-1.5">
+            <div
+              className={`h-1.5 rounded-full transition-all duration-700 ${
+                progress.percent_complete >= 75 ? 'bg-emerald-500' :
+                progress.percent_complete >= 25 ? 'bg-amber-500' : 'bg-rose-500'
+              }`}
+              style={{ width: `${Math.min(100, progress.percent_complete)}%` }}
+            />
+          </div>
+          {/* Status Breakdown */}
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {Object.entries(progress.status_breakdown)
+              .filter(([, count]) => count > 0)
+              .map(([status, count]) => (
+                <span
+                  key={status}
+                  className={`px-1.5 py-0.5 rounded border text-[9px] font-bold ${STATUS_STYLES[status] || 'bg-slate-800 text-slate-300 border-slate-700'}`}
+                >
                   {status}: {count}
-                </Typography>
+                </span>
               ))}
-            </Box>
+          </div>
+        </div>
+      )}
 
-            {/* Next due and blocked info */}
-            {progress.next_due_task && (
-              <Alert severity="info" sx={{ mt: 2 }}>
-                Next due: <strong>{progress.next_due_task.title}</strong> (
-                {new Date(progress.next_due_task.due_at!).toLocaleDateString()})
-              </Alert>
-            )}
-
-            {progress.blocked_tasks.length > 0 && (
-              <Alert severity="warning" sx={{ mt: 2 }}>
-                {progress.blocked_tasks.length} task(s) blocked
-              </Alert>
-            )}
-
-            {progress.overdue_tasks.length > 0 && (
-              <Alert severity="error" sx={{ mt: 2 }}>
-                {progress.overdue_tasks.length} task(s) overdue
-              </Alert>
-            )}
-          </CardContent>
-        </Card>
+      {/* Error */}
+      {error && (
+        <div className="mx-4 mt-2 p-2 bg-rose-950/40 border border-rose-800/60 rounded-lg text-rose-300 text-[11px]">
+          {error}
+          <button className="ml-2 underline" onClick={() => setError(null)}>dismiss</button>
+        </div>
       )}
 
       {/* Task List */}
-      <Card>
-        <CardHeader title="Task List" />
-        <CardContent>
-          {tasks.length === 0 ? (
-            <Typography variant="body2" color="textSecondary">
-              No tasks. Click "Load Template" to initialize from case type.
-            </Typography>
-          ) : (
-            <List sx={{ width: '100%' }}>
-              {tasks.map((task) => (
-                <React.Fragment key={task.id}>
-                  <ListItem
-                    disablePadding
-                    sx={{
-                      bgcolor:
-                        task.status === 'ACTIVE'
-                          ? 'action.hover'
-                          : task.status === 'COMPLETED'
-                            ? 'action.selected'
-                            : 'transparent',
-                      mb: 1,
-                      borderRadius: 1,
-                      border: '1px solid',
-                      borderColor: 'divider',
-                    }}
-                  >
-                    <ListItemButton
-                      onClick={() => setSelectedTask(selectedTask?.id === task.id ? null : task)}
-                    >
-                      <ListItemText
-                        primary={
-                          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                            <Typography variant="subtitle2">{task.title}</Typography>
-                            <StatusChip status={task.status} slaState={task.sla_state} />
-                            <PriorityChip priority={task.priority} />
-                          </Box>
-                        }
-                        secondary={
-                          <Box sx={{ mt: 1 }}>
-                            <Typography variant="caption" display="block">
-                              {task.description}
-                            </Typography>
-                            {task.due_at && (
-                              <Typography variant="caption" display="block">
-                                Due: {new Date(task.due_at).toLocaleDateString()}
-                              </Typography>
-                            )}
-                            {task.assigned_officer_id && (
-                              <Typography variant="caption" display="block">
-                                Assigned to: {task.assigned_officer_id}
-                              </Typography>
-                            )}
-                          </Box>
-                        }
-                      />
-                    </ListItemButton>
-
-                    {/* Action Buttons */}
-                    {selectedTask?.id === task.id && (
-                      <Box sx={{ ml: 2, display: 'flex', gap: 0.5 }}>
-                        {getAvailableActions(task).map((action) => {
-                          const icons: Record<string, React.ReactNode> = {
-                            assign: <AssignIcon fontSize="small" />,
-                            start: <PlayIcon fontSize="small" />,
-                            complete: <CompleteIcon fontSize="small" />,
-                            cancel: <CancelIcon fontSize="small" />,
-                            skip: <SkipIcon fontSize="small" />,
-                            block: <BlockIcon fontSize="small" />,
-                            unblock: <PlayIcon fontSize="small" />,
-                          };
-
-                          return (
-                            <Button
-                              key={action}
-                              size="small"
-                              startIcon={icons[action]}
-                              onClick={() => handleTaskAction(task, action)}
-                              disabled={loading}
-                            >
-                              {action}
-                            </Button>
-                          );
-                        })}
-                      </Box>
+      <div className="p-4 space-y-2 max-h-[600px] overflow-y-auto">
+        {loading && tasks.length === 0 ? (
+          <div className="text-slate-500 py-8 text-center animate-pulse">Loading tasks...</div>
+        ) : tasks.length === 0 ? (
+          <div className="text-slate-500 py-8 text-center border border-dashed border-slate-800 rounded-lg italic">
+            No tasks created yet.
+            {caseType && (
+              <button
+                onClick={initializeTemplate}
+                className="block mx-auto mt-3 px-4 py-1.5 bg-purple-800 hover:bg-purple-700 text-white rounded-lg text-xs"
+              >
+                Initialize from {caseType} Template
+              </button>
+            )}
+          </div>
+        ) : (
+          tasks.map((task) => (
+            <div
+              key={task.id}
+              onClick={() => setSelectedTask(selectedTask?.id === task.id ? null : task)}
+              className={`p-3 rounded-lg border transition-all cursor-pointer ${
+                selectedTask?.id === task.id
+                  ? 'bg-slate-800 border-cyan-700'
+                  : 'bg-slate-900/80 border-slate-800 hover:border-slate-600'
+              } ${task.status === 'COMPLETED' ? 'opacity-60' : ''}`}
+            >
+              {/* Task Row */}
+              <div className="flex items-start justify-between gap-2">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-semibold text-slate-100 truncate">{task.title}</span>
+                    {task.sla_state === 'BREACHED' && (
+                      <span className="px-1.5 py-0.5 rounded bg-rose-900 text-rose-300 border border-rose-700 text-[9px] animate-pulse font-bold">
+                        SLA BREACHED
+                      </span>
                     )}
-                  </ListItem>
-                </React.Fragment>
-              ))}
-            </List>
-          )}
-        </CardContent>
-      </Card>
+                    {task.sla_state === 'WARNING' && (
+                      <span className="px-1.5 py-0.5 rounded bg-amber-900 text-amber-300 border border-amber-700 text-[9px] font-bold">
+                        SLA WARNING
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2 mt-1 text-[10px] text-slate-400">
+                    <span>{task.category}</span>
+                    {task.assigned_officer_id && <span>&bull; {task.assigned_officer_id}</span>}
+                    {task.due_at && <span>&bull; Due: {formatDate(task.due_at)}</span>}
+                  </div>
+                </div>
 
-      {/* Action Dialog */}
-      <Dialog
-        open={actionDialog.open}
-        onClose={() => setActionDialog({ open: false, action: '', task: null })}
-        maxWidth="sm"
-        fullWidth
-      >
-        <DialogTitle>
-          {actionDialog.action.charAt(0).toUpperCase() + actionDialog.action.slice(1)} Task
-        </DialogTitle>
-        <DialogContent>
-          {actionDialog.task && (
-            <Box sx={{ mt: 2 }}>
-              <Typography variant="body2" gutterBottom>
-                <strong>Task:</strong> {actionDialog.task.title}
-              </Typography>
-              <Typography variant="body2" gutterBottom>
-                <strong>Current Status:</strong> {actionDialog.task.status}
-              </Typography>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <span className={`px-1.5 py-0.5 rounded border text-[9px] font-bold ${PRIORITY_STYLES[task.priority]}`}>
+                    {task.priority}
+                  </span>
+                  <span className={`px-1.5 py-0.5 rounded border text-[9px] font-bold ${STATUS_STYLES[task.status]}`}>
+                    {task.status}
+                  </span>
+                </div>
+              </div>
 
-              {['block', 'complete', 'cancel', 'skip'].includes(actionDialog.action) && (
-                <TextField
-                  fullWidth
-                  multiline
-                  rows={3}
-                  label={
-                    actionDialog.action === 'complete'
-                      ? 'Completion Notes'
-                      : 'Reason'
-                  }
-                  placeholder={
-                    actionDialog.action === 'block'
-                      ? 'What are you waiting for?'
-                      : undefined
-                  }
-                  value={actionDialog.reason || ''}
-                  onChange={(e) =>
-                    setActionDialog({
-                      ...actionDialog,
-                      reason: e.target.value,
-                    })
-                  }
-                  sx={{ mt: 2 }}
-                />
+              {/* Expanded Actions */}
+              {selectedTask?.id === task.id && (
+                <div
+                  className="mt-3 pt-3 border-t border-slate-700 space-y-2"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {task.description && (
+                    <p className="text-slate-300 text-[11px] leading-relaxed">{task.description}</p>
+                  )}
+                  <div className="flex flex-wrap gap-1.5">
+                    {getActionButtons(task).map(({ label, action, style }) => (
+                      <button
+                        key={action}
+                        onClick={() => {
+                          if (ACTIONS_NEEDING_REASON.includes(action)) {
+                            openActionDialog(action, task);
+                          } else {
+                            executeAction(action, task);
+                          }
+                        }}
+                        disabled={loading}
+                        className={`px-3 py-1 rounded text-[10px] font-semibold ${style} disabled:opacity-50`}
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
               )}
-            </Box>
-          )}
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setActionDialog({ open: false, action: '', task: null })}>
-            Cancel
-          </Button>
-          <Button
-            onClick={() => {
-              if (actionDialog.task) {
-                executeAction(actionDialog.action, actionDialog.task, actionDialog.reason);
-              }
-            }}
-            variant="contained"
-            disabled={loading}
-          >
-            {actionDialog.action}
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </Box>
+            </div>
+          ))
+        )}
+      </div>
+
+      {/* Action Confirmation Dialog */}
+      {actionDialog.open && actionDialog.task && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
+          <div className="bg-slate-900 border border-slate-700 rounded-xl p-6 w-full max-w-md shadow-2xl">
+            <h3 className="text-sm font-bold text-slate-100 mb-1 capitalize">
+              {actionDialog.action} Task
+            </h3>
+            <p className="text-[11px] text-slate-400 mb-4">
+              Task: <span className="text-slate-200">{actionDialog.task.title}</span>
+            </p>
+
+            {ACTIONS_NEEDING_REASON.includes(actionDialog.action) && (
+              <textarea
+                className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-slate-200 text-xs resize-none focus:outline-none focus:ring-1 focus:ring-cyan-600 mb-4"
+                rows={3}
+                placeholder={
+                  actionDialog.action === 'complete'
+                    ? 'Completion notes (optional)...'
+                    : `Reason for ${actionDialog.action}...`
+                }
+                value={actionDialog.reason}
+                onChange={(e) => setActionDialog((prev) => ({ ...prev, reason: e.target.value }))}
+              />
+            )}
+
+            <div className="flex justify-end gap-2">
+              <button
+                onClick={closeActionDialog}
+                className="px-4 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={confirmAction}
+                disabled={loading}
+                className="px-4 py-1.5 bg-cyan-700 hover:bg-cyan-600 text-white rounded-lg text-xs font-semibold shadow"
+              >
+                {loading ? 'Processing...' : `Confirm ${actionDialog.action}`}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 };
 

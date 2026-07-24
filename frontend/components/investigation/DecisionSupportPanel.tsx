@@ -2,7 +2,7 @@ import React from "react";
 
 export interface Recommendation {
   recommendation_id: string;
-  rule_code: str;
+  rule_code: string;
   reason: string;
   priority: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW" | string;
   recommended_action: string;

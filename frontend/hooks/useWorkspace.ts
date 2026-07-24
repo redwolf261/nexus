@@ -1,6 +1,5 @@
-
-import { useQuery, useQueryClient } from ''@tanstack/react-query'';
-import { getInvestigationWorkspace } from ''@/lib/api'';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { getInvestigationWorkspace } from '@/lib/api';
 
 export function useWorkspaceOrchestrator(id: string) {
   const qc = useQueryClient();

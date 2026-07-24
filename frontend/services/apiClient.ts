@@ -8,7 +8,7 @@ export async function fetchApi<T = any>(
   endpoint: string,
   options: RequestInit = {}
 ): Promise<T> {
-  const token = typeof window !== "undefined" ? localStorage.getItem("nexus_token") : null;
+  const token = typeof window !== "undefined" ? (localStorage.getItem("nexus_token") || localStorage.getItem("dev_token")) : null;
   const headers: Record<string, string> = {
     "Content-Type": "application/json",
     ...(options.headers as Record<string, string>),

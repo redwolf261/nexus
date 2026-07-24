@@ -31,7 +31,7 @@ export const ReminderManager: React.FC<ReminderManagerProps> = ({
             </span>
           </h3>
           <p className="text-[11px] text-slate-400 mt-0.5">
-            Manages escalating intervals ($2^n \times \text{base}$). Reminders suppress automatically upon acknowledgement.
+            Manages escalating intervals (2^n × base). Reminders suppress automatically upon acknowledgement.
           </p>
         </div>
 

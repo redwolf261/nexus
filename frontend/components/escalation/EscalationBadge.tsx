@@ -3,7 +3,7 @@ import React from "react";
 export type EscalationStatus = "PENDING" | "ACKNOWLEDGED" | "RESOLVED" | "EXPIRED" | "CANCELLED";
 
 interface EscalationBadgeProps {
-  status: EscalationStatus | str;
+  status: EscalationStatus | string;
   size?: "sm" | "md" | "lg";
 }
 

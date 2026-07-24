@@ -6,7 +6,7 @@ interface ApprovalDecisionDialogProps {
   approvalId: string;
   isOpen: boolean;
   onClose: () => void;
-  onSubmit: (action: DecisionAction, comments: str, targetRole?: string) => Promise<void>;
+  onSubmit: (action: DecisionAction, comments: string, targetRole?: string) => Promise<void>;
   isSubmitting?: boolean;
 }
 

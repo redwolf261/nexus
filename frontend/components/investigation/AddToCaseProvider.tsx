@@ -38,7 +38,7 @@ function AddToCaseDialog({ entityId, entityType, onClose }: { entityId: string, 
   const { addEntity } = useInvestigationMutations();
 
   const handleAttach = async (invId: string) => {
-    await addEntity.mutateAsync({ invId, type: entityType, id: entityId });
+    await addEntity.mutateAsync({ invId, entityType, entityId });
     onClose();
   };
 

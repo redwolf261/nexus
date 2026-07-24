@@ -3,7 +3,7 @@ import React from "react";
 export interface SLAAlert {
   task_id: string;
   investigation_id: string;
-  task_title: str;
+  task_title: string;
   assigned_officer_id?: string;
   sla_category: string;
   remaining_sla_seconds: number;

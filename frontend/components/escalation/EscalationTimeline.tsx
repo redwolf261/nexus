@@ -6,7 +6,7 @@ export interface EscalationLevelDTO {
   authority_tier: string;
   role_name: string;
   timeout_hours: number;
-  auto_escalate: bool;
+  auto_escalate: boolean;
 }
 
 interface EscalationTimelineProps {

@@ -1,17 +1,17 @@
 import React from "react";
 
 export interface NotificationDTO {
-  notification_id: str;
-  title: str;
-  body: str;
-  event_type: str;
+  notification_id: string;
+  title: string;
+  body: string;
+  event_type: string;
   priority: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW" | string;
-  status: str;
-  source_entity_type: str;
-  source_entity_id: str;
-  created_at: str;
-  acknowledged_at?: str | null;
-  dismissed_at?: str | null;
+  status: string;
+  source_entity_type: string;
+  source_entity_id: string;
+  created_at: string;
+  acknowledged_at?: string | null;
+  dismissed_at?: string | null;
   version: number;
 }
 

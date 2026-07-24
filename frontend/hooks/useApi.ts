@@ -27,7 +27,7 @@ import {
 import { ApiClient } from "@/services/apiClient";
 import type { FIRFilters } from "@/types/api";
 
-// ── Existing Hooks ─────────────────────────────────────────────────────────
+// ── Existing Dashboard & FIR Hooks ─────────────────────────────────────────
 
 export function useExecutiveDashboard() {
   return useQuery({
@@ -57,11 +57,158 @@ export function useFIRs(filters: FIRFilters = {}) {
   });
 }
 
-export function useInvestigations() {
+export function useFIRDetail(firId: string) {
   return useQuery({
-    queryKey: ["investigations"],
-    queryFn: getInvestigations,
+    queryKey: ["firDetail", firId],
+    queryFn: () => getFIRDetail(firId),
+    enabled: !!firId,
+  });
+}
+
+export function usePersonDetail(personId: string) {
+  return useQuery({
+    queryKey: ["personDetail", personId],
+    queryFn: () => getPersonDetail(personId),
+    enabled: !!personId,
+  });
+}
+
+export function useVehicleDetail(vehicleId: string) {
+  return useQuery({
+    queryKey: ["vehicleDetail", vehicleId],
+    queryFn: () => getVehicleDetail(vehicleId),
+    enabled: !!vehicleId,
+  });
+}
+
+export function useCriminalDetail(criminalId: string) {
+  return useQuery({
+    queryKey: ["criminalDetail", criminalId],
+    queryFn: () => getCriminalDetail(criminalId),
+    enabled: !!criminalId,
+  });
+}
+
+export function useHotspots() {
+  return useQuery({
+    queryKey: ["hotspots"],
+    queryFn: getHotspots,
+    staleTime: 60_000,
+  });
+}
+
+export function useSiloBuster(firId: string) {
+  return useQuery({
+    queryKey: ["siloBuster", firId],
+    queryFn: () => getSiloBuster(firId),
+    enabled: !!firId,
+  });
+}
+
+export function usePersonGraph(personId: string) {
+  return useQuery({
+    queryKey: ["personGraph", personId],
+    queryFn: () => getPersonGraph(personId),
+    enabled: !!personId,
+  });
+}
+
+export function useCampaignTimeline(campaignId: string) {
+  return useQuery({
+    queryKey: ["campaignTimeline", campaignId],
+    queryFn: () => getCampaignTimeline(campaignId),
+    enabled: !!campaignId,
+  });
+}
+
+export function useCampaignSummary(campaignId: string) {
+  return useQuery({
+    queryKey: ["campaignSummary", campaignId],
+    queryFn: () => getCampaignSummary(campaignId),
+    enabled: !!campaignId,
+  });
+}
+
+export function useSearch(query: string) {
+  return useQuery({
+    queryKey: ["search", query],
+    queryFn: () => search(query),
+    enabled: !!query && query.length >= 2,
+  });
+}
+
+export function useInvestigations(status?: string) {
+  return useQuery({
+    queryKey: ["investigations", status],
+    queryFn: () => getInvestigations(status),
     staleTime: 15_000,
+  });
+}
+
+export function useInvestigationMutations() {
+  const queryClient = useQueryClient();
+
+  const addEntityMutation = useMutation({
+    mutationFn: ({ invId, entityType, entityId }: { invId: string; entityType: string; entityId: string }) =>
+      addEntityToInvestigation(invId, entityType, entityId),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["investigations"] });
+    },
+  });
+
+  const removeEntityMutation = useMutation({
+    mutationFn: ({ invId, entityType, entityId }: { invId: string; entityType: string; entityId: string }) =>
+      removeEntityFromInvestigation(invId, entityType, entityId),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["investigations"] });
+    },
+  });
+
+  const createNoteMutation = useMutation({
+    mutationFn: ({ invId, markdown }: { invId: string; markdown: string }) =>
+      addInvestigationNote(invId, markdown),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["investigations"] });
+    },
+  });
+
+  const createInvestigationMutation = useMutation({
+    mutationFn: (data: { title: string; description?: string; priority: string }) =>
+      createInvestigation(data),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["investigations"] });
+    },
+  });
+
+  return {
+    create: createInvestigationMutation,
+    addEntity: addEntityMutation,
+    removeEntity: removeEntityMutation,
+    createNote: createNoteMutation,
+  };
+}
+
+export function useCaseRecommendations(caseId: string) {
+  return useQuery({
+    queryKey: ["caseRecommendations", caseId],
+    queryFn: () => ApiClient.recommendAssignment({ case_id: caseId }),
+    enabled: !!caseId,
+  });
+}
+
+export function useCaseRisk(caseId: string) {
+  return useQuery({
+    queryKey: ["caseRisk", caseId],
+    queryFn: () => ApiClient.getComplianceDashboard(),
+    enabled: !!caseId,
+  });
+}
+
+export function useCaseOverlaps(caseId: string) {
+  return useQuery({
+    queryKey: ["caseOverlaps", caseId],
+    queryFn: () => getSiloBuster("FIR-RBG-2021-00003"),
+    enabled: !!caseId,
   });
 }
 

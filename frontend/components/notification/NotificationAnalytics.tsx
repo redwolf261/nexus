@@ -1,16 +1,16 @@
 import React from "react";
 
 export interface AnalyticsReportDTO {
-  total_notifications: int;
-  delivery_success_rate: float;
-  unread_rate: float;
-  dismiss_rate: float;
-  avg_ack_time_seconds: float;
-  critical_avg_ack_time_seconds: float;
-  channel_usage: Record<string, int>;
+  total_notifications: number;
+  delivery_success_rate: number;
+  unread_rate: number;
+  dismiss_rate: number;
+  avg_ack_time_seconds: number;
+  critical_avg_ack_time_seconds: number;
+  channel_usage: Record<string, number>;
   district_stats: Record<string, any>;
-  officer_engagement_score: float;
-  supervisor_engagement_score: float;
+  officer_engagement_score: number;
+  supervisor_engagement_score: number;
 }
 
 interface NotificationAnalyticsProps {

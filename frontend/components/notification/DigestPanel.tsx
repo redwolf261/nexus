@@ -5,11 +5,11 @@ export interface DigestContentDTO {
   digest_type: string;
   recipient_id: string;
   recipient_role: string;
-  generated_at: str;
-  unread_notifications_count: int;
-  critical_alerts_count: int;
-  pending_approvals_count: int;
-  escalations_count: int;
+  generated_at: string;
+  unread_notifications_count: number;
+  critical_alerts_count: number;
+  pending_approvals_count: number;
+  escalations_count: number;
   summary_text: string;
 }
 

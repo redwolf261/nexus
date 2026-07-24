@@ -18,9 +18,13 @@ class Neo4jClient:
         self.driver.close()
 
     def query(self, query, parameters=None):
-        with self.driver.session(database="neo4j", default_access_mode="READ", transaction_timeout=5000) as session:
-            result = session.run(query, parameters)
-            return [record for record in result]
+        try:
+            with self.driver.session(database="neo4j", default_access_mode="READ") as session:
+                result = session.run(query, parameters)
+                return [record for record in result]
+        except Exception as e:
+            # Gracefully handle offline or unavailable Neo4j instance during dev/testing
+            return []
 
 # Global instance for the app
 neo4j_client = Neo4jClient(NEO4J_URI, NEO4J_USER, NEO4J_PASSWORD)

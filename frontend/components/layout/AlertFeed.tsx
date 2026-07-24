@@ -49,15 +49,15 @@ export function AlertFeed() {
     }
     
     if (activeIncident) {
-      initialAlerts = [
+      initialAlerts = ([
         { 
           id: Date.now(), 
-          type: "critical", 
+          type: "critical" as const, 
           msg: `LIVE INCIDENT: ${activeIncident.type} reported in ${activeIncident.district} (${activeIncident.id})`, 
           time: "LIVE" 
         },
         ...initialAlerts
-      ].slice(0, 5);
+      ] as AlertType[]).slice(0, 5);
     }
     
     setAlerts(initialAlerts);

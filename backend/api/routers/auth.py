@@ -27,16 +27,17 @@ def login_for_access_token(request: Request, response: Response, form_data: OAut
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     
     # We will update these later to include token_version
+    token_ver = getattr(user, "token_version", 1)
     access_token = create_access_token(
-        data={"sub": user.username, "role": user.role, "version": user.token_version}, expires_delta=access_token_expires
+        data={"sub": user.username, "role": str(user.role), "version": token_ver}, expires_delta=access_token_expires
     )
-    refresh_token = create_refresh_token(data={"sub": user.username, "role": user.role, "version": user.token_version})
+    refresh_token = create_refresh_token(data={"sub": user.username, "role": str(user.role), "version": token_ver})
     
     # Set HttpOnly Cookies
     response.set_cookie(key="access_token", value=access_token, httponly=True, secure=True, samesite="lax", max_age=ACCESS_TOKEN_EXPIRE_MINUTES * 60)
     response.set_cookie(key="refresh_token", value=refresh_token, httponly=True, secure=True, samesite="lax", max_age=7 * 24 * 60 * 60)
     
-    return {"message": "Authenticated"}
+    return {"access_token": access_token, "token_type": "bearer", "user": {"username": user.username, "role": str(user.role)}}
 
 @router.post("/refresh")
 @limiter.limit("10/minute")
