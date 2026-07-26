@@ -16,7 +16,9 @@ pytest-benchmark
 httpx
 cachetools
 bleach
+PyJWT>=2.8.0
 python-jose[cryptography]
 passlib[bcrypt]
+python-multipart>=0.0.6
 slowapi
 psutil
