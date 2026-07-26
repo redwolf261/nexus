@@ -1,5 +1,6 @@
 from typing import List, Dict, Any
 from collections import defaultdict
+from datetime import datetime, date
 from fastapi import HTTPException
 
 from backend.repositories.investigations_repo import InvestigationsRepository
@@ -156,9 +157,28 @@ class InvestigationsService:
             analytical_findings["temporal_alerts"] = []
 
         # Sort timeline
-        timeline.sort(key=lambda x: x["date"], reverse=True)
+        timeline.sort(key=lambda x: str(x["date"]), reverse=True)
 
-        return {
+        def object_to_dict(obj: Any) -> Any:
+            if obj is None:
+                return None
+            if isinstance(obj, (int, float, str, bool)):
+                return obj
+            if isinstance(obj, (datetime, date)):
+                return obj.isoformat()
+            if isinstance(obj, dict):
+                return {k: object_to_dict(v) for k, v in obj.items()}
+            if isinstance(obj, (list, tuple, set)):
+                return [object_to_dict(x) for x in obj]
+            if hasattr(obj, '__table__'):
+                return {col.name: object_to_dict(getattr(obj, col.name)) for col in obj.__table__.columns}
+            if hasattr(obj, 'dict') and callable(getattr(obj, 'dict')):
+                return object_to_dict(obj.dict())
+            if hasattr(obj, 'model_dump') and callable(getattr(obj, 'model_dump')):
+                return object_to_dict(obj.model_dump())
+            return str(obj)
+
+        raw_result = {
             "investigation": inv,
             "entities": dict(entities_grouped),
             "notes": notes,
@@ -169,4 +189,5 @@ class InvestigationsService:
             },
             "analytical_findings": analytical_findings,
         }
+        return object_to_dict(raw_result)
 
