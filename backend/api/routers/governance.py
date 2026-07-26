@@ -19,7 +19,7 @@ from backend.assignment.governance_service import AssignmentGovernanceService
 from backend.assignment.override_policy import OverrideReasonEnum
 from backend.core.logging import logger
 
-router = APIRouter(prefix="/assignment", tags=["Assignment Governance"])
+router = APIRouter(prefix="/api/assignment", tags=["Assignment Governance"])
 
 
 # ── Request Models ───────────────────────────────────────────────────────────

@@ -15,8 +15,11 @@ from backend.database import get_db
 from backend.db.schema import User, Role
 from backend.auth.deps import get_current_user, require_role
 from backend.command_center.dashboard_service import DashboardAggregationService
+from backend.command_center.subscription_manager import SubscriptionRegistry
+from backend.command_center.presence_service import PresenceService
+from backend.command_center.replay_service import ReplayService
 
-router = APIRouter(prefix="/command-center", tags=["Supervisor Command Center"])
+router = APIRouter(prefix="/api/command-center", tags=["Supervisor Command Center"])
 
 
 @router.get("/dashboard")

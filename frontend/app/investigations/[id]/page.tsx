@@ -18,9 +18,9 @@ export default function WorkspacePage({ params }: { params: Promise<{ id: string
   // Orchestrator loads the data and populates granular caches
   const { isLoading, data: workspaceObj } = useWorkspaceOrchestrator(unwrappedParams.id);
   
-  const { data: inv } = useWorkspaceMeta(unwrappedParams.id);
-  const { data: entities } = useWorkspaceEntities(unwrappedParams.id);
-  const { data: timeline } = useWorkspaceTimeline(unwrappedParams.id);
+  const { data: inv } = useWorkspaceMeta(unwrappedParams.id) as { data: any };
+  const { data: entities } = useWorkspaceEntities(unwrappedParams.id) as { data: any };
+  const { data: timeline } = useWorkspaceTimeline(unwrappedParams.id) as { data: any };
   const { data: notes } = useWorkspaceNotes(unwrappedParams.id);
 
   const { createNote, removeEntity } = useInvestigationMutations();
@@ -267,7 +267,7 @@ function IntelligencePanel({ caseId, workspace, openDrawer }: { caseId: string, 
           <AlertTriangle className="w-4 h-4"/> Cross-Case Discoveries
         </h2>
         <div className="space-y-3">
-           {overlapsLoading ? <div className="animate-pulse font-mono text-muted-foreground">SCANNING NETWORK...</div> : (overlaps as any)?.length > 0 ? (overlaps as any[]).map((o: any, i: number) => (
+           {overlapsLoading ? <div className="animate-pulse font-mono text-muted-foreground">SCANNING NETWORK...</div> : (overlaps as any)?.length > 0 ? ((overlaps as unknown) as any[]).map((o: any, i: number) => (
              <div key={i} className="bg-card border border-chart-2/30 p-4 rounded-lg flex items-center justify-between">
                 <div>
                    <div className="text-chart-2 font-bold font-mono text-sm mb-1">{o.reason}</div>

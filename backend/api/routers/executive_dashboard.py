@@ -19,7 +19,7 @@ from backend.command_center.trend_engine import TrendAnalysisEngine
 from backend.command_center.heatmap_engine import HeatmapEngine
 
 
-router = APIRouter(prefix="/executive", tags=["Executive Dashboard"])
+router = APIRouter(prefix="/api/executive", tags=["Executive Dashboard"])
 
 
 @router.get("/dashboard")

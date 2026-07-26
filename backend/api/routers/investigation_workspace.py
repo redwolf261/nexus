@@ -21,7 +21,7 @@ from backend.command_center.decision_support_engine import DecisionSupportEngine
 from backend.command_center.supervisor_action_engine import SupervisorActionEngine
 
 
-router = APIRouter(prefix="/workspace", tags=["Investigation Workspace"])
+router = APIRouter(prefix="/api/workspace", tags=["Investigation Workspace"])
 
 
 @router.get("/{investigation_id}")

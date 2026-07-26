@@ -18,7 +18,7 @@ from backend.auth.deps import get_current_user, require_role
 from backend.assignment.assignment_service import AssignmentService
 from backend.core.logging import logger
 
-router = APIRouter(prefix="/assignment", tags=["Assignment Service"])
+router = APIRouter(prefix="/api/assignment", tags=["Assignment Service"])
 
 
 # ── Request / Response Schemas ───────────────────────────────────────────────

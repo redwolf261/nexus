@@ -1,59 +1,112 @@
+"use client";
+
 import Link from "next/link";
-import { LayoutDashboard, Network, Map, ListTree, Users, Bell } from "lucide-react";
+import { usePathname, useRouter } from "next/navigation";
+import {
+  LayoutDashboard, Network, Map, ListTree, Users, Bell,
+  CheckCircle, AlertTriangle, Shield, ClipboardList,
+  Terminal, LogOut, Wifi
+} from "lucide-react";
+
+const NAV_GROUPS = [
+  {
+    label: "Intelligence",
+    links: [
+      { name: "Executive", href: "/", icon: LayoutDashboard },
+      { name: "Investigations", href: "/investigations", icon: Users },
+      { name: "Silo Buster", href: "/silo-buster", icon: Network },
+      { name: "Knowledge Graph", href: "/graph", icon: ListTree },
+      { name: "Predictive Map", href: "/map", icon: Map },
+    ],
+  },
+  {
+    label: "Operations",
+    links: [
+      { name: "Command Center", href: "/command-center", icon: Terminal },
+      { name: "Approvals", href: "/approvals", icon: CheckCircle },
+      { name: "Escalations", href: "/escalations", icon: AlertTriangle },
+      { name: "Notifications", href: "/notifications", icon: Bell },
+    ],
+  },
+  {
+    label: "Governance",
+    links: [
+      { name: "Audit Ledger", href: "/audit", icon: Shield },
+      { name: "Compliance", href: "/compliance", icon: ClipboardList },
+    ],
+  },
+];
 
 export function Sidebar() {
-  const links = [
-    { name: "Executive", href: "/", icon: LayoutDashboard },
-    { name: "Investigations", href: "/investigations", icon: Users },
-    { name: "Silo Buster", href: "/silo-buster", icon: Network },
-    { name: "Knowledge Graph", href: "/graph", icon: ListTree },
-    { name: "Predictive", href: "/map", icon: Map },
-  ];
+  const pathname = usePathname();
+  const router = useRouter();
+
+  function handleLogout() {
+    localStorage.removeItem("nexus_token");
+    localStorage.removeItem("dev_token");
+    router.push("/login");
+  }
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
-    <aside className="w-64 bg-sidebar border-r border-sidebar-border h-full flex flex-col">
-      <div className="h-16 flex items-center px-6 border-b border-sidebar-border">
-        <span className="font-mono text-xl text-primary tracking-widest font-bold">NEXUS</span>
+    <aside className="w-60 bg-slate-950 border-r border-slate-800/60 h-full flex flex-col shrink-0">
+      {/* Logo */}
+      <div className="h-14 flex items-center px-5 border-b border-slate-800/60 shrink-0">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="font-mono text-lg text-emerald-400 tracking-widest font-bold">NEXUS</span>
+        </div>
       </div>
-      <nav className="flex-1 px-4 py-6 space-y-2">
-        {links.map((link) => {
-          const Icon = link.icon;
-          return (
-            <Link 
-              key={link.name} 
-              href={link.href}
-              className="flex items-center gap-3 px-3 py-2 rounded-md text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-colors"
-            >
-              <Icon className="w-5 h-5" />
-              <span className="text-sm font-medium">{link.name}</span>
-            </Link>
-          );
-        })}
+
+      {/* Navigation */}
+      <nav className="flex-1 px-3 py-4 space-y-6 overflow-y-auto">
+        {NAV_GROUPS.map((group) => (
+          <div key={group.label}>
+            <p className="text-[9px] font-bold text-slate-600 uppercase tracking-[0.2em] px-2 mb-2">
+              {group.label}
+            </p>
+            <div className="space-y-0.5">
+              {group.links.map((link) => {
+                const Icon = link.icon;
+                const active = isActive(link.href);
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={`flex items-center gap-2.5 px-2.5 py-2 rounded-md text-sm transition-all group ${
+                      active
+                        ? "bg-emerald-950/60 text-emerald-300 border border-emerald-800/40"
+                        : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
+                    }`}
+                  >
+                    <Icon className={`w-4 h-4 shrink-0 ${active ? "text-emerald-400" : "text-slate-500 group-hover:text-slate-300"}`} />
+                    <span className="font-medium text-[13px]">{link.name}</span>
+                    {active && <div className="ml-auto w-1 h-1 rounded-full bg-emerald-400" />}
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        ))}
       </nav>
-      <div className="p-4 border-t border-sidebar-border">
-        <div className="flex items-center gap-3 px-3 py-2 text-muted-foreground">
-          <Bell className="w-5 h-5" />
-          <span className="text-xs uppercase tracking-wider">Alerts Active</span>
+
+      {/* Footer */}
+      <div className="border-t border-slate-800/60 p-3 space-y-2 shrink-0">
+        <div className="flex items-center justify-between px-2 py-1">
+          <div className="flex items-center gap-1.5">
+            <Wifi className="w-3 h-3 text-emerald-500" />
+            <span className="text-[10px] font-mono text-emerald-500">SYSTEMS NOMINAL</span>
+          </div>
         </div>
-      </div>
-      
-      <div className="p-4 border-t border-border/50 shrink-0 space-y-3">
-        <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-2 border-b border-border/50 pb-1">System Status</div>
-        
-        <div className="flex items-center justify-between text-xs font-mono">
-          <span className="text-muted-foreground">GIS Core</span>
-          <span className="text-primary flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary" /> OK</span>
-        </div>
-        
-        <div className="flex items-center justify-between text-xs font-mono">
-          <span className="text-muted-foreground">Neo4j Graph</span>
-          <span className="text-primary flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-primary" /> OK</span>
-        </div>
-        
-        <div className="flex items-center justify-between text-xs font-mono">
-          <span className="text-muted-foreground">Prediction AI</span>
-          <span className="text-chart-2 flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-chart-2 animate-pulse" /> 14ms</span>
-        </div>
+        <button
+          onClick={handleLogout}
+          className="w-full flex items-center gap-2.5 px-2.5 py-2 rounded-md text-slate-500 hover:text-rose-400 hover:bg-rose-950/20 transition-all text-[13px]"
+        >
+          <LogOut className="w-4 h-4" />
+          <span className="font-medium">Sign Out</span>
+        </button>
       </div>
     </aside>
   );

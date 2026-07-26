@@ -24,10 +24,6 @@ def get_current_user(request: Request, db: Session = Depends(get_db)) -> User:
             token = auth.split(" ")[1]
             
     if not token:
-        # Seamless hackathon/demo mode fallback: if no token is passed, default to admin user
-        admin_user = db.query(User).filter(User.username == "admin").first()
-        if admin_user:
-            return admin_user
         raise credentials_exception
         
     payload = decode_access_token(token)
@@ -44,18 +40,23 @@ def get_current_user(request: Request, db: Session = Depends(get_db)) -> User:
         raise credentials_exception
     return user
 
-def require_role(min_role: Role) -> Callable:
+def require_role(min_role) -> Callable:
+    """Accept a single Role (hierarchy check) or a list of Roles (membership check)."""
     def role_checker(current_user: User = Depends(get_current_user)):
         roles_hierarchy = [Role.ReadOnly, Role.Analyst, Role.Supervisor, Role.ACP, Role.DCP, Role.Admin]
 
-        try:
-            user_level = roles_hierarchy.index(current_user.role)
-            min_level = roles_hierarchy.index(min_role)
-        except ValueError:
-            raise HTTPException(status_code=403, detail="Invalid role definition")
-            
-        if user_level < min_level:
-            raise HTTPException(status_code=403, detail="Not enough permissions")
+        if isinstance(min_role, list):
+            # Allow if the user's role is in the allowed list
+            if current_user.role not in min_role:
+                raise HTTPException(status_code=403, detail="Not enough permissions")
+        else:
+            try:
+                user_level = roles_hierarchy.index(current_user.role)
+                min_level = roles_hierarchy.index(min_role)
+            except ValueError:
+                raise HTTPException(status_code=403, detail="Invalid role definition")
+            if user_level < min_level:
+                raise HTTPException(status_code=403, detail="Not enough permissions")
         return current_user
     return role_checker
 
