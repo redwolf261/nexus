@@ -84,37 +84,48 @@
 }
 
 .dark {
-  --background: oklch(0.10 0 0); /* Very dark charcoal */
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.13 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.13 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.7 0.15 200); /* Tactical Cyan */
-  --primary-foreground: oklch(0.1 0 0);
-  --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.18 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.18 0 0);
-  --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.6 0.2 25); /* Tactical Red */
-  --border: oklch(0.22 0 0);
-  --input: oklch(0.22 0 0);
-  --ring: oklch(0.7 0.15 200);
-  --chart-1: oklch(0.7 0.15 200); /* Cyan */
-  --chart-2: oklch(0.8 0.15 80); /* Amber */
-  --chart-3: oklch(0.6 0.2 25); /* Red */
-  --chart-4: oklch(0.7 0.15 300); /* Purple */
-  --chart-5: oklch(0.7 0.15 150); /* Green */
-  --sidebar: oklch(0.11 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.7 0.15 200);
-  --sidebar-primary-foreground: oklch(0.1 0 0);
-  --sidebar-accent: oklch(0.18 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.22 0 0);
-  --sidebar-ring: oklch(0.7 0.15 200);
+  /* ── Core palette — pure near-black, not charcoal ── */
+  --background: oklch(0.07 0.004 264);   /* slate-950 equivalent */
+  --foreground: oklch(0.96 0.004 264);   /* near-white */
+  --card: oklch(0.10 0.006 264);         /* glass card base */
+  --card-foreground: oklch(0.96 0.004 264);
+  --popover: oklch(0.10 0.006 264);
+  --popover-foreground: oklch(0.96 0.004 264);
+
+  /* ── Brand: Tactical Emerald (not cyan — darker, more militaristic) ── */
+  --primary: oklch(0.72 0.17 162);       /* emerald-400 */
+  --primary-foreground: oklch(0.07 0.004 264);
+
+  --secondary: oklch(0.14 0.006 264);
+  --secondary-foreground: oklch(0.96 0.004 264);
+  --muted: oklch(0.14 0.006 264);
+  --muted-foreground: oklch(0.52 0.01 264);
+
+  --accent: oklch(0.14 0.006 264);
+  --accent-foreground: oklch(0.96 0.004 264);
+
+  /* ── Status colors ── */
+  --destructive: oklch(0.60 0.22 25);    /* rose-600 */
+  --border: oklch(0.18 0.008 264);       /* barely-visible divider */
+  --input: oklch(0.14 0.006 264);
+  --ring: oklch(0.72 0.17 162);
+
+  /* ── Chart palette ── */
+  --chart-1: oklch(0.72 0.17 162);      /* emerald — primary */
+  --chart-2: oklch(0.78 0.14 80);       /* amber — warning */
+  --chart-3: oklch(0.60 0.22 25);       /* rose — danger */
+  --chart-4: oklch(0.68 0.14 300);      /* violet — intelligence */
+  --chart-5: oklch(0.68 0.14 220);      /* sky — info */
+
+  /* ── Sidebar — 1 shade darker than card ── */
+  --sidebar: oklch(0.055 0.004 264);
+  --sidebar-foreground: oklch(0.96 0.004 264);
+  --sidebar-primary: oklch(0.72 0.17 162);
+  --sidebar-primary-foreground: oklch(0.07 0.004 264);
+  --sidebar-accent: oklch(0.12 0.006 264);
+  --sidebar-accent-foreground: oklch(0.96 0.004 264);
+  --sidebar-border: oklch(0.15 0.006 264);
+  --sidebar-ring: oklch(0.72 0.17 162);
 }
 
 @layer base {
@@ -127,4 +138,93 @@
   html {
     @apply font-sans;
   }
+}
+
+/* ── Page transition fade-in ───────────────────────────────────────────────── */
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > * {
+  animation: page-enter 0.25s ease-out both;
+}
+
+/* ── Glass card utility ─────────────────────────────────────────────────────── */
+.glass-card {
+  background: oklch(0.10 0.006 264 / 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid oklch(0.22 0.008 264 / 0.6);
+  box-shadow:
+    0 0 0 1px oklch(0.22 0.008 264 / 0.2),
+    0 4px 24px oklch(0.04 0 0 / 0.5),
+    inset 0 1px 0 oklch(0.30 0.01 264 / 0.15);
+}
+
+/* ── Tactical glow on primary accents ────────────────────────────────────── */
+.glow-emerald {
+  box-shadow: 0 0 12px oklch(0.72 0.17 162 / 0.25), 0 0 4px oklch(0.72 0.17 162 / 0.15);
+}
+
+/* ── Skeleton loading pulse ──────────────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    oklch(0.14 0.006 264) 25%,
+    oklch(0.18 0.008 264) 50%,
+    oklch(0.14 0.006 264) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Scan line overlay for cinematic effect ──────────────────────────────── */
+.scanlines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    oklch(0 0 0 / 0.04) 2px,
+    oklch(0 0 0 / 0.04) 4px
+  );
+  pointer-events: none;
+}
+
+/* ── Dot grid background ─────────────────────────────────────────────────── */
+.dot-grid {
+  background-image: radial-gradient(oklch(0.30 0.01 264 / 0.4) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── Scrollbar styling ───────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.22 0.008 264);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.30 0.01 264);
+}
+
+/* ── Focus ring ──────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid oklch(0.72 0.17 162 / 0.7);
+  outline-offset: 2px;
 }

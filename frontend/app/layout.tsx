@@ -48,7 +48,7 @@ export default function RootLayout({
                 <Sidebar />
                 <div className="flex-1 flex flex-col h-full overflow-hidden relative">
                   <TopBar />
-                  <main className="flex-1 overflow-auto bg-background/50 relative">
+                  <main className="flex-1 overflow-auto relative" style={{ background: "oklch(0.07 0.004 264)" }}>
                     <ErrorBoundary fallbackMessage="The main application module failed to load.">
                       {children}
                     </ErrorBoundary>
